@@ -30,3 +30,6 @@ wp-content/cache/
 # Server configs
 .htaccess
 *.log
+
+#maintainance issue solved
+.maintenance
