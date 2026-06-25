@@ -33,3 +33,9 @@ wp-content/cache/
 
 #maintainance issue solved
 .maintenance
+
+#Wordfence disturb in github desktop
+wp-content/wflogs/
+
+#skip uploading the backup file
+wp-content/ai1wm-backups/
