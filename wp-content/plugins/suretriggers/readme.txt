@@ -2,13 +2,13 @@
 Contributors: sujaypawar, wpcrafter
 Tags: automation, google sheets, webhooks, schedule, SureCart
 Requires at least: 5.4
-Tested up to: 7.0
-Stable tag: 1.1.31
+Tested up to: 7.1
+Stable tag: 1.1.43
 Requires PHP: 5.6
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Experience the power of automation within WordPress: Connect 1,500+ apps, automate manual tasks, and unlock your full potential. Get started now!
+Experience the power of automation within WordPress: Connect 1,600+ apps, automate manual tasks, and unlock your full potential. Get started now!
 
 == Description ==
 
@@ -334,6 +334,65 @@ You can report the issue through our [Bug Bounty Program](https://brainstormforc
 8. Workspace Notification Settings.
 
 == Changelog ==
+= Version 1.1.43 - Thursday, 29th October 2026 =
+* New: Added "Fluent Player" Integration
+* Improvement: "WP Travel Engine" – Added new "Export Bookings" Action
+
+= Version 1.1.42 - Thursday, 15th October 2026 =
+* New: Added "HBook" Integration
+* Fix: This update addressed a security bug. Props to Peter Tang and Patchstack for privately reporting it to our team. Please make sure you are using the latest version on your website.
+
+= Version 1.1.41 - Thursday, 8th October 2026 =
+* New: Added "Bit CRM" Integration
+* Improvement: "WordPress" – Added file attachment support (via URL) to "Send Email" Action
+* Improvement: "Voxel" – Added new Actions
+* Improvement: "SureForms" – Added new "Create Form" and "Create Form from Prompt" Actions
+* Improvement: Optimized database schema check so the webhook requests table is updated only when its schema version is outdated
+
+= Version 1.1.40 - Thursday, 24th September 2026 =
+* Improvement: "Divi Builder" – Added compatibility with Divi 5 block-based Contact Form modules
+* Fix: "FluentCRM" – Fixed "Send Email By Campaign" Action leaving the campaign stuck in Draft instead of sending it
+
+= Version 1.1.39 - Thursday, 10th September 2026 =
+* New: Added "WholesaleX" Integration
+* Improvement: "FluentCommunity" – Added permalink field to "Feed Created"/"Feed Updated" Trigger sample data
+* Fix: "LatePoint" – Fixed a crash when updating a booking's status due to unnecessary price recalculation
+
+= Version 1.1.38 - Tuesday, 1st September 2026 =
+* Improvement: "MailerPress" – Added custom fields support to "Create/Update Contact" Action
+* Improvement: "LatePoint" – Added new "Find Booking By Customer Email" Action
+* Improvement: "SureMembers" – Added new "Team Member Added to Access Group" Trigger
+
+= Version 1.1.37 - Tuesday, 18th August 2026 =
+* Improvement: "EDD" – Added new Triggers
+* Fix: "Gravity Forms" – Fixed plugin detection issue causing form entry Actions to fail on current Gravity Forms versions
+
+= Version 1.1.36 - Tuesday, 11th August 2026 =
+* New: Added "Studiocart" Integration
+* Improvement: "SureForms" – Strip inline base64 media from confirmation messages before sending to prevent oversized-payload failures
+* Fix: "FluentBoards" – Fixed "Create Task"/"Create Board" Actions failing on FluentBoards v2.0.4+
+* Fix: This update addressed multiple security hardening issues, including SSRF protection improvements, an unauthenticated object-injection fix, and role/privilege-escalation safeguards across several integrations
+
+= Version 1.1.35 - Thursday, 30th July 2026 =
+* New: Added "Directories Pro" Integration
+* Improvement: "WP Travel Engine" – Added new Actions
+* Improvement: "SureMembers" – Added new "Get User Details" Action
+
+= Version 1.1.34 - Tuesday, 21st July 2026 =
+* New: Added "JetBooking" Integration
+* Improvement: "SureDash" – Added new "Create Event" Action
+* Fix: "MemberPress" – Fixed "Coupon Code Redeemed" Trigger not firing for free-trial coupons
+
+= Version 1.1.33 - Monday, 13th July 2026 =
+* New: Added "Mailster" Integration
+* Improvement: "BuddyBoss" – Added support for attaching photos/videos directly to activity feed posts
+* Improvement: "WooCommerce Subscriptions" – Added new "Find Subscription by Subscription ID" Action
+
+= Version 1.1.32 - Thursday, 2nd July 2026 =
+* New: Added "SureDonation" Integration
+* Improvement: "Bricks Builder" – Added new "User Account Activated" Trigger
+* Improvement: "FluentCRM" – Added slug sanitization to the "Create Tag" Action
+
 = Version 1.1.31 - Thursday, 11th June 2026 =
 * Improvement: "Amelia" – Added event period start/end dates and amount paid to the "New Event Attendee" Trigger
 * Fix: "MemberPress" – Fixed "Membership Signup Completed" Trigger not firing for Stripe subscription payments

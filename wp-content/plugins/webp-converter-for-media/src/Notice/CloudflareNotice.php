@@ -4,15 +4,16 @@ namespace WebpConverter\Notice;
 
 use WebpConverter\Service\CloudflareConfigurator;
 use WebpConverter\Service\OptionsAccessManager;
+use WebpConverter\Settings\Page\CdnSettingsPage;
 use WebpConverter\Settings\Page\PageIntegrator;
 
 /**
- * Supports notice asking to clear CDN cache for Cloudflare.
+ * Supports notice asking to configure Cloudflare integration.
  */
 class CloudflareNotice extends NoticeAbstract implements NoticeInterface {
 
-	const NOTICE_OPTION    = 'webpc_notice_cloudflare';
-	const NOTICE_VIEW_PATH = 'components/notices/clear-cache.php';
+	const NOTICE_OPTION    = 'webpc_notice_cloudflare_setup';
+	const NOTICE_VIEW_PATH = 'components/notices/cloudflare-setup.php';
 
 	/**
 	 * {@inheritdoc}
@@ -32,23 +33,18 @@ class CloudflareNotice extends NoticeAbstract implements NoticeInterface {
 
 		if ( ( strpos( $cdn_server, 'cloudflare' ) === false ) && ! is_plugin_active( 'cloudflare/cloudflare.php' ) ) {
 			return false;
-		} elseif ( strpos( $_SERVER['SERVER_NAME'] ?? '', 'tastewp.com' ) !== false ) { // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
-			return false;
 		}
 
-		if ( OptionsAccessManager::get_option( CloudflareConfigurator::REQUEST_CACHE_PURGE_OPTION, '-' ) === 'yes' ) {
-			return false;
-		}
-
-		return ( ( $_GET['page'] ?? '' ) === PageIntegrator::SETTINGS_MENU_PAGE ); // phpcs:ignore WordPress.Security
+		return ( ( ( $_GET['page'] ?? '' ) === PageIntegrator::SETTINGS_MENU_PAGE ) // phpcs:ignore WordPress.Security
+			&& ( ( $_GET[ PageIntegrator::SETTINGS_PAGE_TYPE ] ?? '' ) !== CdnSettingsPage::PAGE_SLUG ) ); // phpcs:ignore WordPress.Security
 	}
 
 	/**
 	 * {@inheritdoc}
 	 */
 	public function is_active(): bool {
-		$option_value = OptionsAccessManager::get_option( $this->get_option_name() );
-		return ( $option_value !== 'yes' );
+		return ( ( OptionsAccessManager::get_option( $this->get_option_name() ) !== $this->get_disable_value() )
+			&& ( OptionsAccessManager::get_option( CloudflareConfigurator::REQUEST_CACHE_SETTINGS_OPTION, '-' ) !== 'yes' ) );
 	}
 
 	/**
@@ -74,30 +70,7 @@ class CloudflareNotice extends NoticeAbstract implements NoticeInterface {
 		return [
 			'ajax_url'     => admin_url( 'admin-ajax.php' ),
 			'close_action' => self::NOTICE_OPTION,
-			'service_name' => 'Cloudflare',
-			'steps'        => [
-				sprintf(
-				/* translators: %1$s: service name */
-					__( 'Log in to your %1$s dashboard.', 'webp-converter-for-media' ),
-					'Cloudflare'
-				),
-				sprintf(
-				/* translators: %1$s: button label */
-					__( 'Click %1$s.', 'webp-converter-for-media' ),
-					'<strong>"Caching > Configuration"</strong>'
-				),
-				sprintf(
-				/* translators: %1$s: section label, %2$s: button label */
-					__( 'Under %1$s, click %2$s. A warning window will appear.', 'webp-converter-for-media' ),
-					'<strong>"Purge Cache"</strong>',
-					'<strong>"Purge Everything"</strong>'
-				),
-				sprintf(
-				/* translators: %1$s: button label */
-					__( 'If you agree, click %1$s.', 'webp-converter-for-media' ),
-					'<strong>"Purge Everything"</strong>'
-				),
-			],
+			'settings_url' => PageIntegrator::get_settings_page_url( 'cdn' ),
 		];
 	}
 

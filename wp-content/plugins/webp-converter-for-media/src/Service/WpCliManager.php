@@ -9,8 +9,6 @@ use WebpConverter\Conversion\Format\WebpFormat;
 use WebpConverter\Conversion\Method\MethodFactory;
 use WebpConverter\Conversion\Method\MethodIntegrator;
 use WebpConverter\Conversion\PathsFinder;
-use WebpConverter\Error\Detector\TokenStatusDetector;
-use WebpConverter\Error\Notice\LibsNotInstalledNotice;
 use WebpConverter\HookableInterface;
 use WebpConverter\PluginData;
 use WebpConverter\Repository\TokenRepository;

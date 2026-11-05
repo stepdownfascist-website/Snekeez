@@ -87,9 +87,7 @@ class OptionsManager {
 			return null;
 		}
 
-		$form_type = ( isset( $_POST[ SettingsManager::FORM_TYPE_PARAM_KEY ] ) )
-			? sanitize_text_field( wp_unslash( $_POST[ SettingsManager::FORM_TYPE_PARAM_KEY ] ?? '' ) )
-			: '';
+		$form_type = sanitize_text_field( wp_unslash( $_POST[ SettingsManager::FORM_TYPE_PARAM_KEY ] ?? '' ) );
 		if ( $form_type === '' ) {
 			return [];
 		}

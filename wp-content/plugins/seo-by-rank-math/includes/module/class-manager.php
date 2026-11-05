@@ -42,6 +42,7 @@ class Manager {
 	 */
 	public function __construct() {
 		if ( Helper::is_heartbeat() ) {
+			$this->load_rewrite_modules();
 			return;
 		}
 
@@ -54,6 +55,29 @@ class Manager {
 		$this->action( 'after_setup_theme', 'load_modules', 2 );
 		add_action( 'rank_math/module_changed', [ '\RankMath\Admin\Watcher', 'module_changed' ], 10, 2 );
 		$this->action( 'rank_math/module_changed', 'watch_for_analytics', 10, 2 );
+	}
+
+	/**
+	 * Register the rewrite rules that must survive a heartbeat request.
+	 *
+	 * The full module system is skipped on heartbeat requests for performance,
+	 * but that also skips constructing Router and LLMS_Txt, so their `init`
+	 * callbacks (Router::init(), LLMS_Txt::add_rewrite_rule()) never call
+	 * add_rewrite_rule(). If something flushes rewrite rules while handling
+	 * that same request (e.g. a 3rd-party `heartbeat_send` callback calling
+	 * flush_rewrite_rules()), WordPress persists a rules option missing ours,
+	 * 404ing the sitemap and llms.txt until the next full flush. Loading just
+	 * these two lean classes keeps the rules registered without loading the
+	 * rest of the plugin.
+	 */
+	private function load_rewrite_modules() {
+		if ( Helper::is_module_active( 'sitemap', false ) ) {
+			new \RankMath\Sitemap\Router();
+		}
+
+		if ( Helper::is_module_active( 'llms-txt', false ) ) {
+			new \RankMath\LLMS\LLMS_Txt();
+		}
 	}
 
 	/**
@@ -89,7 +113,14 @@ class Manager {
 		$modules = $this->do_filter( 'modules', [] );
 
 		ksort( $modules );
-		$modules = array_merge( [ 'content-ai' => $modules['content-ai'] ], $modules ); // Move Content AI to first position.
+		// Move AI Visibility to first position, followed by Content AI.
+		$modules = array_merge(
+			[
+				'ai-visibility' => $modules['ai-visibility'],
+				'content-ai'    => $modules['content-ai'],
+			],
+			$modules
+		);
 		foreach ( $modules as $id => $module ) {
 			$this->add_module( $id, $module );
 		}
@@ -155,7 +186,7 @@ class Manager {
 		];
 
 		$modules['link-genius'] = [
-			'title'         => esc_html__( 'Link Genius', 'seo-by-rank-math' ),
+			'title'         => esc_html__( 'AI Link Genius', 'seo-by-rank-math' ),
 			'desc'          => esc_html__( 'An advanced internal linking tool that analyzes your posts, tracks link data, highlights opportunities, and offers detailed report.', 'seo-by-rank-math' ),
 			'icon'          => 'link',
 			'probadge'      => true,
@@ -188,7 +219,6 @@ class Manager {
 			'icon'        => 'content-ai',
 			'upgradeable' => true,
 			'settings'    => Helper::get_settings_url( 'general', 'content-ai' ),
-			'betabadge'   => true,
 		];
 
 		$modules['llms-txt'] = [
@@ -224,6 +254,16 @@ class Manager {
 			'probadge'      => true,
 			'disabled'      => true,
 			'disabled_text' => esc_html__( 'This module is available in the PRO version.', 'seo-by-rank-math' ),
+		];
+
+		$modules['ai-visibility'] = [
+			'title'       => esc_html__( 'AI Visibility', 'seo-by-rank-math' ),
+			'desc'        => esc_html__( 'Track your brand\'s AI search visibility. Monitor brand mentions, citations, & sentiment, and discover opportunities to grow your AI visibility.', 'seo-by-rank-math' ),
+			'icon'        => 'ai-visibility',
+			'class'       => 'RankMath\AI_Visibility\AI_Visibility',
+			'settings'    => Helper::get_admin_url( 'ai-visibility' ),
+			'betabadge'   => true,
+			'upgradeable' => true,
 		];
 
 		return $modules;
@@ -438,7 +478,7 @@ class Manager {
 								<?php } ?>
 								<?php if ( $is_upgradeable && ! $is_pro_active ) { ?>
 									<span class="is-upgradeable rank-math-tooltip">
-										<a href="<?php KB::the( 'pro', esc_html( $module->get( 'title' ) ) . ' Module Upgradable Icon' ); ?>">
+										<a href="<?php KB::the( in_array( $key, [ 'content-ai', 'ai-visibility' ], true ) ? 'ai-pricing' : 'pro', esc_html( $module->get( 'title' ) ) . ' Module Upgradable Icon' ); ?>">
 											<div>&#171;</div>
 										</a>
 										<span><?php echo esc_html__( 'More powerful options are available in the PRO version.', 'seo-by-rank-math' ); ?></span>
@@ -547,14 +587,14 @@ class Manager {
 						<h3><?php esc_html_e( 'Take SEO to the Next Level!', 'seo-by-rank-math' ); ?></h3>
 						<ul>
 							<li><?php esc_html_e( 'Unlimited personal websites', 'seo-by-rank-math' ); ?></li>
-							<li><?php esc_html_e( 'Free 15 Content AI Credits', 'seo-by-rank-math' ); ?></li>
+							<li><?php esc_html_e( 'Free 15-day Rank Math AI Trial', 'seo-by-rank-math' ); ?></li>
 							<li><?php esc_html_e( 'Track 500 Keywords', 'seo-by-rank-math' ); ?></li>
 							<li><?php esc_html_e( 'Powerful Schema Generator', 'seo-by-rank-math' ); ?></li>
 							<li><?php esc_html_e( '24/7 Support', 'seo-by-rank-math' ); ?></li>
 						</ul>
 					</header>
 					<div class="status wp-clearfix">
-						<button class="button button-secondary"><?php esc_html_e( 'Buy', 'seo-by-rank-math' ); ?></button>
+						<button class="button button-secondary"><?php esc_html_e( 'Buy Now', 'seo-by-rank-math' ); ?></button>
 					</div>
 				</a>
 			</div>

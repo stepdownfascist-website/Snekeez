@@ -10,7 +10,7 @@ interface EndpointInterface {
 	/**
 	 * Returns route of endpoint.
 	 *
-	 * @return string
+	 * @return non-falsy-string
 	 */
 	public static function get_route_name(): string;
 

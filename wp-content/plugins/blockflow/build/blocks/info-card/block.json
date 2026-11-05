@@ -1,0 +1,687 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "blockflow/info-card",
+  "version": "1.0.0",
+  "title": "Info Card",
+  "category": "blockflow",
+  "description": "Single info card with media, title, description and optional link.",
+  "keywords": [
+    "info",
+    "card",
+    "icon",
+    "feature"
+  ],
+  "textdomain": "blockflow",
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "stylePreset": {
+      "type": "string",
+      "default": "icon-top"
+    },
+    "boxStyle": {
+      "type": "string",
+      "default": "custom"
+    },
+    "icon": {
+      "type": "object",
+      "default": {
+        "source": "library",
+        "name": "star",
+        "customSvg": {
+          "id": null,
+          "url": ""
+        }
+      }
+    },
+    "mediaImage": {
+      "type": "object",
+      "default": {
+        "id": null,
+        "url": "",
+        "alt": ""
+      }
+    },
+    "mediaType": {
+      "type": "string",
+      "default": "icon",
+      "enum": [
+        "icon",
+        "image"
+      ]
+    },
+    "mediaView": {
+      "type": "string",
+      "default": "default",
+      "enum": [
+        "default",
+        "stacked",
+        "framed",
+        "custom"
+      ]
+    },
+    "mediaShape": {
+      "type": "string",
+      "default": "square",
+      "enum": [
+        "square",
+        "rounded",
+        "circle",
+        "custom"
+      ]
+    },
+    "imageObjectFit": {
+      "type": "string",
+      "default": "cover",
+      "enum": [
+        "cover",
+        "contain",
+        "fill"
+      ]
+    },
+    "iconSize": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "width": "48",
+          "height": "48",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "imageWidth": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "100",
+          "unit": "%"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "iconColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "iconColorHover": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "iconBgColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "iconBgColorHover": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "iconHoverAnimation": {
+      "type": "string",
+      "default": ""
+    },
+    "mediaGap": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "16",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "iconPadding": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "iconBorderRadius": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "topLeft": "",
+          "topRight": "",
+          "bottomRight": "",
+          "bottomLeft": "",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "iconBorderWidth": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "top": "",
+          "right": "",
+          "bottom": "",
+          "left": "",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "iconBorderColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "iconBorderColorHover": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "imageOverlay": {
+      "type": "object",
+      "default": {
+        "gradient": {
+          "light": "",
+          "dark": ""
+        },
+        "opacity": 0.5
+      }
+    },
+    "mediaShadow": {
+      "type": "object",
+      "default": {
+        "enabled": false,
+        "horizontal": "0",
+        "vertical": "4",
+        "blur": "6",
+        "spread": "0",
+        "color": {
+          "light": "rgba(0, 0, 0, 0.1)",
+          "dark": ""
+        },
+        "inset": false
+      }
+    },
+    "layout": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "direction": "column",
+          "alignItems": "center"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "contentAlignment": {
+      "type": "object",
+      "default": {
+        "desktop": "",
+        "tablet": "",
+        "mobile": ""
+      }
+    },
+    "title": {
+      "type": "string",
+      "default": "Feature title"
+    },
+    "titleTag": {
+      "type": "string",
+      "default": "h2"
+    },
+    "titleColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "titleColorHover": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "titleTypography": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "fontFamily": "",
+          "fontSize": {
+            "value": "",
+            "unit": "px"
+          },
+          "fontWeight": "",
+          "textTransform": "",
+          "fontStyle": "",
+          "textDecoration": "",
+          "lineHeight": {
+            "value": "",
+            "unit": "em"
+          },
+          "letterSpacing": {
+            "value": "",
+            "unit": "px"
+          },
+          "wordSpacing": {
+            "value": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {},
+        "enabled": true
+      }
+    },
+    "titleMargin": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "12",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "description": {
+      "type": "string",
+      "default": "Add a short description for this feature."
+    },
+    "descTag": {
+      "type": "string",
+      "default": "p"
+    },
+    "descColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "descColorHover": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "descTypography": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "fontFamily": "",
+          "fontSize": {
+            "value": "",
+            "unit": "px"
+          },
+          "fontWeight": "",
+          "textTransform": "",
+          "fontStyle": "",
+          "textDecoration": "",
+          "lineHeight": {
+            "value": "",
+            "unit": "em"
+          },
+          "letterSpacing": {
+            "value": "",
+            "unit": "px"
+          },
+          "wordSpacing": {
+            "value": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {},
+        "enabled": true
+      }
+    },
+    "descMargin": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "link": {
+      "type": "object",
+      "default": {
+        "url": "",
+        "target": "",
+        "rel": "",
+        "customAttributes": []
+      }
+    },
+    "linkScope": {
+      "type": "string",
+      "default": "card",
+      "enum": [
+        "card",
+        "button"
+      ]
+    },
+    "hoverAnimation": {
+      "type": "string",
+      "default": ""
+    },
+    "spacing": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "padding": {
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "unit": "px"
+          },
+          "margin": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "advancedLayout": {
+      "type": "object",
+      "default": {
+        "desktop": {},
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "background": {
+      "type": "object",
+      "default": {
+        "type": "none",
+        "color": {
+          "light": "",
+          "dark": ""
+        },
+        "gradient": {
+          "light": "",
+          "dark": ""
+        },
+        "image": {
+          "url": "",
+          "id": null,
+          "position": "center center",
+          "repeat": "no-repeat",
+          "size": "cover",
+          "attachment": "scroll"
+        },
+        "overlay": {
+          "enabled": false,
+          "color": {
+            "light": "",
+            "dark": ""
+          },
+          "opacity": 0.5
+        }
+      }
+    },
+    "border": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "style": "",
+          "width": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": "",
+            "unit": "px"
+          },
+          "color": {
+            "light": "",
+            "dark": ""
+          },
+          "radius": {
+            "topLeft": "",
+            "topRight": "",
+            "bottomRight": "",
+            "bottomLeft": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "borderHover": {
+      "type": "object",
+      "default": {
+        "desktop": {},
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "boxShadow": {
+      "type": "object",
+      "default": {
+        "horizontal": "0",
+        "vertical": "4",
+        "blur": "6",
+        "spread": "0",
+        "color": {
+          "light": "rgba(0, 0, 0, 0.1)",
+          "dark": ""
+        },
+        "inset": false,
+        "enabled": false
+      }
+    },
+    "boxShadowHover": {
+      "type": "object",
+      "default": {
+        "horizontal": "0",
+        "vertical": "4",
+        "blur": "6",
+        "spread": "0",
+        "color": {
+          "light": "rgba(0, 0, 0, 0.1)",
+          "dark": ""
+        },
+        "inset": false,
+        "enabled": false
+      }
+    },
+    "animation": {
+      "type": "object",
+      "default": {
+        "type": "",
+        "duration": 400,
+        "delay": 0,
+        "easing": "ease",
+        "once": true
+      }
+    },
+    "responsiveVisibility": {
+      "type": "object",
+      "default": {
+        "hideOnDesktop": false,
+        "hideOnTablet": false,
+        "hideOnMobile": false
+      }
+    },
+    "htmlTag": {
+      "type": "string",
+      "default": "div"
+    },
+    "htmlAttributes": {
+      "type": "object",
+      "default": {
+        "customAttributes": []
+      }
+    },
+    "ctaButton": {
+      "type": "object",
+      "default": {
+        "enabled": false,
+        "text": "Learn More",
+        "icon": {
+          "enabled": false,
+          "source": "library",
+          "name": "",
+          "position": "after",
+          "customSvg": {
+            "id": null,
+            "url": ""
+          }
+        }
+      }
+    },
+    "ctaTextColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "ctaTextColorHover": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "ctaBgColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "ctaBgColorHover": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "ctaPadding": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "top": "",
+          "right": "",
+          "bottom": "",
+          "left": "",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "ctaBorder": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "style": "",
+          "width": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": "",
+            "unit": "px"
+          },
+          "color": {
+            "light": "",
+            "dark": ""
+          },
+          "radius": {
+            "topLeft": "",
+            "topRight": "",
+            "bottomRight": "",
+            "bottomLeft": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "ctaBorderHover": {
+      "type": "object",
+      "default": {
+        "desktop": {},
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "ctaTypography": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "fontFamily": "",
+          "fontSize": {
+            "value": "",
+            "unit": "px"
+          },
+          "fontWeight": "",
+          "textTransform": "",
+          "fontStyle": "",
+          "textDecoration": "",
+          "lineHeight": {
+            "value": "",
+            "unit": "em"
+          },
+          "letterSpacing": {
+            "value": "",
+            "unit": "px"
+          },
+          "wordSpacing": {
+            "value": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {},
+        "enabled": true
+      }
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "className": true,
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

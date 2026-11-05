@@ -2,11 +2,8 @@
 
 namespace WebpConverter\Conversion\Method;
 
-use WebpConverter\Exception\FilesizeOversizeException;
-use WebpConverter\Exception\ImageInvalidException;
+use WebpConverter\Exception\ExceptionInterface;
 use WebpConverter\Exception\LargerThanOriginalException;
-use WebpConverter\Exception\OutputPathException;
-use WebpConverter\Exception\SourcePathException;
 use WebpConverter\Settings\Option\OutputFormatsOption;
 
 /**
@@ -51,13 +48,13 @@ abstract class LibraryMethodAbstract extends MethodAbstract implements LibraryMe
 			$this->update_conversion_stats( $source_path, $output_path, $output_format );
 
 			$this->files_statuses[ $output_format ][ $source_path ] = true;
-		} catch ( OutputPathException $e ) {
-			$this->save_conversion_error( $e->getMessage(), $plugin_settings );
-		} catch ( SourcePathException|FilesizeOversizeException|ImageInvalidException $e ) {
-			$this->save_conversion_error( $e->getMessage(), $plugin_settings );
-			$this->skip_crashed->create_crashed_file( $output_path );
 		} catch ( LargerThanOriginalException $e ) {
 			return;
+		} catch ( ExceptionInterface $e ) {
+			$this->save_conversion_error( $e->getMessage(), $plugin_settings );
+			if ( isset( $output_path ) && $e->is_crashed_file_required() ) {
+				$this->skip_crashed->create_crashed_file( $output_path );
+			}
 		}
 	}
 }

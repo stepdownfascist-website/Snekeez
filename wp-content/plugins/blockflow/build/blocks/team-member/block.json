@@ -1,0 +1,648 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "blockflow/team-member",
+  "version": "1.0.0",
+  "title": "Team Member",
+  "category": "blockflow",
+  "description": "Display team member profiles with image, name, description, and social links.",
+  "keywords": [
+    "team",
+    "member",
+    "staff",
+    "profile",
+    "person",
+    "user",
+    "avatar",
+    "social"
+  ],
+  "textdomain": "blockflow",
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "layout": {
+      "type": "string",
+      "default": "card",
+      "enum": [
+        "card",
+        "avatar",
+        "horizontal",
+        "overlay",
+        "custom"
+      ]
+    },
+    "image": {
+      "type": "object",
+      "default": {
+        "id": null,
+        "url": "",
+        "alt": ""
+      }
+    },
+    "imageWidth": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "100",
+          "unit": "%"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "imageBorder": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "style": "",
+          "width": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": "",
+            "unit": "px"
+          },
+          "color": {
+            "light": "",
+            "dark": ""
+          },
+          "radius": {
+            "topLeft": "",
+            "topRight": "",
+            "bottomRight": "",
+            "bottomLeft": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "imageBorderHover": {
+      "type": "object",
+      "default": {
+        "desktop": {},
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "imageBoxShadow": {
+      "type": "object",
+      "default": {
+        "horizontal": "0",
+        "vertical": "4",
+        "blur": "6",
+        "spread": "0",
+        "color": {
+          "light": "rgba(0, 0, 0, 0.1)",
+          "dark": ""
+        },
+        "inset": false,
+        "enabled": false
+      }
+    },
+    "imageBoxShadowHover": {
+      "type": "object",
+      "default": {
+        "horizontal": "0",
+        "vertical": "4",
+        "blur": "6",
+        "spread": "0",
+        "color": {
+          "light": "rgba(0, 0, 0, 0.1)",
+          "dark": ""
+        },
+        "inset": false,
+        "enabled": false
+      }
+    },
+    "name": {
+      "type": "string",
+      "default": "John Smith"
+    },
+    "description": {
+      "type": "string",
+      "default": "Marketing Director"
+    },
+    "meta": {
+      "type": "string",
+      "default": "Passionate about innovation and delivering exceptional results for our clients."
+    },
+    "nameTag": {
+      "type": "string",
+      "default": "h3",
+      "enum": [
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "p",
+        "span"
+      ]
+    },
+    "nameTypography": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "fontFamily": "",
+          "fontSize": {
+            "value": "",
+            "unit": "px"
+          },
+          "fontWeight": "700",
+          "fontStyle": "",
+          "textTransform": "",
+          "textDecoration": "",
+          "lineHeight": {
+            "value": "",
+            "unit": "em"
+          },
+          "letterSpacing": {
+            "value": "",
+            "unit": "px"
+          },
+          "wordSpacing": {
+            "value": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "nameColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "descTypography": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "fontFamily": "",
+          "fontSize": {
+            "value": "12",
+            "unit": "px"
+          },
+          "fontWeight": "",
+          "fontStyle": "",
+          "textTransform": "",
+          "textDecoration": "",
+          "lineHeight": {
+            "value": "",
+            "unit": "em"
+          },
+          "letterSpacing": {
+            "value": "",
+            "unit": "px"
+          },
+          "wordSpacing": {
+            "value": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "descColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "metaTypography": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "fontFamily": "",
+          "fontSize": {
+            "value": "15",
+            "unit": "px"
+          },
+          "fontWeight": "",
+          "fontStyle": "",
+          "textTransform": "",
+          "textDecoration": "",
+          "lineHeight": {
+            "value": "",
+            "unit": "em"
+          },
+          "letterSpacing": {
+            "value": "",
+            "unit": "px"
+          },
+          "wordSpacing": {
+            "value": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "metaColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "contentAlignment": {
+      "type": "object",
+      "default": {
+        "desktop": "center",
+        "tablet": "",
+        "mobile": ""
+      }
+    },
+    "elementsGap": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "8",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "imageGap": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "12",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "socialTopSpacing": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "16",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "socialItems": {
+      "type": "array",
+      "default": [
+        {
+          "platform": "facebook",
+          "link": {
+            "url": "",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          "colorMode": "custom",
+          "primaryColor": {
+            "light": "#FFFFFF",
+            "dark": ""
+          },
+          "secondaryColor": {
+            "light": "#000000",
+            "dark": ""
+          }
+        },
+        {
+          "platform": "x-twitter",
+          "link": {
+            "url": "",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          "colorMode": "custom",
+          "primaryColor": {
+            "light": "#FFFFFF",
+            "dark": ""
+          },
+          "secondaryColor": {
+            "light": "#000000",
+            "dark": ""
+          }
+        },
+        {
+          "platform": "linkedin",
+          "link": {
+            "url": "",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          "colorMode": "custom",
+          "primaryColor": {
+            "light": "#FFFFFF",
+            "dark": ""
+          },
+          "secondaryColor": {
+            "light": "#000000",
+            "dark": ""
+          }
+        }
+      ]
+    },
+    "socialView": {
+      "type": "string",
+      "default": "stacked",
+      "enum": [
+        "default",
+        "stacked",
+        "framed"
+      ]
+    },
+    "socialShape": {
+      "type": "string",
+      "default": "circle",
+      "enum": [
+        "square",
+        "rounded",
+        "circle"
+      ]
+    },
+    "socialSize": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "16",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "socialGap": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "8",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "socialPrimaryColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "socialSecondaryColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "socialPrimaryColorHover": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "socialSecondaryColorHover": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "socialHoverAnimation": {
+      "type": "string",
+      "default": "grow"
+    },
+    "innerBackground": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "innerPadding": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "top": "",
+          "right": "",
+          "bottom": "",
+          "left": "",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "innerBorderRadius": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "innerBoxShadow": {
+      "type": "object",
+      "default": {
+        "horizontal": "0",
+        "vertical": "4",
+        "blur": "16",
+        "spread": "0",
+        "color": {
+          "light": "rgba(0, 0, 0, 0.08)",
+          "dark": ""
+        },
+        "inset": false,
+        "enabled": false
+      }
+    },
+    "avatarOverlap": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "40",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "spacing": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "padding": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": "",
+            "unit": "px"
+          },
+          "margin": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "advancedLayout": {
+      "type": "object",
+      "default": {
+        "desktop": {},
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "background": {
+      "type": "object",
+      "default": {
+        "type": "none",
+        "color": {
+          "light": "",
+          "dark": ""
+        },
+        "gradient": {
+          "light": "",
+          "dark": ""
+        },
+        "image": {
+          "url": "",
+          "id": null,
+          "position": "center center",
+          "repeat": "no-repeat",
+          "size": "cover",
+          "attachment": "scroll"
+        },
+        "overlay": {
+          "enabled": false,
+          "color": {
+            "light": "",
+            "dark": ""
+          },
+          "opacity": 0.5
+        }
+      }
+    },
+    "border": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "style": "",
+          "width": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": "",
+            "unit": "px"
+          },
+          "color": {
+            "light": "",
+            "dark": ""
+          },
+          "radius": {
+            "topLeft": "",
+            "topRight": "",
+            "bottomRight": "",
+            "bottomLeft": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "borderHover": {
+      "type": "object",
+      "default": {
+        "desktop": {},
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "boxShadow": {
+      "type": "object",
+      "default": {
+        "horizontal": "0",
+        "vertical": "4",
+        "blur": "6",
+        "spread": "0",
+        "color": {
+          "light": "rgba(0, 0, 0, 0.1)",
+          "dark": ""
+        },
+        "inset": false,
+        "enabled": false
+      }
+    },
+    "boxShadowHover": {
+      "type": "object",
+      "default": {
+        "horizontal": "0",
+        "vertical": "4",
+        "blur": "6",
+        "spread": "0",
+        "color": {
+          "light": "rgba(0, 0, 0, 0.1)",
+          "dark": ""
+        },
+        "inset": false,
+        "enabled": false
+      }
+    },
+    "animation": {
+      "type": "object",
+      "default": {
+        "type": "",
+        "duration": 400,
+        "delay": 0,
+        "easing": "ease",
+        "once": true
+      }
+    },
+    "responsiveVisibility": {
+      "type": "object",
+      "default": {
+        "hideOnDesktop": false,
+        "hideOnTablet": false,
+        "hideOnMobile": false
+      }
+    },
+    "htmlTag": {
+      "type": "string",
+      "default": "div"
+    },
+    "htmlAttributes": {
+      "type": "object",
+      "default": {
+        "customAttributes": []
+      }
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "className": true,
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

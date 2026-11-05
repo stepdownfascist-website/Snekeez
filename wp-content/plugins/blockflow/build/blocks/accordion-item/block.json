@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "blockflow/accordion-item",
+  "version": "1.0.0",
+  "title": "Accordion Item",
+  "category": "blockflow",
+  "description": "Content container for accordion item.",
+  "keywords": [
+    "accordion",
+    "item",
+    "content"
+  ],
+  "textdomain": "blockflow",
+  "parent": [
+    "blockflow/accordion"
+  ],
+  "supports": {
+    "anchor": false,
+    "className": false,
+    "html": false,
+    "reusable": false,
+    "lock": false
+  },
+  "usesContext": [
+    "blockflow/accordionItems",
+    "blockflow/accordionExpandIcon",
+    "blockflow/accordionIconPosition",
+    "blockflow/accordionHeadingTag",
+    "blockflow/accordionTitleIcon",
+    "blockflow/accordionInitOpenFirst"
+  ],
+  "attributes": {},
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

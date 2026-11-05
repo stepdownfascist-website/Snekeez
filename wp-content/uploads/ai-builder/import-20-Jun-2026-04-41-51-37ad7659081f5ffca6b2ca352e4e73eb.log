@@ -1,0 +1,1614 @@
+
+[05:18:15 UTC] [SUCCESS] {"required_plugins":{"active":[{"name":"Spectra","slug":"ultimate-addons-for-gutenberg","init":"ultimate-addons-for-gutenberg\/ultimate-addons-for-gutenberg.php"}],"inactive":[],"notinstalled":[{"name":"SureForms","slug":"sureforms","init":"sureforms\/sureforms.php","action":"http:\/\/snekeez.test\/wp-admin\/update.php?action=install-plugin&plugin=sureforms&_wpnonce=03c0ead203"},{"name":"SureRank","slug":"surerank","init":"surerank\/surerank.php","action":"http:\/\/snekeez.test\/wp-admin\/update.php?action=install-plugin&plugin=surerank&_wpnonce=a01da6009e"},{"name":"SureCart","slug":"surecart","init":"surecart\/surecart.php","action":"http:\/\/snekeez.test\/wp-admin\/update.php?action=install-plugin&plugin=surecart&_wpnonce=f8d3616158"},{"name":"SureTriggers","slug":"suretriggers","init":"suretriggers\/suretriggers.php","action":"http:\/\/snekeez.test\/wp-admin\/update.php?action=install-plugin&plugin=suretriggers&_wpnonce=b61c944ebb"}]},"third_party_required_plugins":[],"update_avilable_plugins":[],"incompatible_plugins":[],"error":false} | Context: {"required_plugins":{"active":[{"name":"Spectra","slug":"ultimate-addons-for-gutenberg","init":"ultimate-addons-for-gutenberg\/ultimate-addons-for-gutenberg.php"}],"inactive":[],"notinstalled":[{"name":"SureForms","slug":"sureforms","init":"sureforms\/sureforms.php","action":"http:\/\/snekeez.test\/wp-admin\/update.php?action=install-plugin&plugin=sureforms&_wpnonce=03c0ead203"},{"name":"SureRank","slug":"surerank","init":"surerank\/surerank.php","action":"http:\/\/snekeez.test\/wp-admin\/update.php?action=install-plugin&plugin=surerank&_wpnonce=a01da6009e"},{"name":"SureCart","slug":"surecart","init":"surecart\/surecart.php","action":"http:\/\/snekeez.test\/wp-admin\/update.php?action=install-plugin&plugin=surecart&_wpnonce=f8d3616158"},{"name":"SureTriggers","slug":"suretriggers","init":"suretriggers\/suretriggers.php","action":"http:\/\/snekeez.test\/wp-admin\/update.php?action=install-plugin&plugin=suretriggers&_wpnonce=b61c944ebb"}]},"third_party_required_plugins":[],"update_avilable_plugins":[],"incompatible_plugins":[],"error":false}
+[05:18:17 UTC] [SUCCESS] {"permissions":{"is_readable":true,"is_writable":true,"is_wp_filesystem":true},"directory":"F:\\2026\\Zihad_20.04.2026\\21.04.2026\\Softwares\\Snekeez\\laragon\\www\\Snekeez\/wp-content\/uploads"} | Context: {"permissions":{"is_readable":true,"is_writable":true,"is_wp_filesystem":true},"directory":"F:\\2026\\Zihad_20.04.2026\\21.04.2026\\Softwares\\Snekeez\\laragon\\www\\Snekeez\/wp-content\/uploads"}
+[05:18:17 UTC] [INFO] Starting import process | Context: {"template_type":"ai","uuid":"ff0ab5c7-5940-44d1-b57f-3232158b4f16"}
+[05:18:17 UTC] [INFO] AI import started flag set | Context: {"uuid":"ff0ab5c7-5940-44d1-b57f-3232158b4f16"}
+[05:18:17 UTC] [INFO] Started Import Process
+[05:18:17 UTC] [INFO] # System Details: 
+[05:18:17 UTC] [INFO] Debug Mode 		: Disabled
+[05:18:17 UTC] [INFO] Operating System 	: WINNT
+[05:18:17 UTC] [INFO] Software 		: Apache/2.4.66 (Win64) OpenSSL/3.0.18 PHP/8.3.30
+[05:18:17 UTC] [INFO] MySQL version 		: 8.4.3
+[05:18:17 UTC] [INFO] XML Reader 		: Yes
+[05:18:17 UTC] [INFO] PHP Version 		: 8.3.30
+[05:18:17 UTC] [INFO] PHP Max Input Vars 	: 1000
+[05:18:17 UTC] [INFO] PHP Max Post Size 	: 2G
+[05:18:17 UTC] [INFO] PHP Extension GD 	: Yes
+[05:18:17 UTC] [INFO] PHP Max Execution Time 	: 36000
+[05:18:17 UTC] [INFO] Max Upload Size 	: 2 GB
+[05:18:17 UTC] [INFO] Memory Limit 		: Current memory limit 40M. We recommend setting memory to at least 64M.
+[05:18:17 UTC] [INFO] Timezone 		: -6
+[05:18:17 UTC] [INFO] 
+-----
+
+[05:18:17 UTC] [INFO] Importing Started! - 05:18:17 UTC
+[05:18:17 UTC] [INFO] ---
+
+[05:18:17 UTC] [INFO] WHY IMPORT PROCESS CAN FAIL? READ THIS - 
+[05:18:17 UTC] [INFO] https://wpastra.com/docs/?p=1314&utm_source=demo-import-panel&utm_campaign=import-error&utm_medium=wp-dashboard
+
+[05:18:17 UTC] [INFO] ---
+
+[05:18:17 UTC] [SUCCESS] Import process start flag set successfully | Context: {"template_type":"ai"}
+[05:18:23 UTC] [SUCCESS] {"required_plugins":{"active":[{"name":"Spectra","slug":"ultimate-addons-for-gutenberg","init":"ultimate-addons-for-gutenberg\/ultimate-addons-for-gutenberg.php"}],"inactive":[],"notinstalled":[{"name":"SureForms","slug":"sureforms","init":"sureforms\/sureforms.php","action":"http:\/\/snekeez.test\/wp-admin\/update.php?action=install-plugin&plugin=sureforms&_wpnonce=03c0ead203"},{"name":"SureRank","slug":"surerank","init":"surerank\/surerank.php","action":"http:\/\/snekeez.test\/wp-admin\/update.php?action=install-plugin&plugin=surerank&_wpnonce=a01da6009e"},{"name":"SureCart","slug":"surecart","init":"surecart\/surecart.php","action":"http:\/\/snekeez.test\/wp-admin\/update.php?action=install-plugin&plugin=surecart&_wpnonce=f8d3616158"},{"name":"SureTriggers","slug":"suretriggers","init":"suretriggers\/suretriggers.php","action":"http:\/\/snekeez.test\/wp-admin\/update.php?action=install-plugin&plugin=suretriggers&_wpnonce=b61c944ebb"}]},"third_party_required_plugins":[],"update_avilable_plugins":[],"incompatible_plugins":[],"error":false} | Context: {"required_plugins":{"active":[{"name":"Spectra","slug":"ultimate-addons-for-gutenberg","init":"ultimate-addons-for-gutenberg\/ultimate-addons-for-gutenberg.php"}],"inactive":[],"notinstalled":[{"name":"SureForms","slug":"sureforms","init":"sureforms\/sureforms.php","action":"http:\/\/snekeez.test\/wp-admin\/update.php?action=install-plugin&plugin=sureforms&_wpnonce=03c0ead203"},{"name":"SureRank","slug":"surerank","init":"surerank\/surerank.php","action":"http:\/\/snekeez.test\/wp-admin\/update.php?action=install-plugin&plugin=surerank&_wpnonce=a01da6009e"},{"name":"SureCart","slug":"surecart","init":"surecart\/surecart.php","action":"http:\/\/snekeez.test\/wp-admin\/update.php?action=install-plugin&plugin=surecart&_wpnonce=f8d3616158"},{"name":"SureTriggers","slug":"suretriggers","init":"suretriggers\/suretriggers.php","action":"http:\/\/snekeez.test\/wp-admin\/update.php?action=install-plugin&plugin=suretriggers&_wpnonce=b61c944ebb"}]},"third_party_required_plugins":[],"update_avilable_plugins":[],"incompatible_plugins":[],"error":false}
+[05:18:25 UTC] [SUCCESS] {"permissions":{"is_readable":true,"is_writable":true,"is_wp_filesystem":true},"directory":"F:\\2026\\Zihad_20.04.2026\\21.04.2026\\Softwares\\Snekeez\\laragon\\www\\Snekeez\/wp-content\/uploads"} | Context: {"permissions":{"is_readable":true,"is_writable":true,"is_wp_filesystem":true},"directory":"F:\\2026\\Zihad_20.04.2026\\21.04.2026\\Softwares\\Snekeez\\laragon\\www\\Snekeez\/wp-content\/uploads"}
+[05:18:26 UTC] [INFO] Checking if plugin directory clearing is needed
+[05:18:26 UTC] [INFO] Plugin install clear directory - Not an Astra Sites request, skipping
+[05:18:43 UTC] [INFO] Checking if plugin directory clearing is needed
+[05:18:43 UTC] [INFO] Plugin install clear directory - Not an Astra Sites request, skipping
+[05:18:49 UTC] [SUCCESS] Plugin Activated | Context: {"success":true,"status":"activated","message":"Plugin Activated"}
+[05:19:01 UTC] [INFO] Checking if plugin directory clearing is needed
+[05:19:01 UTC] [INFO] Plugin install clear directory - Not an Astra Sites request, skipping
+[05:19:07 UTC] [SUCCESS] Plugin Activated | Context: {"success":true,"status":"activated","message":"Plugin Activated"}
+[05:19:50 UTC] [INFO] Checking if plugin directory clearing is needed
+[05:19:50 UTC] [INFO] Plugin install clear directory - Not an Astra Sites request, skipping
+[05:20:30 UTC] [SUCCESS] Plugin Activated | Context: {"success":true,"status":"activated","message":"Plugin Activated"}
+[05:21:33 UTC] [SUCCESS] Plugin Activated | Context: {"success":true,"status":"activated","message":"Plugin Activated"}
+[05:22:02 UTC] [INFO] ---
+
+[05:22:02 UTC] [INFO] Starting import customizer settings
+[05:22:02 UTC] [INFO] Importing customizer settings | Context: {"settings_count":0}
+[05:22:02 UTC] [INFO] Fetched customizer data from site data | Context: {"settings_count":2}
+[05:22:02 UTC] [INFO] Starting customizer settings import | Context: {"settings_count":2}
+[05:22:02 UTC] [INFO] Validating customizer data keys | Context: {"keys":["astra-settings","custom-css"]}
+[05:22:02 UTC] [INFO] Old customizer data backed up
+[05:22:02 UTC] [SUCCESS] Astra theme settings updated | Context: {"option_key":"astra-settings"}
+[05:22:03 UTC] [SUCCESS] Custom CSS updated | Context: {"option_key":"custom-css"}
+[05:22:03 UTC] [SUCCESS] Customizer settings import completed successfully
+[05:22:03 UTC] [SUCCESS] Customizer settings imported successfully
+[05:22:07 UTC] [INFO] ---
+
+[05:22:07 UTC] [INFO] Starting import Spectra settings
+[05:22:07 UTC] [INFO] Starting Spectra settings import | Context: {"settings_count":29}
+[05:22:12 UTC] [SUCCESS] Spectra settings imported successfully
+[05:22:12 UTC] [SUCCESS] Spectra settings imported successfully. | Context: {"message":"Spectra settings imported successfully.","url":""}
+[05:22:14 UTC] [INFO] ---
+
+[05:22:14 UTC] [INFO] Starting import SureCart settings
+[05:22:14 UTC] [INFO] Starting SureCart settings import | Context: {"account_id":""}
+[05:22:15 UTC] [INFO] SureCart settings validation | Context: {"currency":"usd","create_account":true}
+[05:22:15 UTC] [INFO] SureCart processing products data | Context: {"product_count":0}
+[05:22:15 UTC] [INFO] SureCart no products found, seed flag enabled
+[05:22:15 UTC] [INFO] SureCart API call to create account
+[05:22:17 UTC] [ERROR] SureCart settings import API error | Context: {"error":"Unknown error"}
+[05:22:17 UTC] [SUCCESS] success
+[05:22:26 UTC] [INFO] {"post_title":"Response XML","post_mime_type":"application\/xml","post_content":"","post_status":"inherit"}
+[05:22:26 UTC] [INFO] "F:\\2026\\Zihad_20.04.2026\\21.04.2026\\Softwares\\Snekeez\\laragon\\www\\Snekeez\/wp-content\/uploads\/2026\/06\/wxr.xml"
+[05:22:26 UTC] [INFO] 35
+[05:22:26 UTC] [INFO] info | Context: {"xml_file_path":"F:\\2026\\Zihad_20.04.2026\\21.04.2026\\Softwares\\Snekeez\\laragon\\www\\Snekeez\/wp-content\/uploads\/2026\/06\/wxr.xml","xml_post_id":35}
+[05:22:27 UTC] [INFO] success | Context: {"xml_file_path":"F:\\2026\\Zihad_20.04.2026\\21.04.2026\\Softwares\\Snekeez\\laragon\\www\\Snekeez\/wp-content\/uploads\/2026\/06\/wxr.xml","post_count":17,"media_count":40,"author_count":2,"comment_count":0,"term_count":7}
+[05:22:52 UTC] [INFO] info | Context: {"xml_url_provided":false}
+[05:22:52 UTC] [INFO] info | Context: {"xml_url":"F:\\2026\\Zihad_20.04.2026\\21.04.2026\\Softwares\\Snekeez\\laragon\\www\\Snekeez\/wp-content\/uploads\/2026\/06\/wxr.xml","file_size":1219514}
+[05:24:41 UTC] [INFO] success | Context: {"post_id":162,"post_type":"wp_navigation","original_id":4,"post_title":"Navigation"}
+[05:24:44 UTC] [INFO] success | Context: {"post_id":163,"post_type":"page","original_id":23,"post_title":"Home"}
+[05:24:46 UTC] [INFO] success | Context: {"post_id":165,"post_type":"page","original_id":24,"post_title":"About"}
+[05:24:48 UTC] [INFO] success | Context: {"post_id":166,"post_type":"page","original_id":26,"post_title":"Services"}
+[05:24:50 UTC] [INFO] success | Context: {"post_id":167,"post_type":"page","original_id":27,"post_title":"Blog"}
+[05:24:51 UTC] [INFO] success | Context: {"post_id":168,"post_type":"page","original_id":28,"post_title":"Contact"}
+[05:24:52 UTC] [INFO] success | Context: {"post_id":169,"post_type":"nav_menu_item","original_id":34,"post_title":"Home"}
+[05:24:53 UTC] [INFO] success | Context: {"post_id":170,"post_type":"nav_menu_item","original_id":35,"post_title":"About"}
+[05:24:54 UTC] [INFO] success | Context: {"post_id":36,"post_type":"nav_menu_item","original_id":36,"post_title":"Services"}
+[05:24:55 UTC] [INFO] success | Context: {"post_id":37,"post_type":"nav_menu_item","original_id":37,"post_title":"Blog"}
+[05:24:55 UTC] [INFO] success | Context: {"post_id":38,"post_type":"nav_menu_item","original_id":38,"post_title":"Contact"}
+[05:24:58 UTC] [INFO] success | Context: {"post_id":171,"post_type":"post","original_id":65,"post_title":"Mastering the First Impression: Your intriguing post title goes here"}
+[05:24:59 UTC] [INFO] success | Context: {"post_id":66,"post_type":"wp_global_styles","original_id":66,"post_title":"Custom Styles"}
+[05:25:01 UTC] [INFO] success | Context: {"post_id":68,"post_type":"post","original_id":68,"post_title":"The Art of Drawing Readers In: Your attractive post title goes here"}
+[05:25:05 UTC] [INFO] success | Context: {"post_id":70,"post_type":"post","original_id":70,"post_title":"Crafting Captivating Headlines: Your awesome post title goes here"}
+[05:25:06 UTC] [INFO] success | Context: {"post_id":201,"post_type":"wp_block","original_id":201,"post_title":"footer-cta"}
+[05:25:07 UTC] [INFO] success | Context: {"post_id":309,"post_type":"sureforms_form","original_id":309,"post_title":"Simple Contact Form"}
+[05:25:12 UTC] [INFO] success | Context: {"xml_url":"F:\\2026\\Zihad_20.04.2026\\21.04.2026\\Softwares\\Snekeez\\laragon\\www\\Snekeez\/wp-content\/uploads\/2026\/06\/wxr.xml"}
+[05:25:16 UTC] [INFO] ---
+
+[05:25:16 UTC] [INFO] Starting import options
+[05:25:16 UTC] [INFO] Importing site options | Context: {"options":[]}
+[05:25:16 UTC] [INFO] Starting site options import | Context: {"options_count":13}
+[05:25:16 UTC] [INFO] Old site options backed up
+[05:25:16 UTC] [INFO] Processing option | Context: {"option_name":"custom_logo"}
+[05:25:16 UTC] [INFO] Importing custom logo | Context: {"logo_id":""}
+[05:25:16 UTC] [INFO] info | Context: {"url":""}
+[05:25:16 UTC] [INFO] error | Context: {"url":""}
+[05:25:16 UTC] [INFO] error | Context: {"url":""}
+[05:25:16 UTC] [INFO] Processing option | Context: {"option_name":"nav_menu_locations"}
+[05:25:16 UTC] [INFO] Setting navigation menu locations | Context: {"menu_count":3}
+[05:25:16 UTC] [INFO] info | Context: {"total_locations":3}
+[05:25:16 UTC] [INFO] info | Context: {"location":"primary","slug":"main-menu","menu_id":20}
+[05:25:16 UTC] [INFO] info | Context: {"location":"mobile_menu","slug":"main-menu","menu_id":20}
+[05:25:16 UTC] [INFO] info | Context: {"location":"footer_menu","slug":"main-menu","menu_id":20}
+[05:25:16 UTC] [INFO] success | Context: {"successful_mappings":3,"failed_locations":[],"total_locations":3}
+[05:25:16 UTC] [INFO] Processing option | Context: {"option_name":"show_on_front"}
+[05:25:16 UTC] [INFO] Updating standard option | Context: {"option_name":"show_on_front"}
+[05:25:16 UTC] [INFO] Processing option | Context: {"option_name":"page_on_front"}
+[05:25:16 UTC] [INFO] Updating page ID option | Context: {"option_name":"page_on_front","option_value":"Home"}
+[05:25:16 UTC] [INFO] info | Context: {"option_name":"page_on_front","option_value":"Home"}
+[05:25:16 UTC] [INFO] success | Context: {"option_name":"page_on_front","page_title":"Home","page_id":163}
+[05:25:17 UTC] [INFO] Processing option | Context: {"option_name":"page_for_posts"}
+[05:25:17 UTC] [INFO] Updating page ID option | Context: {"option_name":"page_for_posts","option_value":"Blog"}
+[05:25:17 UTC] [INFO] info | Context: {"option_name":"page_for_posts","option_value":"Blog"}
+[05:25:17 UTC] [INFO] success | Context: {"option_name":"page_for_posts","page_title":"Blog","page_id":167}
+[05:25:17 UTC] [INFO] Processing option | Context: {"option_name":"site_title"}
+[05:25:17 UTC] [INFO] Updating site title | Context: {"site_title":"MultiWeb"}
+[05:25:17 UTC] [INFO] Processing option | Context: {"option_name":"astra-color-palettes"}
+[05:25:17 UTC] [INFO] Updating standard option | Context: {"option_name":"astra-color-palettes"}
+[05:25:17 UTC] [INFO] Processing option | Context: {"option_name":"astra-typography-presets"}
+[05:25:17 UTC] [INFO] Updating standard option | Context: {"option_name":"astra-typography-presets"}
+[05:25:17 UTC] [INFO] Processing option | Context: {"option_name":"srfm_general_settings_options"}
+[05:25:17 UTC] [INFO] Updating standard option | Context: {"option_name":"srfm_general_settings_options"}
+[05:25:17 UTC] [INFO] Processing option | Context: {"option_name":"get_default_dynamic_block_option"}
+[05:25:17 UTC] [INFO] Updating standard option | Context: {"option_name":"get_default_dynamic_block_option"}
+[05:25:17 UTC] [INFO] Processing option | Context: {"option_name":"srfm_default_dynamic_block_option"}
+[05:25:17 UTC] [INFO] Updating standard option | Context: {"option_name":"srfm_default_dynamic_block_option"}
+[05:25:18 UTC] [INFO] Processing option | Context: {"option_name":"srfm_email_summary_settings_options"}
+[05:25:18 UTC] [INFO] Updating standard option | Context: {"option_name":"srfm_email_summary_settings_options"}
+[05:25:18 UTC] [INFO] Processing option | Context: {"option_name":"srfm_security_settings_options"}
+[05:25:18 UTC] [INFO] Updating standard option | Context: {"option_name":"srfm_security_settings_options"}
+[05:25:18 UTC] [INFO] Running st_importer_import_site_options action
+[05:25:18 UTC] [INFO] Processing site options import - Total options: 13
+[05:25:18 UTC] [INFO] Inserting custom logo from URL: 
+[05:25:18 UTC] [INFO] Starting image import for URL: 
+[05:25:18 UTC] [WARNING] Invalid image URL provided: 
+[05:25:18 UTC] [WARNING] Failed to download logo image from: 
+[05:25:18 UTC] [INFO] Setting nav menu locations - Total menus: 3
+[05:25:18 UTC] [INFO] Menu location 'primary' set to term ID: 20
+[05:25:18 UTC] [INFO] Menu location 'mobile_menu' set to term ID: 20
+[05:25:18 UTC] [INFO] Menu location 'footer_menu' set to term ID: 20
+[05:25:18 UTC] [SUCCESS] Nav menu locations updated successfully
+[05:25:18 UTC] [INFO] Updated option: show_on_front | Context: "page"
+[05:25:18 UTC] [INFO] Updating page ID for option: page_on_front with value: Home
+[05:25:18 UTC] [INFO] Page ID updated for page_on_front: 163
+[05:25:18 UTC] [INFO] Updating page ID for option: page_for_posts with value: Blog
+[05:25:18 UTC] [INFO] Page ID updated for page_for_posts: 167
+[05:25:18 UTC] [INFO] Site title (blogname) updated successfully to MultiWeb
+[05:25:18 UTC] [INFO] Updated option: astra-color-palettes | Context: {"currentPalette":"palette_1","palettes":{"palette_1":["#ffc03d","#ffae00","#212d45","#4b4f58","#f7f7f7","#FFFFFF","#f7f7f7","#212d45","#212d45"],"palette_2":["#0170B9","#3a3a3a","#3a3a3a","#4B4F58","#F5F5F5","#FFFFFF","#F2F5F7","#424242","#000000"],"palette_3":["#0170B9","#3a3a3a","#3a3a3a","#4B4F58","#F5F5F5","#FFFFFF","#F2F5F7","#424242","#000000"],"palette_4":["#0085FF","#0177E3","#FFFFFF","#E7F6FF","#212A37","#0F172A","#4F5B62","#070614","#222222"]},"presets":{"Oak":["#0067FF","#005EE9","#0F172A","#364151","#E7F6FF","#FFFFFF","#D1DAE5","#070614","#222222"],"Viola":["#6528F7","#5511F8","#0F172A","#454F5E","#F2F0FE","#FFFFFF","#D8D8F5","#0D0614","#222222"],"Cedar":["#DD183B","#CC1939","#0F172A","#3A3A3A","#FFEDE6","#FFFFFF","#FFD1BF","#140609","#222222"],"Willow":["#54B435","#379237","#0F172A","#2F3B40","#EDFBE2","#FFFFFF","#D5EAD8","#0C1406","#222222"],"Lily":["#DCA54A","#D09A40","#0F172A","#4A4A4A","#FAF5E5","#FFFFFF","#F0E6C5","#141004","#222222"],"Rose":["#FB5FAB","#EA559D","#0F172A","#454F5E","#FCEEF5","#FFFFFF","#FAD8E9","#140610","#222222"],"Sage":["#1B9C85","#178E79","#0F172A","#454F5E","#EDF6EE","#FFFFFF","#D4F3D7","#06140C","#222222"],"Flare":["#FD9800","#E98C00","#0F172A","#454F5E","#FEF9E1","#FFFFFF","#F9F0C8","#141006","#222222"],"Maple":["#FF6210","#F15808","#1C0D0A","#353535","#FEF1E4","#FFFFFF","#E5D7D1","#140B06","#222222"],"Birch":["#737880","#65696F","#151616","#393C40","#F6F6F6","#FFFFFF","#F1F0F0","#232529","#222222"],"Dark":["#0085FF","#0177E3","#FFFFFF","#E7F6FF","#212A37","#0F172A","#4F5B62","#070614","#222222"]},"flag":false}
+[05:25:18 UTC] [INFO] Updated option: astra-typography-presets
+[05:25:18 UTC] [INFO] Updated option: srfm_general_settings_options
+[05:25:18 UTC] [INFO] Updated option: get_default_dynamic_block_option
+[05:25:18 UTC] [INFO] Updated option: srfm_default_dynamic_block_option | Context: {"srfm_url_block_required_text":"This field is required.","srfm_input_block_required_text":"This field is required.","srfm_input_block_unique_text":"Value needs to be unique.","srfm_address_block_required_text":"This field is required.","srfm_phone_block_required_text":"This field is required.","srfm_phone_block_unique_text":"Value needs to be unique.","srfm_number_block_required_text":"This field is required.","srfm_textarea_block_required_text":"This field is required.","srfm_multi_choice_block_required_text":"This field is required.","srfm_checkbox_block_required_text":"This field is required.","srfm_gdpr_block_required_text":"This field is required.","srfm_email_block_required_text":"This field is required.","srfm_email_block_unique_text":"Value needs to be unique.","srfm_dropdown_block_required_text":"This field is required.","srfm_rating_block_required_text":"This field is required.","srfm_valid_phone_number":"Please enter a valid phone number.","srfm_valid_url":"Please enter a valid URL.","srfm_confirm_email_same":"Confirmation email does not match.","srfm_valid_email":"Please enter a valid email address.","srfm_input_min_value":"Minimum value is %s","srfm_input_max_value":"Maximum value is %s","srfm_dropdown_min_selections":"Minimum %s selections are required","srfm_dropdown_max_selections":"Maximum %s selections are allowed","srfm_multi_choice_min_selections":"Minimum %s selections are required","srfm_multi_choice_max_selections":"Maximum %s selections are allowed"}
+[05:25:18 UTC] [INFO] Updated option: srfm_email_summary_settings_options
+[05:25:18 UTC] [INFO] Updated option: srfm_security_settings_options
+[05:25:18 UTC] [SUCCESS] Classic templates options import completed successfully
+[05:25:18 UTC] [SUCCESS] Site options import completed successfully | Context: {"processed_count":13,"skipped_count":0,"total_count":13}
+[05:25:18 UTC] [SUCCESS] Site options Imported!
+[05:25:22 UTC] [INFO] ---
+
+[05:25:22 UTC] [INFO] Starting import widgets
+[05:25:22 UTC] [INFO] Importing widgets
+[05:25:22 UTC] [INFO] Starting widgets import
+[05:25:22 UTC] [INFO] Processing widget data | Context: {"data_type":"string","widgets_data_type":"string"}
+[05:25:22 UTC] [INFO] Parsing widget data from JSON string
+[05:25:22 UTC] [INFO] Importing widget data via ST_Widget_Importer
+[05:25:22 UTC] [INFO] Starting widget import process
+[05:25:22 UTC] [INFO] Checking available widgets | Context: {"widget_control_count":37}
+[05:25:22 UTC] [INFO] Widget availability check completed | Context: {"available_widget_count":33,"available_widgets":["pages","calendar","archives","media_audio","media_image","media_gallery","media_video","meta","search","text","categories","recent-posts","recent-comments","rss","tag_cloud","nav_menu","custom_html","block","woocommerce_widget_cart","woocommerce_layered_nav_filters","woocommerce_layered_nav","woocommerce_price_filter","woocommerce_product_categories","woocommerce_product_search","woocommerce_product_tag_cloud","woocommerce_products","woocommerce_recently_viewed_products","woocommerce_top_rated_products","woocommerce_recent_reviews","woocommerce_rating_filter","wc_brands_brand_description","woocommerce_brand_nav","wc_brands_brand_thumbnails"]}
+[05:25:22 UTC] [INFO] Loaded widget configuration | Context: {"available_widget_types":33,"sidebar_count":5}
+[05:25:22 UTC] [INFO] Processing sidebars from import data | Context: {"sidebar_count_in_data":1}
+[05:25:22 UTC] [INFO] Processing sidebar: sidebar-1 | Context: {"sidebar_name":"Main Sidebar","widget_count":5,"availability":"available"}
+[05:25:22 UTC] [INFO] Processing widget: block-2 | Context: {"widget_type":"block","instance_id":"2","sidebar_id":"sidebar-1"}
+[05:25:22 UTC] [WARNING] Duplicate widget skipped: block-2 | Context: {"widget_type":"block","existing_instance_id":"block-2","sidebar_id":"sidebar-1"}
+[05:25:22 UTC] [INFO] Processing widget: block-3 | Context: {"widget_type":"block","instance_id":"3","sidebar_id":"sidebar-1"}
+[05:25:22 UTC] [WARNING] Duplicate widget skipped: block-3 | Context: {"widget_type":"block","existing_instance_id":"block-3","sidebar_id":"sidebar-1"}
+[05:25:22 UTC] [INFO] Processing widget: block-4 | Context: {"widget_type":"block","instance_id":"4","sidebar_id":"sidebar-1"}
+[05:25:22 UTC] [WARNING] Duplicate widget skipped: block-4 | Context: {"widget_type":"block","existing_instance_id":"block-4","sidebar_id":"sidebar-1"}
+[05:25:22 UTC] [INFO] Processing widget: block-5 | Context: {"widget_type":"block","instance_id":"5","sidebar_id":"sidebar-1"}
+[05:25:22 UTC] [WARNING] Duplicate widget skipped: block-5 | Context: {"widget_type":"block","existing_instance_id":"block-5","sidebar_id":"sidebar-1"}
+[05:25:22 UTC] [INFO] Processing widget: block-6 | Context: {"widget_type":"block","instance_id":"6","sidebar_id":"sidebar-1"}
+[05:25:22 UTC] [WARNING] Duplicate widget skipped: block-6 | Context: {"widget_type":"block","existing_instance_id":"block-6","sidebar_id":"sidebar-1"}
+[05:25:22 UTC] [INFO] Widget import process completed | Context: {"total_sidebars_processed":1,"successful_imports":0,"warnings":5,"errors":0,"total_widgets_processed":5}
+[05:25:22 UTC] [INFO] Retrieving current sidebars and widgets
+[05:25:22 UTC] [INFO] Backing up old widgets data | Context: {"sidebars_count":11}
+[05:25:23 UTC] [SUCCESS] Widgets import completed successfully
+[05:25:23 UTC] [SUCCESS] Widget Imported!
+[05:25:28 UTC] [INFO] ---
+
+[05:25:28 UTC] [INFO] Starting page builder batch processing for Gutenberg
+[05:25:28 UTC] [INFO] Gutenberg batch processing started
+[05:25:28 UTC] [INFO] Gutenberg posts retrieved for processing | Context: {"post_count":11,"post_types":"page, post, wp_block, wp_template, wp_navigation, wp_template_part, wp_global_styles, sc_form, spectra-popup, sfwd-courses, sfwd-lessons, sfwd-topic, sfwd-quiz, sfwd-certificates, sfwd-assignment"}
+[05:25:28 UTC] [INFO] Processing Gutenberg post | Context: {"post_id":201}
+[05:25:28 UTC] [INFO] Updating post content (first pass) | Context: {"post_id":201}
+[05:25:28 UTC] [INFO] Starting link extraction and replacement process
+[05:25:28 UTC] [INFO] Links discovered in content | Context: {"total_links":8}
+[05:25:28 UTC] [INFO] Downloading images through ST_Image_Importer | Context: {"image_count":5}
+[05:25:28 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/footer-cta.jpg
+[05:25:28 UTC] [INFO] Image already exists in media library (ID: 84), skipping download
+[05:25:28 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-includes/images/media/default.svg
+[05:25:28 UTC] [INFO] Downloading image from remote URL: https://multipurpose29.ziptemplates.top/wp-includes/images/media/default.svg
+[05:25:29 UTC] [INFO] Successfully downloaded image, preparing to upload: default.svg
+[05:25:29 UTC] [INFO] Image uploaded successfully: http://snekeez.test/wp-content/uploads/2026/06/default.svg
+[05:25:29 UTC] [INFO] Attachment post created with ID: 312
+[05:25:29 UTC] [INFO] Generating attachment metadata for attachment ID: 312
+[05:25:30 UTC] [INFO] Attachment metadata generated and saved for attachment ID: 312
+[05:25:31 UTC] [INFO] Image import completed successfully - ID: 312, URL: http://snekeez.test/wp-content/uploads/2026/06/default.svg
+[05:25:31 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/footer-cta-150x150.jpg
+[05:25:31 UTC] [INFO] Image already exists in media library (ID: 84), skipping download
+[05:25:31 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/footer-cta-300x85.jpg
+[05:25:31 UTC] [INFO] Image already exists in media library (ID: 84), skipping download
+[05:25:31 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/footer-cta-1024x289.jpg
+[05:25:31 UTC] [INFO] Image already exists in media library (ID: 84), skipping download
+[05:25:31 UTC] [INFO] Starting link replacements in content | Context: {"replacements_count":8}
+[05:25:31 UTC] [SUCCESS] Link replacement process completed | Context: {"total_replacements":8}
+[05:25:31 UTC] [INFO] Updating post content (second pass with link replacements) | Context: {"post_id":201}
+[05:25:32 UTC] [SUCCESS] Successfully completed processing Gutenberg post | Context: {"post_id":201}
+[05:25:32 UTC] [INFO] Processing Gutenberg post | Context: {"post_id":70}
+[05:25:32 UTC] [INFO] Updating post content (first pass) | Context: {"post_id":70}
+[05:25:34 UTC] [INFO] Starting link extraction and replacement process
+[05:25:34 UTC] [INFO] Links discovered in content | Context: {"total_links":0}
+[05:25:34 UTC] [INFO] No links found in content, skipping replacement
+[05:25:34 UTC] [INFO] Updating post content (second pass with link replacements) | Context: {"post_id":70}
+[05:25:34 UTC] [SUCCESS] Successfully completed processing Gutenberg post | Context: {"post_id":70}
+[05:25:34 UTC] [INFO] Processing Gutenberg post | Context: {"post_id":68}
+[05:25:34 UTC] [INFO] Updating post content (first pass) | Context: {"post_id":68}
+[05:25:36 UTC] [INFO] Starting link extraction and replacement process
+[05:25:36 UTC] [INFO] Links discovered in content | Context: {"total_links":0}
+[05:25:36 UTC] [INFO] No links found in content, skipping replacement
+[05:25:36 UTC] [INFO] Updating post content (second pass with link replacements) | Context: {"post_id":68}
+[05:25:36 UTC] [SUCCESS] Successfully completed processing Gutenberg post | Context: {"post_id":68}
+[05:25:36 UTC] [INFO] Processing Gutenberg post | Context: {"post_id":66}
+[05:25:36 UTC] [INFO] Updating post content (first pass) | Context: {"post_id":66}
+[05:25:36 UTC] [INFO] Starting link extraction and replacement process
+[05:25:36 UTC] [INFO] Links discovered in content | Context: {"total_links":0}
+[05:25:36 UTC] [INFO] No links found in content, skipping replacement
+[05:25:36 UTC] [INFO] Updating post content (second pass with link replacements) | Context: {"post_id":66}
+[05:25:36 UTC] [SUCCESS] Successfully completed processing Gutenberg post | Context: {"post_id":66}
+[05:25:36 UTC] [INFO] Processing Gutenberg post | Context: {"post_id":171}
+[05:25:36 UTC] [INFO] Updating post content (first pass) | Context: {"post_id":171}
+[05:25:37 UTC] [INFO] Starting link extraction and replacement process
+[05:25:37 UTC] [INFO] Links discovered in content | Context: {"total_links":0}
+[05:25:37 UTC] [INFO] No links found in content, skipping replacement
+[05:25:37 UTC] [INFO] Updating post content (second pass with link replacements) | Context: {"post_id":171}
+[05:25:37 UTC] [SUCCESS] Successfully completed processing Gutenberg post | Context: {"post_id":171}
+[05:25:37 UTC] [INFO] Processing Gutenberg post | Context: {"post_id":168}
+[05:25:37 UTC] [INFO] Updating post content (first pass) | Context: {"post_id":168}
+[05:25:38 UTC] [INFO] Starting link extraction and replacement process
+[05:25:38 UTC] [INFO] Links discovered in content | Context: {"total_links":15}
+[05:25:38 UTC] [INFO] Downloading images through ST_Image_Importer | Context: {"image_count":9}
+[05:25:38 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/contact-bg.jpg
+[05:25:38 UTC] [INFO] Image already exists in media library (ID: 81), skipping download
+[05:25:38 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-includes/images/media/default.svg
+[05:25:38 UTC] [INFO] Image already exists in media library (ID: 312), skipping download
+[05:25:38 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/contact-bg-150x150.jpg
+[05:25:38 UTC] [INFO] Image already exists in media library (ID: 81), skipping download
+[05:25:38 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/contact-bg-300x83.jpg
+[05:25:38 UTC] [INFO] Image already exists in media library (ID: 81), skipping download
+[05:25:38 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/contact-bg-1024x283.jpg
+[05:25:38 UTC] [INFO] Image already exists in media library (ID: 81), skipping download
+[05:25:38 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/faq-bg.jpg
+[05:25:38 UTC] [INFO] Image already exists in media library (ID: 65), skipping download
+[05:25:38 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/faq-bg-150x150.jpg
+[05:25:38 UTC] [INFO] Image already exists in media library (ID: 65), skipping download
+[05:25:38 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/faq-bg-300x143.jpg
+[05:25:38 UTC] [INFO] Image already exists in media library (ID: 65), skipping download
+[05:25:38 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/faq-bg-1024x489.jpg
+[05:25:38 UTC] [INFO] Image already exists in media library (ID: 65), skipping download
+[05:25:38 UTC] [INFO] Starting link replacements in content | Context: {"replacements_count":15}
+[05:25:38 UTC] [SUCCESS] Link replacement process completed | Context: {"total_replacements":15}
+[05:25:38 UTC] [INFO] Updating post content (second pass with link replacements) | Context: {"post_id":168}
+[05:25:39 UTC] [SUCCESS] Successfully completed processing Gutenberg post | Context: {"post_id":168}
+[05:25:39 UTC] [INFO] Processing Gutenberg post | Context: {"post_id":167}
+[05:25:39 UTC] [INFO] Updating post content (first pass) | Context: {"post_id":167}
+[05:25:42 UTC] [INFO] Starting link extraction and replacement process
+[05:25:42 UTC] [INFO] Links discovered in content | Context: {"total_links":0}
+[05:25:42 UTC] [INFO] No links found in content, skipping replacement
+[05:25:42 UTC] [INFO] Updating post content (second pass with link replacements) | Context: {"post_id":167}
+[05:25:42 UTC] [SUCCESS] Successfully completed processing Gutenberg post | Context: {"post_id":167}
+[05:25:42 UTC] [INFO] Processing Gutenberg post | Context: {"post_id":166}
+[05:25:42 UTC] [INFO] Updating post content (first pass) | Context: {"post_id":166}
+[05:25:43 UTC] [INFO] Starting link extraction and replacement process
+[05:25:43 UTC] [INFO] Links discovered in content | Context: {"total_links":18}
+[05:25:43 UTC] [INFO] Downloading images through ST_Image_Importer | Context: {"image_count":14}
+[05:25:43 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/services-bg.jpg
+[05:25:43 UTC] [INFO] Image already exists in media library (ID: 141), skipping download
+[05:25:43 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-includes/images/media/default.svg
+[05:25:43 UTC] [INFO] Image already exists in media library (ID: 312), skipping download
+[05:25:43 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/services-bg-150x150.jpg
+[05:25:43 UTC] [INFO] Image already exists in media library (ID: 141), skipping download
+[05:25:43 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/services-bg-300x83.jpg
+[05:25:43 UTC] [INFO] Image already exists in media library (ID: 141), skipping download
+[05:25:43 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/services-bg-1024x283.jpg
+[05:25:43 UTC] [INFO] Image already exists in media library (ID: 141), skipping download
+[05:25:43 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/creative-01.jpg
+[05:25:43 UTC] [INFO] Image already exists in media library (ID: 144), skipping download
+[05:25:43 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/creative-02.jpg
+[05:25:43 UTC] [INFO] Image already exists in media library (ID: 145), skipping download
+[05:25:43 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/creative-03.jpg
+[05:25:43 UTC] [INFO] Image already exists in media library (ID: 83), skipping download
+[05:25:43 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/digital-01.jpg
+[05:25:43 UTC] [INFO] Image already exists in media library (ID: 146), skipping download
+[05:25:43 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/mobile-01.jpg
+[05:25:43 UTC] [INFO] Image already exists in media library (ID: 148), skipping download
+[05:25:43 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/mobile-02.jpg
+[05:25:43 UTC] [INFO] Image already exists in media library (ID: 149), skipping download
+[05:25:43 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/brand-01.jpg
+[05:25:43 UTC] [INFO] Image already exists in media library (ID: 151), skipping download
+[05:25:43 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/brand-02.jpg
+[05:25:43 UTC] [INFO] Image already exists in media library (ID: 153), skipping download
+[05:25:43 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/brand-03.jpg
+[05:25:43 UTC] [INFO] Image already exists in media library (ID: 154), skipping download
+[05:25:43 UTC] [INFO] Starting link replacements in content | Context: {"replacements_count":18}
+[05:25:43 UTC] [SUCCESS] Link replacement process completed | Context: {"total_replacements":18}
+[05:25:43 UTC] [INFO] Updating post content (second pass with link replacements) | Context: {"post_id":166}
+[05:25:44 UTC] [SUCCESS] Successfully completed processing Gutenberg post | Context: {"post_id":166}
+[05:25:44 UTC] [INFO] Processing Gutenberg post | Context: {"post_id":165}
+[05:25:44 UTC] [INFO] Updating post content (first pass) | Context: {"post_id":165}
+[05:25:46 UTC] [INFO] Starting link extraction and replacement process
+[05:25:46 UTC] [INFO] Links discovered in content | Context: {"total_links":13}
+[05:25:46 UTC] [INFO] Downloading images through ST_Image_Importer | Context: {"image_count":10}
+[05:25:46 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/about-bg.jpg
+[05:25:46 UTC] [INFO] Image already exists in media library (ID: 114), skipping download
+[05:25:46 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-includes/images/media/default.svg
+[05:25:46 UTC] [INFO] Image already exists in media library (ID: 312), skipping download
+[05:25:46 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/about-bg-150x150.jpg
+[05:25:46 UTC] [INFO] Image already exists in media library (ID: 114), skipping download
+[05:25:46 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/about-bg-300x83.jpg
+[05:25:46 UTC] [INFO] Image already exists in media library (ID: 114), skipping download
+[05:25:46 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/about-bg-1024x283.jpg
+[05:25:46 UTC] [INFO] Image already exists in media library (ID: 114), skipping download
+[05:25:46 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/our-story.jpg
+[05:25:46 UTC] [INFO] Image already exists in media library (ID: 80), skipping download
+[05:25:46 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/team-skip-01.jpg
+[05:25:46 UTC] [INFO] Image already exists in media library (ID: 105), skipping download
+[05:25:46 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/team-skip-02.jpg
+[05:25:46 UTC] [INFO] Image already exists in media library (ID: 106), skipping download
+[05:25:46 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/team-skip-03.jpg
+[05:25:46 UTC] [INFO] Image already exists in media library (ID: 107), skipping download
+[05:25:46 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/team-skip-04.jpg
+[05:25:46 UTC] [INFO] Image already exists in media library (ID: 108), skipping download
+[05:25:46 UTC] [INFO] Starting link replacements in content | Context: {"replacements_count":13}
+[05:25:46 UTC] [SUCCESS] Link replacement process completed | Context: {"total_replacements":13}
+[05:25:46 UTC] [INFO] Updating post content (second pass with link replacements) | Context: {"post_id":165}
+[05:25:49 UTC] [SUCCESS] Successfully completed processing Gutenberg post | Context: {"post_id":165}
+[05:25:49 UTC] [INFO] Processing Gutenberg post | Context: {"post_id":162}
+[05:25:49 UTC] [INFO] Updating post content (first pass) | Context: {"post_id":162}
+[05:25:50 UTC] [INFO] Starting link extraction and replacement process
+[05:25:50 UTC] [INFO] Links discovered in content | Context: {"total_links":0}
+[05:25:50 UTC] [INFO] No links found in content, skipping replacement
+[05:25:50 UTC] [INFO] Updating post content (second pass with link replacements) | Context: {"post_id":162}
+[05:25:50 UTC] [SUCCESS] Successfully completed processing Gutenberg post | Context: {"post_id":162}
+[05:25:50 UTC] [INFO] Processing Gutenberg post | Context: {"post_id":163}
+[05:25:50 UTC] [INFO] Updating post content (first pass) | Context: {"post_id":163}
+[05:25:51 UTC] [INFO] Starting link extraction and replacement process
+[05:25:51 UTC] [INFO] Links discovered in content | Context: {"total_links":26}
+[05:25:51 UTC] [INFO] Downloading images through ST_Image_Importer | Context: {"image_count":18}
+[05:25:51 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/hero-bg.jpg
+[05:25:51 UTC] [INFO] Image already exists in media library (ID: 161), skipping download
+[05:25:51 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-includes/images/media/default.svg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 312), skipping download
+[05:25:52 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/hero-bg-150x150.jpg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 161), skipping download
+[05:25:52 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/hero-bg-300x107.jpg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 161), skipping download
+[05:25:52 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/hero-bg-1024x366.jpg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 161), skipping download
+[05:25:52 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/Services-01.jpg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 75), skipping download
+[05:25:52 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/Services-02.jpg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 74), skipping download
+[05:25:52 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/Services-03.jpg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 73), skipping download
+[05:25:52 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/creative.jpg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 159), skipping download
+[05:25:52 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/digital.jpg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 160), skipping download
+[05:25:52 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/embark-cta.jpg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 77), skipping download
+[05:25:52 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/embark-cta-150x150.jpg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 77), skipping download
+[05:25:52 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/embark-cta-300x102.jpg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 77), skipping download
+[05:25:52 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/embark-cta-1024x347.jpg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 77), skipping download
+[05:25:52 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/why-choose-us.jpg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 155), skipping download
+[05:25:52 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/testimonial-skip-01.jpg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 79), skipping download
+[05:25:52 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/testimonial-skip-02.jpg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 156), skipping download
+[05:25:52 UTC] [INFO] Starting image import for URL: https://multipurpose29.ziptemplates.top/wp-content/uploads/2024/05/testimonial-skip-03.jpg
+[05:25:52 UTC] [INFO] Image already exists in media library (ID: 157), skipping download
+[05:25:52 UTC] [INFO] Starting link replacements in content | Context: {"replacements_count":26}
+[05:25:52 UTC] [SUCCESS] Link replacement process completed | Context: {"total_replacements":26}
+[05:25:52 UTC] [INFO] Updating post content (second pass with link replacements) | Context: {"post_id":163}
+[05:25:53 UTC] [SUCCESS] Successfully completed processing Gutenberg post | Context: {"post_id":163}
+[05:25:53 UTC] [SUCCESS] Gutenberg batch processing completed successfully | Context: {"posts_processed":11}
+[05:25:53 UTC] [SUCCESS] Gutenberg batch completed.
+[05:25:57 UTC] [INFO] ---
+
+[05:25:57 UTC] [INFO] Starting image replacement batch processing
+[05:25:57 UTC] [INFO] Misc batch processing started
+[05:25:57 UTC] [INFO] Starting image replacement process
+[05:25:57 UTC] [INFO] Replacing images in pages
+[05:25:57 UTC] [INFO] Starting page image replacement
+[05:25:57 UTC] [INFO] ST_Replace_Blocks_Images instance created
+[05:25:57 UTC] [INFO] Processing pages | Context: {"pages_count":5,"plugin_type":"blocks"}
+[05:25:57 UTC] [INFO] Starting parse_replace_images for post ID: 163
+[05:25:57 UTC] [INFO] Parsed 13 blocks from post content
+[05:25:57 UTC] [INFO] Processing 13 blocks for updates
+[05:25:57 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:25:57 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:57 UTC] [INFO] Starting parse_spectra_container
+[05:25:57 UTC] [INFO] Found background image to replace: http://snekeez.test/wp-content/uploads/2024/05/hero-bg.jpg
+[05:25:57 UTC] [INFO] Retrieved replacement image from index: 0
+[05:25:57 UTC] [INFO] Successfully downloaded image with ID: 17
+[05:25:58 UTC] [INFO] Successfully replaced container background image - Old: http://snekeez.test/wp-content/uploads/2024/05/hero-bg.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-260044.jpeg
+[05:25:58 UTC] [INFO] Processing 1 inner blocks for block #0
+[05:25:58 UTC] [INFO] Processing 1 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 1 inner blocks for block #0
+[05:25:58 UTC] [INFO] Processing 1 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/info-box
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/info-box
+[05:25:58 UTC] [INFO] Starting parse_spectra_infobox
+[05:25:58 UTC] [INFO] No icon image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:25:58 UTC] [INFO] Processing block #1 - Block type: 
+[05:25:58 UTC] [INFO] Checking block for image replacement: 
+[05:25:58 UTC] [INFO] Processing block #2 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 2 inner blocks for block #2
+[05:25:58 UTC] [INFO] Processing 2 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:25:58 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 2 inner blocks for block #1
+[05:25:58 UTC] [INFO] Processing 2 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 2 inner blocks for block #0
+[05:25:58 UTC] [INFO] Processing 2 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:25:58 UTC] [INFO] Starting parse_spectra_image
+[05:25:58 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/Services-01.jpg
+[05:25:58 UTC] [INFO] Retrieved replacement image from index: 1
+[05:25:58 UTC] [INFO] Successfully downloaded image with ID: 18
+[05:25:58 UTC] [INFO] Replaced image URL in innerHTML
+[05:25:58 UTC] [INFO] Updated alt text to: Close-up of an athlete tying sneakers on a track during the day. Perfect fit concept.
+[05:25:58 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8454904.jpeg
+[05:25:58 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8454904.jpeg
+[05:25:58 UTC] [INFO] Updated image ID from 75 to 18
+[05:25:58 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:25:58 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/Services-01.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8454904.jpeg
+[05:25:58 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 2 inner blocks for block #1
+[05:25:58 UTC] [INFO] Processing 2 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:25:58 UTC] [INFO] Starting parse_spectra_image
+[05:25:58 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/Services-02.jpg
+[05:25:58 UTC] [INFO] Retrieved replacement image from index: 2
+[05:25:58 UTC] [INFO] Successfully downloaded image with ID: 19
+[05:25:58 UTC] [INFO] Replaced image URL in innerHTML
+[05:25:58 UTC] [INFO] Updated alt text to: Close-up of a woman tying shoelaces on white sneakers during an outdoor exercise session.
+[05:25:58 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-7880182.jpeg
+[05:25:58 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-7880182.jpeg
+[05:25:58 UTC] [INFO] Updated image ID from 74 to 19
+[05:25:58 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:25:58 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/Services-02.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-7880182.jpeg
+[05:25:58 UTC] [INFO] Processing block #1 - Block type: uagb/image
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:25:58 UTC] [INFO] Starting parse_spectra_image
+[05:25:58 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/Services-03.jpg
+[05:25:58 UTC] [INFO] Retrieved replacement image from index: 3
+[05:25:58 UTC] [INFO] Successfully downloaded image with ID: 20
+[05:25:58 UTC] [INFO] Replaced image URL in innerHTML
+[05:25:58 UTC] [INFO] Updated alt text to: People jogging on a city street, giving a close-up of their sportswear shoes. Urban fitness scene.
+[05:25:58 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-15659357.jpeg
+[05:25:58 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-15659357.jpeg
+[05:25:58 UTC] [INFO] Updated image ID from 73 to 20
+[05:25:58 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:25:58 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/Services-03.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-15659357.jpeg
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:25:58 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 1 inner blocks for block #1
+[05:25:58 UTC] [INFO] Processing 1 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/info-box
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/info-box
+[05:25:58 UTC] [INFO] Starting parse_spectra_infobox
+[05:25:58 UTC] [INFO] No icon image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:25:58 UTC] [INFO] Processing block #3 - Block type: 
+[05:25:58 UTC] [INFO] Checking block for image replacement: 
+[05:25:58 UTC] [INFO] Processing block #4 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 2 inner blocks for block #4
+[05:25:58 UTC] [INFO] Processing 2 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:25:58 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 2 inner blocks for block #1
+[05:25:58 UTC] [INFO] Processing 2 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 2 inner blocks for block #0
+[05:25:58 UTC] [INFO] Processing 2 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/info-box
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/info-box
+[05:25:58 UTC] [INFO] Starting parse_spectra_infobox
+[05:25:58 UTC] [INFO] No icon image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing block #1 - Block type: uagb/image
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:25:58 UTC] [INFO] Starting parse_spectra_image
+[05:25:58 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/creative.jpg
+[05:25:58 UTC] [INFO] Retrieved replacement image from index: 4
+[05:25:58 UTC] [INFO] Successfully downloaded image with ID: 21
+[05:25:58 UTC] [INFO] Replaced image URL in innerHTML
+[05:25:58 UTC] [INFO] Updated alt text to: A detailed view of a sneaker mid-stride on a treadmill, showcasing active lifestyle footwear.
+[05:25:58 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-4065509.jpeg
+[05:25:58 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-4065509.jpeg
+[05:25:58 UTC] [INFO] Updated image ID from 159 to 21
+[05:25:58 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:25:58 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/creative.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-4065509.jpeg
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:25:58 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 3 inner blocks for block #1
+[05:25:58 UTC] [INFO] Processing 3 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 2 inner blocks for block #0
+[05:25:58 UTC] [INFO] Processing 2 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/info-box
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/info-box
+[05:25:58 UTC] [INFO] Starting parse_spectra_infobox
+[05:25:58 UTC] [INFO] No icon image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing block #1 - Block type: uagb/image
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:25:58 UTC] [INFO] Starting parse_spectra_image
+[05:25:58 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/digital.jpg
+[05:25:58 UTC] [INFO] Retrieved replacement image from index: 5
+[05:25:58 UTC] [INFO] Successfully downloaded image with ID: 27
+[05:25:58 UTC] [INFO] Replaced image URL in innerHTML
+[05:25:58 UTC] [INFO] Updated alt text to: Close-up image of a person tying shoelaces on a sneaker while sitting on pavement.
+[05:25:58 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8497536.jpeg
+[05:25:58 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8497536.jpeg
+[05:25:58 UTC] [INFO] Updated image ID from 160 to 27
+[05:25:58 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:25:58 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/digital.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8497536.jpeg
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:25:58 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 1 inner blocks for block #1
+[05:25:58 UTC] [INFO] Processing 1 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/info-box
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/info-box
+[05:25:58 UTC] [INFO] Starting parse_spectra_infobox
+[05:25:58 UTC] [INFO] No icon image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:25:58 UTC] [INFO] Processing block #2 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 1 inner blocks for block #2
+[05:25:58 UTC] [INFO] Processing 1 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/info-box
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/info-box
+[05:25:58 UTC] [INFO] Starting parse_spectra_infobox
+[05:25:58 UTC] [INFO] No icon image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 3, Skipped: 0
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:25:58 UTC] [INFO] Processing block #5 - Block type: 
+[05:25:58 UTC] [INFO] Checking block for image replacement: 
+[05:25:58 UTC] [INFO] Processing block #6 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] Found background image to replace: http://snekeez.test/wp-content/uploads/2024/05/embark-cta.jpg
+[05:25:58 UTC] [INFO] Retrieved replacement image from index: 6
+[05:25:58 UTC] [INFO] Successfully downloaded image with ID: 29
+[05:25:58 UTC] [INFO] Successfully replaced container background image - Old: http://snekeez.test/wp-content/uploads/2024/05/embark-cta.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-36429546.jpeg
+[05:25:58 UTC] [INFO] Processing 1 inner blocks for block #6
+[05:25:58 UTC] [INFO] Processing 1 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 1 inner blocks for block #0
+[05:25:58 UTC] [INFO] Processing 1 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/info-box
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/info-box
+[05:25:58 UTC] [INFO] Starting parse_spectra_infobox
+[05:25:58 UTC] [INFO] No icon image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:25:58 UTC] [INFO] Processing block #7 - Block type: 
+[05:25:58 UTC] [INFO] Checking block for image replacement: 
+[05:25:58 UTC] [INFO] Processing block #8 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 2 inner blocks for block #8
+[05:25:58 UTC] [INFO] Processing 2 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 2 inner blocks for block #0
+[05:25:58 UTC] [INFO] Processing 2 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:25:58 UTC] [INFO] Processing block #1 - Block type: uagb/image
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:25:58 UTC] [INFO] Starting parse_spectra_image
+[05:25:58 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/why-choose-us.jpg
+[05:25:58 UTC] [INFO] Retrieved replacement image from index: 7
+[05:25:58 UTC] [INFO] Successfully downloaded image with ID: 30
+[05:25:58 UTC] [INFO] Replaced image URL in innerHTML
+[05:25:58 UTC] [INFO] Updated alt text to: Close-up of a woman tying her shoes on a running track, ready to sprint.
+[05:25:58 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-3763869.jpeg
+[05:25:58 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-3763869.jpeg
+[05:25:58 UTC] [INFO] Updated image ID from 154 to 30
+[05:25:58 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:25:58 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/why-choose-us.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-3763869.jpeg
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:25:58 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 3 inner blocks for block #1
+[05:25:58 UTC] [INFO] Processing 3 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:25:58 UTC] [INFO] Processing block #1 - Block type: uagb/advanced-heading
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:25:58 UTC] [INFO] Processing block #2 - Block type: uagb/advanced-heading
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 3, Skipped: 0
+[05:25:58 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:25:58 UTC] [INFO] Processing block #9 - Block type: 
+[05:25:58 UTC] [INFO] Checking block for image replacement: 
+[05:25:58 UTC] [INFO] Processing block #10 - Block type: uagb/container
+[05:25:58 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:58 UTC] [INFO] Starting parse_spectra_container
+[05:25:58 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:58 UTC] [INFO] Processing 2 inner blocks for block #10
+[05:25:58 UTC] [INFO] Processing 2 blocks for updates
+[05:25:58 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:25:59 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:25:59 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:25:59 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:59 UTC] [INFO] Starting parse_spectra_container
+[05:25:59 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:59 UTC] [INFO] Processing 3 inner blocks for block #1
+[05:25:59 UTC] [INFO] Processing 3 blocks for updates
+[05:25:59 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:25:59 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:59 UTC] [INFO] Starting parse_spectra_container
+[05:25:59 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:59 UTC] [INFO] Processing 2 inner blocks for block #0
+[05:25:59 UTC] [INFO] Processing 2 blocks for updates
+[05:25:59 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:25:59 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:25:59 UTC] [INFO] Starting parse_spectra_image
+[05:25:59 UTC] [INFO] No image URL or skipable image, returning block unchanged
+[05:25:59 UTC] [INFO] Processing block #1 - Block type: uagb/info-box
+[05:25:59 UTC] [INFO] Checking block for image replacement: uagb/info-box
+[05:25:59 UTC] [INFO] Starting parse_spectra_infobox
+[05:25:59 UTC] [INFO] No icon image or skipable image, returning block unchanged
+[05:25:59 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:25:59 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:25:59 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:59 UTC] [INFO] Starting parse_spectra_container
+[05:25:59 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:59 UTC] [INFO] Processing 2 inner blocks for block #1
+[05:25:59 UTC] [INFO] Processing 2 blocks for updates
+[05:25:59 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:25:59 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:25:59 UTC] [INFO] Starting parse_spectra_image
+[05:25:59 UTC] [INFO] No image URL or skipable image, returning block unchanged
+[05:25:59 UTC] [INFO] Processing block #1 - Block type: uagb/info-box
+[05:25:59 UTC] [INFO] Checking block for image replacement: uagb/info-box
+[05:25:59 UTC] [INFO] Starting parse_spectra_infobox
+[05:25:59 UTC] [INFO] No icon image or skipable image, returning block unchanged
+[05:25:59 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:25:59 UTC] [INFO] Processing block #2 - Block type: uagb/container
+[05:25:59 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:59 UTC] [INFO] Starting parse_spectra_container
+[05:25:59 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:25:59 UTC] [INFO] Processing 2 inner blocks for block #2
+[05:25:59 UTC] [INFO] Processing 2 blocks for updates
+[05:25:59 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:25:59 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:25:59 UTC] [INFO] Starting parse_spectra_image
+[05:25:59 UTC] [INFO] No image URL or skipable image, returning block unchanged
+[05:25:59 UTC] [INFO] Processing block #1 - Block type: uagb/info-box
+[05:25:59 UTC] [INFO] Checking block for image replacement: uagb/info-box
+[05:25:59 UTC] [INFO] Starting parse_spectra_infobox
+[05:25:59 UTC] [INFO] No icon image or skipable image, returning block unchanged
+[05:25:59 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:25:59 UTC] [INFO] Completed get_updated_blocks - Processed: 3, Skipped: 0
+[05:25:59 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:25:59 UTC] [INFO] Processing block #11 - Block type: 
+[05:25:59 UTC] [INFO] Checking block for image replacement: 
+[05:25:59 UTC] [INFO] Processing block #12 - Block type: core/block
+[05:25:59 UTC] [INFO] Found reusable block with ID: 201
+[05:25:59 UTC] [INFO] Added reusable block to tracking list: 201
+[05:25:59 UTC] [INFO] Starting parse_replace_images for post ID: 201
+[05:25:59 UTC] [INFO] Parsed 1 blocks from post content
+[05:25:59 UTC] [INFO] Processing 1 blocks for updates
+[05:25:59 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:25:59 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:25:59 UTC] [INFO] Starting parse_spectra_container
+[05:25:59 UTC] [INFO] Found background image to replace: http://snekeez.test/wp-content/uploads/2024/05/footer-cta.jpg
+[05:25:59 UTC] [INFO] Retrieved replacement image from index: 8
+[05:25:59 UTC] [INFO] Successfully downloaded image with ID: 31
+[05:25:59 UTC] [INFO] Successfully replaced container background image - Old: http://snekeez.test/wp-content/uploads/2024/05/footer-cta.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-5319372.jpeg
+[05:25:59 UTC] [INFO] Processing 1 inner blocks for block #0
+[05:25:59 UTC] [INFO] Processing 1 blocks for updates
+[05:25:59 UTC] [INFO] Processing block #0 - Block type: uagb/info-box
+[05:25:59 UTC] [INFO] Checking block for image replacement: uagb/info-box
+[05:25:59 UTC] [INFO] Starting parse_spectra_infobox
+[05:25:59 UTC] [INFO] No icon image or skipable image, returning block unchanged
+[05:25:59 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:25:59 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:25:59 UTC] [INFO] Serialized updated blocks into content
+[05:25:59 UTC] [INFO] Starting replace_content_glitch
+[05:25:59 UTC] [INFO] Completed replace_content_glitch
+[05:25:59 UTC] [INFO] Completed parse_replace_images for post ID: 201
+[05:25:59 UTC] [INFO] Successfully updated reusable block ID: 201
+[05:25:59 UTC] [INFO] Checking block for image replacement: core/block
+[05:25:59 UTC] [INFO] Completed get_updated_blocks - Processed: 13, Skipped: 0
+[05:25:59 UTC] [INFO] Serialized updated blocks into content
+[05:25:59 UTC] [INFO] Starting replace_content_glitch
+[05:25:59 UTC] [INFO] Completed replace_content_glitch
+[05:25:59 UTC] [INFO] Completed parse_replace_images for post ID: 163
+[05:26:00 UTC] [INFO] Updated page content | Context: {"post_id":163}
+[05:26:00 UTC] [INFO] Starting parse_replace_images for post ID: 168
+[05:26:00 UTC] [INFO] Parsed 9 blocks from post content
+[05:26:00 UTC] [INFO] Processing 9 blocks for updates
+[05:26:00 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:26:00 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:00 UTC] [INFO] Starting parse_spectra_container
+[05:26:00 UTC] [INFO] Found background image to replace: http://snekeez.test/wp-content/uploads/2024/05/contact-bg.jpg
+[05:26:00 UTC] [INFO] Retrieved replacement image from index: 9
+[05:26:00 UTC] [INFO] Successfully downloaded image with ID: 32
+[05:26:00 UTC] [INFO] Successfully replaced container background image - Old: http://snekeez.test/wp-content/uploads/2024/05/contact-bg.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8456074.jpeg
+[05:26:00 UTC] [INFO] Processing 1 inner blocks for block #0
+[05:26:00 UTC] [INFO] Processing 1 blocks for updates
+[05:26:00 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:26:00 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:00 UTC] [INFO] Starting parse_spectra_container
+[05:26:00 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:00 UTC] [INFO] Processing 1 inner blocks for block #0
+[05:26:00 UTC] [INFO] Processing 1 blocks for updates
+[05:26:00 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:00 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:26:01 UTC] [INFO] Processing block #1 - Block type: 
+[05:26:01 UTC] [INFO] Checking block for image replacement: 
+[05:26:01 UTC] [INFO] Processing block #2 - Block type: uagb/container
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:01 UTC] [INFO] Starting parse_spectra_container
+[05:26:01 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 2 inner blocks for block #2
+[05:26:01 UTC] [INFO] Processing 2 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:01 UTC] [INFO] Starting parse_spectra_container
+[05:26:01 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 3 inner blocks for block #1
+[05:26:01 UTC] [INFO] Processing 3 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:01 UTC] [INFO] Starting parse_spectra_container
+[05:26:01 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 2 inner blocks for block #0
+[05:26:01 UTC] [INFO] Processing 2 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Processing block #1 - Block type: uagb/icon-list
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list
+[05:26:01 UTC] [INFO] Starting parse_social_icons
+[05:26:01 UTC] [INFO] No social profiles found, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 3 inner blocks for block #1
+[05:26:01 UTC] [INFO] Processing 3 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Processing block #1 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Processing block #2 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 3, Skipped: 0
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:01 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:01 UTC] [INFO] Starting parse_spectra_container
+[05:26:01 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 2 inner blocks for block #1
+[05:26:01 UTC] [INFO] Processing 2 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Processing block #1 - Block type: uagb/icon-list
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list
+[05:26:01 UTC] [INFO] Starting parse_social_icons
+[05:26:01 UTC] [INFO] No social profiles found, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 3 inner blocks for block #1
+[05:26:01 UTC] [INFO] Processing 3 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Processing block #1 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Processing block #2 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 3, Skipped: 0
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:01 UTC] [INFO] Processing block #2 - Block type: uagb/container
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:01 UTC] [INFO] Starting parse_spectra_container
+[05:26:01 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 2 inner blocks for block #2
+[05:26:01 UTC] [INFO] Processing 2 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Processing block #1 - Block type: uagb/icon-list
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list
+[05:26:01 UTC] [INFO] Starting parse_social_icons
+[05:26:01 UTC] [INFO] No social profiles found, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 3 inner blocks for block #1
+[05:26:01 UTC] [INFO] Processing 3 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Processing block #1 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Processing block #2 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 3, Skipped: 0
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 3, Skipped: 0
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:01 UTC] [INFO] Processing block #3 - Block type: 
+[05:26:01 UTC] [INFO] Checking block for image replacement: 
+[05:26:01 UTC] [INFO] Processing block #4 - Block type: uagb/container
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:01 UTC] [INFO] Starting parse_spectra_container
+[05:26:01 UTC] [INFO] Found background image to replace: http://snekeez.test/wp-content/uploads/2024/05/faq-bg.jpg
+[05:26:01 UTC] [INFO] Retrieved replacement image from index: 0
+[05:26:01 UTC] [INFO] Successfully downloaded image with ID: 17
+[05:26:01 UTC] [INFO] Successfully replaced container background image - Old: http://snekeez.test/wp-content/uploads/2024/05/faq-bg.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-260044.jpeg
+[05:26:01 UTC] [INFO] Processing 2 inner blocks for block #4
+[05:26:01 UTC] [INFO] Processing 2 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:01 UTC] [INFO] Starting parse_spectra_container
+[05:26:01 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 4 inner blocks for block #1
+[05:26:01 UTC] [INFO] Processing 4 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:01 UTC] [INFO] Starting parse_spectra_container
+[05:26:01 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 1 inner blocks for block #0
+[05:26:01 UTC] [INFO] Processing 1 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:26:01 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:01 UTC] [INFO] Starting parse_spectra_container
+[05:26:01 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 1 inner blocks for block #1
+[05:26:01 UTC] [INFO] Processing 1 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:26:01 UTC] [INFO] Processing block #2 - Block type: uagb/container
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:01 UTC] [INFO] Starting parse_spectra_container
+[05:26:01 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 1 inner blocks for block #2
+[05:26:01 UTC] [INFO] Processing 1 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:26:01 UTC] [INFO] Processing block #3 - Block type: uagb/container
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:01 UTC] [INFO] Starting parse_spectra_container
+[05:26:01 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 1 inner blocks for block #3
+[05:26:01 UTC] [INFO] Processing 1 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 4, Skipped: 0
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:01 UTC] [INFO] Processing block #5 - Block type: 
+[05:26:01 UTC] [INFO] Checking block for image replacement: 
+[05:26:01 UTC] [INFO] Processing block #6 - Block type: uagb/container
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:01 UTC] [INFO] Starting parse_spectra_container
+[05:26:01 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 2 inner blocks for block #6
+[05:26:01 UTC] [INFO] Processing 2 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:01 UTC] [INFO] Starting parse_spectra_container
+[05:26:01 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 1 inner blocks for block #0
+[05:26:01 UTC] [INFO] Processing 1 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: core/shortcode
+[05:26:01 UTC] [INFO] Checking block for image replacement: core/shortcode
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:26:01 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:01 UTC] [INFO] Starting parse_spectra_container
+[05:26:01 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 5 inner blocks for block #1
+[05:26:01 UTC] [INFO] Processing 5 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Processing block #1 - Block type: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Processing block #2 - Block type: uagb/icon-list
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list
+[05:26:01 UTC] [INFO] Starting parse_social_icons
+[05:26:01 UTC] [INFO] No social profiles found, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 3 inner blocks for block #2
+[05:26:01 UTC] [INFO] Processing 3 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Processing block #1 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Processing block #2 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 3, Skipped: 0
+[05:26:01 UTC] [INFO] Processing block #3 - Block type: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:01 UTC] [INFO] Processing block #4 - Block type: uagb/icon-list
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list
+[05:26:01 UTC] [INFO] Starting parse_social_icons
+[05:26:01 UTC] [INFO] No social profiles found, returning block unchanged
+[05:26:01 UTC] [INFO] Processing 5 inner blocks for block #4
+[05:26:01 UTC] [INFO] Processing 5 blocks for updates
+[05:26:01 UTC] [INFO] Processing block #0 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Processing block #1 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Processing block #2 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Processing block #3 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Processing block #4 - Block type: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Checking block for image replacement: uagb/icon-list-child
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 5, Skipped: 0
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 5, Skipped: 0
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:01 UTC] [INFO] Processing block #7 - Block type: 
+[05:26:01 UTC] [INFO] Checking block for image replacement: 
+[05:26:01 UTC] [INFO] Processing block #8 - Block type: core/block
+[05:26:01 UTC] [INFO] Found reusable block with ID: 201
+[05:26:01 UTC] [INFO] Reusable block already processed, skipping ID: 201
+[05:26:01 UTC] [INFO] Completed get_updated_blocks - Processed: 8, Skipped: 0
+[05:26:01 UTC] [INFO] Serialized updated blocks into content
+[05:26:01 UTC] [INFO] Starting replace_content_glitch
+[05:26:01 UTC] [INFO] Completed replace_content_glitch
+[05:26:01 UTC] [INFO] Completed parse_replace_images for post ID: 168
+[05:26:03 UTC] [INFO] Updated page content | Context: {"post_id":168}
+[05:26:03 UTC] [INFO] Starting parse_replace_images for post ID: 167
+[05:26:03 UTC] [INFO] Parsed 0 blocks from post content
+[05:26:03 UTC] [INFO] Processing 0 blocks for updates
+[05:26:03 UTC] [INFO] Completed get_updated_blocks - Processed: 0, Skipped: 0
+[05:26:03 UTC] [INFO] Serialized updated blocks into content
+[05:26:03 UTC] [INFO] Starting replace_content_glitch
+[05:26:03 UTC] [INFO] Completed replace_content_glitch
+[05:26:03 UTC] [INFO] Completed parse_replace_images for post ID: 167
+[05:26:03 UTC] [INFO] Updated page content | Context: {"post_id":167}
+[05:26:03 UTC] [INFO] Starting parse_replace_images for post ID: 166
+[05:26:03 UTC] [INFO] Parsed 13 blocks from post content
+[05:26:03 UTC] [INFO] Processing 13 blocks for updates
+[05:26:03 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:26:03 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:03 UTC] [INFO] Starting parse_spectra_container
+[05:26:03 UTC] [INFO] Found background image to replace: http://snekeez.test/wp-content/uploads/2024/05/services-bg.jpg
+[05:26:03 UTC] [INFO] Retrieved replacement image from index: 1
+[05:26:03 UTC] [INFO] Successfully downloaded image with ID: 18
+[05:26:03 UTC] [INFO] Successfully replaced container background image - Old: http://snekeez.test/wp-content/uploads/2024/05/services-bg.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8454904.jpeg
+[05:26:03 UTC] [INFO] Processing 1 inner blocks for block #0
+[05:26:03 UTC] [INFO] Processing 1 blocks for updates
+[05:26:03 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:26:03 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:03 UTC] [INFO] Starting parse_spectra_container
+[05:26:03 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:03 UTC] [INFO] Processing 1 inner blocks for block #0
+[05:26:03 UTC] [INFO] Processing 1 blocks for updates
+[05:26:03 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:03 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:03 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:26:03 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:26:03 UTC] [INFO] Processing block #1 - Block type: 
+[05:26:03 UTC] [INFO] Checking block for image replacement: 
+[05:26:03 UTC] [INFO] Processing block #2 - Block type: uagb/container
+[05:26:03 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:03 UTC] [INFO] Starting parse_spectra_container
+[05:26:03 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:03 UTC] [INFO] Processing 2 inner blocks for block #2
+[05:26:03 UTC] [INFO] Processing 2 blocks for updates
+[05:26:03 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:03 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:03 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:03 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:03 UTC] [INFO] Starting parse_spectra_container
+[05:26:03 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:03 UTC] [INFO] Processing 2 inner blocks for block #1
+[05:26:03 UTC] [INFO] Processing 2 blocks for updates
+[05:26:03 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:26:03 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:03 UTC] [INFO] Starting parse_spectra_container
+[05:26:03 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:03 UTC] [INFO] Processing 2 inner blocks for block #0
+[05:26:03 UTC] [INFO] Processing 2 blocks for updates
+[05:26:03 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:26:03 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:03 UTC] [INFO] Starting parse_spectra_image
+[05:26:03 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/creative-01.jpg
+[05:26:03 UTC] [INFO] Retrieved replacement image from index: 2
+[05:26:03 UTC] [INFO] Successfully downloaded image with ID: 19
+[05:26:04 UTC] [INFO] Replaced image URL in innerHTML
+[05:26:04 UTC] [INFO] Updated alt text to: Close-up of a woman tying shoelaces on white sneakers during an outdoor exercise session.
+[05:26:04 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-7880182.jpeg
+[05:26:04 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-7880182.jpeg
+[05:26:04 UTC] [INFO] Updated image ID from 144 to 19
+[05:26:04 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:26:04 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/creative-01.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-7880182.jpeg
+[05:26:04 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:04 UTC] [INFO] Starting parse_spectra_container
+[05:26:04 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Processing 2 inner blocks for block #1
+[05:26:04 UTC] [INFO] Processing 2 blocks for updates
+[05:26:04 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:04 UTC] [INFO] Starting parse_spectra_image
+[05:26:04 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/creative-02.jpg
+[05:26:04 UTC] [INFO] Retrieved replacement image from index: 3
+[05:26:04 UTC] [INFO] Successfully downloaded image with ID: 20
+[05:26:04 UTC] [INFO] Replaced image URL in innerHTML
+[05:26:04 UTC] [INFO] Updated alt text to: People jogging on a city street, giving a close-up of their sportswear shoes. Urban fitness scene.
+[05:26:04 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-15659357.jpeg
+[05:26:04 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-15659357.jpeg
+[05:26:04 UTC] [INFO] Updated image ID from 145 to 20
+[05:26:04 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:26:04 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/creative-02.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-15659357.jpeg
+[05:26:04 UTC] [INFO] Processing block #1 - Block type: uagb/image
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:04 UTC] [INFO] Starting parse_spectra_image
+[05:26:04 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/creative-03.jpg
+[05:26:04 UTC] [INFO] Retrieved replacement image from index: 4
+[05:26:04 UTC] [INFO] Successfully downloaded image with ID: 21
+[05:26:04 UTC] [INFO] Replaced image URL in innerHTML
+[05:26:04 UTC] [INFO] Updated alt text to: A detailed view of a sneaker mid-stride on a treadmill, showcasing active lifestyle footwear.
+[05:26:04 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-4065509.jpeg
+[05:26:04 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-4065509.jpeg
+[05:26:04 UTC] [INFO] Updated image ID from 81 to 21
+[05:26:04 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:26:04 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/creative-03.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-4065509.jpeg
+[05:26:04 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:04 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:04 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:04 UTC] [INFO] Starting parse_spectra_container
+[05:26:04 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Processing 1 inner blocks for block #1
+[05:26:04 UTC] [INFO] Processing 1 blocks for updates
+[05:26:04 UTC] [INFO] Processing block #0 - Block type: uagb/info-box
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/info-box
+[05:26:04 UTC] [INFO] Starting parse_spectra_infobox
+[05:26:04 UTC] [INFO] No icon image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:26:04 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:04 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:04 UTC] [INFO] Processing block #3 - Block type: 
+[05:26:04 UTC] [INFO] Checking block for image replacement: 
+[05:26:04 UTC] [INFO] Processing block #4 - Block type: uagb/container
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:04 UTC] [INFO] Starting parse_spectra_container
+[05:26:04 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Processing 2 inner blocks for block #4
+[05:26:04 UTC] [INFO] Processing 2 blocks for updates
+[05:26:04 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:04 UTC] [INFO] Starting parse_spectra_container
+[05:26:04 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Processing 1 inner blocks for block #0
+[05:26:04 UTC] [INFO] Processing 1 blocks for updates
+[05:26:04 UTC] [INFO] Processing block #0 - Block type: uagb/info-box
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/info-box
+[05:26:04 UTC] [INFO] Starting parse_spectra_infobox
+[05:26:04 UTC] [INFO] No icon image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:26:04 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:04 UTC] [INFO] Starting parse_spectra_container
+[05:26:04 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Processing 2 inner blocks for block #1
+[05:26:04 UTC] [INFO] Processing 2 blocks for updates
+[05:26:04 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:04 UTC] [INFO] Starting parse_spectra_image
+[05:26:04 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/digital-01.jpg
+[05:26:04 UTC] [INFO] Retrieved replacement image from index: 5
+[05:26:04 UTC] [INFO] Successfully downloaded image with ID: 27
+[05:26:04 UTC] [INFO] Replaced image URL in innerHTML
+[05:26:04 UTC] [INFO] Updated alt text to: Close-up image of a person tying shoelaces on a sneaker while sitting on pavement.
+[05:26:04 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8497536.jpeg
+[05:26:04 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8497536.jpeg
+[05:26:04 UTC] [INFO] Updated image ID from 146 to 27
+[05:26:04 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:26:04 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/digital-01.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8497536.jpeg
+[05:26:04 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:04 UTC] [INFO] Starting parse_spectra_container
+[05:26:04 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Processing 2 inner blocks for block #1
+[05:26:04 UTC] [INFO] Processing 2 blocks for updates
+[05:26:04 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:04 UTC] [INFO] Starting parse_spectra_image
+[05:26:04 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/creative-02.jpg
+[05:26:04 UTC] [INFO] Retrieved replacement image from index: 6
+[05:26:04 UTC] [INFO] Successfully downloaded image with ID: 29
+[05:26:04 UTC] [INFO] Replaced image URL in innerHTML
+[05:26:04 UTC] [INFO] Updated alt text to: Close-up of a man tying his running shoes on stone steps, preparing for a run outdoors.
+[05:26:04 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-36429546.jpeg
+[05:26:04 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-36429546.jpeg
+[05:26:04 UTC] [INFO] Updated image ID from 145 to 29
+[05:26:04 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:26:04 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/creative-02.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-36429546.jpeg
+[05:26:04 UTC] [INFO] Processing block #1 - Block type: uagb/image
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:04 UTC] [INFO] Starting parse_spectra_image
+[05:26:04 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/creative-03.jpg
+[05:26:04 UTC] [INFO] Retrieved replacement image from index: 7
+[05:26:04 UTC] [INFO] Successfully downloaded image with ID: 30
+[05:26:04 UTC] [INFO] Replaced image URL in innerHTML
+[05:26:04 UTC] [INFO] Updated alt text to: Close-up of a woman tying her shoes on a running track, ready to sprint.
+[05:26:04 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-3763869.jpeg
+[05:26:04 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-3763869.jpeg
+[05:26:04 UTC] [INFO] Updated image ID from 81 to 30
+[05:26:04 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:26:04 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/creative-03.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-3763869.jpeg
+[05:26:04 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:04 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:04 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:04 UTC] [INFO] Processing block #5 - Block type: 
+[05:26:04 UTC] [INFO] Checking block for image replacement: 
+[05:26:04 UTC] [INFO] Processing block #6 - Block type: uagb/container
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:04 UTC] [INFO] Starting parse_spectra_container
+[05:26:04 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Processing 2 inner blocks for block #6
+[05:26:04 UTC] [INFO] Processing 2 blocks for updates
+[05:26:04 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:04 UTC] [INFO] Processing block #1 - Block type: uagb/buttons
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/buttons
+[05:26:04 UTC] [INFO] Processing 1 inner blocks for block #1
+[05:26:04 UTC] [INFO] Processing 1 blocks for updates
+[05:26:04 UTC] [INFO] Processing block #0 - Block type: uagb/buttons-child
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/buttons-child
+[05:26:04 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:26:04 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:04 UTC] [INFO] Processing block #7 - Block type: 
+[05:26:04 UTC] [INFO] Checking block for image replacement: 
+[05:26:04 UTC] [INFO] Processing block #8 - Block type: uagb/container
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:04 UTC] [INFO] Starting parse_spectra_container
+[05:26:04 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Processing 2 inner blocks for block #8
+[05:26:04 UTC] [INFO] Processing 2 blocks for updates
+[05:26:04 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:04 UTC] [INFO] Starting parse_spectra_container
+[05:26:04 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Processing 2 inner blocks for block #0
+[05:26:04 UTC] [INFO] Processing 2 blocks for updates
+[05:26:04 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:04 UTC] [INFO] Starting parse_spectra_image
+[05:26:04 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/mobile-01.jpg
+[05:26:04 UTC] [INFO] Retrieved replacement image from index: 8
+[05:26:04 UTC] [INFO] Successfully downloaded image with ID: 31
+[05:26:04 UTC] [INFO] Replaced image URL in innerHTML
+[05:26:04 UTC] [INFO] Updated alt text to: A man prepares for a run by tying his sneakers while standing on a bridge barrier outdoors.
+[05:26:04 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-5319372.jpeg
+[05:26:04 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-5319372.jpeg
+[05:26:04 UTC] [INFO] Updated image ID from 148 to 31
+[05:26:04 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:26:04 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/mobile-01.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-5319372.jpeg
+[05:26:04 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:04 UTC] [INFO] Starting parse_spectra_container
+[05:26:04 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Processing 2 inner blocks for block #1
+[05:26:04 UTC] [INFO] Processing 2 blocks for updates
+[05:26:04 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:04 UTC] [INFO] Starting parse_spectra_image
+[05:26:04 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/mobile-02.jpg
+[05:26:04 UTC] [INFO] Retrieved replacement image from index: 9
+[05:26:04 UTC] [INFO] Successfully downloaded image with ID: 32
+[05:26:04 UTC] [INFO] Replaced image URL in innerHTML
+[05:26:04 UTC] [INFO] Updated alt text to: Close-up of athlete tying laces on sneakers on a running track, emphasizing readiness.
+[05:26:04 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8456074.jpeg
+[05:26:04 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8456074.jpeg
+[05:26:04 UTC] [INFO] Updated image ID from 149 to 32
+[05:26:04 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:26:04 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/mobile-02.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8456074.jpeg
+[05:26:04 UTC] [INFO] Processing block #1 - Block type: uagb/image
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:04 UTC] [INFO] Starting parse_spectra_image
+[05:26:04 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/creative-03.jpg
+[05:26:04 UTC] [INFO] Retrieved replacement image from index: 0
+[05:26:04 UTC] [INFO] Successfully downloaded image with ID: 17
+[05:26:04 UTC] [INFO] Replaced image URL in innerHTML
+[05:26:04 UTC] [INFO] Updated alt text to: Close-up of athletic sneakers on a wooden bridge, capturing a runner's morning exercise routine.
+[05:26:04 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-260044.jpeg
+[05:26:04 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-260044.jpeg
+[05:26:04 UTC] [INFO] Updated image ID from 81 to 17
+[05:26:04 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:26:04 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/creative-03.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-260044.jpeg
+[05:26:04 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:04 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:04 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:04 UTC] [INFO] Starting parse_spectra_container
+[05:26:04 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Processing 1 inner blocks for block #1
+[05:26:04 UTC] [INFO] Processing 1 blocks for updates
+[05:26:04 UTC] [INFO] Processing block #0 - Block type: uagb/info-box
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/info-box
+[05:26:04 UTC] [INFO] Starting parse_spectra_infobox
+[05:26:04 UTC] [INFO] No icon image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:26:04 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:04 UTC] [INFO] Processing block #9 - Block type: 
+[05:26:04 UTC] [INFO] Checking block for image replacement: 
+[05:26:04 UTC] [INFO] Processing block #10 - Block type: uagb/container
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:04 UTC] [INFO] Starting parse_spectra_container
+[05:26:04 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Processing 2 inner blocks for block #10
+[05:26:04 UTC] [INFO] Processing 2 blocks for updates
+[05:26:04 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:04 UTC] [INFO] Starting parse_spectra_container
+[05:26:04 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Processing 1 inner blocks for block #0
+[05:26:04 UTC] [INFO] Processing 1 blocks for updates
+[05:26:04 UTC] [INFO] Processing block #0 - Block type: uagb/info-box
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/info-box
+[05:26:04 UTC] [INFO] Starting parse_spectra_infobox
+[05:26:04 UTC] [INFO] No icon image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:26:04 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:04 UTC] [INFO] Starting parse_spectra_container
+[05:26:04 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Processing 2 inner blocks for block #1
+[05:26:04 UTC] [INFO] Processing 2 blocks for updates
+[05:26:04 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:04 UTC] [INFO] Starting parse_spectra_image
+[05:26:04 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/brand-01.jpg
+[05:26:04 UTC] [INFO] Retrieved replacement image from index: 1
+[05:26:04 UTC] [INFO] Successfully downloaded image with ID: 18
+[05:26:04 UTC] [INFO] Replaced image URL in innerHTML
+[05:26:04 UTC] [INFO] Updated alt text to: Close-up of an athlete tying sneakers on a track during the day. Perfect fit concept.
+[05:26:04 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8454904.jpeg
+[05:26:04 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8454904.jpeg
+[05:26:04 UTC] [INFO] Updated image ID from 151 to 18
+[05:26:04 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:26:04 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/brand-01.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8454904.jpeg
+[05:26:04 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:04 UTC] [INFO] Starting parse_spectra_container
+[05:26:04 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:04 UTC] [INFO] Processing 2 inner blocks for block #1
+[05:26:04 UTC] [INFO] Processing 2 blocks for updates
+[05:26:04 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:26:04 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:04 UTC] [INFO] Starting parse_spectra_image
+[05:26:04 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/brand-02.jpg
+[05:26:04 UTC] [INFO] Retrieved replacement image from index: 2
+[05:26:04 UTC] [INFO] Successfully downloaded image with ID: 19
+[05:26:04 UTC] [INFO] Replaced image URL in innerHTML
+[05:26:04 UTC] [INFO] Updated alt text to: Close-up of a woman tying shoelaces on white sneakers during an outdoor exercise session.
+[05:26:05 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-7880182.jpeg
+[05:26:05 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-7880182.jpeg
+[05:26:05 UTC] [INFO] Updated image ID from 152 to 19
+[05:26:05 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:26:05 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/brand-02.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-7880182.jpeg
+[05:26:05 UTC] [INFO] Processing block #1 - Block type: uagb/image
+[05:26:05 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:05 UTC] [INFO] Starting parse_spectra_image
+[05:26:05 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/brand-03.jpg
+[05:26:05 UTC] [INFO] Retrieved replacement image from index: 3
+[05:26:05 UTC] [INFO] Successfully downloaded image with ID: 20
+[05:26:05 UTC] [INFO] Replaced image URL in innerHTML
+[05:26:05 UTC] [INFO] Updated alt text to: People jogging on a city street, giving a close-up of their sportswear shoes. Urban fitness scene.
+[05:26:05 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-15659357.jpeg
+[05:26:05 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-15659357.jpeg
+[05:26:05 UTC] [INFO] Updated image ID from 153 to 20
+[05:26:05 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:26:05 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/brand-03.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-15659357.jpeg
+[05:26:05 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:05 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:05 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:05 UTC] [INFO] Processing block #11 - Block type: 
+[05:26:05 UTC] [INFO] Checking block for image replacement: 
+[05:26:05 UTC] [INFO] Processing block #12 - Block type: core/block
+[05:26:05 UTC] [INFO] Found reusable block with ID: 201
+[05:26:05 UTC] [INFO] Reusable block already processed, skipping ID: 201
+[05:26:05 UTC] [INFO] Completed get_updated_blocks - Processed: 12, Skipped: 0
+[05:26:05 UTC] [INFO] Serialized updated blocks into content
+[05:26:05 UTC] [INFO] Starting replace_content_glitch
+[05:26:05 UTC] [INFO] Completed replace_content_glitch
+[05:26:05 UTC] [INFO] Completed parse_replace_images for post ID: 166
+[05:26:07 UTC] [INFO] Updated page content | Context: {"post_id":166}
+[05:26:07 UTC] [INFO] Starting parse_replace_images for post ID: 165
+[05:26:07 UTC] [INFO] Parsed 9 blocks from post content
+[05:26:07 UTC] [INFO] Processing 9 blocks for updates
+[05:26:07 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:07 UTC] [INFO] Starting parse_spectra_container
+[05:26:07 UTC] [INFO] Found background image to replace: http://snekeez.test/wp-content/uploads/2024/05/about-bg.jpg
+[05:26:07 UTC] [INFO] Retrieved replacement image from index: 4
+[05:26:07 UTC] [INFO] Successfully downloaded image with ID: 21
+[05:26:07 UTC] [INFO] Successfully replaced container background image - Old: http://snekeez.test/wp-content/uploads/2024/05/about-bg.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-4065509.jpeg
+[05:26:07 UTC] [INFO] Processing 1 inner blocks for block #0
+[05:26:07 UTC] [INFO] Processing 1 blocks for updates
+[05:26:07 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:07 UTC] [INFO] Starting parse_spectra_container
+[05:26:07 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing 1 inner blocks for block #0
+[05:26:07 UTC] [INFO] Processing 1 blocks for updates
+[05:26:07 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:26:07 UTC] [INFO] Completed get_updated_blocks - Processed: 1, Skipped: 0
+[05:26:07 UTC] [INFO] Processing block #1 - Block type: 
+[05:26:07 UTC] [INFO] Checking block for image replacement: 
+[05:26:07 UTC] [INFO] Processing block #2 - Block type: uagb/container
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:07 UTC] [INFO] Starting parse_spectra_container
+[05:26:07 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing 2 inner blocks for block #2
+[05:26:07 UTC] [INFO] Processing 2 blocks for updates
+[05:26:07 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:07 UTC] [INFO] Starting parse_spectra_container
+[05:26:07 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing 2 inner blocks for block #1
+[05:26:07 UTC] [INFO] Processing 2 blocks for updates
+[05:26:07 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:07 UTC] [INFO] Starting parse_spectra_image
+[05:26:07 UTC] [INFO] Found image to replace: http://snekeez.test/wp-content/uploads/2024/05/our-story.jpg
+[05:26:07 UTC] [INFO] Retrieved replacement image from index: 5
+[05:26:07 UTC] [INFO] Successfully downloaded image with ID: 27
+[05:26:07 UTC] [INFO] Replaced image URL in innerHTML
+[05:26:07 UTC] [INFO] Updated alt text to: Close-up image of a person tying shoelaces on a sneaker while sitting on pavement.
+[05:26:07 UTC] [INFO] Updated tablet image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8497536.jpeg
+[05:26:07 UTC] [INFO] Updated mobile image URL: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8497536.jpeg
+[05:26:07 UTC] [INFO] Updated image ID from 78 to 27
+[05:26:07 UTC] [INFO] Replaced image URL in 1 inner content items
+[05:26:07 UTC] [INFO] Successfully replaced Spectra image - Old: http://snekeez.test/wp-content/uploads/2024/05/our-story.jpg, New: http://snekeez.test/wp-content/uploads/2026/06/pexels-photo-8497536.jpeg
+[05:26:07 UTC] [INFO] Processing block #1 - Block type: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:07 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:07 UTC] [INFO] Processing block #3 - Block type: 
+[05:26:07 UTC] [INFO] Checking block for image replacement: 
+[05:26:07 UTC] [INFO] Processing block #4 - Block type: uagb/container
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:07 UTC] [INFO] Starting parse_spectra_container
+[05:26:07 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing 2 inner blocks for block #4
+[05:26:07 UTC] [INFO] Processing 2 blocks for updates
+[05:26:07 UTC] [INFO] Processing block #0 - Block type: uagb/info-box
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/info-box
+[05:26:07 UTC] [INFO] Starting parse_spectra_infobox
+[05:26:07 UTC] [INFO] No icon image or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:07 UTC] [INFO] Starting parse_spectra_container
+[05:26:07 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing 3 inner blocks for block #1
+[05:26:07 UTC] [INFO] Processing 3 blocks for updates
+[05:26:07 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:07 UTC] [INFO] Starting parse_spectra_container
+[05:26:07 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing 2 inner blocks for block #0
+[05:26:07 UTC] [INFO] Processing 2 blocks for updates
+[05:26:07 UTC] [INFO] Processing block #0 - Block type: uagb/counter
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/counter
+[05:26:07 UTC] [INFO] Processing block #1 - Block type: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:07 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:07 UTC] [INFO] Starting parse_spectra_container
+[05:26:07 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing 2 inner blocks for block #1
+[05:26:07 UTC] [INFO] Processing 2 blocks for updates
+[05:26:07 UTC] [INFO] Processing block #0 - Block type: uagb/counter
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/counter
+[05:26:07 UTC] [INFO] Processing block #1 - Block type: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:07 UTC] [INFO] Processing block #2 - Block type: uagb/container
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:07 UTC] [INFO] Starting parse_spectra_container
+[05:26:07 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing 2 inner blocks for block #2
+[05:26:07 UTC] [INFO] Processing 2 blocks for updates
+[05:26:07 UTC] [INFO] Processing block #0 - Block type: uagb/counter
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/counter
+[05:26:07 UTC] [INFO] Processing block #1 - Block type: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:07 UTC] [INFO] Completed get_updated_blocks - Processed: 3, Skipped: 0
+[05:26:07 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:07 UTC] [INFO] Processing block #5 - Block type: 
+[05:26:07 UTC] [INFO] Checking block for image replacement: 
+[05:26:07 UTC] [INFO] Processing block #6 - Block type: uagb/container
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:07 UTC] [INFO] Starting parse_spectra_container
+[05:26:07 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing 2 inner blocks for block #6
+[05:26:07 UTC] [INFO] Processing 2 blocks for updates
+[05:26:07 UTC] [INFO] Processing block #0 - Block type: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:07 UTC] [INFO] Starting parse_spectra_container
+[05:26:07 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing 4 inner blocks for block #1
+[05:26:07 UTC] [INFO] Processing 4 blocks for updates
+[05:26:07 UTC] [INFO] Processing block #0 - Block type: uagb/container
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:07 UTC] [INFO] Starting parse_spectra_container
+[05:26:07 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing 2 inner blocks for block #0
+[05:26:07 UTC] [INFO] Processing 2 blocks for updates
+[05:26:07 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:07 UTC] [INFO] Starting parse_spectra_image
+[05:26:07 UTC] [INFO] No image URL or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing block #1 - Block type: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:07 UTC] [INFO] Processing block #1 - Block type: uagb/container
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:07 UTC] [INFO] Starting parse_spectra_container
+[05:26:07 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing 2 inner blocks for block #1
+[05:26:07 UTC] [INFO] Processing 2 blocks for updates
+[05:26:07 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:07 UTC] [INFO] Starting parse_spectra_image
+[05:26:07 UTC] [INFO] No image URL or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing block #1 - Block type: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:07 UTC] [INFO] Processing block #2 - Block type: uagb/container
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:07 UTC] [INFO] Starting parse_spectra_container
+[05:26:07 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing 2 inner blocks for block #2
+[05:26:07 UTC] [INFO] Processing 2 blocks for updates
+[05:26:07 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:07 UTC] [INFO] Starting parse_spectra_image
+[05:26:07 UTC] [INFO] No image URL or skipable image, returning block unchanged
+[05:26:07 UTC] [INFO] Processing block #1 - Block type: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:07 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:07 UTC] [INFO] Processing block #3 - Block type: uagb/container
+[05:26:07 UTC] [INFO] Checking block for image replacement: uagb/container
+[05:26:08 UTC] [INFO] Starting parse_spectra_container
+[05:26:08 UTC] [INFO] No background image or skipable image, returning block unchanged
+[05:26:08 UTC] [INFO] Processing 2 inner blocks for block #3
+[05:26:08 UTC] [INFO] Processing 2 blocks for updates
+[05:26:08 UTC] [INFO] Processing block #0 - Block type: uagb/image
+[05:26:08 UTC] [INFO] Checking block for image replacement: uagb/image
+[05:26:08 UTC] [INFO] Starting parse_spectra_image
+[05:26:08 UTC] [INFO] No image URL or skipable image, returning block unchanged
+[05:26:08 UTC] [INFO] Processing block #1 - Block type: uagb/advanced-heading
+[05:26:08 UTC] [INFO] Checking block for image replacement: uagb/advanced-heading
+[05:26:08 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:08 UTC] [INFO] Completed get_updated_blocks - Processed: 4, Skipped: 0
+[05:26:08 UTC] [INFO] Completed get_updated_blocks - Processed: 2, Skipped: 0
+[05:26:08 UTC] [INFO] Processing block #7 - Block type: 
+[05:26:08 UTC] [INFO] Checking block for image replacement: 
+[05:26:08 UTC] [INFO] Processing block #8 - Block type: core/block
+[05:26:08 UTC] [INFO] Found reusable block with ID: 201
+[05:26:08 UTC] [INFO] Reusable block already processed, skipping ID: 201
+[05:26:08 UTC] [INFO] Completed get_updated_blocks - Processed: 8, Skipped: 0
+[05:26:08 UTC] [INFO] Serialized updated blocks into content
+[05:26:08 UTC] [INFO] Starting replace_content_glitch
+[05:26:08 UTC] [INFO] Completed replace_content_glitch
+[05:26:08 UTC] [INFO] Completed parse_replace_images for post ID: 165
+[05:26:10 UTC] [INFO] Updated page content | Context: {"post_id":165}
+[05:26:10 UTC] [SUCCESS] Page image replacement completed | Context: {"success_count":5}
+[05:26:10 UTC] [INFO] Replacing images in posts
+[05:26:10 UTC] [INFO] Starting post image replacement | Context: {"post_count":3}
+[05:26:10 UTC] [SUCCESS] Successfully set featured image | Context: {"post_id":70,"attachment_id":29}
+[05:26:11 UTC] [SUCCESS] Successfully set featured image | Context: {"post_id":68,"attachment_id":30}
+[05:26:11 UTC] [SUCCESS] Successfully set featured image | Context: {"post_id":171,"attachment_id":31}
+[05:26:11 UTC] [SUCCESS] Post image replacement completed | Context: {"processed_count":3}
+[05:26:11 UTC] [INFO] Replacing images in customizer
+[05:26:11 UTC] [INFO] Starting customizer image replacement
+[05:26:11 UTC] [INFO] Skipping astra option update - image ID is 0
+[05:26:11 UTC] [INFO] Updated customizer option | Context: {"option_name":"footer-bg-obj-responsive"}
+[05:26:11 UTC] [SUCCESS] Successfully updated astra option | Context: {"attachment_id":32}
+[05:26:11 UTC] [INFO] Updated customizer option | Context: {"option_name":"ast-dynamic-archive-post-banner-custom-bg"}
+[05:26:11 UTC] [INFO] Starting social options update | Context: {"options_count":0}
+[05:26:11 UTC] [INFO] No social options to update
+[05:26:11 UTC] [SUCCESS] Customizer image replacement completed
+[05:26:11 UTC] [INFO] Starting cleanup of old images
+[05:26:11 UTC] [INFO] Processing old image URLs | Context: {"old_image_count":26}
+[05:26:30 UTC] [INFO] Old images deleted | Context: {"deleted_count":23}
+[05:26:31 UTC] [INFO] Cleanup options removed
+[05:26:31 UTC] [INFO] Cleanup completed
+[05:26:31 UTC] [SUCCESS] Image replacement completed successfully
+[05:26:31 UTC] [SUCCESS] Image Replacement completed.
+[05:26:34 UTC] [INFO] ---
+
+[05:26:34 UTC] [INFO] Starting import end process
+[05:26:34 UTC] [INFO] Finalizing import process
+[05:26:34 UTC] [INFO] Setting permalink structure to post name
+[05:26:34 UTC] [INFO] Executing import complete actions
+[05:26:37 UTC] [SUCCESS] Import completed successfully!
+[05:26:44 UTC] [INFO] ---
+
+[05:26:44 UTC] [INFO] Setting site data: site-colors
+[05:26:48 UTC] [INFO] ---
+
+[05:26:48 UTC] [INFO] Setting site data: site-title
+[05:26:51 UTC] [INFO] ---
+
+[05:26:51 UTC] [INFO] Setting site data: site-typography
+[05:27:00 UTC] [INFO] ---
+
+[05:27:00 UTC] [SUCCESS] Import completed successfully!
+[05:27:07 UTC] [INFO] Import process completed. Cleaning up log file option.

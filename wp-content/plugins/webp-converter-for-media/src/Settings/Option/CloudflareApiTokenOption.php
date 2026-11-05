@@ -7,7 +7,7 @@ namespace WebpConverter\Settings\Option;
  */
 class CloudflareApiTokenOption extends OptionAbstract {
 
-	const OPTION_NAME = 'cloudflare_api_token';
+	const OPTION_NAME = 'cloudflare_api_token_zone_settings';
 
 	/**
 	 * {@inheritdoc}
@@ -41,10 +41,22 @@ class CloudflareApiTokenOption extends OptionAbstract {
 	 * {@inheritdoc}
 	 */
 	public function get_info(): string {
-		return sprintf(
-		/* translators: %s: service name */
-			__( 'Optionally, fill in if you are using %s.', 'webp-converter-for-media' ),
-			'Cloudflare'
+		return implode(
+			'</p><p>',
+			[
+				sprintf(
+				/* translators: %1$s: open strong tag, %2$s: close strong tag */
+					__( '%1$sWant your images to load even faster?%2$s By default, Cloudflare cannot dynamically deliver modern WebP and AVIF formats while keeping images cached on its CDN servers. Connect your Cloudflare account to our plugin to fix this and enable lightning-fast image delivery.', 'webp-converter-for-media' ),
+					'<strong>',
+					'</strong>'
+				),
+				sprintf(
+				/* translators: %s: service name */
+					'<a href="https://url.mattplugins.com/converter-field-cloudflare-token-docs" target="_blank">' . __( 'Learn more about how it works', 'webp-converter-for-media' ) . '.</a> ' . __( 'You can generate API Token in %1$sthe Cloudflare dashboard%2$s.', 'webp-converter-for-media' ),
+					'<a href="https://url.mattplugins.com/converter-field-cloudflare-token-generate" target="_blank">',
+					'</a>'
+				),
+			]
 		);
 	}
 

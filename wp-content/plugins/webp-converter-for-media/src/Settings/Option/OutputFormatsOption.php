@@ -5,7 +5,6 @@ namespace WebpConverter\Settings\Option;
 use WebpConverter\Conversion\Format\AvifFormat;
 use WebpConverter\Conversion\Format\FormatFactory;
 use WebpConverter\Conversion\Format\WebpFormat;
-use WebpConverter\Repository\TokenRepository;
 
 /**
  * {@inheritdoc}

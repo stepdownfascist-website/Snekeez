@@ -132,7 +132,7 @@ class OutputPathGenerator {
 
 	private function get_output_dir(): string {
 		if ( $this->path_output_dir === null ) {
-			$this->path_output_dir = apply_filters( 'webpc_dir_path', '', 'webp' );
+			$this->path_output_dir = (string) apply_filters( 'webpc_dir_path', '', 'webp' );
 		}
 		return $this->path_output_dir;
 	}

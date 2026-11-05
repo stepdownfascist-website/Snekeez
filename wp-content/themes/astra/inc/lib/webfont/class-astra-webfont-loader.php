@@ -585,11 +585,29 @@ class Astra_WebFont_Loader {
 	 * Get the base URL.
 	 *
 	 * @since 3.6.0
+	 * @since 4.13.7 Use a root-relative URL when wp-content shares the site host, so local fonts
+	 *              stay same-origin on single installs serving multiple domains (e.g. WPML).
 	 * @return string
 	 */
 	public function get_base_url() {
 		if ( ! $this->base_url ) {
-			$this->base_url = apply_filters( 'astra_local_fonts_base_url', content_url() );
+			$base_url = content_url();
+
+			// Root-relative keeps the shared cache same-origin on multi-domain installs (e.g. WPML).
+			// Kept absolute for an external host (CDN) and when site_url() has a path, since WP_Styles
+			// prepends site_url() to a relative source and would duplicate that path (Bedrock's /wp).
+			$content_host = wp_parse_url( $base_url, PHP_URL_HOST );
+			$home_host    = wp_parse_url( home_url(), PHP_URL_HOST );
+			$site_path    = wp_parse_url( site_url(), PHP_URL_PATH );
+			$wp_in_subdir = ! empty( $site_path ) && '/' !== $site_path;
+			if ( $content_host && $content_host === $home_host && ! $wp_in_subdir ) {
+				$content_path = wp_parse_url( $base_url, PHP_URL_PATH );
+				if ( $content_path ) {
+					$base_url = $content_path;
+				}
+			}
+
+			$this->base_url = apply_filters( 'astra_local_fonts_base_url', $base_url );
 		}
 		return $this->base_url;
 	}
@@ -747,7 +765,7 @@ class Astra_WebFont_Loader {
  * Create instance of Astra_WebFont_Loader class.
  *
  * @param string $font_url Google font URL to set data.
- * @return object
+ * @return Astra_WebFont_Loader Instance of Astra_WebFont_Loader class.
  * @since 3.6.0
  */
 function astra_webfont_loader_instance( $font_url = '' ) {

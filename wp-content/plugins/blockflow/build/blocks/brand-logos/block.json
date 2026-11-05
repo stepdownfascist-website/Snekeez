@@ -1,0 +1,297 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "blockflow/brand-logos",
+  "version": "1.0.0",
+  "title": "Brand Logos",
+  "category": "blockflow",
+  "description": "Display brand, client, or partner logos in a slider or grid layout.",
+  "keywords": [
+    "brand",
+    "logo",
+    "client",
+    "partner",
+    "sponsor",
+    "carousel",
+    "marquee",
+    "grid"
+  ],
+  "textdomain": "blockflow",
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "logos": {
+      "type": "array",
+      "default": []
+    },
+    "displayMode": {
+      "type": "string",
+      "default": "slider",
+      "enum": [
+        "slider",
+        "grid"
+      ]
+    },
+    "direction": {
+      "type": "string",
+      "default": "left",
+      "enum": [
+        "left",
+        "right"
+      ]
+    },
+    "speed": {
+      "type": "number",
+      "default": 50
+    },
+    "pauseOnHover": {
+      "type": "boolean",
+      "default": true
+    },
+    "columns": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "4"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "sliderGap": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "60",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "gridGap": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "column": "60",
+          "row": "30",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "logoSize": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "width": "120",
+          "height": "60",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "opacity": {
+      "type": "number",
+      "default": 0.6
+    },
+    "opacityHover": {
+      "type": "number",
+      "default": 1
+    },
+    "grayscale": {
+      "type": "boolean",
+      "default": false
+    },
+    "grayscaleHover": {
+      "type": "boolean",
+      "default": true
+    },
+    "hoverAnimation": {
+      "type": "string",
+      "default": ""
+    },
+    "enableLinks": {
+      "type": "boolean",
+      "default": false
+    },
+    "spacing": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "padding": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": "",
+            "unit": "px"
+          },
+          "margin": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "advancedLayout": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "overflow": "clip"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "background": {
+      "type": "object",
+      "default": {
+        "type": "none",
+        "color": {
+          "light": "",
+          "dark": ""
+        },
+        "gradient": {
+          "light": "",
+          "dark": ""
+        },
+        "image": {
+          "url": "",
+          "id": null,
+          "position": "center center",
+          "repeat": "no-repeat",
+          "size": "cover",
+          "attachment": "scroll"
+        },
+        "overlay": {
+          "enabled": false,
+          "color": {
+            "light": "",
+            "dark": ""
+          },
+          "opacity": 0.5
+        }
+      }
+    },
+    "border": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "style": "",
+          "width": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": "",
+            "unit": "px"
+          },
+          "color": {
+            "light": "",
+            "dark": ""
+          },
+          "radius": {
+            "topLeft": "",
+            "topRight": "",
+            "bottomRight": "",
+            "bottomLeft": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "borderHover": {
+      "type": "object",
+      "default": {
+        "desktop": {},
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "boxShadow": {
+      "type": "object",
+      "default": {
+        "horizontal": "0",
+        "vertical": "4",
+        "blur": "6",
+        "spread": "0",
+        "color": {
+          "light": "rgba(0, 0, 0, 0.1)",
+          "dark": ""
+        },
+        "inset": false,
+        "enabled": false
+      }
+    },
+    "boxShadowHover": {
+      "type": "object",
+      "default": {
+        "horizontal": "0",
+        "vertical": "4",
+        "blur": "6",
+        "spread": "0",
+        "color": {
+          "light": "rgba(0, 0, 0, 0.1)",
+          "dark": ""
+        },
+        "inset": false,
+        "enabled": false
+      }
+    },
+    "animation": {
+      "type": "object",
+      "default": {
+        "type": "",
+        "duration": 400,
+        "delay": 0,
+        "easing": "ease",
+        "once": true
+      }
+    },
+    "itemAnimation": {
+      "type": "object",
+      "default": {
+        "type": "",
+        "duration": 600,
+        "stagger": 100
+      }
+    },
+    "responsiveVisibility": {
+      "type": "object",
+      "default": {
+        "hideOnDesktop": false,
+        "hideOnTablet": false,
+        "hideOnMobile": false
+      }
+    },
+    "htmlTag": {
+      "type": "string",
+      "default": "div"
+    },
+    "htmlAttributes": {
+      "type": "object",
+      "default": {
+        "customAttributes": []
+      }
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "className": true,
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

@@ -2,11 +2,7 @@
 /**
  * Widget displayed on plugin settings page.
  *
- * @var string     $api_paths_url        URL of REST API endpoint.
- * @var string     $api_paths_nonce      Authorization code of REST API endpoint.
- * @var string     $api_regenerate_url   URL of REST API endpoint.
- * @var string     $api_regenerate_nonce Authorization code of REST API endpoint.
- * @var string[][] $output_formats       Data about output formats for regeneration.
+ * @var string[][] $output_formats Data about output formats for regeneration.
  *
  * @package Converter for Media
  */
@@ -21,8 +17,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php echo esc_html( __( 'Bulk Optimization of Images', 'webp-converter-for-media' ) ); ?>
 	</h3>
 	<div class="webpcLoader webpcContent"
-		data-api-paths="<?php echo esc_url( $api_paths_url ); ?>|<?php echo esc_attr( $api_paths_nonce ); ?>"
-		data-api-regenerate="<?php echo esc_url( $api_regenerate_url ); ?>|<?php echo esc_attr( $api_regenerate_nonce ); ?>"
 		data-api-error-message="<?php echo esc_html( __( 'An error occurred while connecting to the REST API. Please, try again.', 'webp-converter-for-media' ) ); ?>"
 	>
 		<div class="webpcPage__widgetRow">

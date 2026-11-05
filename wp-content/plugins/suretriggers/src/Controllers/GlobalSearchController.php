@@ -14,6 +14,7 @@
 namespace SureTriggers\Controllers;
 
 use DOMDocument;
+use EDD_Subscription;
 use FluentCrm\App\Models\CustomContactField;
 use FluentCrm\App\Models\Subscriber;
 use FluentCrm\App\Models\Tag;
@@ -532,6 +533,50 @@ class GlobalSearchController {
 	}
 
 	/**
+	 * Search SureDash Event/Calendar Spaces.
+	 *
+	 * @param array $data query params.
+	 *
+	 * @return array
+	 * @since 1.0.0
+	 */
+	public function search_suredash_event_spaces( $data ) {
+		if ( ! defined( 'SUREDASHBOARD_POST_TYPE' ) ) {
+			return [
+				'options' => [],
+				'hasMore' => false,
+			];
+		}
+
+		$spaces = get_posts(
+			[
+				'post_type'   => SUREDASHBOARD_POST_TYPE,
+				'post_status' => 'publish',
+				'meta_query'  => [
+					[
+						'key'   => 'integration',
+						'value' => 'events',
+					],
+				],
+				'numberposts' => -1,
+			]
+		);
+
+		$options = [];
+		foreach ( $spaces as $space ) {
+			$options[] = [
+				'label' => $space->post_title,
+				'value' => $space->ID,
+			];
+		}
+
+		return [
+			'options' => $options,
+			'hasMore' => false,
+		];
+	}
+
+	/**
 	 * Search SureDash Badges.
 	 *
 	 * @param array $data query params.
@@ -625,7 +670,7 @@ class GlobalSearchController {
 		$courses = get_posts(
 			[
 				'post_type'   => tutor()->course_post_type,
-				'post_status' => 'publish',
+				'post_status' => 'any',
 				'numberposts' => -1,
 			]
 		);
@@ -1926,13 +1971,8 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 		}
 
 		foreach ( (array) $form_posts as $form_post ) {
-			$pattern_regex = '/\[et_pb_contact_form(.*?)](.+?)\[\/et_pb_contact_form]/';
+			$pattern_regex = '/\[et_pb_contact_form(.*?)](.+?)\[\/et_pb_contact_form]/s';
 			preg_match_all( $pattern_regex, $form_post['post_content'], $forms, PREG_SET_ORDER );
-			if ( empty( $forms ) ) {
-				continue;
-			}
-
-			$count = 0;
 
 			foreach ( $forms as $form ) {
 				$pattern_form = get_shortcode_regex( [ 'et_pb_contact_form' ] );
@@ -1956,7 +1996,18 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 						'value' => $form_id,
 					];
 				}
-				$count++;
+			}
+
+			foreach ( self::get_divi5_contact_form_blocks( $form_post['post_content'] ) as $block ) {
+				$unique_id = self::array_get( $block['attrs'], 'module.advanced.uniqueId.desktop.value' );
+				if ( empty( $unique_id ) || ! is_string( $unique_id ) ) {
+					continue;
+				}
+				$form_title = self::array_get( $block['attrs'], 'title.innerContent.desktop.value', '' );
+				$options[]  = [
+					'label' => trim( sprintf( '%s %s', $form_post['post_title'], is_string( $form_title ) ? $form_title : '' ) ),
+					'value' => sprintf( '%d-%s', $form_post['ID'], $unique_id ),
+				];
 			}
 		}
 
@@ -1964,6 +2015,44 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 			'options' => $options,
 			'hasMore' => false,
 		];
+	}
+
+	/**
+	 * Find Divi 5 native `divi/contact-form` blocks inside a post's content.
+	 *
+	 * Divi 5's block-based builder no longer stores modules as `[et_pb_contact_form]`
+	 * shortcodes, so the legacy shortcode regex never matches. This walks the block
+	 * tree instead to support sites built with the new (block) Divi Builder.
+	 *
+	 * @param string $post_content Post content.
+	 * @return array
+	 */
+	private static function get_divi5_contact_form_blocks( $post_content ) {
+		if ( false === strpos( $post_content, 'wp:divi/contact-form' ) ) {
+			return [];
+		}
+
+		return self::find_blocks_by_name( parse_blocks( $post_content ), 'divi/contact-form' );
+	}
+
+	/**
+	 * Recursively search a parsed block tree for blocks matching a given block name.
+	 *
+	 * @param array  $blocks Parsed blocks, as returned by parse_blocks().
+	 * @param string $block_name Block name to search for, e.g. 'divi/contact-form'.
+	 * @return array
+	 */
+	private static function find_blocks_by_name( $blocks, $block_name ) {
+		$found = [];
+		foreach ( $blocks as $block ) {
+			if ( isset( $block['blockName'] ) && $block_name === $block['blockName'] ) {
+				$found[] = $block;
+			}
+			if ( ! empty( $block['innerBlocks'] ) ) {
+				$found = array_merge( $found, self::find_blocks_by_name( $block['innerBlocks'], $block_name ) );
+			}
+		}
+		return $found;
 	}
 
 	/**
@@ -2605,13 +2694,8 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 		}
 		$fields = [];
 		foreach ( (array) $form_posts as $form_post ) {
-			$pattern_regex = '/\[et_pb_contact_form(.*?)](.+?)\[\/et_pb_contact_form]/';
+			$pattern_regex = '/\[et_pb_contact_form(.*?)](.+?)\[\/et_pb_contact_form]/s';
 			preg_match_all( $pattern_regex, $form_post['post_content'], $forms, PREG_SET_ORDER );
-			if ( empty( $forms ) ) {
-				continue;
-			}
-
-			$count = 0;
 
 			foreach ( $forms as $form ) {
 				$pattern = get_shortcode_regex( [ 'et_pb_contact_field' ] );
@@ -2619,7 +2703,7 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 				preg_match_all( "/$pattern/", $form[0], $contact_fields, PREG_SET_ORDER );
 
 				if ( empty( $contact_fields ) ) {
-					return $fields;
+					continue;
 				}
 
 				foreach ( $contact_fields as $contact_field ) {
@@ -2632,6 +2716,22 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 							'field_id'    => $field_id,
 						];
 					}
+				}
+			}
+
+			foreach ( self::get_divi5_contact_form_blocks( $form_post['post_content'] ) as $contact_form_block ) {
+				$inner_blocks = isset( $contact_form_block['innerBlocks'] ) && is_array( $contact_form_block['innerBlocks'] ) ? $contact_form_block['innerBlocks'] : [];
+
+				foreach ( self::find_blocks_by_name( $inner_blocks, 'divi/contact-field' ) as $contact_field_block ) {
+					$field_id = self::array_get( $contact_field_block['attrs'], 'fieldItem.advanced.id.desktop.value' );
+					if ( ! is_string( $field_id ) || '' === $field_id ) {
+						continue;
+					}
+					$field_title = self::array_get( $contact_field_block['attrs'], 'fieldItem.innerContent.desktop.value', __( 'No title', 'suretriggers' ) );
+					$fields[]    = [
+						'field_title' => is_string( $field_title ) && '' !== $field_title ? $field_title : __( 'No title', 'suretriggers' ),
+						'field_id'    => strtolower( $field_id ),
+					];
 				}
 			}
 		}
@@ -3672,6 +3772,80 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 				'value' => 'false',
 			],
 		];
+
+		return [
+			'options' => $options,
+			'hasMore' => false,
+		];
+	}
+
+	/**
+	 * Prepare mailster lists.
+	 *
+	 * @param array $data Search Params.
+	 *
+	 * @return array
+	 */
+	public function search_mailster_lists( $data ) {
+		if ( ! function_exists( 'mailster' ) ) {
+			return [
+				'options' => [],
+				'hasMore' => false,
+			];
+		}
+
+		$all_lists = mailster( 'lists' )->get();
+		$options   = [];
+
+		if ( ! empty( $all_lists ) && is_array( $all_lists ) ) {
+			foreach ( $all_lists as $list ) {
+				if ( ! is_object( $list ) || ! isset( $list->ID, $list->name ) ) {
+					continue;
+				}
+
+				$options[] = [
+					'label' => $list->name,
+					'value' => absint( $list->ID ),
+				];
+			}
+		}
+
+		return [
+			'options' => $options,
+			'hasMore' => false,
+		];
+	}
+
+	/**
+	 * Prepare mailster tags.
+	 *
+	 * @param array $data Search Params.
+	 *
+	 * @return array
+	 */
+	public function search_mailster_tags( $data ) {
+		if ( ! function_exists( 'mailster' ) ) {
+			return [
+				'options' => [],
+				'hasMore' => false,
+			];
+		}
+
+		$all_tags = mailster( 'tags' )->get();
+		$options  = [];
+
+		if ( ! empty( $all_tags ) && is_array( $all_tags ) ) {
+			foreach ( $all_tags as $tag ) {
+				if ( ! is_object( $tag ) || ! isset( $tag->ID, $tag->name ) ) {
+					continue;
+				}
+
+				$options[] = [
+					'label' => $tag->name,
+					'value' => absint( $tag->ID ),
+				];
+			}
+		}
 
 		return [
 			'options' => $options,
@@ -5875,6 +6049,34 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 	}
 
 	/**
+	 * Prepare EDD Recurring subscription status list.
+	 *
+	 * @param array $data Search Params.
+	 * @return array{options: array<int, array{label: string, value: string}>, hasMore: bool}
+	 */
+	public function search_edd_subscription_status_list( $data ) {
+		$options = [];
+
+		if ( function_exists( 'edd_recurring_get_subscription_statuses' ) ) {
+			$subscription_statuses = edd_recurring_get_subscription_statuses();
+
+			if ( ! empty( $subscription_statuses ) ) {
+				foreach ( $subscription_statuses as $key => $label ) {
+					$options[] = [
+						'label' => $label,
+						'value' => $key,
+					];
+				}
+			}
+		}
+
+		return [
+			'options' => $options,
+			'hasMore' => false,
+		];
+	}
+
+	/**
 	 * Get last data for trigger.
 	 *
 	 * @param array $data data.
@@ -5996,7 +6198,55 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 				$order_data               = EDD::get_purchase_refund_context( $payments[0] );
 				$context['response_type'] = 'live';
 			}
-		} else {    
+		} elseif ( 'subscription_status_changed' === $term || 'subscription_cancelled' === $term ) {
+			if ( ! class_exists( 'EDD_Subscription' ) ) {
+				return $context;
+			}
+
+			$subscription_id = $wpdb->get_var( "SELECT id FROM {$wpdb->prefix}edd_subscriptions ORDER BY id DESC LIMIT 1" );
+			$subscription    = ! empty( $subscription_id ) ? new EDD_Subscription( $subscription_id ) : null;
+
+			if ( ! empty( $subscription ) && ! empty( $subscription->id ) ) {
+				$subscription_data = EDD::get_subscription_context( $subscription );
+
+				if ( 'subscription_status_changed' === $term ) {
+					$subscription_data['from_status'] = 'pending';
+					$subscription_data['to_status']   = $subscription->status;
+				}
+
+				$context['pluggable_data'] = $subscription_data;
+				$context['response_type']  = 'live';
+			} else {
+				$subscription_data = [
+					'subscription_id'   => 1,
+					'customer_id'       => 5,
+					'customer_email'    => 'sample@example.com',
+					'customer_name'     => 'Sure Test',
+					'user_id'           => 1,
+					'product_id'        => 101,
+					'product_name'      => 'Sample Subscription Product',
+					'price_id'          => null,
+					'period'            => 'month',
+					'initial_amount'    => '9.99',
+					'recurring_amount'  => '9.99',
+					'bill_times'        => 0,
+					'gateway'           => 'manual',
+					'profile_id'        => 'sample_profile_id',
+					'parent_payment_id' => 187,
+					'date_created'      => current_time( 'mysql' ),
+					'expiration'        => current_time( 'mysql' ),
+					'status'            => 'active',
+				];
+
+				if ( 'subscription_status_changed' === $term ) {
+					$subscription_data['from_status'] = 'pending';
+					$subscription_data['to_status']   = 'active';
+				}
+
+				$context['pluggable_data'] = $subscription_data;
+				$context['response_type']  = 'sample';
+			}
+		} else {
 			$status = isset( $data['post_type'] ) ? $data['post_type'] : '';
 			if ( ! empty( $status ) ) {
 				if ( $download_id > 0 ) {
@@ -8082,13 +8332,32 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 		$post_type = $data['post_type'];
 		$meta_key  = '_is_complete';
 		$trigger   = $data['search_term'];
-		$post_id   = $data['filter']['group_id']['value'];
+		$post_id   = isset( $data['filter']['group_id']['value'] ) ? $data['filter']['group_id']['value'] : 0;
 
 		if ( 'suremember_updated_group' === $trigger ) {
 			if ( -1 === $post_id ) {
 				$result = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM  {$wpdb->prefix}posts as posts WHERE posts.post_type=%s", $post_type ) );
 			} else {
 				$result = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM  {$wpdb->prefix}posts as posts WHERE posts.ID=%s AND posts.post_type=%s", $post_id, $post_type ) );
+			}
+		} elseif ( 'suremember_team_member_added_to_access_group' === $trigger ) {
+			$sub_table  = $wpdb->prefix . 'suremembers_sub_accounts';
+			$corp_table = $wpdb->prefix . 'suremembers_corporate_accounts';
+			if ( -1 === $post_id ) {
+				$result = $wpdb->get_results(
+					$wpdb->prepare(
+						"SELECT sub.*, corp.access_group_id, corp.user_id AS owner_id FROM {$sub_table} AS sub INNER JOIN {$corp_table} AS corp ON corp.id = sub.corporate_account_id WHERE sub.status = %s ORDER BY sub.id DESC LIMIT 1", //phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared
+						'active'
+					)
+				);
+			} else {
+				$result = $wpdb->get_results(
+					$wpdb->prepare(
+						"SELECT sub.*, corp.access_group_id, corp.user_id AS owner_id FROM {$sub_table} AS sub INNER JOIN {$corp_table} AS corp ON corp.id = sub.corporate_account_id WHERE sub.status = %s AND corp.access_group_id = %d ORDER BY sub.id DESC LIMIT 1", //phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared
+						'active',
+						$post_id
+					)
+				);
 			}
 		} else {
 			$result = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM  {$wpdb->prefix}usermeta as usermeta WHERE usermeta.meta_key = %s", 'suremembers_user_access_group_' . $post_id ) );
@@ -8115,7 +8384,7 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 					break;
 				case 'suremember_user_added_in_group':
 					foreach ( $result as $res ) {
-						$meta_value = unserialize( $res->meta_value );
+						$meta_value = st_safe_unserialize( $res->meta_value );
 						if ( is_array( $meta_value ) && 'active' === $meta_value['status'] ) {
 							$context             = WordPress::get_user_context( $res->user_id );
 							$context['group']    = WordPress::get_post_context( $post_id );
@@ -8128,7 +8397,7 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 					break;
 				case 'suremember_user_removed_from_group':
 					foreach ( $result as $res ) {
-						$meta_value = unserialize( $res->meta_value );
+						$meta_value = st_safe_unserialize( $res->meta_value );
 						if ( is_array( $meta_value ) && 'revoked' === $meta_value['status'] ) {
 							$context             = WordPress::get_user_context( $res->user_id );
 							$context['group']    = WordPress::get_post_context( $post_id );
@@ -8137,6 +8406,21 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 							$response['pluggable_data'] = $context;
 							$response['response_type']  = 'live';
 						}
+					}
+					break;
+				case 'suremember_team_member_added_to_access_group':
+					foreach ( $result as $res ) {
+						$context               = WordPress::get_user_context( $res->user_id );
+						$context['account_id'] = (int) $res->corporate_account_id;
+						$context['added_via']  = $res->added_via;
+						$context['group_id']   = (int) $res->access_group_id;
+						$context['group']      = WordPress::get_post_context( $res->access_group_id );
+						unset( $context['group']['ID'] );
+						if ( ! empty( $res->owner_id ) ) {
+							$context['team_owner'] = WordPress::get_user_context( $res->owner_id );
+						}
+						$response['pluggable_data'] = $context;
+						$response['response_type']  = 'live';
 					}
 					break;
 				default:
@@ -9396,7 +9680,7 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 				$user_data   = WordPress::get_user_context( $result[0]->user_id );
 				$quiz_result = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM {$wpdb->prefix}usermeta WHERE user_id = %d AND meta_key = '_sfwd-quizzes'", $result[0]->user_id ) );
 				
-				$data          = unserialize( $quiz_result[0]->meta_value );
+				$data          = st_safe_unserialize( $quiz_result[0]->meta_value );
 				$found_element = null;
 				foreach ( (array) $data as $element ) {
 					if ( is_array( $element ) ) {
@@ -10533,11 +10817,12 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 				];
 			}
 
-			$context['pluggable_data'] = array_merge( $result, $fields_arr, $event, $customer_result, $coupon_result, $tags, $event_period_data, $payment_data );
-			$context['response_type']  = 'live';
+			$context['pluggable_data']               = array_merge( $result, $fields_arr, $event, $customer_result, $coupon_result, $tags, $event_period_data, $payment_data );
+			$context['pluggable_data']['event_name'] = isset( $event['name'] ) ? $event['name'] : '';
+			$context['response_type']                = 'live';
 		} else {
 
-			$context = json_decode( '{"response_type": "sample","pluggable_data": {"id": "1","appointmentId": null,"customerId": "1","status": "visible","price": "10","persons": "1","couponId": null,"token": "6485b07ce9","info": "{\"firstName\":\"John\",\"lastName\":\"Doe\",\"phone\":\"+213551223123\",\"locale\":\"en_US\",\"timeZone\":\"Asia\\/Kolkata\",\"urlParams\":null}","utcOffset": null,"aggregatedPrice": "1","packageCustomerServiceId": null,"duration": null,"created": "2023-02-02 06:35:18","actionsCompleted": "1","Do You Know Automation?": "Yes","When Are You Coming?": "2023-04-20","Upload Something": "","Tell Us About You!": "Hey there!","customerBookingId": "105","eventPeriodId": "5","parentId": null,"name": "Music Event","bookingOpens": null,"bookingCloses": "2023-02-09 08:00:00","bookingOpensRec": "same","bookingClosesRec": "same","ticketRangeRec": "calculate","recurringCycle": null,"recurringOrder": null,"recurringInterval": null,"recurringMonthly": null,"monthlyDate": null,"monthlyOnRepeat": null,"monthlyOnDay": null,"recurringUntil": null,"maxCapacity": "12","maxCustomCapacity": null,"maxExtraPeople": null,"locationId": null,"customLocation": "Kolkata","description": null,"color": "#1788FB","show": "1","notifyParticipants": "1","settings": "{\"payments\":{\"onSite\":true,\"payPal\":{\"enabled\":false},\"stripe\":{\"enabled\":false},\"mollie\":{\"enabled\":false},\"razorpay\":{\"enabled\":false}},\"general\":{\"minimumTimeRequirementPriorToCanceling\":null,\"redirectUrlAfterAppointment\":null},\"zoom\":{\"enabled\":false},\"lessonSpace\":{\"enabled\":false}}","zoomUserId": null,"bringingAnyone": "1","bookMultipleTimes": "1","translations": "{\"defaultLanguage\":\"en_US\"}","depositPayment": "disabled","depositPerPerson": "1","fullPayment": "0","deposit": "0","customPricing": "0","organizerId": "2","closeAfterMin": null,"closeAfterMinBookings": "0","type": "customer","externalId": "91","firstName": "John","lastName": "Doe","email": "johnd@gmail.com","birthday": null,"phone": "+213551223123","gender": null,"note": null,"pictureFullPath": null,"pictureThumbPath": null,"password": null,"usedTokens": null,"countryPhoneIso": "dz","timeZone": null,"periodStart": "2023-04-20 10:00:00","periodEnd": "2023-04-20 12:00:00","amountPaid": "10"}}', true );
+			$context = json_decode( '{"response_type": "sample","pluggable_data": {"id": "1","appointmentId": null,"customerId": "1","status": "visible","price": "10","persons": "1","couponId": null,"token": "6485b07ce9","info": "{\"firstName\":\"John\",\"lastName\":\"Doe\",\"phone\":\"+213551223123\",\"locale\":\"en_US\",\"timeZone\":\"Asia\\/Kolkata\",\"urlParams\":null}","utcOffset": null,"aggregatedPrice": "1","packageCustomerServiceId": null,"duration": null,"created": "2023-02-02 06:35:18","actionsCompleted": "1","Do You Know Automation?": "Yes","When Are You Coming?": "2023-04-20","Upload Something": "","Tell Us About You!": "Hey there!","customerBookingId": "105","eventPeriodId": "5","parentId": null,"name": "Music Event","event_name": "Music Event","bookingOpens": null,"bookingCloses": "2023-02-09 08:00:00","bookingOpensRec": "same","bookingClosesRec": "same","ticketRangeRec": "calculate","recurringCycle": null,"recurringOrder": null,"recurringInterval": null,"recurringMonthly": null,"monthlyDate": null,"monthlyOnRepeat": null,"monthlyOnDay": null,"recurringUntil": null,"maxCapacity": "12","maxCustomCapacity": null,"maxExtraPeople": null,"locationId": null,"customLocation": "Kolkata","description": null,"color": "#1788FB","show": "1","notifyParticipants": "1","settings": "{\"payments\":{\"onSite\":true,\"payPal\":{\"enabled\":false},\"stripe\":{\"enabled\":false},\"mollie\":{\"enabled\":false},\"razorpay\":{\"enabled\":false}},\"general\":{\"minimumTimeRequirementPriorToCanceling\":null,\"redirectUrlAfterAppointment\":null},\"zoom\":{\"enabled\":false},\"lessonSpace\":{\"enabled\":false}}","zoomUserId": null,"bringingAnyone": "1","bookMultipleTimes": "1","translations": "{\"defaultLanguage\":\"en_US\"}","depositPayment": "disabled","depositPerPerson": "1","fullPayment": "0","deposit": "0","customPricing": "0","organizerId": "2","closeAfterMin": null,"closeAfterMinBookings": "0","type": "customer","externalId": "91","firstName": "John","lastName": "Doe","email": "johnd@gmail.com","birthday": null,"phone": "+213551223123","gender": null,"note": null,"pictureFullPath": null,"pictureThumbPath": null,"password": null,"usedTokens": null,"countryPhoneIso": "dz","timeZone": null,"periodStart": "2023-04-20 10:00:00","periodEnd": "2023-04-20 12:00:00","amountPaid": "10"}}', true );
 		}
 
 		return $context;
@@ -18795,7 +19080,7 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 				$course_ids = null;
 				foreach ( $activity_meta as $item ) {
 					if ( 'course_ids' === $item->activity_meta_key ) {
-						$course_ids = unserialize( $item->activity_meta_value );
+						$course_ids = st_safe_unserialize( $item->activity_meta_value );
 						break;
 					}
 				}
@@ -22766,7 +23051,7 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 						'created_at'  => $result['created_at'],
 						'created_by'  => $result['created_by'],
 						'updated_at'  => $result['updated_at'],
-						'settings'    => unserialize( $result['settings'] ),
+						'settings'    => st_safe_unserialize( $result['settings'] ),
 						'stage'       => $stage_data ? [
 							'id'         => $stage_data->id,
 							'slug'       => $stage_data->slug,
@@ -22830,7 +23115,7 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 							'created_at'  => $result['created_at'],
 							'created_by'  => $result['created_by'],
 							'updated_at'  => $result['updated_at'],
-							'settings'    => unserialize( $result['settings'] ),
+							'settings'    => st_safe_unserialize( $result['settings'] ),
 							'stage'       => [
 								'id'         => $stage_data->id,
 								'slug'       => $stage_data->slug,
@@ -23216,15 +23501,15 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 		global $wpdb;
 		$results = $wpdb->get_row( "SELECT * FROM {$wpdb->prefix}fsmpt_email_logs WHERE status = 'failed' ORDER BY id DESC Limit 1", ARRAY_A );
 		if ( ! empty( $results ) ) {
-			$context['to']             = unserialize( $results['to'] );
+			$context['to']             = st_safe_unserialize( $results['to'] );
 			$context['from']           = $results['from'];
 			$context['subject']        = $results['subject'];
 			$context['body']           = $results['body'];
-			$context['attachments']    = unserialize( $results['attachments'] );
+			$context['attachments']    = st_safe_unserialize( $results['attachments'] );
 			$context['status']         = $results['status'];
-			$context['response']       = unserialize( $results['response'] );
-			$context['headers']        = unserialize( $results['headers'] );
-			$context['extra']          = unserialize( $results['extra'] );
+			$context['response']       = st_safe_unserialize( $results['response'] );
+			$context['headers']        = st_safe_unserialize( $results['headers'] );
+			$context['extra']          = st_safe_unserialize( $results['extra'] );
 			$context['pluggable_data'] = $context;
 			$context['response_type']  = 'live';
 		} else {
@@ -23266,7 +23551,7 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 				'created_at'  => $result['created_at'],
 				'created_by'  => $result['created_by'],
 				'updated_at'  => $result['updated_at'],
-				'settings'    => unserialize( $result['settings'] ),
+				'settings'    => st_safe_unserialize( $result['settings'] ),
 			];
 		}
 
@@ -23274,7 +23559,21 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 			$result         = $wpdb->get_row( "SELECT * FROM {$wpdb->prefix}fcom_posts ORDER BY id DESC LIMIT 1", ARRAY_A );
 			$profile_result = $wpdb->get_row( "SELECT * FROM {$wpdb->prefix}fcom_xprofile ORDER BY id DESC LIMIT 1", ARRAY_A );
 			$user_result    = $wpdb->get_row( "SELECT * FROM {$wpdb->prefix}users ORDER BY id DESC LIMIT 1", ARRAY_A );
-			$feed_data      = [
+			$feed_permalink = '';
+			if ( ! empty( $result ) && class_exists( '\FluentCommunity\App\Services\Helper' ) ) {
+				$is_lesson      = isset( $result['type'] ) && 'course_lesson' === $result['type'];
+				$content_prefix = $is_lesson ? 'lessons' : 'post';
+				$section_prefix = $is_lesson ? 'course' : 'space';
+				$url_path       = $content_prefix . '/' . $result['slug'];
+				if ( ! empty( $result['space_id'] ) && ! empty( $space_result['slug'] ) ) {
+					$url_path = $section_prefix . '/' . $space_result['slug'] . '/' . $content_prefix . '/' . $result['slug'];
+					if ( $is_lesson ) {
+						$url_path .= '/view';
+					}
+				}
+				$feed_permalink = \FluentCommunity\App\Services\Helper::baseUrl( $url_path );
+			}
+			$feed_data = [
 				'feed' => [
 					'id'               => $result['id'],
 					'user_id'          => $result['user_id'],
@@ -23289,7 +23588,7 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 					'privacy'          => $result['privacy'],
 					'status'           => $result['status'],
 					'featured_image'   => $result['featured_image'],
-					'meta'             => unserialize( $result['meta'] ),
+					'meta'             => st_safe_unserialize( $result['meta'] ),
 					'issticky'         => $result['issticky'],
 					'comments_count'   => $result['comments_count'],
 					'reactions_count'  => $result['reactions_count'],
@@ -23298,6 +23597,7 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 					'scheduledat'      => $result['scheduled_at'],
 					'created_at'       => $result['created_at'],
 					'updated_at'       => $result['updated_at'],
+					'permalink'        => $feed_permalink,
 					'space'            => $space_result,
 					'xprofile'         => [
 						'id'                => $profile_result['id'],
@@ -23310,7 +23610,7 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 						'avatar'            => $profile_result['avatar'],
 						'short_description' => $profile_result['short_description'],
 						'last_activity'     => $profile_result['last_activity'],
-						'meta'              => unserialize( $profile_result['meta'] ),
+						'meta'              => st_safe_unserialize( $profile_result['meta'] ),
 						'created_at'        => $profile_result['created_at'],
 						'updated_at'        => $profile_result['updated_at'],
 					],
@@ -23335,7 +23635,7 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 				'created_by'  => $result['created_by'],
 				'updated_at'  => $result['updated_at'],
 				'description' => $result['description'],
-				'settings'    => unserialize( $result['settings'] ),
+				'settings'    => st_safe_unserialize( $result['settings'] ),
 			];
 		}
 
@@ -23391,7 +23691,7 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 						'created_at'  => $result['created_at'],
 						'created_by'  => $result['created_by'],
 						'updated_at'  => $result['updated_at'],
-						'settings'    => unserialize( $result['settings'] ),
+						'settings'    => st_safe_unserialize( $result['settings'] ),
 						'membership'  => [
 							'ID'               => $user_result['ID'],
 							'photo'            => '',
@@ -23449,7 +23749,7 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 						'reactions_count'  => $result['reactions_count'],
 						'message'          => $result['message'],
 						'message_rendered' => $result['message_rendered'],
-						'meta'             => unserialize( $result['meta'] ),
+						'meta'             => st_safe_unserialize( $result['meta'] ),
 						'type'             => $result['type'],
 						'content_type'     => $result['content_type'],
 						'status'           => $result['status'],
@@ -23467,7 +23767,7 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 							'avatar'            => $profile_result['avatar'],
 							'short_description' => $profile_result['short_description'],
 							'last_activity'     => $profile_result['last_activity'],
-							'meta'              => unserialize( $profile_result['meta'] ),
+							'meta'              => st_safe_unserialize( $profile_result['meta'] ),
 							'created_at'        => $profile_result['created_at'],
 							'updated_at'        => $profile_result['updated_at'],
 						],
@@ -26423,6 +26723,67 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 	}
 
 	/**
+	 * Prepare mailerpress show custom fields toggle options.
+	 *
+	 * @param array $data Search Params.
+	 *
+	 * @return array
+	 */
+	public function search_mailerpress_fetch_custom_fields( $data ) {
+
+		$options = [
+			[
+				'label' => __( 'Yes', 'suretriggers' ),
+				'value' => 'true',
+			],
+			[
+				'label' => __( 'No', 'suretriggers' ),
+				'value' => 'false',
+			],
+		];
+
+		return [
+			'options' => $options,
+			'hasMore' => false,
+		];
+	}
+
+	/**
+	 * Get MailerPress custom field definitions.
+	 *
+	 * @param array $data data.
+	 *
+	 * @return array
+	 */
+	public function search_mailerpress_custom_fields( $data ) {
+		global $wpdb;
+
+		$context    = [];
+		$table_name = $wpdb->prefix . 'mailerpress_cpt_definitions';
+
+		if ( $wpdb->get_var( $wpdb->prepare( 'SHOW TABLES LIKE %s', $table_name ) ) !== $table_name ) {
+			$context['fields'] = [];
+			return $context;
+		}
+
+		$definitions = $wpdb->get_results( "SELECT field_key, label, type FROM {$wpdb->prefix}mailerpress_cpt_definitions ORDER BY id ASC" );
+		$fields      = [];
+
+		if ( ! empty( $definitions ) ) {
+			foreach ( $definitions as $definition ) {
+				$fields[] = [
+					'slug'  => $definition->field_key,
+					'label' => $definition->label,
+					'type'  => $definition->type,
+				];
+			}
+		}
+
+		$context['fields'] = $fields;
+		return $context;
+	}
+
+	/**
 	 * Get MailerPress last data
 	 *
 	 * @param array $data data.
@@ -27009,6 +27370,367 @@ Cc:johnDoe@xyz.com Bcc:johnDoe@xyz.com',
 			'hasMore' => false,
 		];
 	}
+
+	/**
+	 * Search SureDonation Campaigns.
+	 *
+	 * @param array $data query params.
+	 *
+	 * @return array
+	 * @since 1.0.0
+	 */
+	public function search_suredonation_campaign( $data ) {
+		if ( ! defined( 'SUREDONATION_POST_TYPE' ) ) {
+			return [
+				'options' => [],
+				'hasMore' => false,
+			];
+		}
+
+		$campaigns = get_posts(
+			[
+				'post_type'   => SUREDONATION_POST_TYPE,
+				'post_status' => [ 'publish', 'draft' ],
+				'numberposts' => -1,
+			]
+		);
+
+		$options = [];
+		foreach ( $campaigns as $campaign ) {
+			$options[] = [
+				'label' => sanitize_text_field( $campaign->post_title ),
+				'value' => absint( $campaign->ID ),
+			];
+		}
+
+		return [
+			'options' => $options,
+			'hasMore' => false,
+		];
+	}
+
+	/**
+	 * Search New Donation pluggable data.
+	 *
+	 * @param array $data query params.
+	 *
+	 * @return array
+	 * @since 1.0.0
+	 */
+	/**
+	 * Search SureDonation trigger pluggable data.
+	 * Handles: suredonation_new_donation, suredonation_donation_completed, suredonation_donation_status_changed, suredonation_donation_refunded.
+	 *
+	 * @param array $data query params.
+	 * @return array
+	 * @since 1.0.0
+	 */
+	public function search_pluggables_suredonation_triggers( $data ) {
+		$context      = [];
+		$term         = isset( $data['search_term'] ) ? sanitize_text_field( $data['search_term'] ) : '';
+		$campaign_id  = isset( $data['filter']['suredonation_campaign']['value'] ) ? (int) $data['filter']['suredonation_campaign']['value'] : null;
+		$new_status   = isset( $data['filter']['new_status']['value'] ) ? sanitize_text_field( $data['filter']['new_status']['value'] ) : null;
+		$use_campaign = null !== $campaign_id && -1 !== $campaign_id;
+
+		$allowed_terms    = [ 'suredonation_new_donation', 'suredonation_donation_completed', 'suredonation_donation_status_changed', 'suredonation_donation_refunded' ];
+		$allowed_statuses = [ 'pending', 'processing', 'completed', 'failed', 'refunded', 'partially_refunded', 'cancelled' ];
+		$use_status       = null !== $new_status && in_array( $new_status, $allowed_statuses, true );
+
+		if ( ! in_array( $term, $allowed_terms, true ) ) {
+			return $context;
+		}
+
+		global $wpdb;
+
+		$donation = null;
+
+		if ( 'suredonation_donation_completed' === $term ) {
+			if ( $use_campaign ) {
+				$donation = $wpdb->get_row(
+					$wpdb->prepare(
+						'SELECT d.id, d.campaign_id, d.form_id, d.donor_id, d.amount, d.fees_covered, d.currency, d.payment_status, d.payment_mode, d.gateway, d.transaction_id, d.donation_type, d.is_anonymous, d.donor_comment, d.subscription_id, d.subscription_status, d.created_at, d.updated_at, dn.name as donor_name, dn.email as donor_email, dn.phone as donor_phone FROM ' . $wpdb->prefix . 'suredonation_donations d LEFT JOIN ' . $wpdb->prefix . 'suredonation_donors dn ON d.donor_id = dn.id WHERE d.campaign_id = %d AND d.payment_status = %s ORDER BY d.id DESC LIMIT 1',
+						$campaign_id,
+						'completed'
+					)
+				);
+			} else {
+				$donation = $wpdb->get_row(
+					$wpdb->prepare(
+						'SELECT d.id, d.campaign_id, d.form_id, d.donor_id, d.amount, d.fees_covered, d.currency, d.payment_status, d.payment_mode, d.gateway, d.transaction_id, d.donation_type, d.is_anonymous, d.donor_comment, d.subscription_id, d.subscription_status, d.created_at, d.updated_at, dn.name as donor_name, dn.email as donor_email, dn.phone as donor_phone FROM ' . $wpdb->prefix . 'suredonation_donations d LEFT JOIN ' . $wpdb->prefix . 'suredonation_donors dn ON d.donor_id = dn.id WHERE d.payment_status = %s ORDER BY d.id DESC LIMIT 1',
+						'completed'
+					)
+				);
+			}
+		} elseif ( 'suredonation_donation_status_changed' === $term ) {
+			if ( $use_campaign && $use_status ) {
+				$donation = $wpdb->get_row(
+					$wpdb->prepare(
+						'SELECT d.id, d.campaign_id, d.form_id, d.donor_id, d.amount, d.fees_covered, d.currency, d.payment_status, d.payment_mode, d.gateway, d.transaction_id, d.donation_type, d.is_anonymous, d.donor_comment, d.subscription_id, d.subscription_status, d.created_at, d.updated_at, dn.name as donor_name, dn.email as donor_email, dn.phone as donor_phone FROM ' . $wpdb->prefix . 'suredonation_donations d LEFT JOIN ' . $wpdb->prefix . 'suredonation_donors dn ON d.donor_id = dn.id WHERE d.campaign_id = %d AND d.payment_status = %s ORDER BY d.id DESC LIMIT 1',
+						$campaign_id,
+						$new_status
+					)
+				);
+			} elseif ( $use_campaign ) {
+				$donation = $wpdb->get_row(
+					$wpdb->prepare(
+						'SELECT d.id, d.campaign_id, d.form_id, d.donor_id, d.amount, d.fees_covered, d.currency, d.payment_status, d.payment_mode, d.gateway, d.transaction_id, d.donation_type, d.is_anonymous, d.donor_comment, d.subscription_id, d.subscription_status, d.created_at, d.updated_at, dn.name as donor_name, dn.email as donor_email, dn.phone as donor_phone FROM ' . $wpdb->prefix . 'suredonation_donations d LEFT JOIN ' . $wpdb->prefix . 'suredonation_donors dn ON d.donor_id = dn.id WHERE d.campaign_id = %d ORDER BY d.id DESC LIMIT 1',
+						$campaign_id
+					)
+				);
+			} elseif ( $use_status ) {
+				$donation = $wpdb->get_row(
+					$wpdb->prepare(
+						'SELECT d.id, d.campaign_id, d.form_id, d.donor_id, d.amount, d.fees_covered, d.currency, d.payment_status, d.payment_mode, d.gateway, d.transaction_id, d.donation_type, d.is_anonymous, d.donor_comment, d.subscription_id, d.subscription_status, d.created_at, d.updated_at, dn.name as donor_name, dn.email as donor_email, dn.phone as donor_phone FROM ' . $wpdb->prefix . 'suredonation_donations d LEFT JOIN ' . $wpdb->prefix . 'suredonation_donors dn ON d.donor_id = dn.id WHERE d.payment_status = %s ORDER BY d.id DESC LIMIT 1',
+						$new_status
+					)
+				);
+			} else {
+				$donation = $wpdb->get_row(
+					$wpdb->prepare(
+						'SELECT d.id, d.campaign_id, d.form_id, d.donor_id, d.amount, d.fees_covered, d.currency, d.payment_status, d.payment_mode, d.gateway, d.transaction_id, d.donation_type, d.is_anonymous, d.donor_comment, d.subscription_id, d.subscription_status, d.created_at, d.updated_at, dn.name as donor_name, dn.email as donor_email, dn.phone as donor_phone FROM ' . $wpdb->prefix . 'suredonation_donations d LEFT JOIN ' . $wpdb->prefix . 'suredonation_donors dn ON d.donor_id = dn.id ORDER BY d.id DESC LIMIT %d',
+						1
+					)
+				);
+			}
+		} elseif ( 'suredonation_donation_refunded' === $term ) {
+			if ( $use_campaign ) {
+				$donation = $wpdb->get_row(
+					$wpdb->prepare(
+						'SELECT d.id, d.campaign_id, d.form_id, d.donor_id, d.amount, d.fees_covered, d.currency, d.payment_status, d.payment_mode, d.gateway, d.transaction_id, d.donation_type, d.is_anonymous, d.donor_comment, d.subscription_id, d.subscription_status, d.created_at, d.updated_at, dn.name as donor_name, dn.email as donor_email, dn.phone as donor_phone FROM ' . $wpdb->prefix . 'suredonation_donations d LEFT JOIN ' . $wpdb->prefix . 'suredonation_donors dn ON d.donor_id = dn.id WHERE d.campaign_id = %d AND d.payment_status IN (%s, %s) ORDER BY d.id DESC LIMIT 1',
+						$campaign_id,
+						'refunded',
+						'partially_refunded'
+					)
+				);
+			} else {
+				$donation = $wpdb->get_row(
+					$wpdb->prepare(
+						'SELECT d.id, d.campaign_id, d.form_id, d.donor_id, d.amount, d.fees_covered, d.currency, d.payment_status, d.payment_mode, d.gateway, d.transaction_id, d.donation_type, d.is_anonymous, d.donor_comment, d.subscription_id, d.subscription_status, d.created_at, d.updated_at, dn.name as donor_name, dn.email as donor_email, dn.phone as donor_phone FROM ' . $wpdb->prefix . 'suredonation_donations d LEFT JOIN ' . $wpdb->prefix . 'suredonation_donors dn ON d.donor_id = dn.id WHERE d.payment_status IN (%s, %s) ORDER BY d.id DESC LIMIT 1',
+						'refunded',
+						'partially_refunded'
+					)
+				);
+			}
+		} else {
+			if ( $use_campaign ) {
+				$donation = $wpdb->get_row(
+					$wpdb->prepare(
+						'SELECT d.id, d.campaign_id, d.form_id, d.donor_id, d.amount, d.fees_covered, d.currency, d.payment_status, d.payment_mode, d.gateway, d.transaction_id, d.donation_type, d.is_anonymous, d.donor_comment, d.subscription_id, d.subscription_status, d.created_at, d.updated_at, dn.name as donor_name, dn.email as donor_email, dn.phone as donor_phone FROM ' . $wpdb->prefix . 'suredonation_donations d LEFT JOIN ' . $wpdb->prefix . 'suredonation_donors dn ON d.donor_id = dn.id WHERE d.campaign_id = %d ORDER BY d.id DESC LIMIT 1',
+						$campaign_id
+					)
+				);
+			} else {
+				$donation = $wpdb->get_row(
+					$wpdb->prepare(
+						'SELECT d.id, d.campaign_id, d.form_id, d.donor_id, d.amount, d.fees_covered, d.currency, d.payment_status, d.payment_mode, d.gateway, d.transaction_id, d.donation_type, d.is_anonymous, d.donor_comment, d.subscription_id, d.subscription_status, d.created_at, d.updated_at, dn.name as donor_name, dn.email as donor_email, dn.phone as donor_phone FROM ' . $wpdb->prefix . 'suredonation_donations d LEFT JOIN ' . $wpdb->prefix . 'suredonation_donors dn ON d.donor_id = dn.id ORDER BY d.id DESC LIMIT %d',
+						1
+					)
+				);
+			}
+		}
+
+		if ( null !== $donation ) {
+			$campaign_title = '';
+			$campaign_post  = get_post( absint( $donation->campaign_id ) );
+			if ( $campaign_post ) {
+				$campaign_title = $campaign_post->post_title;
+			}
+			$form_title = '';
+			$form_post  = get_post( absint( $donation->form_id ) );
+			if ( $form_post ) {
+				$form_title = $form_post->post_title;
+			}
+
+			$pluggable_data = [
+				'donation_id'           => absint( $donation->id ),
+				'campaign_id'           => absint( $donation->campaign_id ),
+				'campaign_title'        => sanitize_text_field( $campaign_title ),
+				'suredonation_campaign' => absint( $donation->campaign_id ),
+				'form_id'               => absint( $donation->form_id ),
+				'form_title'            => sanitize_text_field( $form_title ),
+				'donor_id'              => absint( $donation->donor_id ),
+				'donor_name'            => sanitize_text_field( (string) $donation->donor_name ),
+				'donor_email'           => sanitize_email( (string) $donation->donor_email ),
+				'donor_phone'           => sanitize_text_field( (string) $donation->donor_phone ),
+				'amount'                => (float) $donation->amount,
+				'fees_covered'          => (float) $donation->fees_covered,
+				'currency'              => sanitize_text_field( (string) $donation->currency ),
+				'payment_status'        => sanitize_text_field( (string) $donation->payment_status ),
+				'payment_mode'          => sanitize_text_field( (string) $donation->payment_mode ),
+				'gateway'               => sanitize_text_field( (string) $donation->gateway ),
+				'transaction_id'        => sanitize_text_field( (string) $donation->transaction_id ),
+				'donation_type'         => sanitize_text_field( (string) $donation->donation_type ),
+				'is_anonymous'          => (bool) $donation->is_anonymous,
+				'donor_comment'         => wp_kses_post( (string) $donation->donor_comment ),
+				'subscription_id'       => sanitize_text_field( (string) $donation->subscription_id ),
+				'subscription_status'   => sanitize_text_field( (string) $donation->subscription_status ),
+				'created_at'            => sanitize_text_field( (string) $donation->created_at ),
+				'updated_at'            => sanitize_text_field( (string) $donation->updated_at ),
+			];
+
+			if ( 'suredonation_donation_status_changed' === $term ) {
+				$pluggable_data['old_status'] = 'unknown';
+				$pluggable_data['new_status'] = $use_status ? $new_status : sanitize_text_field( (string) $donation->payment_status );
+			}
+
+			if ( 'suredonation_donation_refunded' === $term ) {
+				$pluggable_data['refund_amount']  = 0.0;
+				$pluggable_data['total_refunded'] = 0.0;
+			}
+
+			$context['pluggable_data'] = $pluggable_data;
+			$context['response_type']  = 'live';
+		} else {
+			$cid               = $use_campaign ? absint( $campaign_id ) : 1;
+			$sample_new_status = $use_status ? $new_status : 'completed';
+
+			$pluggable_data = [
+				'donation_id'           => 1,
+				'campaign_id'           => $cid,
+				'campaign_title'        => 'Sample Campaign',
+				'suredonation_campaign' => $cid,
+				'form_id'               => 1,
+				'form_title'            => 'Sample Form',
+				'donor_id'              => 1,
+				'donor_name'            => 'John Doe',
+				'donor_email'           => 'john@example.com',
+				'donor_phone'           => '+1234567890',
+				'amount'                => '25.00',
+				'fees_covered'          => 0,
+				'currency'              => 'USD',
+				'payment_status'        => 'suredonation_new_donation' === $term ? 'pending' : $sample_new_status,
+				'payment_mode'          => 'live',
+				'gateway'               => 'suredonation_new_donation' === $term ? 'manual' : 'stripe',
+				'transaction_id'        => 'suredonation_new_donation' === $term ? '' : 'txn_sample123',
+				'donation_type'         => 'one-time',
+				'is_anonymous'          => false,
+				'donor_comment'         => '',
+				'subscription_id'       => null,
+				'subscription_status'   => null,
+				'created_at'            => '2024-01-15 10:30:00',
+				'updated_at'            => '2024-01-15 10:35:00',
+			];
+
+			if ( 'suredonation_donation_status_changed' === $term ) {
+				$pluggable_data['old_status'] = 'pending';
+				$pluggable_data['new_status'] = $sample_new_status;
+			}
+
+			if ( 'suredonation_donation_refunded' === $term ) {
+				$pluggable_data['payment_status'] = 'refunded';
+				$pluggable_data['refund_amount']  = 10.00;
+				$pluggable_data['total_refunded'] = 10.00;
+			}
+
+			$context['pluggable_data'] = $pluggable_data;
+			$context['response_type']  = 'sample';
+		}
+
+		return $context;
+	}
+
+	/**
+	 * Search Directories Pro listing directories (bundles/post types).
+	 *
+	 * @param array $data Search Params.
+	 * @return array
+	 */
+	public function search_directories_pro_listing_types( $data ) {
+		$options = [];
+
+		if ( function_exists( 'drts' ) ) {
+			$bundles = drts()->Entity_Bundles_byType( 'directory__listing' );
+
+			foreach ( $bundles as $bundle ) {
+				if ( ! empty( $bundle->info['is_taxonomy'] ) ) {
+					continue;
+				}
+
+				$label = $bundle->name;
+				if ( is_object( $bundle ) && method_exists( $bundle, 'getGroupLabel' ) && method_exists( $bundle, 'getLabel' ) ) {
+					$label = $bundle->getGroupLabel() . ' - ' . $bundle->getLabel( 'singular' );
+				}
+
+				$options[] = [
+					'label' => $label,
+					'value' => $bundle->name,
+				];
+			}
+		}
+
+		return [
+			'options' => $options,
+			'hasMore' => false,
+		];
+	}
+
+	/**
+	 * Search Directories Pro listings by title, across all listing directories.
+	 *
+	 * @param array $data Search Params.
+	 * @return array
+	 */
+	public function search_directories_pro_listings( $data ) {
+		if ( ! function_exists( 'drts' ) ) {
+			return [
+				'options' => [],
+				'hasMore' => false,
+			];
+		}
+
+		$filter_type = isset( $data['filter']['post_type'] ) ? sanitize_key( $data['filter']['post_type'] ) : '';
+		$post_types  = [];
+
+		foreach ( drts()->Entity_Bundles_byType( 'directory__listing' ) as $bundle ) {
+			if ( ! empty( $bundle->info['is_taxonomy'] ) ) {
+				continue;
+			}
+			if ( $filter_type && $bundle->name !== $filter_type ) {
+				continue;
+			}
+			$post_types[] = $bundle->name;
+		}
+
+		if ( empty( $post_types ) ) {
+			return [
+				'options' => [],
+				'hasMore' => false,
+			];
+		}
+
+		$term  = isset( $data['search_term'] ) ? sanitize_text_field( $data['search_term'] ) : '';
+		$page  = isset( $data['page'] ) ? absint( $data['page'] ) : 1;
+		$limit = 20;
+
+		$query = new WP_Query(
+			[
+				'post_type'      => $post_types,
+				'post_status'    => [ 'publish', 'pending', 'draft' ],
+				's'              => $term,
+				'posts_per_page' => $limit,
+				'paged'          => $page,
+				'orderby'        => 'title',
+				'order'          => 'ASC',
+			]
+		);
+
+		$options = [];
+		foreach ( $query->posts as $listing_post ) {
+			if ( ! $listing_post instanceof WP_Post ) {
+				continue;
+			}
+			$options[] = [
+				'label' => $listing_post->post_title,
+				'value' => $listing_post->ID,
+			];
+		}
+
+		return [
+			'options' => $options,
+			'hasMore' => $page < $query->max_num_pages,
+		];
+	}
+
 }
 
 

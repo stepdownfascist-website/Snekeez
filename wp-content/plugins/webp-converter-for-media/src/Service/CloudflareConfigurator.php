@@ -13,10 +13,13 @@ use WebpConverter\Settings\Option\CloudflareZoneIdOption;
  */
 class CloudflareConfigurator implements HookableInterface {
 
-	const API_CACHE_CONFIG_URL        = 'https://api.cloudflare.com/client/v4/zones/%s/cache/variants';
-	const API_CACHE_PURGE_URL         = 'https://api.cloudflare.com/client/v4/zones/%s/purge_cache';
-	const REQUEST_CACHE_CONFIG_OPTION = 'webpc_cloudflare_cache_config';
-	const REQUEST_CACHE_PURGE_OPTION  = 'webpc_cloudflare_cache_purge';
+	const API_ZONES_URL                 = 'https://api.cloudflare.com/client/v4/zones?per_page=1000';
+	const API_CACHE_SETTINGS_URL        = 'https://api.cloudflare.com/client/v4/zones/%s/rulesets/phases/http_request_cache_settings/entrypoint';
+	const API_CACHE_PURGE_URL           = 'https://api.cloudflare.com/client/v4/zones/%s/purge_cache';
+	const API_CACHE_RULE_PREFIX         = '[Converter for Media]';
+	const API_CACHE_RULE_DEFAULT_NAME   = self::API_CACHE_RULE_PREFIX . ' WebP and AVIF delivery';
+	const REQUEST_CACHE_SETTINGS_OPTION = 'webpc_cloudflare_cache_settings';
+	const REQUEST_CACHE_PURGE_OPTION    = 'webpc_cloudflare_cache_purge';
 
 	private PluginInfo $plugin_info;
 
@@ -53,69 +56,79 @@ class CloudflareConfigurator implements HookableInterface {
 	}
 
 	/**
-	 * @return bool
 	 * @internal
 	 */
-	public function set_cache_config(): bool {
-		$this->send_request( self::API_CACHE_CONFIG_URL, 'DELETE' );
-
-		$response_code = $this->send_request(
-			self::API_CACHE_CONFIG_URL,
-			'PATCH',
-			[
-				'value' => [
-					'jpeg' => [ 'image/jpeg', 'image/webp', 'image/avif' ],
-					'jpg'  => [ 'image/jpeg', 'image/webp', 'image/avif' ],
-					'png'  => [ 'image/png', 'image/webp', 'image/avif' ],
-					'gif'  => [ 'image/gif', 'image/webp', 'image/avif' ],
-					'webp' => [ 'image/webp', 'image/avif' ],
-				],
-			]
-		);
-		if ( $response_code === null ) {
-			return false;
+	public function set_cache_config(): void {
+		$cache_settings = $this->send_request( self::API_CACHE_SETTINGS_URL, 'GET' );
+		if ( $cache_settings === null ) {
+			return;
 		}
 
-		OptionsAccessManager::update_option(
-			self::REQUEST_CACHE_CONFIG_OPTION,
-			( $response_code === 200 ) ? 'yes' : $response_code
-		);
+		if ( ! in_array( $cache_settings['http_code'], [ 200, 404 ] ) ) {
+			OptionsAccessManager::update_option( self::REQUEST_CACHE_SETTINGS_OPTION, $cache_settings['http_code'] );
+			return;
+		}
 
-		return ( $response_code === 200 );
+		$new_rule = [
+			'expression'        => '(http.request.uri.path.extension in {"jpg" "jpeg" "gif" "png" "webp" "avif"})',
+			'description'       => self::API_CACHE_RULE_DEFAULT_NAME,
+			'action'            => 'set_cache_settings',
+			'action_parameters' => [
+				'cache' => true,
+				'vary'  => [
+					'default' => [
+						'action' => 'normalize',
+					],
+				],
+			],
+		];
+
+		$rules   = array_values(
+			array_filter(
+				$cache_settings['body']['result']['rules'] ?? [],
+				static fn( array $rule ) => ( strpos( $rule['description'] ?? '', self::API_CACHE_RULE_PREFIX ) !== 0 )
+			)
+		);
+		$rules[] = $new_rule;
+
+		$response = $this->send_request( self::API_CACHE_SETTINGS_URL, 'PUT', [ 'rules' => $rules ] );
+		if ( $response !== null ) {
+			OptionsAccessManager::update_option(
+				self::REQUEST_CACHE_SETTINGS_OPTION,
+				( $response['http_code'] === 200 ) ? 'yes' : $response['http_code']
+			);
+		}
 	}
 
 	/**
-	 * @return bool
 	 * @internal
 	 */
-	public function purge_cache(): bool {
-		$response_code = $this->send_request(
+	public function purge_cache(): void {
+		$response = $this->send_request(
 			self::API_CACHE_PURGE_URL,
 			'POST',
 			[
 				'purge_everything' => true,
 			]
 		);
-		if ( $response_code === null ) {
-			return false;
+		if ( $response === null ) {
+			return;
 		}
 
 		OptionsAccessManager::update_option(
 			self::REQUEST_CACHE_PURGE_OPTION,
-			( $response_code === 200 ) ? 'yes' : $response_code
+			( $response['http_code'] === 200 ) ? 'yes' : $response['http_code']
 		);
-
-		return ( $response_code === 200 );
 	}
 
 	/**
-	 * @param string  $api_url        .
-	 * @param string  $request_method .
-	 * @param mixed[] $request_data   .
+	 * @param string           $api_url        .
+	 * @param non-empty-string $request_method .
+	 * @param mixed[]          $request_data   .
 	 *
-	 * @return int|null
+	 * @return array{http_code: int, body: mixed[]}|null
 	 */
-	private function send_request( string $api_url, string $request_method, array $request_data = [] ): ?int {
+	private function send_request( string $api_url, string $request_method, array $request_data = [] ): ?array {
 		$plugin_setting = $this->plugin_data->get_plugin_settings();
 		if ( ! $plugin_setting[ CloudflareZoneIdOption::OPTION_NAME ] || ! $plugin_setting[ CloudflareApiTokenOption::OPTION_NAME ] ) {
 			return null;
@@ -130,7 +143,7 @@ class CloudflareConfigurator implements HookableInterface {
 		curl_setopt( $connect, CURLOPT_SSL_VERIFYHOST, 0 );
 		curl_setopt( $connect, CURLOPT_RETURNTRANSFER, true );
 		curl_setopt( $connect, CURLOPT_TIMEOUT, 10 );
-		curl_setopt( $connect, CURLOPT_CUSTOMREQUEST, $request_method ?: 'POST' );
+		curl_setopt( $connect, CURLOPT_CUSTOMREQUEST, $request_method );
 		if ( $request_data !== [] ) {
 			curl_setopt( $connect, CURLOPT_POSTFIELDS, json_encode( $request_data ) ?: '' );
 		}
@@ -143,9 +156,67 @@ class CloudflareConfigurator implements HookableInterface {
 			]
 		);
 
-		curl_exec( $connect );
-		$request_info = curl_getinfo( $connect );
+		$response_body = curl_exec( $connect );
+		$response_code = curl_getinfo( $connect, CURLINFO_HTTP_CODE );
 
-		return $request_info['http_code'];
+		$json = json_decode( (string) $response_body, true );
+		return [
+			'http_code' => (int) $response_code,
+			'body'      => ( is_array( $json ) ) ? $json : [],
+		];
+	}
+
+	/**
+	 * @param string $api_token .
+	 *
+	 * @return array<int, array{id: string, name: string}>
+	 */
+	public static function get_zones( string $api_token ): array {
+		if ( empty( $api_token ) ) {
+			return [];
+		}
+
+		$connect = curl_init( 'https://api.cloudflare.com/client/v4/zones?per_page=1000' );
+		if ( ! $connect ) {
+			return [];
+		}
+
+		curl_setopt( $connect, CURLOPT_SSL_VERIFYPEER, false );
+		curl_setopt( $connect, CURLOPT_SSL_VERIFYHOST, 0 );
+		curl_setopt( $connect, CURLOPT_RETURNTRANSFER, true );
+		curl_setopt( $connect, CURLOPT_TIMEOUT, 10 );
+		curl_setopt( $connect, CURLOPT_CUSTOMREQUEST, 'GET' );
+		curl_setopt(
+			$connect,
+			CURLOPT_HTTPHEADER,
+			[
+				'Content-Type: application/json',
+				'Authorization: Bearer ' . $api_token,
+			]
+		);
+
+		$response_body = curl_exec( $connect );
+		$response_code = curl_getinfo( $connect, CURLINFO_HTTP_CODE );
+
+		if ( (int) $response_code !== 200 ) {
+			return [];
+		}
+
+		$json = json_decode( (string) $response_body, true );
+		if ( empty( $json['success'] ) || empty( $json['result'] ) ) {
+			return [];
+		}
+
+		$zones = [];
+		foreach ( $json['result'] as $zone ) {
+			if ( isset( $zone['id'], $zone['name'] ) ) {
+				$zones[] = [
+					'id'   => $zone['id'],
+					'name' => $zone['name'],
+				];
+			}
+		}
+
+		return $zones;
 	}
 }

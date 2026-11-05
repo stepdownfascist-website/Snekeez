@@ -9,7 +9,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Rank Math SEO
- * Version:           1.0.272
+ * Version:           1.0.281
  * Plugin URI:        https://rankmath.com/
  * Description:       Rank Math SEO is the Best WordPress SEO plugin with the features of many SEO and AI SEO tools in a single package to help multiply your SEO traffic.
  * Author:            Rank Math SEO
@@ -34,7 +34,7 @@ final class RankMath {
 	 *
 	 * @var string
 	 */
-	public $version = '1.0.272';
+	public $version = '1.0.281';
 
 	/**
 	 * Rank Math database version.
@@ -48,7 +48,7 @@ final class RankMath {
 	 *
 	 * @var string
 	 */
-	private $wordpress_version = '6.3';
+	private $wordpress_version = '6.7';
 
 	/**
 	 * Minimum version of PHP required to run Rank Math.
@@ -253,6 +253,9 @@ final class RankMath {
 		if ( ! defined( 'CONTENT_AI_URL' ) ) {
 			define( 'CONTENT_AI_URL', 'https://cai.rankmath.com' );
 		}
+		if ( ! defined( 'RANK_MATH_AIV_URL' ) ) {
+			define( 'RANK_MATH_AIV_URL', 'https://ai-visibility.rankmath.com' );
+		}
 	}
 
 	/**
@@ -261,8 +264,9 @@ final class RankMath {
 	private function includes() {
 		include __DIR__ . '/vendor/autoload.php';
 
-		if ( class_exists( 'WP\MCP\Core\McpAdapter' ) && function_exists( 'wp_get_abilities' ) ) {
-			\WP\MCP\Core\McpAdapter::instance();
+		// MCP OAuth wires itself only when the MCP Adapter plugin is active.
+		if ( class_exists( '\WPMedia\MCP\OAuth\Bootstrap' ) && function_exists( 'wp_get_abilities' ) ) {
+			\WPMedia\MCP\OAuth\Bootstrap::instance();
 		}
 
 		// For Theme Developers:
@@ -415,6 +419,11 @@ final class RankMath {
 			new \RankMath\ThirdParty\WPML();
 		}
 
+		// Hook into `pll_init` when Polylang (Free or Pro) is active, unless the manual KB integration is already enabled.
+		if ( ( is_plugin_active( 'polylang/polylang.php' ) || is_plugin_active( 'polylang-pro/polylang.php' ) ) && ! class_exists( 'PLL_RankMath' ) ) {
+			new \RankMath\ThirdParty\Polylang\Polylang();
+		}
+
 		// Divi theme.
 		add_action(
 			'after_setup_theme',
@@ -460,11 +469,17 @@ final class RankMath {
 			];
 		}
 
+		$plugin_links = [];
 		foreach ( $options as $link => $label ) {
 			$plugin_links[] = '<a href="' . \RankMath\Helper::get_admin_url( $link ) . '">' . esc_html( $label ) . '</a>';
 		}
 
-		return array_merge( $links, $plugin_links );
+		$pro_links = [];
+		if ( ! defined( 'RANK_MATH_PRO_FILE' ) ) {
+			$pro_links[] = '<a href="' . esc_url( \RankMath\KB::get( 'pro', 'upgrade-plugins-screen-link' ) ) . '" style="color: #10AC84; font-weight: 600;" target="_blank">' . esc_html__( 'Unlock PRO', 'seo-by-rank-math' ) . '</a>';
+		}
+
+		return array_merge( $pro_links, $links, $plugin_links );
 	}
 
 	/**

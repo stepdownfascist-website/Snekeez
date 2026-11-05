@@ -7,14 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInit977a71a7bb63d9fc0c8d6b8913a12a29
 {
     public static $prefixLengthsPsr4 = array (
-        'W' => 
+        'W' =>
         array (
             'WebpConverter\\' => 14,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'WebpConverter\\' => 
+        'WebpConverter\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
@@ -55,6 +55,7 @@ class ComposerStaticInit977a71a7bb63d9fc0c8d6b8913a12a29
         'WebpConverter\\Conversion\\Directory\\SourceDirectory' => __DIR__ . '/../..' . '/src/Conversion/Directory/SourceDirectory.php',
         'WebpConverter\\Conversion\\Directory\\UploadsDirectory' => __DIR__ . '/../..' . '/src/Conversion/Directory/UploadsDirectory.php',
         'WebpConverter\\Conversion\\Directory\\UploadsWebpcDirectory' => __DIR__ . '/../..' . '/src/Conversion/Directory/UploadsWebpcDirectory.php',
+        'WebpConverter\\Conversion\\Endpoint\\CloudflareZonesEndpoint' => __DIR__ . '/../..' . '/src/Conversion/Endpoint/CloudflareZonesEndpoint.php',
         'WebpConverter\\Conversion\\Endpoint\\CronConversionEndpoint' => __DIR__ . '/../..' . '/src/Conversion/Endpoint/CronConversionEndpoint.php',
         'WebpConverter\\Conversion\\Endpoint\\EndpointAbstract' => __DIR__ . '/../..' . '/src/Conversion/Endpoint/EndpointAbstract.php',
         'WebpConverter\\Conversion\\Endpoint\\EndpointIntegrator' => __DIR__ . '/../..' . '/src/Conversion/Endpoint/EndpointIntegrator.php',
@@ -138,6 +139,7 @@ class ComposerStaticInit977a71a7bb63d9fc0c8d6b8913a12a29
         'WebpConverter\\Loader\\LoaderIntegrator' => __DIR__ . '/../..' . '/src/Loader/LoaderIntegrator.php',
         'WebpConverter\\Loader\\LoaderInterface' => __DIR__ . '/../..' . '/src/Loader/LoaderInterface.php',
         'WebpConverter\\Loader\\PassthruLoader' => __DIR__ . '/../..' . '/src/Loader/PassthruLoader.php',
+        'WebpConverter\\Model\\DebugCurl' => __DIR__ . '/../..' . '/src/Model/DebugCurl.php',
         'WebpConverter\\Model\\Token' => __DIR__ . '/../..' . '/src/Model/Token.php',
         'WebpConverter\\Notice\\BlackFridayNotice' => __DIR__ . '/../..' . '/src/Notice/BlackFridayNotice.php',
         'WebpConverter\\Notice\\CloudflareNotice' => __DIR__ . '/../..' . '/src/Notice/CloudflareNotice.php',
@@ -173,7 +175,6 @@ class ComposerStaticInit977a71a7bb63d9fc0c8d6b8913a12a29
         'WebpConverter\\Service\\PathsGenerator' => __DIR__ . '/../..' . '/src/Service/PathsGenerator.php',
         'WebpConverter\\Service\\RestApiUnlocker' => __DIR__ . '/../..' . '/src/Service/RestApiUnlocker.php',
         'WebpConverter\\Service\\ServerConfigurator' => __DIR__ . '/../..' . '/src/Service/ServerConfigurator.php',
-        'WebpConverter\\Service\\SiteHealthDetector' => __DIR__ . '/../..' . '/src/Service/SiteHealthDetector.php',
         'WebpConverter\\Service\\StatsManager' => __DIR__ . '/../..' . '/src/Service/StatsManager.php',
         'WebpConverter\\Service\\TokenValidator' => __DIR__ . '/../..' . '/src/Service/TokenValidator.php',
         'WebpConverter\\Service\\ViewLoader' => __DIR__ . '/../..' . '/src/Service/ViewLoader.php',

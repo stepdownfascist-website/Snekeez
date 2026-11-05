@@ -140,7 +140,7 @@ if ( ! class_exists( 'UAGB_Loader' ) ) {
 			define( 'UAGB_BASE', plugin_basename( UAGB_FILE ) );
 			define( 'UAGB_DIR', plugin_dir_path( UAGB_FILE ) );
 			define( 'UAGB_URL', plugins_url( '/', UAGB_FILE ) );
-			define( 'UAGB_VER', '2.19.28' );
+			define( 'UAGB_VER', '2.20.6' );
 			define( 'UAGB_MODULES_DIR', UAGB_DIR . 'modules/' );
 			define( 'UAGB_MODULES_URL', UAGB_URL . 'modules/' );
 			define( 'UAGB_SLUG', 'spectra' );
@@ -464,7 +464,7 @@ if ( ! class_exists( 'UAGB_Loader' ) ) {
 
 			$class = 'notice notice-error';
 			/* translators: %s: html tags */
-			$message = sprintf( __( 'The %1$sSpectra%2$s plugin requires %1$sGutenberg%2$s plugin installed & activated.', 'ultimate-addons-for-gutenberg' ), '<strong>', '</strong>' );
+			$message = sprintf( __( 'The %1$sSpectra Legacy%2$s plugin requires %1$sGutenberg%2$s plugin installed & activated.', 'ultimate-addons-for-gutenberg' ), '<strong>', '</strong>' );
 
 			$action_url   = wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=gutenberg' ), 'install-plugin_gutenberg' );
 			$button_label = __( 'Install Gutenberg', 'ultimate-addons-for-gutenberg' );
@@ -642,9 +642,18 @@ if ( ! class_exists( 'UAGB_Loader' ) ) {
 				return;
 			}
 
-			// If the stored domain is different from the current site domain, update the '__uagb_asset_version' option with the current timestamp.
+			// If the stored domain is different from the current site domain, bump the
+			// asset version ONCE for the migration and persist the new domain so the
+			// two reconcile. Previously only the version was bumped and 'uagb_site_url'
+			// was never updated, so the domains never matched again: every subsequent
+			// request re-entered this branch, bumped '__uagb_asset_version' to a fresh
+			// timestamp, and forced every page to rebuild its assets on every view.
+			// That perpetual regeneration is what deadlocks the concurrent
+			// delete_post_meta() calls in UAGB_Post_Assets::allow_assets_generation()
+			// under load (#6095).
 			if ( $stored_domain !== $site_domain ) {
 				\UAGB_Admin_Helper::update_admin_settings_option( '__uagb_asset_version', time() );
+				\UAGB_Admin_Helper::update_admin_settings_option( 'uagb_site_url', $site_domain );
 			}
 		}
 

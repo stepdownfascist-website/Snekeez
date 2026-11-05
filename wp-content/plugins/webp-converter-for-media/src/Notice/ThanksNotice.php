@@ -9,9 +9,8 @@ use WebpConverter\Service\OptionsAccessManager;
  */
 class ThanksNotice extends NoticeAbstract implements NoticeInterface {
 
-	const NOTICE_OPTION     = 'webpc_notice_thanks';
-	const NOTICE_OLD_OPTION = 'webpc_notice_hidden';
-	const NOTICE_VIEW_PATH  = 'components/notices/thanks.php';
+	const NOTICE_OPTION    = 'webpc_notice_thanks';
+	const NOTICE_VIEW_PATH = 'components/notices/thanks.php';
 
 	/**
 	 * {@inheritdoc}

@@ -7,6 +7,7 @@ use WebpConverter\Error\Notice\NoticeInterface;
 use WebpConverter\PluginData;
 use WebpConverter\Service\CloudflareConfigurator;
 use WebpConverter\Service\OptionsAccessManager;
+use WebpConverter\Settings\Option\CloudflareApiTokenOption;
 use WebpConverter\Settings\Option\CloudflareZoneIdOption;
 
 /**
@@ -22,11 +23,13 @@ class CloudflareStatusDetector implements DetectorInterface {
 
 	public function get_error(): ?NoticeInterface {
 		$plugin_settings = $this->plugin_data->get_plugin_settings();
-		if ( ! $plugin_settings[ CloudflareZoneIdOption::OPTION_NAME ] ) {
+		if ( ! $plugin_settings[ CloudflareApiTokenOption::OPTION_NAME ] || ! $plugin_settings[ CloudflareZoneIdOption::OPTION_NAME ] ) {
 			return null;
 		}
 
-		if ( OptionsAccessManager::get_option( CloudflareConfigurator::REQUEST_CACHE_PURGE_OPTION, 'yes' ) !== 'yes' ) {
+		if ( OptionsAccessManager::get_option( CloudflareConfigurator::REQUEST_CACHE_SETTINGS_OPTION, 'yes' ) !== 'yes' ) {
+			return new CloudflareSettingsIncorrectNotice();
+		} elseif ( OptionsAccessManager::get_option( CloudflareConfigurator::REQUEST_CACHE_PURGE_OPTION, 'yes' ) !== 'yes' ) {
 			return new CloudflareSettingsIncorrectNotice();
 		}
 

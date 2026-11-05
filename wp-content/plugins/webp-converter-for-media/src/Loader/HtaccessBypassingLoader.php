@@ -37,7 +37,7 @@ class HtaccessBypassingLoader extends HtaccessLoader {
 	 * @internal
 	 */
 	public function start_buffering(): void {
-		if ( ! ( ( defined( 'DOING_AJAX' ) && DOING_AJAX ) || ( ! is_admin() && ! is_network_admin() ) ) ) {
+		if ( ! ( wp_doing_ajax() || ( ! is_admin() && ! is_network_admin() ) ) ) {
 			return;
 		}
 

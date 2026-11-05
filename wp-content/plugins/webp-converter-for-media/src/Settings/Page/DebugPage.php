@@ -19,9 +19,9 @@ class DebugPage extends PageAbstract {
 
 	private PluginInfo $plugin_info;
 
-	private PluginData $plugin_data;
-
 	private FileLoader $file_loader;
+
+	private PluginData $plugin_data;
 
 	public function __construct(
 		PluginInfo $plugin_info,
@@ -60,7 +60,6 @@ class DebugPage extends PageAbstract {
 	public function get_template_vars(): array {
 		$uploads_url  = apply_filters( 'webpc_dir_url', '', 'uploads' );
 		$uploads_path = apply_filters( 'webpc_dir_path', '', 'uploads' );
-		$ver_param    = uniqid();
 
 		$errors_messages = apply_filters( 'webpc_server_errors_messages', [] );
 		$errors_codes    = apply_filters( 'webpc_server_errors', [] );
@@ -74,26 +73,22 @@ class DebugPage extends PageAbstract {
 			'size_png2_path'        => $this->file_loader->get_file_size_by_path(
 				$uploads_path . RewritesErrorsDetector::PATH_OUTPUT_FILE_PNG2
 			),
-			'size_png_url'          => $this->file_loader->get_file_size_by_url(
+			'size_png_url'          => $this->file_loader->get_file_by_url(
 				$uploads_url . RewritesErrorsDetector::PATH_OUTPUT_FILE_PNG,
-				false,
-				$ver_param
-			),
-			'size_png2_url'         => $this->file_loader->get_file_size_by_url(
+				false
+			)->get_length(),
+			'size_png2_url'         => $this->file_loader->get_file_by_url(
 				$uploads_url . RewritesErrorsDetector::PATH_OUTPUT_FILE_PNG2,
-				false,
-				$ver_param
-			),
-			'size_png_as_webp_url'  => $this->file_loader->get_file_size_by_url(
+				false
+			)->get_length(),
+			'size_png_as_webp_url'  => $this->file_loader->get_file_by_url(
 				$uploads_url . RewritesErrorsDetector::PATH_OUTPUT_FILE_PNG,
-				true,
-				$ver_param
-			),
-			'size_png2_as_webp_url' => $this->file_loader->get_file_size_by_url(
+				true
+			)->get_length(),
+			'size_png2_as_webp_url' => $this->file_loader->get_file_by_url(
 				$uploads_url . RewritesErrorsDetector::PATH_OUTPUT_FILE_PNG2,
-				true,
-				$ver_param
-			),
+				true
+			)->get_length(),
 			'plugin_settings'       => $this->plugin_data->get_plugin_settings_public(),
 			'url_debug_page'        => PageIntegrator::get_settings_page_url( self::PAGE_SLUG ),
 			'errors_messages'       => $errors_messages,

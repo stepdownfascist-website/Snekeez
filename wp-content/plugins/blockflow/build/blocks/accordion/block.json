@@ -1,0 +1,536 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "blockflow/accordion",
+  "version": "1.0.0",
+  "title": "Accordion",
+  "category": "blockflow",
+  "description": "Collapsible accordion with expandable sections.",
+  "keywords": [
+    "accordion",
+    "faq",
+    "collapse",
+    "toggle",
+    "expand"
+  ],
+  "textdomain": "blockflow",
+  "supports": {
+    "anchor": true,
+    "className": true,
+    "html": false
+  },
+  "providesContext": {
+    "blockflow/accordionItems": "items",
+    "blockflow/accordionExpandIcon": "expandIcon",
+    "blockflow/accordionIconPosition": "iconPosition",
+    "blockflow/accordionHeadingTag": "headingTag",
+    "blockflow/accordionTitleIcon": "titleIcon",
+    "blockflow/accordionInitOpenFirst": "initOpenFirst"
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "variationSelected": {
+      "type": "boolean",
+      "default": true
+    },
+    "styleTemplate": {
+      "type": "string",
+      "default": "classic",
+      "enum": [
+        "classic",
+        "iconic",
+        "card",
+        "custom"
+      ]
+    },
+    "items": {
+      "type": "array",
+      "default": [
+        {
+          "heading": "What services do you offer?",
+          "icon": ""
+        },
+        {
+          "heading": "How can I contact support?",
+          "icon": ""
+        },
+        {
+          "heading": "What is your refund policy?",
+          "icon": ""
+        }
+      ]
+    },
+    "openMode": {
+      "type": "string",
+      "default": "single",
+      "enum": [
+        "single",
+        "multiple"
+      ]
+    },
+    "initOpenFirst": {
+      "type": "boolean",
+      "default": true
+    },
+    "titleIcon": {
+      "type": "object",
+      "default": {
+        "source": "library",
+        "name": "forward",
+        "customSvg": {
+          "id": null,
+          "url": ""
+        }
+      }
+    },
+    "titleIconSize": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "20",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "titleIconColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "expandIcon": {
+      "type": "object",
+      "default": {
+        "source": "library",
+        "name": "alt-arrow-down",
+        "customSvg": {
+          "id": null,
+          "url": ""
+        }
+      }
+    },
+    "iconPosition": {
+      "type": "string",
+      "default": "right",
+      "enum": [
+        "left",
+        "right"
+      ]
+    },
+    "headerAlign": {
+      "type": "object",
+      "default": {
+        "desktop": "",
+        "tablet": "",
+        "mobile": ""
+      }
+    },
+    "animationDuration": {
+      "type": "number",
+      "default": 300
+    },
+    "faqSchema": {
+      "type": "boolean",
+      "default": false
+    },
+    "headingTag": {
+      "type": "string",
+      "default": "h2",
+      "enum": [
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "p",
+        "div"
+      ]
+    },
+    "headingTypography": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "fontFamily": "",
+          "fontSize": {
+            "value": "16",
+            "unit": "px"
+          },
+          "fontWeight": "600",
+          "textTransform": "",
+          "fontStyle": "",
+          "textDecoration": "",
+          "lineHeight": {
+            "value": "1.4",
+            "unit": "em"
+          },
+          "letterSpacing": {
+            "value": "",
+            "unit": "px"
+          },
+          "wordSpacing": {
+            "value": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {},
+        "enabled": true
+      }
+    },
+    "headingTextShadow": {
+      "type": "object",
+      "default": {
+        "horizontal": "",
+        "vertical": "",
+        "blur": "",
+        "color": {
+          "light": "",
+          "dark": ""
+        },
+        "enabled": false
+      }
+    },
+    "headingColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "headingColorHover": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "headingColorActive": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "iconSize": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "16",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "iconColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "iconColorHover": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "iconColorActive": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "headerPadding": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "top": "16",
+          "right": "20",
+          "bottom": "16",
+          "left": "20",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "itemGap": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "5",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "itemBackground": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "itemBackgroundHover": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "itemBackgroundActive": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "itemBorder": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "style": "solid",
+          "width": {
+            "top": "1",
+            "right": "1",
+            "bottom": "1",
+            "left": "1",
+            "unit": "px"
+          },
+          "color": {
+            "light": "#8884",
+            "dark": ""
+          },
+          "radius": {
+            "topLeft": "6",
+            "topRight": "6",
+            "bottomRight": "6",
+            "bottomLeft": "6",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "itemBorderHover": {
+      "type": "object",
+      "default": {
+        "desktop": {},
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "itemShadow": {
+      "type": "object",
+      "default": {
+        "horizontal": "",
+        "vertical": "",
+        "blur": "",
+        "spread": "",
+        "color": {
+          "light": "",
+          "dark": ""
+        },
+        "inset": false,
+        "enabled": false
+      }
+    },
+    "itemShadowHover": {
+      "type": "object",
+      "default": {
+        "enabled": false
+      }
+    },
+    "contentPadding": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "top": "16",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "contentBackground": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "spacing": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "padding": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": "",
+            "unit": "px"
+          },
+          "margin": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "advancedLayout": {
+      "type": "object",
+      "default": {
+        "desktop": {},
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "background": {
+      "type": "object",
+      "default": {
+        "type": "none",
+        "color": {
+          "light": "",
+          "dark": ""
+        },
+        "gradient": {
+          "light": "",
+          "dark": ""
+        },
+        "image": {
+          "url": "",
+          "id": null,
+          "position": "center center",
+          "repeat": "no-repeat",
+          "size": "cover",
+          "attachment": "scroll"
+        },
+        "overlay": {
+          "enabled": false,
+          "color": {
+            "light": "",
+            "dark": ""
+          },
+          "opacity": 0.5
+        }
+      }
+    },
+    "border": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "style": "",
+          "width": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": "",
+            "unit": "px"
+          },
+          "color": {
+            "light": "",
+            "dark": ""
+          },
+          "radius": {
+            "topLeft": "",
+            "topRight": "",
+            "bottomRight": "",
+            "bottomLeft": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "borderHover": {
+      "type": "object",
+      "default": {
+        "desktop": {},
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "boxShadow": {
+      "type": "object",
+      "default": {
+        "horizontal": "",
+        "vertical": "",
+        "blur": "",
+        "spread": "",
+        "color": {
+          "light": "",
+          "dark": ""
+        },
+        "inset": false,
+        "enabled": false
+      }
+    },
+    "boxShadowHover": {
+      "type": "object",
+      "default": {
+        "horizontal": "",
+        "vertical": "",
+        "blur": "",
+        "spread": "",
+        "color": {
+          "light": "",
+          "dark": ""
+        },
+        "inset": false,
+        "enabled": false
+      }
+    },
+    "animation": {
+      "type": "object",
+      "default": {
+        "type": "",
+        "duration": 400,
+        "delay": 0,
+        "easing": "ease",
+        "once": true
+      }
+    },
+    "responsiveVisibility": {
+      "type": "object",
+      "default": {
+        "hideOnDesktop": false,
+        "hideOnTablet": false,
+        "hideOnMobile": false
+      }
+    },
+    "htmlTag": {
+      "type": "string",
+      "default": "div"
+    },
+    "htmlAttributes": {
+      "type": "object",
+      "default": {
+        "customAttributes": []
+      }
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

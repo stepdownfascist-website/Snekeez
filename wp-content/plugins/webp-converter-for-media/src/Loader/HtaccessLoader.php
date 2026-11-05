@@ -9,10 +9,10 @@ use WebpConverter\Service\PathsGenerator;
 use WebpConverter\Settings\Option\CloudflareApiTokenOption;
 use WebpConverter\Settings\Option\CloudflareZoneIdOption;
 use WebpConverter\Settings\Option\ExtraFeaturesOption;
+use WebpConverter\Settings\Option\HtaccessRewriteFlagRedirectOption;
 use WebpConverter\Settings\Option\HtaccessRewriteOutputOption;
 use WebpConverter\Settings\Option\HtaccessRewriteParentOption;
 use WebpConverter\Settings\Option\HtaccessRewritePathOption;
-use WebpConverter\Settings\Option\HtaccessRewriteFlagRedirectOption;
 use WebpConverter\Settings\Option\HtaccessRewriteRootOption;
 use WebpConverter\Settings\Option\RewriteInheritanceOption;
 use WebpConverter\Settings\Option\SupportedExtensionsOption;
@@ -317,7 +317,7 @@ class HtaccessLoader extends LoaderAbstract {
 
 		$cache_control = true;
 		if ( $settings[ CloudflareZoneIdOption::OPTION_NAME ] && $settings[ CloudflareApiTokenOption::OPTION_NAME ]
-			&& OptionsAccessManager::get_option( CloudflareConfigurator::REQUEST_CACHE_CONFIG_OPTION ) === 'yes' ) {
+			&& OptionsAccessManager::get_option( CloudflareConfigurator::REQUEST_CACHE_SETTINGS_OPTION ) === 'yes' ) {
 			$cache_control = false;
 		} elseif ( EnvDetector::is_cdn_bunny() ) {
 			$cache_control = false;

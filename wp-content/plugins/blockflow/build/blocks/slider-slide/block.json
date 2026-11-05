@@ -1,0 +1,112 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "blockflow/slider-slide",
+  "version": "1.0.0",
+  "title": "Slide",
+  "category": "blockflow",
+  "description": "Individual slide for the slider block.",
+  "keywords": [
+    "slide",
+    "slider"
+  ],
+  "textdomain": "blockflow",
+  "parent": [
+    "blockflow/slider"
+  ],
+  "supports": {
+    "anchor": false,
+    "className": false,
+    "html": false,
+    "reusable": false,
+    "lock": false
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "background": {
+      "type": "object",
+      "default": {
+        "type": "none",
+        "color": {
+          "light": "",
+          "dark": ""
+        },
+        "gradient": {
+          "light": "",
+          "dark": ""
+        },
+        "image": {
+          "url": "",
+          "id": null,
+          "position": "center center",
+          "repeat": "no-repeat",
+          "size": "cover",
+          "attachment": "scroll",
+          "opacity": 1
+        },
+        "overlay": {
+          "enabled": false,
+          "color": {
+            "light": "",
+            "dark": ""
+          },
+          "opacity": 0.5
+        }
+      }
+    },
+    "padding": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "top": "",
+          "right": "",
+          "bottom": "",
+          "left": "",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "maxWidth": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "100",
+          "unit": "%"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "layout": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "justifyContent": "center",
+          "alignItems": "center"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "gap": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "row": "",
+          "column": "",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

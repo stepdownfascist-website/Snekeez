@@ -1,10 +1,10 @@
 === WooCommerce ===
 Contributors: automattic, woocommerce, mikejolley, jameskoster, claudiosanches, rodrigosprimo, peterfabian1000, vedjain, jamosova, obliviousharmony, konamiman, sadowski, wpmuguru, royho, barryhughes-1, claudiulodro, tiagonoronha, ryelle, levinmedia, aljullu, nerrad, joshuawold, assassinateur, haszari, mppfeiffer, nielslange, opr18, ralucastn, tjcafferkey, danielwrobert, patriciahillebrandt, albarin, dinhtungdu, imanish003, karolmanijak, sunyatasattva, alexandrelara, gigitux, danieldudzic, samueljseay, alexflorisca, opr18, tarunvijwani, pauloarromba, saadtarhi, bor0, kloon, coreymckrill, jorgeatorres, leifsinger, neosinner
 Tags: online store, ecommerce, shop, shopping cart, sell online
-Requires at least: 6.9
-Tested up to: 7.0
+Requires at least: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 10.7.0
+Stable tag: 11.2.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -128,11 +128,11 @@ Request new features and extensions and vote on existing suggestions on our offi
 
 = WooCommerce is awesome! Can I contribute? =
 
-Yes, you can! Join in on our [GitHub repository](https://github.com/woocommerce/woocommerce/?utm_medium=referral&utm_source=wordpress.org&utm_campaign=wp_org_repo_listing) and follow the [development blog](https://woocommerce.wordpress.com/?utm_medium=referral&utm_source=wordpress.org&utm_campaign=wp_org_repo_listing) to stay up-to-date with everything happening in the project.
+Yes, you can! Join in on our [GitHub repository](https://github.com/woocommerce/woocommerce/?utm_medium=referral&utm_source=wordpress.org&utm_campaign=wp_org_repo_listing) and follow the [development blog](https://developer.woocommerce.com/?utm_medium=referral&utm_source=wordpress.org&utm_campaign=wp_org_repo_listing) to stay up-to-date with everything happening in the project.
 
 = Where can I find REST API documentation? =
 
-Extensive [WooCommerce REST API Documentation](https://woocommerce.github.io/woocommerce-rest-api-docs/?utm_medium=referral&utm_source=wordpress.org&utm_campaign=wp_org_repo_listing) is available on GitHub.
+Extensive [WooCommerce REST API Documentation](https://developer.woocommerce.com/docs/apis/rest-api/?utm_medium=referral&utm_source=wordpress.org&utm_campaign=wp_org_repo_listing) is available.
 
 = My question is not listed here. Where can I find more answers? =
 
@@ -144,7 +144,7 @@ Check out [Frequently Asked Questions](https://woocommerce.com/document/frequent
 
 * PHP 7.4 or greater is required (PHP 8.0 or greater is recommended)
 * MySQL 5.5.5 or greater, OR MariaDB version 10.1 or greater, is required
-* WordPress 6.9 or greater
+* WordPress 7.0 or greater
 * (Recommended) WordPress [memory limit](https://woocommerce.com/document/increasing-the-wordpress-memory-limit/) of 256 MB or greater.
 * (Recommended) [HTTPS](https://woocommerce.com/document/ssl-and-https/) support.
 
@@ -170,12 +170,21 @@ WooCommerce comes with some sample data you can use to see how products look; im
 
 == Changelog ==
 
-= 10.8.1 2026-05-27 =
+= 11.2.2 2026-11-04 =
 
 **WooCommerce**
 
-* Fix - Fix a fatal error during in-place upgrade to 10.8.0 caused by the new DefaultCustomerAddress enum being referenced from class-wc-settings-general.php before the in-process autoloader classmap is refreshed. [#65359](https://github.com/woocommerce/woocommerce/pull/65359)
-* Fix - Fix WooPayments onboarding business type dropdown crash. [#65345](https://github.com/woocommerce/woocommerce/pull/65345)
+* Fix - Ensure PayPal Standard shipping updates correctly update shipping and tax amounts [#70653](https://github.com/woocommerce/woocommerce/pull/70653)
+* Fix - Improve handling of unexpected payment settings profile data. [#70642](https://github.com/woocommerce/woocommerce/pull/70642)
+* Fix - Improve validation of the column mapping used by the product CSV importer. [#70646](https://github.com/woocommerce/woocommerce/pull/70646)
+* Fix - Keep custom default attribute values intact when a global attribute term slug is renamed. [#70641](https://github.com/woocommerce/woocommerce/pull/70641)
+* Fix - Require a logged-in admin browser session for the Jetpack connection endpoints used during onboarding. [#70656](https://github.com/woocommerce/woocommerce/pull/70656)
+* Fix - Restrict REST API key authentication to REST API requests. [#70649](https://github.com/woocommerce/woocommerce/pull/70649)
+* Fix - Start each Store API checkout request with its own order and payment data. [#70637](https://github.com/woocommerce/woocommerce/pull/70637)
+* Fix - Stop checkout from continuing to payment when the order could not be saved, and reject phone numbers over 100 characters. [#70639](https://github.com/woocommerce/woocommerce/pull/70639)
+* Fix - Use a chosen shipping method only when its rate was calculated for the cart. [#70648](https://github.com/woocommerce/woocommerce/pull/70648)
+* Fix - Validate the quantity when updating a cart item via the Store API. [#70657](https://github.com/woocommerce/woocommerce/pull/70657)
+* Fix - When a shopper adds a product to the cart, ignore attributes that the product does not use. [#70651](https://github.com/woocommerce/woocommerce/pull/70651)
 
 
 [See changelog for all versions](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/changelog.txt).

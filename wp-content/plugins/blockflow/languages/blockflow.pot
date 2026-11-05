@@ -1,0 +1,5614 @@
+# Copyright (C) 2026 ThemeRuby
+# This file is distributed under the same license as the BlockFlow plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: BlockFlow 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wpblockflow.com\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-05-30T04:14:24+00:00\n"
+"PO-Revision-Date: 2026-05-30T04:14:24+00:00\n"
+"X-Generator: BlockFlow i18n Extractor\n"
+"X-Domain: blockflow\n"
+
+#: src/blocks/video/settings/VideoPanel.jsx:368
+msgid "0 = no limit"
+msgstr ""
+
+#: src/blocks/grid/components/GridStructurePicker.js:69
+#: src/blocks/grid/components/GridToolbar.js:69
+#: src/blocks/grid/variations.js:165
+msgid "1fr / 2fr"
+msgstr ""
+
+#: src/blocks/grid/components/GridStructurePicker.js:76
+#: src/blocks/grid/components/GridToolbar.js:76
+#: src/blocks/grid/variations.js:184
+msgid "1fr / 2fr / 1fr"
+msgstr ""
+
+#: src/blocks/grid/components/GridStructurePicker.js:20
+#: src/blocks/grid/components/GridToolbar.js:20
+#: src/blocks/grid/variations.js:31
+msgid "2 Columns"
+msgstr ""
+
+#: src/blocks/grid/components/GridStructurePicker.js:41
+#: src/blocks/grid/components/GridToolbar.js:41
+#: src/blocks/grid/variations.js:89
+msgid "2 Rows"
+msgstr ""
+
+#: src/blocks/grid/components/GridStructurePicker.js:48
+#: src/blocks/grid/components/GridToolbar.js:48
+#: src/blocks/grid/variations.js:108
+msgid "2×2 Grid"
+msgstr ""
+
+#: src/blocks/container/components/ContainerToolbar.js:98
+#: src/blocks/container/components/StructurePicker.js:52
+msgid "25 / 25 / 25 / 25"
+msgstr ""
+
+#: src/blocks/container/components/ContainerToolbar.js:91
+#: src/blocks/container/components/StructurePicker.js:77
+msgid "25 / 50 / 25"
+msgstr ""
+
+#: src/blocks/container/components/ContainerToolbar.js:70
+#: src/blocks/container/components/StructurePicker.js:57
+msgid "25 / 75"
+msgstr ""
+
+#: src/blocks/grid/components/GridStructurePicker.js:27
+#: src/blocks/grid/components/GridToolbar.js:27
+#: src/blocks/grid/variations.js:51
+msgid "3 Columns"
+msgstr ""
+
+#: src/blocks/grid/components/GridStructurePicker.js:55
+#: src/blocks/grid/components/GridToolbar.js:55
+#: src/blocks/grid/variations.js:127
+msgid "3×2 Grid"
+msgstr ""
+
+#: src/blocks/container/components/ContainerToolbar.js:84
+#: src/blocks/container/components/StructurePicker.js:47
+msgid "33 / 33 / 33"
+msgstr ""
+
+#: src/blocks/container/components/ContainerToolbar.js:56
+#: src/blocks/container/components/StructurePicker.js:67
+msgid "33 / 66"
+msgstr ""
+
+#: src/blocks/grid/components/GridStructurePicker.js:34
+#: src/blocks/grid/components/GridToolbar.js:34
+#: src/blocks/grid/variations.js:70
+msgid "4 Columns"
+msgstr ""
+
+#: src/blocks/grid/components/GridStructurePicker.js:62
+#: src/blocks/grid/components/GridToolbar.js:62
+#: src/blocks/grid/variations.js:146
+msgid "4×2 Grid"
+msgstr ""
+
+#: src/blocks/container/components/ContainerToolbar.js:49
+#: src/blocks/container/components/StructurePicker.js:42
+msgid "50 / 50"
+msgstr ""
+
+#: src/blocks/container/components/ContainerToolbar.js:63
+#: src/blocks/container/components/StructurePicker.js:72
+msgid "66 / 33"
+msgstr ""
+
+#: src/blocks/container/components/ContainerToolbar.js:77
+#: src/blocks/container/components/StructurePicker.js:62
+msgid "75 / 25"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/TitlePanel.jsx:36
+msgid "Above"
+msgstr ""
+
+#: src/blocks/countdown/settings/LabelPanel.jsx:19
+msgid "Above Digits"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:22
+msgid "Absolute"
+msgstr ""
+
+#: src/blocks/accordion-item/edit.js:57
+#: src/blocks/accordion/settings/ItemStylePanel.jsx:50
+msgid "Accordion Item"
+msgstr ""
+
+#: src/admin/components/pages/PluginsPage.jsx:95
+msgid "Activate"
+msgstr ""
+
+#: src/admin/components/pages/PluginsPage.jsx:89
+#: src/admin/components/pages/SystemInfoPage.jsx:206
+#: src/components/controls/StateTabBar.jsx:18
+msgid "Active"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:209
+msgid "Active Blocks"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:310
+#: src/blocks/slider/settings/NavigationPanel.jsx:310
+msgid "Active Color"
+msgstr ""
+
+#: src/blocks/accordion/settings/ItemsPanel.jsx:101
+msgid "Add Accordion Item"
+msgstr ""
+
+#: src/components/advanced-settings/AttributesPanel.jsx:82
+#: src/components/controls/LinkControl.jsx:125
+msgid "Add Attribute"
+msgstr ""
+
+#: src/blocks/brand-logos/edit.js:182
+msgid "Add brand logos to display."
+msgstr ""
+
+#: src/blocks/container/components/ContainerToolbar.js:328
+msgid "Add Container"
+msgstr ""
+
+#: src/blocks/icon-set/settings/IconsPanel.jsx:205
+#: src/blocks/social-icons/settings/IconsPanel.jsx:196
+msgid "Add Icon"
+msgstr ""
+
+#: src/blocks/image/edit.js:264
+msgid "Add Image"
+msgstr ""
+
+#: src/blocks/carousel-images/edit.js:427
+#: src/blocks/carousel-images/settings/ImagesPanel.jsx:267
+#: src/blocks/gallery/edit.js:299
+#: src/blocks/gallery/settings/GalleryPanel.jsx:234
+msgid "Add Images"
+msgstr ""
+
+#: src/blocks/counter/settings/ItemsPanel.jsx:264
+#: src/blocks/icon-list/settings/ItemsPanel.jsx:218
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:101
+#: src/components/controls/RepeaterControl/RepeaterControl.jsx:44
+msgid "Add Item"
+msgstr ""
+
+#: src/blocks/brand-logos/edit.js:218
+#: src/blocks/brand-logos/settings/LogosPanel.jsx:181
+msgid "Add Logos"
+msgstr ""
+
+#: src/components/controls/LinkControl.jsx:101
+msgid "Add nofollow"
+msgstr ""
+
+#: src/blocks/slider/edit.js:370
+#: src/blocks/slider/edit.js:447
+msgid "Add Slide"
+msgstr ""
+
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:313
+msgid "Add Social"
+msgstr ""
+
+#: src/blocks/accordion/settings/GeneralPanel.jsx:128
+msgid "Add structured data for search engines"
+msgstr ""
+
+#: src/blocks/testimonial/edit.js:218
+msgid "Add testimonial quote…"
+msgstr ""
+
+#: src/blocks/marquee-text/settings/ItemsPanel.jsx:98
+msgid "Add Text"
+msgstr ""
+
+#: src/blocks/testimonial/edit.js:215
+msgid "Add title…"
+msgstr ""
+
+#: src/blocks/team-member/edit.js:255
+msgid "Additional info…"
+msgstr ""
+
+#: src/components/inspector-tabs/InspectorTabs.jsx:25
+msgid "Advanced"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:379
+msgid "Affected by browser autoplay policy. May require muted."
+msgstr ""
+
+#: src/utils/constants.js:345
+msgid "After"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:31
+msgid "After Text"
+msgstr ""
+
+#: src/blocks/grid/settings/GridPanel.js:526
+#: src/blocks/grid/settings/GridPanel.js:527
+msgid "Align Content"
+msgstr ""
+
+#: src/blocks/container/settings/ContainerPanel.js:302
+#: src/blocks/container/settings/ContainerPanel.js:303
+#: src/blocks/grid/settings/GridPanel.js:512
+#: src/blocks/grid/settings/GridPanel.js:513
+#: src/blocks/slider-slide/settings/SlidePanel.jsx:181
+#: src/blocks/slider-slide/settings/SlidePanel.jsx:182
+msgid "Align Items"
+msgstr ""
+
+#: src/components/advanced-settings/LayoutPositionPanel.jsx:203
+#: src/components/advanced-settings/LayoutPositionPanel.jsx:204
+msgid "Align Self"
+msgstr ""
+
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:148
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:149
+#: src/blocks/button/settings/LayoutPanel.jsx:107
+#: src/blocks/button/settings/LayoutPanel.jsx:108
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:220
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:221
+#: src/blocks/countdown/settings/CountdownPanel.jsx:196
+#: src/blocks/countdown/settings/CountdownPanel.jsx:197
+#: src/blocks/counter/settings/LayoutPanel.jsx:165
+#: src/blocks/counter/settings/LayoutPanel.jsx:166
+#: src/blocks/gallery/settings/CaptionPanel.jsx:220
+#: src/blocks/gallery/settings/CaptionPanel.jsx:221
+#: src/blocks/heading/settings/LayoutPanel.jsx:64
+#: src/blocks/heading/settings/LayoutPanel.jsx:65
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:202
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:203
+#: src/blocks/icon-set/settings/IconPanel.jsx:339
+#: src/blocks/icon-set/settings/IconPanel.jsx:340
+#: src/blocks/icon/settings/IconPanel.jsx:416
+#: src/blocks/icon/settings/IconPanel.jsx:417
+#: src/blocks/image/settings/CaptionPanel.jsx:224
+#: src/blocks/image/settings/CaptionPanel.jsx:225
+#: src/blocks/image/settings/ImagePanel.js:428
+#: src/blocks/image/settings/ImagePanel.js:429
+#: src/blocks/note/settings/LayoutPanel.jsx:169
+#: src/blocks/note/settings/LayoutPanel.jsx:170
+#: src/blocks/separator/settings/SeparatorPanel.jsx:140
+#: src/blocks/separator/settings/SeparatorPanel.jsx:141
+#: src/blocks/social-icons/settings/IconPanel.jsx:256
+#: src/blocks/social-icons/settings/IconPanel.jsx:257
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:187
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:199
+#: src/blocks/team-member/settings/LayoutPanel.jsx:95
+#: src/blocks/team-member/settings/LayoutPanel.jsx:96
+#: src/blocks/testimonial/settings/LayoutPanel.jsx:38
+#: src/blocks/testimonial/settings/LayoutPanel.jsx:39
+#: src/blocks/text/settings/TextPanel.jsx:245
+#: src/blocks/text/settings/TextPanel.jsx:246
+msgid "Alignment"
+msgstr ""
+
+#: src/admin/components/pages/BlocksPage.jsx:246
+msgid "All"
+msgstr ""
+
+#: src/blocks/icon-set/settings/IconsPanel.jsx:22
+msgid "All Icons"
+msgstr ""
+
+#: src/blocks/note/settings/DismissPanel.jsx:39
+msgid "Allow Dismiss"
+msgstr ""
+
+#: src/admin/components/pages/StylePage.jsx:69
+msgid "Allow SVG files to be uploaded to the Media Library. Required for custom icon uploads in blocks."
+msgstr ""
+
+#: src/utils/constants.js:466
+msgid "Always"
+msgstr ""
+
+#: src/components/SvgUploadModal.jsx:79
+msgid "An error occurred. Please try again."
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:351
+#: src/components/advanced-settings/AnimationPanel.jsx:352
+msgid "Animate once"
+msgstr ""
+
+#: src/blocks/accordion/settings/ItemStylePanel.jsx:60
+#: src/components/advanced-settings/AnimationPanel.jsx:332
+#: src/components/advanced-settings/AnimationPanel.jsx:333
+#: src/components/advanced-settings/AnimationPanel.jsx:334
+msgid "Animation"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:213
+msgid "Animation Duration"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:40
+msgid "Any Video"
+msgstr ""
+
+#: src/blocks/google-map/settings/MapPanel.js:126
+#: src/blocks/google-map/settings/MapPanel.js:19
+msgid "API Key"
+msgstr ""
+
+#: src/blocks/google-map/settings/MapPanel.js:131
+msgid "API Key Value"
+msgstr ""
+
+#: src/blocks/counter/settings/ItemStylePanel.jsx:133
+#: src/blocks/gallery/settings/ImagePanel.jsx:125
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:371
+#: src/blocks/icon-set/settings/IconPanel.jsx:455
+#: src/blocks/social-icons/settings/IconPanel.jsx:390
+msgid "Appear Animation"
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LogoPanel.jsx:103
+msgid "Appear Effect"
+msgstr ""
+
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:118
+msgid "Applies border radius to all slides uniformly."
+msgstr ""
+
+#: src/admin/components/pages/TypographyPage.jsx:185
+msgid "Apply custom typography styles to headings and paragraphs across your site. When disabled, no typography CSS will be output to the frontend."
+msgstr ""
+
+#: src/blocks/container/settings/ContainerPanel.js:330
+#: src/blocks/container/settings/ContainerPanel.js:331
+#: src/blocks/grid/settings/GridPanel.js:535
+#: src/blocks/grid/settings/GridPanel.js:536
+msgid "Apply Styles To"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:44
+msgid "Arch"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:193
+msgid "ARIA Live"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:261
+#: src/blocks/slider/settings/NavigationPanel.jsx:261
+msgid "Arrow Colors"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:222
+#: src/blocks/gallery/settings/LightboxPanel.jsx:183
+#: src/blocks/slider/settings/NavigationPanel.jsx:222
+msgid "Arrow Icons"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:239
+#: src/blocks/slider/settings/NavigationPanel.jsx:239
+msgid "Arrow Padding"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:231
+#: src/blocks/slider/settings/NavigationPanel.jsx:231
+msgid "Arrow Position"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:243
+#: src/blocks/slider/settings/NavigationPanel.jsx:243
+msgid "Arrow Radius"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:235
+#: src/blocks/slider/settings/NavigationPanel.jsx:235
+msgid "Arrow Size"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/ImagePanel.jsx:95
+#: src/blocks/gallery/settings/LayoutPanel.jsx:136
+#: src/blocks/video/settings/VideoPanel.jsx:439
+#: src/blocks/video/settings/VideoPanel.jsx:440
+msgid "Aspect Ratio"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:33
+msgid "Assertive"
+msgstr ""
+
+#: src/admin/components/pages/PerformancePage.jsx:45
+msgid "Asset Loading"
+msgstr ""
+
+#: src/admin/components/pages/StylePage.jsx:61
+msgid "Assets"
+msgstr ""
+
+#: src/components/controls/BackgroundControl.jsx:220
+msgid "Attachment"
+msgstr ""
+
+#: src/components/advanced-settings/AttributesPanel.jsx:70
+#: src/components/controls/LinkControl.jsx:114
+msgid "Attribute"
+msgstr ""
+
+#: src/components/advanced-settings/AttributesPanel.jsx:63
+msgid "Attributes"
+msgstr ""
+
+#: src/blocks/testimonial/settings/AuthorPanel.jsx:74
+msgid "Author"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:55
+#: src/blocks/video/settings/VideoPanel.jsx:32
+#: src/components/controls/BackgroundControl.jsx:72
+#: src/utils/constants.js:170
+msgid "Auto"
+msgstr ""
+
+#: src/blocks/grid/settings/GridPanel.js:498
+#: src/blocks/grid/settings/GridPanel.js:499
+msgid "Auto Flow"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:100
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:101
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:121
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:122
+#: src/blocks/video/settings/VideoPanel.jsx:377
+#: src/blocks/video/settings/VideoPanel.jsx:378
+msgid "Autoplay"
+msgstr ""
+
+#: src/blocks/team-member/templates.js:240
+#: src/blocks/team-member/templates.js:71
+#: src/blocks/testimonial/settings/AuthorPanel.jsx:78
+msgid "Avatar"
+msgstr ""
+
+#: src/blocks/testimonial/settings/AuthorPanel.jsx:79
+msgid "Avatar Image"
+msgstr ""
+
+#: src/blocks/testimonial/settings/AuthorPanel.jsx:82
+#: src/blocks/testimonial/settings/AuthorPanel.jsx:83
+msgid "Avatar Size"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:84
+msgid "Back In Down"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:85
+msgid "Back In Left"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:86
+msgid "Back In Right"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:83
+msgid "Back In Up"
+msgstr ""
+
+#: src/blocks/accordion/settings/ContentStylePanel.jsx:70
+#: src/blocks/accordion/settings/ContentStylePanel.jsx:71
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:211
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:212
+#: src/blocks/button/settings/ButtonPanel.jsx:475
+#: src/blocks/button/settings/ButtonPanel.jsx:476
+#: src/blocks/button/settings/ButtonPanel.jsx:488
+#: src/blocks/button/settings/ButtonPanel.jsx:490
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:255
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:256
+#: src/blocks/carousel-images/settings/LightboxPanel.jsx:139
+#: src/blocks/carousel-images/settings/LightboxPanel.jsx:140
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:266
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:272
+#: src/blocks/gallery/settings/CaptionPanel.jsx:255
+#: src/blocks/gallery/settings/CaptionPanel.jsx:256
+#: src/blocks/gallery/settings/LightboxPanel.jsx:155
+#: src/blocks/gallery/settings/LightboxPanel.jsx:156
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:293
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:294
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:310
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:311
+#: src/blocks/icon-set/settings/IconPanel.jsx:382
+#: src/blocks/icon-set/settings/IconPanel.jsx:383
+#: src/blocks/icon-set/settings/IconPanel.jsx:399
+#: src/blocks/icon-set/settings/IconPanel.jsx:400
+#: src/blocks/icon/settings/IconPanel.jsx:491
+#: src/blocks/icon/settings/IconPanel.jsx:492
+#: src/blocks/icon/settings/IconPanel.jsx:508
+#: src/blocks/icon/settings/IconPanel.jsx:509
+#: src/blocks/image/settings/CaptionPanel.jsx:259
+#: src/blocks/image/settings/CaptionPanel.jsx:260
+#: src/blocks/image/settings/LightboxPanel.jsx:139
+#: src/blocks/image/settings/LightboxPanel.jsx:140
+#: src/blocks/info-card/settings/ButtonPanel.jsx:494
+#: src/blocks/info-card/settings/ButtonPanel.jsx:495
+#: src/blocks/info-card/settings/ButtonPanel.jsx:507
+#: src/blocks/info-card/settings/ButtonPanel.jsx:508
+#: src/blocks/info-card/settings/MediaPanel.jsx:690
+#: src/blocks/info-card/settings/MediaPanel.jsx:691
+#: src/blocks/info-card/settings/MediaPanel.jsx:707
+#: src/blocks/info-card/settings/MediaPanel.jsx:708
+#: src/blocks/note/settings/ContentPanel.jsx:96
+#: src/blocks/note/settings/ContentPanel.jsx:97
+#: src/blocks/note/settings/HeaderPanel.jsx:248
+#: src/blocks/note/settings/HeaderPanel.jsx:249
+#: src/blocks/slider-slide/settings/SlidePanel.jsx:147
+#: src/blocks/slider/settings/NavigationPanel.jsx:266
+#: src/blocks/slider/settings/NavigationPanel.jsx:272
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:296
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:304
+#: src/blocks/team-member/settings/OverlayBoxPanel.jsx:83
+#: src/blocks/team-member/settings/OverlayBoxPanel.jsx:84
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:357
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:358
+#: src/blocks/video/settings/LightboxPanel.jsx:125
+#: src/blocks/video/settings/LightboxPanel.jsx:126
+#: src/blocks/video/settings/PlayIconPanel.jsx:333
+#: src/blocks/video/settings/PlayIconPanel.jsx:335
+#: src/blocks/video/settings/PlayIconPanel.jsx:357
+#: src/components/advanced-settings/BackgroundPanel.jsx:105
+#: src/components/advanced-settings/BackgroundPanel.jsx:106
+msgid "Background"
+msgstr ""
+
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:324
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:332
+#: src/blocks/video/settings/PlayIconPanel.jsx:359
+msgid "Background Hover"
+msgstr ""
+
+#: src/components/controls/BackgroundControl.jsx:193
+msgid "Background Image"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/ImagePanel.jsx:118
+msgid "Background Overlay"
+msgstr ""
+
+#: src/utils/constants.js:458
+msgid "Bar"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:205
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:206
+msgid "Bar Color"
+msgstr ""
+
+#: src/admin/components/pages/DarkModePage.jsx:122
+msgid "Based on your settings, the following CSS selectors will be used:"
+msgstr ""
+
+#: src/utils/constants.js:344
+msgid "Before"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:30
+msgid "Before Text"
+msgstr ""
+
+#: src/components/SvgUploadModal.jsx:88
+msgid "Before you enable SVG uploads, note that such files include a security risk. We run a process to remove possible malicious code, but there is still risk involved when using such files."
+msgstr ""
+
+#: src/blocks/progress-bar/settings/TitlePanel.jsx:37
+#: src/utils/constants.js:488
+msgid "Below"
+msgstr ""
+
+#: src/blocks/countdown/settings/LabelPanel.jsx:18
+msgid "Below Digits"
+msgstr ""
+
+#: src/utils/constants.js:459
+msgid "Below Image"
+msgstr ""
+
+#: src/blocks/team-member/settings/ContentPanel.jsx:127
+msgid "Bio"
+msgstr ""
+
+#: src/blocks/team-member/settings/ContentPanel.jsx:139
+msgid "Bio Color"
+msgstr ""
+
+#: src/blocks/team-member/settings/ContentPanel.jsx:129
+msgid "Bio Text"
+msgstr ""
+
+#: src/blocks/team-member/settings/ContentPanel.jsx:133
+msgid "Bio Typography"
+msgstr ""
+
+#: src/components/controls/BorderRadiusControl.jsx:20
+msgid "BL"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:208
+#: src/blocks/heading/settings/HeadingPanel.jsx:209
+#: src/blocks/marquee-text/settings/StylePanel.jsx:302
+#: src/blocks/marquee-text/settings/StylePanel.jsx:303
+#: src/blocks/text/settings/TextPanel.jsx:281
+#: src/blocks/text/settings/TextPanel.jsx:282
+msgid "Blend Mode"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:25
+msgid "Blob 1"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:26
+msgid "Blob 2"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:27
+msgid "Blob 3"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:28
+msgid "Blob 4"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:29
+msgid "Blob 5"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:30
+msgid "Blob 6"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:31
+msgid "Blob 7"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:32
+msgid "Blob 8"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:33
+msgid "Blob 9"
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:57
+#: includes/admin/class-admin-dashboard.php:58
+#: includes/class-block-manager.php:238
+#: src/admin/components/pages/SystemInfoPage.jsx:198
+msgid "BlockFlow"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:22
+msgid "BlockFlow adds powerful custom blocks to the WordPress block editor. Enable or disable individual blocks from the Blocks page."
+msgstr ""
+
+#: includes/class-page-templates.php:64
+msgid "BlockFlow Canvas"
+msgstr ""
+
+#: includes/class-page-templates.php:65
+msgid "BlockFlow Full Width"
+msgstr ""
+
+#: blockflow.php:128
+msgid "BlockFlow requires WordPress %s or higher. Please update WordPress to use this plugin."
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:184
+#: includes/admin/class-admin-dashboard.php:69
+#: includes/admin/class-admin-dashboard.php:70
+#: src/admin/App.jsx:165
+#: src/admin/App.jsx:175
+#: src/admin/components/Sidebar.jsx:26
+msgid "Blocks"
+msgstr ""
+
+#: src/admin/components/pages/BlocksPage.jsx:274
+msgid "Blocks will appear shortly when loaded in the editor."
+msgstr ""
+
+#: src/components/controls/BoxShadowPopover.jsx:281
+#: src/components/controls/TextShadowPopover.jsx:254
+#: src/utils/constants.js:422
+msgid "Blur"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:82
+#: src/components/controls/ItemAnimationControl.jsx:39
+msgid "Blur In"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:523
+#: src/blocks/info-card/settings/ButtonPanel.jsx:480
+#: src/components/advanced-settings/BorderPanel.jsx:30
+#: src/components/controls/BorderControls.jsx:237
+msgid "Border"
+msgstr ""
+
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:297
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:298
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:314
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:315
+#: src/blocks/icon-set/settings/IconPanel.jsx:386
+#: src/blocks/icon-set/settings/IconPanel.jsx:387
+#: src/blocks/icon-set/settings/IconPanel.jsx:403
+#: src/blocks/icon-set/settings/IconPanel.jsx:404
+#: src/blocks/icon/settings/IconPanel.jsx:495
+#: src/blocks/icon/settings/IconPanel.jsx:496
+#: src/blocks/icon/settings/IconPanel.jsx:512
+#: src/blocks/icon/settings/IconPanel.jsx:513
+#: src/blocks/info-card/settings/MediaPanel.jsx:694
+#: src/blocks/info-card/settings/MediaPanel.jsx:695
+#: src/blocks/info-card/settings/MediaPanel.jsx:711
+#: src/blocks/info-card/settings/MediaPanel.jsx:712
+#: src/components/controls/BorderControls.jsx:257
+#: src/components/controls/BorderControls.jsx:258
+#: src/components/controls/BorderControls.jsx:259
+msgid "Border Color"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:259
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:261
+#: src/blocks/carousel-images/settings/LightboxPanel.jsx:153
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:245
+#: src/blocks/countdown/settings/CountdownPanel.jsx:227
+#: src/blocks/gallery/settings/CaptionPanel.jsx:259
+#: src/blocks/gallery/settings/CaptionPanel.jsx:261
+#: src/blocks/gallery/settings/LightboxPanel.jsx:169
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:351
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:353
+#: src/blocks/icon-set/settings/IconPanel.jsx:435
+#: src/blocks/icon-set/settings/IconPanel.jsx:437
+#: src/blocks/icon/settings/IconPanel.jsx:463
+#: src/blocks/icon/settings/IconPanel.jsx:465
+#: src/blocks/image/settings/CaptionPanel.jsx:263
+#: src/blocks/image/settings/CaptionPanel.jsx:265
+#: src/blocks/image/settings/ImagePanel.js:510
+#: src/blocks/image/settings/ImagePanel.js:512
+#: src/blocks/image/settings/LightboxPanel.jsx:153
+#: src/blocks/info-card/settings/MediaPanel.jsx:748
+#: src/blocks/info-card/settings/MediaPanel.jsx:750
+#: src/blocks/info-card/settings/MediaPanel.jsx:807
+#: src/blocks/info-card/settings/MediaPanel.jsx:809
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:166
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:174
+#: src/blocks/slider/settings/NavigationPanel.jsx:245
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:104
+#: src/blocks/social-icons/settings/IconPanel.jsx:293
+#: src/blocks/social-icons/settings/IconPanel.jsx:295
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:236
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:255
+#: src/blocks/team-member/settings/OverlayBoxPanel.jsx:105
+#: src/blocks/team-member/settings/OverlayBoxPanel.jsx:106
+#: src/blocks/video/settings/LightboxPanel.jsx:139
+#: src/blocks/video/settings/PlayIconPanel.jsx:302
+#: src/blocks/video/settings/PlayIconPanel.jsx:304
+#: src/blocks/video/settings/VideoPanel.jsx:481
+#: src/blocks/video/settings/VideoPanel.jsx:483
+#: src/components/controls/BorderControls.jsx:265
+#: src/components/controls/BorderControls.jsx:266
+#: src/components/controls/BorderControls.jsx:268
+msgid "Border Radius"
+msgstr ""
+
+#: src/components/controls/BorderControls.jsx:241
+#: src/components/controls/BorderControls.jsx:242
+msgid "Border Type"
+msgstr ""
+
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:331
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:333
+#: src/blocks/icon-set/settings/IconPanel.jsx:415
+#: src/blocks/icon-set/settings/IconPanel.jsx:417
+#: src/blocks/icon/settings/IconPanel.jsx:444
+#: src/blocks/icon/settings/IconPanel.jsx:446
+#: src/blocks/info-card/settings/MediaPanel.jsx:728
+#: src/blocks/info-card/settings/MediaPanel.jsx:730
+#: src/components/controls/BorderControls.jsx:249
+#: src/components/controls/BorderControls.jsx:250
+#: src/components/controls/BorderControls.jsx:252
+msgid "Border Width"
+msgstr ""
+
+#: src/blocks/info-card/templates.js:201
+#: src/blocks/info-card/templates.js:322
+#: src/blocks/note/settings/LayoutPanel.jsx:31
+msgid "Bordered"
+msgstr ""
+
+#: src/blocks/counter/templates.js:47
+msgid "Bordered counter items"
+msgstr ""
+
+#: src/blocks/button/templates.js:359
+#: src/blocks/button/templates.js:427
+msgid "Bordered Shadow"
+msgstr ""
+
+#: src/blocks/heading/settings/SeparatorPanel.jsx:22
+#: src/blocks/heading/settings/SubheadingPanel.jsx:21
+#: src/components/advanced-settings/StickyPanel.jsx:23
+#: src/components/controls/SpacingControl.jsx:18
+msgid "Bottom"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:69
+#: src/components/controls/PositionControl.jsx:23
+msgid "Bottom Center"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:68
+#: src/components/controls/BorderRadiusControl.jsx:20
+#: src/components/controls/PositionControl.jsx:22
+msgid "Bottom Left"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:70
+#: src/components/controls/BorderRadiusControl.jsx:19
+#: src/components/controls/PositionControl.jsx:24
+msgid "Bottom Right"
+msgstr ""
+
+#: src/blocks/heading/settings/SeparatorPanel.jsx:131
+#: src/blocks/heading/settings/SeparatorPanel.jsx:132
+#: src/blocks/info-card/settings/DescriptionPanel.jsx:117
+#: src/blocks/info-card/settings/DescriptionPanel.jsx:118
+#: src/blocks/info-card/settings/TitlePanel.jsx:117
+#: src/blocks/info-card/settings/TitlePanel.jsx:118
+#: src/blocks/testimonial/settings/QuotePanel.jsx:42
+#: src/blocks/testimonial/settings/QuotePanel.jsx:43
+#: src/blocks/testimonial/settings/RatingPanel.jsx:47
+#: src/blocks/testimonial/settings/RatingPanel.jsx:48
+#: src/blocks/testimonial/settings/TitlePanel.jsx:42
+#: src/blocks/testimonial/settings/TitlePanel.jsx:43
+msgid "Bottom Spacing"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:47
+#: src/components/advanced-settings/AnimationPanel.jsx:98
+#: src/components/controls/HoverAnimationControl.jsx:23
+msgid "Bounce"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:55
+#: src/components/controls/ItemAnimationControl.jsx:37
+msgid "Bounce In"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:57
+msgid "Bounce In Down"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:58
+msgid "Bounce In Left"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:59
+msgid "Bounce In Right"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:56
+msgid "Bounce In Up"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:23
+msgid "Box"
+msgstr ""
+
+#: src/blocks/info-card/settings/MediaPanel.jsx:768
+#: src/blocks/info-card/settings/MediaPanel.jsx:769
+#: src/blocks/team-member/settings/OverlayBoxPanel.jsx:113
+#: src/blocks/team-member/settings/OverlayBoxPanel.jsx:115
+#: src/components/controls/BorderControls.jsx:274
+#: src/components/controls/BorderControls.jsx:275
+#: src/components/controls/BoxShadowPopover.jsx:230
+msgid "Box Shadow"
+msgstr ""
+
+#: src/blocks/info-card/settings/PresetPanel.jsx:107
+#: src/blocks/info-card/settings/PresetPanel.jsx:108
+msgid "Box Style"
+msgstr ""
+
+#: src/blocks/counter/templates.js:117
+#: src/blocks/counter/templates.js:46
+#: src/utils/constants.js:106
+msgid "Boxed"
+msgstr ""
+
+#: src/components/controls/BorderRadiusControl.jsx:19
+msgid "BR"
+msgstr ""
+
+#: src/blocks/brand-logos/edit.js:182
+msgid "Brand Logos"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:308
+#: src/blocks/slider/settings/NavigationPanel.jsx:308
+msgid "Bullet Colors"
+msgstr ""
+
+#: src/utils/constants.js:479
+msgid "Bullets"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:369
+msgid "Button"
+msgstr ""
+
+#: src/blocks/info-card/settings/ButtonPanel.jsx:414
+msgid "Button Icon"
+msgstr ""
+
+#: src/blocks/info-card/settings/ButtonPanel.jsx:409
+msgid "Button Label"
+msgstr ""
+
+#: src/blocks/info-card/settings/ButtonPanel.jsx:32
+msgid "Button Only"
+msgstr ""
+
+#: src/blocks/button/edit.js:242
+msgid "Button text…"
+msgstr ""
+
+#: src/blocks/button/settings/LayoutPanel.jsx:101
+#: src/blocks/button/settings/LayoutPanel.jsx:102
+msgid "Button Width"
+msgstr ""
+
+#: src/components/controls/HoverAnimationControl.jsx:29
+msgid "Buzz"
+msgstr ""
+
+#: src/components/SvgUploadModal.jsx:94
+msgid "Cancel"
+msgstr ""
+
+#: src/utils/typography-defaults.js:49
+msgid "Capitalize"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:198
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:199
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:200
+#: src/blocks/carousel-images/settings/ImagesPanel.jsx:139
+#: src/blocks/gallery/settings/CaptionPanel.jsx:198
+#: src/blocks/gallery/settings/CaptionPanel.jsx:199
+#: src/blocks/gallery/settings/CaptionPanel.jsx:200
+#: src/blocks/gallery/settings/GalleryPanel.jsx:138
+#: src/blocks/image/settings/CaptionPanel.jsx:201
+#: src/blocks/image/settings/CaptionPanel.jsx:202
+#: src/blocks/image/settings/CaptionPanel.jsx:203
+msgid "Caption"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:401
+#: src/blocks/video/settings/VideoPanel.jsx:402
+msgid "Captions"
+msgstr ""
+
+#: src/blocks/accordion/settings/GeneralPanel.jsx:28
+#: src/blocks/accordion/templates.js:119
+#: src/blocks/counter/templates.js:118
+#: src/blocks/counter/templates.js:75
+#: src/blocks/team-member/templates.js:18
+#: src/blocks/team-member/templates.js:239
+msgid "Card"
+msgstr ""
+
+#: src/blocks/info-card/edit.js:471
+msgid "Card description goes here."
+msgstr ""
+
+#: src/blocks/info-card/settings/ButtonPanel.jsx:388
+msgid "Card Link"
+msgstr ""
+
+#: src/blocks/info-card/edit.js:470
+msgid "Card Title"
+msgstr ""
+
+#: src/blocks/counter/templates.js:76
+msgid "Card-based with shadows"
+msgstr ""
+
+#: src/blocks/accordion/templates.js:120
+msgid "Card-based with shadows and spacing"
+msgstr ""
+
+#: src/blocks/carousel-images/edit.js:352
+msgid "Carousel Images"
+msgstr ""
+
+#: src/blocks/grid/settings/GridPanel.js:37
+#: src/blocks/grid/settings/GridPanel.js:47
+#: src/blocks/grid/settings/GridPanel.js:57
+#: src/blocks/grid/settings/GridPanel.js:68
+#: src/blocks/heading/settings/SeparatorPanel.jsx:21
+#: src/blocks/image/settings/ImagePanel.js:66
+#: src/blocks/testimonial/settings/LayoutPanel.jsx:17
+#: src/components/controls/PositionControl.jsx:20
+#: src/utils/constants.js:209
+#: src/utils/constants.js:220
+#: src/utils/constants.js:231
+#: src/utils/constants.js:241
+#: src/utils/constants.js:251
+#: src/utils/constants.js:283
+#: src/utils/constants.js:313
+msgid "Center"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:65
+#: src/components/controls/PositionControl.jsx:19
+msgid "Center Left"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:67
+#: src/components/controls/PositionControl.jsx:21
+msgid "Center Right"
+msgstr ""
+
+#: src/blocks/container/variations.js:355
+msgid "Centered content with narrow sidebars."
+msgstr ""
+
+#: src/components/controls/IconSourceControl.jsx:153
+msgid "Change"
+msgstr ""
+
+#: src/components/HtmlTagToolbar.jsx:55
+msgid "Change HTML tag"
+msgstr ""
+
+#: src/blocks/icon/edit.js:215
+msgid "Change Icon"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:32
+msgid "Changelog"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:187
+msgid "Child Theme"
+msgstr ""
+
+#: src/components/controls/MediaUploadButton.jsx:32
+msgid "Choose File"
+msgstr ""
+
+#: src/admin/components/pages/DarkModePage.jsx:88
+msgid "Choose how dark mode is detected. You can enable both methods for maximum compatibility."
+msgstr ""
+
+#: src/blocks/marquee-text/settings/StylePanel.jsx:325
+#: src/blocks/video/settings/OverlayPanel.jsx:101
+msgid "Choose Image"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:431
+msgid "Choose Poster Image"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:350
+msgid "Choose Video"
+msgstr ""
+
+#: src/components/advanced-settings/StickyPanel.jsx:95
+msgid "Choose whether the container sticks to the top or bottom of the screen."
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:34
+#: src/blocks/info-card/templates.js:427
+#: src/blocks/info-card/templates.js:459
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:25
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:34
+#: src/utils/constants.js:363
+#: src/utils/icon-presets.js:112
+#: src/utils/icon-presets.js:144
+msgid "Circle"
+msgstr ""
+
+#: src/blocks/accordion/settings/GeneralPanel.jsx:26
+#: src/blocks/accordion/templates.js:19
+#: src/components/controls/BackgroundControl.jsx:26
+msgid "Classic"
+msgstr ""
+
+#: src/components/controls/BackgroundControl.jsx:251
+#: src/components/controls/ColorPickerButton.jsx:187
+#: src/components/controls/SearchableSelect.jsx:382
+msgid "Clear"
+msgstr ""
+
+#: src/components/controls/BoxShadowPopover.jsx:251
+#: src/components/controls/DualColorPicker.jsx:79
+#: src/components/controls/TextShadowPopover.jsx:237
+#: src/components/controls/TextStrokePopover.jsx:385
+msgid "Clear color"
+msgstr ""
+
+#: src/components/icons/IconPicker/IconPicker.jsx:438
+msgid "Clear icon"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/ImagesPanel.jsx:218
+#: src/blocks/gallery/settings/GalleryPanel.jsx:197
+msgid "Click Action"
+msgstr ""
+
+#: src/blocks/icon-list/edit.js:339
+#: src/blocks/icon-set/edit.js:330
+msgid "Click to change icon"
+msgstr ""
+
+#: src/components/controls/RepeaterControl/RepeaterItem.jsx:191
+msgid "Clone"
+msgstr ""
+
+#: src/admin/components/GlobalTypographyControl.jsx:306
+#: src/components/controls/BoxShadowPopover.jsx:235
+#: src/components/controls/TextShadowPopover.jsx:221
+#: src/components/controls/TextStrokePopover.jsx:334
+#: src/components/controls/TypographyPopover.jsx:312
+#: src/components/icons/IconPicker/IconPicker.jsx:465
+msgid "Close"
+msgstr ""
+
+#: src/admin/components/Sidebar.jsx:201
+msgid "Collapse sidebar"
+msgstr ""
+
+#: src/blocks/note/settings/HeaderPanel.jsx:166
+#: src/blocks/note/settings/HeaderPanel.jsx:167
+msgid "Collapsible"
+msgstr ""
+
+#: src/blocks/accordion/settings/ExpandIconPanel.jsx:127
+#: src/blocks/accordion/settings/ExpandIconPanel.jsx:128
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:265
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:271
+#: src/blocks/countdown/settings/DigitPanel.jsx:64
+#: src/blocks/countdown/settings/DigitPanel.jsx:65
+#: src/blocks/countdown/settings/LabelPanel.jsx:93
+#: src/blocks/countdown/settings/LabelPanel.jsx:94
+#: src/blocks/countdown/settings/SeparatorPanel.jsx:68
+#: src/blocks/countdown/settings/SeparatorPanel.jsx:69
+#: src/blocks/counter/settings/SeparatorPanel.jsx:144
+#: src/blocks/counter/settings/SeparatorPanel.jsx:146
+#: src/blocks/heading/settings/HeadingPanel.jsx:34
+#: src/blocks/heading/settings/SeparatorPanel.jsx:141
+#: src/blocks/heading/settings/SeparatorPanel.jsx:142
+#: src/blocks/heading/settings/SubheadingPanel.jsx:100
+#: src/blocks/heading/settings/SubheadingPanel.jsx:101
+#: src/blocks/info-card/settings/DescriptionPanel.jsx:133
+#: src/blocks/info-card/settings/DescriptionPanel.jsx:140
+#: src/blocks/info-card/settings/TitlePanel.jsx:133
+#: src/blocks/info-card/settings/TitlePanel.jsx:140
+#: src/blocks/marquee-text/settings/StylePanel.jsx:339
+#: src/blocks/marquee-text/settings/StylePanel.jsx:52
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:126
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:127
+#: src/blocks/progress-bar/settings/TitlePanel.jsx:112
+#: src/blocks/progress-bar/settings/TitlePanel.jsx:113
+#: src/blocks/separator/settings/SeparatorPanel.jsx:169
+#: src/blocks/separator/settings/SeparatorPanel.jsx:170
+#: src/blocks/slider/settings/NavigationPanel.jsx:265
+#: src/blocks/slider/settings/NavigationPanel.jsx:271
+#: src/blocks/social-icons/settings/IconsPanel.jsx:109
+#: src/blocks/team-member/settings/ContentPanel.jsx:119
+#: src/blocks/team-member/settings/ContentPanel.jsx:140
+#: src/blocks/team-member/settings/ContentPanel.jsx:98
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:134
+#: src/blocks/testimonial/settings/QuotePanel.jsx:46
+#: src/blocks/testimonial/settings/QuotePanel.jsx:47
+#: src/blocks/testimonial/settings/RatingPanel.jsx:51
+#: src/blocks/testimonial/settings/RatingPanel.jsx:52
+#: src/blocks/testimonial/settings/TitlePanel.jsx:46
+#: src/blocks/testimonial/settings/TitlePanel.jsx:47
+#: src/blocks/text/settings/TextPanel.jsx:47
+#: src/blocks/video/settings/PlayIconPanel.jsx:329
+#: src/blocks/video/settings/PlayIconPanel.jsx:353
+#: src/components/controls/BackgroundControl.jsx:245
+#: src/components/controls/BoxShadowPopover.jsx:245
+#: src/components/controls/TextShadowPopover.jsx:231
+#: src/components/controls/TextStrokePopover.jsx:379
+msgid "Color"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:27
+#: src/blocks/marquee-text/settings/StylePanel.jsx:45
+#: src/blocks/text/settings/TextPanel.jsx:40
+msgid "Color Burn"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:26
+#: src/blocks/marquee-text/settings/StylePanel.jsx:44
+#: src/blocks/text/settings/TextPanel.jsx:39
+msgid "Color Dodge"
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LogoPanel.jsx:93
+msgid "Color on Hover"
+msgstr ""
+
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:280
+msgid "Colors"
+msgstr ""
+
+#: src/blocks/grid/settings/GridPanel.js:27
+#: src/components/controls/GapControl.jsx:144
+#: src/utils/constants.js:189
+msgid "Column"
+msgstr ""
+
+#: src/components/controls/GapControl.jsx:118
+msgid "Column gap"
+msgstr ""
+
+#: src/utils/constants.js:199
+msgid "Column Reverse"
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:98
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:99
+#: src/blocks/counter/settings/LayoutPanel.jsx:157
+#: src/blocks/counter/settings/LayoutPanel.jsx:158
+#: src/blocks/gallery/settings/LayoutPanel.jsx:127
+#: src/blocks/gallery/settings/LayoutPanel.jsx:128
+#: src/blocks/grid/settings/GridPanel.js:360
+#: src/blocks/grid/settings/GridPanel.js:362
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:189
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:190
+#: src/blocks/text/settings/TextPanel.jsx:221
+#: src/blocks/text/settings/TextPanel.jsx:222
+msgid "Columns"
+msgstr ""
+
+#: src/blocks/text/settings/TextPanel.jsx:240
+#: src/blocks/text/settings/TextPanel.jsx:241
+msgid "Columns Gap"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:186
+msgid "Completion Action"
+msgstr ""
+
+#: src/admin/components/pages/DarkModePage.jsx:59
+msgid "Configure how dark mode styles are output on the frontend. Dark color values are always preserved in block attributes, regardless of these settings."
+msgstr ""
+
+#: src/admin/components/pages/TypographyPage.jsx:196
+msgid "Configure typography for each element. Use responsive controls to set different values for desktop, tablet, and mobile. Click the icon to clear/disable styles for an individual element."
+msgstr ""
+
+#: src/admin/components/pages/PerformancePage.jsx:73
+msgid "Consider using a CDN for improved delivery speed."
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:53
+#: src/components/controls/BackgroundControl.jsx:71
+#: src/utils/constants.js:375
+msgid "Contain"
+msgstr ""
+
+#: src/blocks/container/settings/ContainerPanel.js:176
+msgid "Container"
+msgstr ""
+
+#: src/blocks/accordion/settings/ContentStylePanel.jsx:49
+#: src/blocks/marquee-text/settings/StylePanel.jsx:261
+#: src/blocks/note/settings/ContentPanel.jsx:54
+#: src/blocks/team-member/settings/ContentPanel.jsx:77
+#: src/blocks/text/settings/TextPanel.jsx:210
+msgid "Content"
+msgstr ""
+
+#: src/blocks/info-card/settings/LayoutPanel.jsx:157
+#: src/blocks/info-card/settings/LayoutPanel.jsx:158
+msgid "Content Alignment"
+msgstr ""
+
+#: src/blocks/team-member/settings/LayoutPanel.jsx:103
+#: src/blocks/team-member/settings/LayoutPanel.jsx:104
+msgid "Content Gap"
+msgstr ""
+
+#: src/blocks/container/settings/ContainerPanel.js:178
+#: src/blocks/grid/settings/GridPanel.js:256
+#: src/blocks/slider-slide/settings/SlidePanel.jsx:143
+#: src/blocks/slider-slide/settings/SlidePanel.jsx:144
+msgid "Content Width"
+msgstr ""
+
+#: src/blocks/note/settings/HeaderPanel.jsx:180
+msgid "Control Icon Size"
+msgstr ""
+
+#: src/blocks/container/settings/ContainerPanel.js:334
+#: src/blocks/grid/settings/GridPanel.js:539
+msgid "Controls where background, border, border-radius, and padding are applied."
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:117
+msgid "Copied!"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:117
+msgid "Copy System Info"
+msgstr ""
+
+#: src/admin/components/shared/BlockCard.jsx:366
+msgid "Core"
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:512
+msgid "Could not access filesystem. Please check file permissions."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:521
+msgid "Could not initialize filesystem."
+msgstr ""
+
+#: src/blocks/counter/settings/LayoutPanel.jsx:22
+msgid "Count Down"
+msgstr ""
+
+#: src/blocks/counter/settings/LayoutPanel.jsx:21
+msgid "Count Up"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:157
+msgid "Countdown"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:160
+msgid "Countdown ends at"
+msgstr ""
+
+#: src/blocks/counter/settings/ItemsPanel.jsx:84
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:90
+msgid "Counter"
+msgstr ""
+
+#: src/blocks/counter/edit.js:462
+#: src/blocks/counter/edit.js:467
+msgid "Counter icon"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:95
+msgid "Counter Value"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:54
+#: src/components/controls/BackgroundControl.jsx:70
+#: src/utils/constants.js:374
+msgid "Cover"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:18
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:24
+msgid "Coverflow"
+msgstr ""
+
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:25
+msgid "Creative"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:48
+msgid "Credits"
+msgstr ""
+
+#: src/admin/components/pages/StylePage.jsx:81
+msgid "CSS"
+msgstr ""
+
+#: src/admin/components/pages/DarkModePage.jsx:119
+msgid "CSS Output Preview"
+msgstr ""
+
+#: src/admin/components/pages/StylePage.jsx:88
+msgid "CSS Specificity Boost"
+msgstr ""
+
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:22
+msgid "Cube"
+msgstr ""
+
+#: src/blocks/accordion/settings/GeneralPanel.jsx:30
+#: src/blocks/button/templates.js:409
+#: src/blocks/button/templates.js:428
+#: src/blocks/countdown/settings/SeparatorPanel.jsx:23
+#: src/blocks/counter/templates.js:119
+#: src/blocks/grid/settings/GridPanel.js:79
+#: src/blocks/image/settings/ImagePanel.js:46
+#: src/blocks/info-card/templates.js:297
+#: src/blocks/info-card/templates.js:312
+#: src/blocks/info-card/templates.js:326
+#: src/blocks/info-card/templates.js:393
+#: src/blocks/info-card/templates.js:438
+#: src/blocks/info-card/templates.js:450
+#: src/blocks/info-card/templates.js:460
+#: src/blocks/note/settings/LayoutPanel.jsx:23
+#: src/blocks/note/settings/LayoutPanel.jsx:34
+#: src/blocks/social-icons/settings/IconsPanel.jsx:22
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:42
+#: src/blocks/team-member/templates.js:243
+#: src/blocks/video/settings/VideoPanel.jsx:52
+#: src/components/advanced-settings/SizingPanel.jsx:23
+#: src/components/advanced-settings/SizingPanel.jsx:42
+#: src/utils/icon-presets.js:123
+#: src/utils/icon-presets.js:135
+#: src/utils/icon-presets.js:145
+#: src/utils/icon-presets.js:77
+msgid "Custom"
+msgstr ""
+
+#: src/components/advanced-settings/AttributesPanel.jsx:64
+msgid "Custom Attributes"
+msgstr ""
+
+#: src/blocks/video/settings/PlayIconPanel.jsx:286
+msgid "Custom Image"
+msgstr ""
+
+#: src/utils/constants.js:445
+msgid "Custom Link"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/ImagePanel.jsx:96
+#: src/blocks/image/settings/ImagePanel.js:434
+#: src/blocks/image/settings/ImagePanel.js:435
+#: src/blocks/video/settings/VideoPanel.jsx:444
+msgid "Custom Ratio"
+msgstr ""
+
+#: src/blocks/icon-set/settings/IconsPanel.jsx:65
+#: src/components/controls/IconSourceControl.jsx:150
+#: src/utils/constants.js:337
+msgid "Custom SVG"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:22
+msgid "Dailymotion"
+msgstr ""
+
+#: src/admin/App.jsx:167
+#: src/admin/components/Sidebar.jsx:35
+#: src/components/ColorModeSwitcher.jsx:35
+msgid "Dark Mode"
+msgstr ""
+
+#: src/admin/components/pages/DarkModePage.jsx:56
+msgid "Dark Mode Settings"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:24
+#: src/blocks/marquee-text/settings/StylePanel.jsx:42
+#: src/blocks/text/settings/TextPanel.jsx:37
+msgid "Darken"
+msgstr ""
+
+#: src/blocks/counter/settings/SeparatorPanel.jsx:19
+#: src/blocks/separator/settings/SeparatorPanel.jsx:20
+#: src/components/controls/BorderControls.jsx:24
+#: src/utils/constants.js:389
+#: src/utils/constants.js:399
+msgid "Dashed"
+msgstr ""
+
+#: src/admin/components/pages/DarkModePage.jsx:104
+msgid "Data Attribute"
+msgstr ""
+
+#: src/blocks/countdown/settings/DisplayUnitsPanel.jsx:89
+msgid "Days"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:142
+msgid "Debug Mode"
+msgstr ""
+
+#: src/admin/components/GlobalTypographyControl.jsx:441
+#: src/components/controls/TypographyPopover.jsx:447
+msgid "Decoration"
+msgstr ""
+
+#: src/admin/components/GlobalTypographyControl.jsx:349
+#: src/admin/components/pages/SettingsPage.jsx:96
+#: src/blocks/counter/templates.js:116
+#: src/blocks/counter/templates.js:17
+#: src/blocks/info-card/templates.js:336
+#: src/blocks/info-card/templates.js:447
+#: src/blocks/note/settings/LayoutPanel.jsx:18
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:23
+#: src/components/advanced-settings/SizingPanel.jsx:20
+#: src/components/controls/BorderControls.jsx:22
+#: src/components/controls/BorderControls.jsx:243
+#: src/components/controls/TypographyPopover.jsx:355
+#: src/utils/constants.js:140
+#: src/utils/constants.js:158
+#: src/utils/constants.js:167
+#: src/utils/constants.js:352
+#: src/utils/icon-presets.js:132
+#: src/utils/icon-presets.js:20
+#: src/utils/typography-defaults.js:46
+#: src/utils/typography-defaults.js:57
+msgid "Default"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:309
+#: src/blocks/slider/settings/NavigationPanel.jsx:309
+msgid "Default Color"
+msgstr ""
+
+#: src/admin/components/pages/SettingsPage.jsx:88
+msgid "Default Editor Width"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:343
+msgid "Delay"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:105
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:126
+#: src/components/advanced-settings/AnimationPanel.jsx:344
+msgid "Delay (ms)"
+msgstr ""
+
+#: src/blocks/info-card/settings/DescriptionPanel.jsx:101
+#: src/blocks/info-card/settings/DescriptionPanel.jsx:104
+msgid "Description"
+msgstr ""
+
+#: src/blocks/info-card/settings/DescriptionPanel.jsx:134
+msgid "Description Color"
+msgstr ""
+
+#: src/admin/components/AdminDeviceSwitcher.jsx:20
+#: src/components/DeviceSwitcher.jsx:21
+msgid "Desktop"
+msgstr ""
+
+#: src/admin/components/pages/DarkModePage.jsx:85
+msgid "Detection Methods"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:37
+msgid "Diamond"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:30
+#: src/blocks/marquee-text/settings/StylePanel.jsx:48
+#: src/blocks/text/settings/TextPanel.jsx:43
+msgid "Difference"
+msgstr ""
+
+#: src/blocks/countdown/settings/DigitPanel.jsx:57
+msgid "Digit"
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:80
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:81
+#: src/blocks/container/settings/ContainerPanel.js:283
+#: src/blocks/container/settings/ContainerPanel.js:284
+#: src/blocks/info-card/settings/LayoutPanel.jsx:138
+#: src/blocks/info-card/settings/LayoutPanel.jsx:139
+#: src/blocks/marquee-text/settings/LayoutPanel.jsx:140
+#: src/blocks/marquee-text/settings/LayoutPanel.jsx:141
+msgid "Direction"
+msgstr ""
+
+#: src/admin/components/GlobalTypographyControl.jsx:280
+#: src/components/controls/BoxShadowPopover.jsx:209
+#: src/components/controls/TextShadowPopover.jsx:195
+#: src/components/controls/TextStrokePopover.jsx:308
+#: src/components/controls/TypographyPopover.jsx:286
+msgid "Disable"
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:183
+#: src/admin/components/pages/BlocksPage.jsx:264
+msgid "Disable All"
+msgstr ""
+
+#: src/admin/components/pages/PerformancePage.jsx:70
+msgid "Disable blocks you do not use to reduce asset loading."
+msgstr ""
+
+#: src/components/controls/BoxShadowPopover.jsx:209
+msgid "Disable box shadow"
+msgstr ""
+
+#: src/components/controls/TextShadowPopover.jsx:195
+msgid "Disable text shadow"
+msgstr ""
+
+#: src/components/controls/TextStrokePopover.jsx:308
+msgid "Disable text stroke"
+msgstr ""
+
+#: src/admin/components/GlobalTypographyControl.jsx:280
+#: src/components/controls/TypographyPopover.jsx:286
+msgid "Disable typography"
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:192
+#: src/admin/components/pages/BlocksPage.jsx:254
+#: src/admin/components/pages/SystemInfoPage.jsx:143
+#: src/admin/components/shared/BlockCard.jsx:377
+msgid "Disabled"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:213
+msgid "Disabled Blocks"
+msgstr ""
+
+#: src/blocks/note/edit.js:225
+#: src/blocks/note/render.php:142
+#: src/blocks/note/settings/DismissPanel.jsx:36
+msgid "Dismiss"
+msgstr ""
+
+#: src/blocks/note/settings/DismissPanel.jsx:46
+msgid "Dismiss Icon"
+msgstr ""
+
+#: src/blocks/note/render.php:141
+msgid "Dismiss note"
+msgstr ""
+
+#: src/blocks/note/settings/DismissPanel.jsx:38
+msgid "Dismissible"
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:73
+msgid "Display Mode"
+msgstr ""
+
+#: src/blocks/gallery/settings/LayoutPanel.jsx:123
+#: src/blocks/gallery/settings/LayoutPanel.jsx:124
+msgid "Display Type"
+msgstr ""
+
+#: src/blocks/countdown/settings/DisplayUnitsPanel.jsx:87
+msgid "Display Units"
+msgstr ""
+
+#: src/blocks/marquee-text/settings/StylePanel.jsx:308
+#: src/blocks/marquee-text/settings/StylePanel.jsx:310
+#: src/blocks/note/settings/HeaderPanel.jsx:230
+#: src/blocks/note/settings/HeaderPanel.jsx:231
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:110
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:111
+msgid "Divider"
+msgstr ""
+
+#: src/blocks/marquee-text/settings/StylePanel.jsx:338
+msgid "Divider Color"
+msgstr ""
+
+#: src/blocks/marquee-text/settings/StylePanel.jsx:342
+msgid "Divider Rotation"
+msgstr ""
+
+#: src/blocks/marquee-text/settings/StylePanel.jsx:334
+msgid "Divider Size"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:26
+msgid "Documentation"
+msgstr ""
+
+#: src/blocks/counter/settings/SeparatorPanel.jsx:20
+#: src/blocks/separator/settings/SeparatorPanel.jsx:21
+#: src/components/controls/BorderControls.jsx:25
+#: src/utils/constants.js:390
+#: src/utils/constants.js:400
+msgid "Dotted"
+msgstr ""
+
+#: src/blocks/counter/settings/SeparatorPanel.jsx:21
+#: src/blocks/separator/settings/SeparatorPanel.jsx:22
+#: src/components/controls/BorderControls.jsx:26
+#: src/utils/constants.js:391
+#: src/utils/constants.js:401
+msgid "Double"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:422
+#: src/blocks/video/settings/VideoPanel.jsx:423
+msgid "Download Button"
+msgstr ""
+
+#: src/components/ImagePlaceholder.jsx:109
+msgid "Drag images, upload, or select from your library."
+msgstr ""
+
+#: src/blocks/slider/edit.js:409
+#: src/components/controls/RepeaterControl/RepeaterItem.jsx:178
+msgid "Drag to reorder"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:339
+#: src/components/controls/ItemAnimationControl.jsx:163
+msgid "Duration"
+msgstr ""
+
+#: src/blocks/accordion/settings/ItemStylePanel.jsx:61
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:215
+#: src/components/advanced-settings/AnimationPanel.jsx:340
+msgid "Duration (ms)"
+msgstr ""
+
+#: src/blocks/counter/settings/ItemsPanel.jsx:163
+msgid "e.g. +"
+msgstr ""
+
+#: src/blocks/counter/settings/ItemsPanel.jsx:159
+msgid "e.g. $"
+msgstr ""
+
+#: src/blocks/counter/settings/ItemsPanel.jsx:128
+msgid "e.g. 5000"
+msgstr ""
+
+#: src/blocks/counter/settings/ItemsPanel.jsx:173
+msgid "e.g. Happy Customers"
+msgstr ""
+
+#: src/blocks/countdown/settings/SeparatorPanel.jsx:65
+msgid "e.g., |"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:189
+msgid "e.g., Event has started!"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:105
+msgid "Ease"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:106
+msgid "Ease In"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:133
+msgid "Ease In Back"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:108
+msgid "Ease In Out"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:137
+msgid "Ease In Out Back"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:107
+msgid "Ease Out"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:129
+msgid "Ease Out Back"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:116
+msgid "Ease Out Cubic"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:124
+msgid "Ease Out Expo"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:112
+msgid "Ease Out Quad"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:120
+msgid "Ease Out Quart"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:347
+#: src/components/advanced-settings/AnimationPanel.jsx:348
+msgid "Easing"
+msgstr ""
+
+#: src/blocks/slider/edit.js:422
+#: src/components/controls/MediaUploadButton.jsx:101
+msgid "Edit"
+msgstr ""
+
+#: src/components/controls/BoxShadowPopover.jsx:221
+msgid "Edit box shadow"
+msgstr ""
+
+#: src/blocks/carousel-images/edit.js:427
+#: src/blocks/carousel-images/settings/ImagesPanel.jsx:249
+#: src/blocks/gallery/edit.js:299
+#: src/blocks/gallery/settings/GalleryPanel.jsx:216
+msgid "Edit Gallery"
+msgstr ""
+
+#: src/blocks/brand-logos/edit.js:218
+#: src/blocks/brand-logos/settings/LogosPanel.jsx:163
+msgid "Edit Logos"
+msgstr ""
+
+#: src/blocks/slider/edit.js:421
+msgid "Edit slide"
+msgstr ""
+
+#: src/components/controls/TextShadowPopover.jsx:207
+msgid "Edit text shadow"
+msgstr ""
+
+#: src/components/controls/TextStrokePopover.jsx:320
+msgid "Edit text stroke"
+msgstr ""
+
+#: src/admin/components/GlobalTypographyControl.jsx:292
+#: src/components/controls/TypographyPopover.jsx:298
+msgid "Edit typography"
+msgstr ""
+
+#: src/admin/components/pages/SettingsPage.jsx:82
+msgid "Editor Settings"
+msgstr ""
+
+#: src/blocks/counter/settings/LayoutPanel.jsx:188
+msgid "Effect Duration"
+msgstr ""
+
+#: src/blocks/counter/settings/LayoutPanel.jsx:190
+msgid "Effect Duration (ms)"
+msgstr ""
+
+#: src/blocks/counter/settings/LayoutPanel.jsx:207
+msgid "Effect Stagger"
+msgstr ""
+
+#: src/blocks/counter/settings/LayoutPanel.jsx:209
+msgid "Effect Stagger (ms)"
+msgstr ""
+
+#: src/blocks/counter/settings/ElementsPanel.jsx:134
+msgid "Elements"
+msgstr ""
+
+#: src/blocks/info-card/templates.js:153
+#: src/blocks/info-card/templates.js:320
+msgid "Elevated"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:35
+msgid "Ellipse"
+msgstr ""
+
+#: src/components/SvgUploadModal.jsx:97
+msgid "Enable"
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:182
+#: src/admin/components/pages/BlocksPage.jsx:261
+msgid "Enable All"
+msgstr ""
+
+#: src/admin/components/pages/PerformancePage.jsx:72
+msgid "Enable browser caching for static assets."
+msgstr ""
+
+#: src/admin/components/pages/DarkModePage.jsx:66
+msgid "Enable Dark Mode"
+msgstr ""
+
+#: src/admin/components/pages/TypographyPage.jsx:184
+msgid "Enable Global Typography"
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LogosPanel.jsx:144
+#: src/blocks/brand-logos/settings/LogosPanel.jsx:145
+msgid "Enable Links"
+msgstr ""
+
+#: src/admin/components/pages/StylePage.jsx:68
+msgid "Enable SVG Upload"
+msgstr ""
+
+#: src/components/SvgUploadModal.jsx:86
+msgid "Enable SVG Uploads"
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:191
+#: src/admin/components/pages/BlocksPage.jsx:250
+#: src/admin/components/pages/SystemInfoPage.jsx:143
+#: src/admin/components/shared/BlockCard.jsx:377
+msgid "Enabled"
+msgstr ""
+
+#: src/blocks/grid/settings/GridPanel.js:38
+#: src/blocks/grid/settings/GridPanel.js:48
+#: src/blocks/grid/settings/GridPanel.js:58
+#: src/blocks/grid/settings/GridPanel.js:69
+#: src/utils/constants.js:210
+#: src/utils/constants.js:221
+#: src/utils/constants.js:232
+#: src/utils/constants.js:242
+#: src/utils/constants.js:252
+#: src/utils/constants.js:288
+msgid "End"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:158
+msgid "End Date"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:366
+msgid "End Time"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:367
+msgid "End Time (seconds)"
+msgstr ""
+
+#: src/blocks/google-map/edit.js:104
+msgid "Enter a location"
+msgstr ""
+
+#: src/blocks/video/edit.js:187
+msgid "Enter a video URL"
+msgstr ""
+
+#: src/blocks/google-map/settings/MapPanel.js:114
+msgid "Enter address or place name"
+msgstr ""
+
+#: src/blocks/team-member/settings/ContentPanel.jsx:130
+msgid "Enter bio or additional info…"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:372
+#: src/blocks/info-card/settings/ButtonPanel.jsx:410
+msgid "Enter button text…"
+msgstr ""
+
+#: src/blocks/info-card/settings/DescriptionPanel.jsx:105
+msgid "Enter description…"
+msgstr ""
+
+#: src/blocks/google-map/settings/MapPanel.js:132
+msgid "Enter Google Maps API Key"
+msgstr ""
+
+#: src/blocks/heading/edit.js:274
+#: src/blocks/heading/settings/HeadingPanel.jsx:156
+msgid "Enter heading text…"
+msgstr ""
+
+#: src/blocks/accordion/settings/ItemsPanel.jsx:59
+msgid "Enter heading…"
+msgstr ""
+
+#: src/blocks/team-member/settings/ContentPanel.jsx:109
+msgid "Enter job title…"
+msgstr ""
+
+#: src/blocks/team-member/settings/ContentPanel.jsx:84
+msgid "Enter name…"
+msgstr ""
+
+#: src/blocks/heading/settings/SubheadingPanel.jsx:81
+msgid "Enter SubHeading text…"
+msgstr ""
+
+#: src/blocks/heading/edit.js:260
+#: src/blocks/heading/edit.js:289
+msgid "Enter subheading…"
+msgstr ""
+
+#: src/blocks/marquee-text/settings/ItemsPanel.jsx:23
+#: src/blocks/text/edit.js:139
+#: src/blocks/text/settings/TextPanel.jsx:211
+msgid "Enter text…"
+msgstr ""
+
+#: src/blocks/info-card/settings/TitlePanel.jsx:105
+#: src/blocks/progress-bar/settings/TitlePanel.jsx:84
+msgid "Enter title…"
+msgstr ""
+
+#: src/components/controls/ItemAnimationControl.jsx:162
+msgid "Entrance"
+msgstr ""
+
+#: src/blocks/note/settings/LayoutPanel.jsx:22
+msgid "Error"
+msgstr ""
+
+#: src/admin/App.jsx:123
+msgid "Error resetting settings."
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:181
+msgid "Error saving settings"
+msgstr ""
+
+#: src/admin/App.jsx:111
+msgid "Error saving settings."
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:31
+#: src/blocks/marquee-text/settings/StylePanel.jsx:49
+#: src/blocks/text/settings/TextPanel.jsx:44
+msgid "Exclusion"
+msgstr ""
+
+#: src/blocks/accordion/settings/ExpandIconPanel.jsx:81
+msgid "Expand Icon"
+msgstr ""
+
+#: src/admin/components/Sidebar.jsx:201
+msgid "Expand sidebar"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:332
+msgid "External URL"
+msgstr ""
+
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:21
+#: src/components/advanced-settings/AnimationPanel.jsx:20
+msgid "Fade"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:22
+#: src/components/controls/ItemAnimationControl.jsx:26
+msgid "Fade Down"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:26
+msgid "Fade Down Big"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:23
+#: src/components/controls/ItemAnimationControl.jsx:27
+msgid "Fade Left"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:27
+msgid "Fade Left Big"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:24
+#: src/components/controls/ItemAnimationControl.jsx:28
+msgid "Fade Right"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:28
+msgid "Fade Right Big"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:21
+#: src/components/controls/ItemAnimationControl.jsx:25
+msgid "Fade Up"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:25
+msgid "Fade Up Big"
+msgstr ""
+
+#: src/components/SvgUploadModal.jsx:76
+msgid "Failed to enable SVG upload."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:542
+msgid "Failed to get plugin information from WordPress.org."
+msgstr ""
+
+#: src/admin/components/pages/PluginsPage.jsx:160
+#: src/admin/components/pages/PluginsPage.jsx:163
+msgid "Failed to load plugins."
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:108
+msgid "Failed to load system information."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:204
+msgid "Failed to reset settings."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:179
+msgid "Failed to save settings."
+msgstr ""
+
+#: src/admin/components/GlobalTypographyControl.jsx:315
+#: src/components/controls/TypographyPopover.jsx:321
+msgid "Family"
+msgstr ""
+
+#: src/blocks/accordion/settings/GeneralPanel.jsx:127
+#: src/blocks/accordion/settings/GeneralPanel.jsx:128
+msgid "FAQ Schema"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:30
+msgid "Feature Requests"
+msgstr ""
+
+#: src/utils/constants.js:376
+msgid "Fill"
+msgstr ""
+
+#: src/blocks/note/settings/LayoutPanel.jsx:32
+msgid "Filled"
+msgstr ""
+
+#: src/blocks/accordion/settings/GeneralPanel.jsx:122
+#: src/blocks/accordion/settings/GeneralPanel.jsx:123
+msgid "First Item Open"
+msgstr ""
+
+#: src/components/controls/BackgroundControl.jsx:90
+msgid "Fixed"
+msgstr ""
+
+#: src/blocks/gallery/settings/LayoutPanel.jsx:138
+msgid "Fixed Aspect Ratio"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:97
+msgid "Flash"
+msgstr ""
+
+#: src/blocks/info-card/templates.js:129
+#: src/blocks/info-card/templates.js:319
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:43
+msgid "Flat"
+msgstr ""
+
+#: src/components/advanced-settings/SizingPanel.jsx:216
+msgid "Flex Size"
+msgstr ""
+
+#: src/blocks/counter/settings/LayoutPanel.jsx:24
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:23
+msgid "Flip"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:44
+#: src/components/controls/ItemAnimationControl.jsx:32
+msgid "Flip Down"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:45
+msgid "Flip Left"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:46
+msgid "Flip Right"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:43
+#: src/components/controls/ItemAnimationControl.jsx:31
+msgid "Flip Up"
+msgstr ""
+
+#: src/components/controls/HoverAnimationControl.jsx:32
+msgid "Flip X"
+msgstr ""
+
+#: src/components/controls/HoverAnimationControl.jsx:33
+msgid "Flip Y"
+msgstr ""
+
+#: src/components/controls/HoverAnimationControl.jsx:25
+msgid "Float"
+msgstr ""
+
+#: src/blocks/container/variations.js:210
+msgid "Four Columns (25/25/25/25)"
+msgstr ""
+
+#: src/blocks/grid/variations.js:147
+msgid "Four columns by two rows."
+msgstr ""
+
+#: src/blocks/grid/variations.js:71
+msgid "Four equal columns."
+msgstr ""
+
+#: src/blocks/container/variations.js:211
+msgid "Four equal width columns."
+msgstr ""
+
+#: src/utils/constants.js:480
+msgid "Fraction"
+msgstr ""
+
+#: src/blocks/info-card/templates.js:374
+#: src/blocks/info-card/templates.js:449
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:25
+#: src/utils/constants.js:354
+#: src/utils/icon-presets.js:134
+#: src/utils/icon-presets.js:58
+msgid "Framed"
+msgstr ""
+
+#: src/blocks/google-map/settings/MapPanel.js:18
+msgid "Free Embed"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:106
+msgid "Free Scroll"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:36
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: src/admin/components/pages/SettingsPage.jsx:104
+#: src/blocks/button/settings/LayoutPanel.jsx:21
+#: src/components/advanced-settings/SizingPanel.jsx:21
+#: src/utils/constants.js:105
+msgid "Full Width"
+msgstr ""
+
+#: src/blocks/gallery/edit.js:234
+#: src/blocks/gallery/settings/GalleryPanel.jsx:196
+msgid "Gallery"
+msgstr ""
+
+#: src/blocks/accordion/settings/ItemStylePanel.jsx:52
+#: src/blocks/accordion/settings/ItemStylePanel.jsx:53
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:105
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:106
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:112
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:113
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:88
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:89
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:305
+#: src/blocks/counter/settings/LayoutPanel.jsx:161
+#: src/blocks/counter/settings/LayoutPanel.jsx:162
+#: src/blocks/gallery/settings/LayoutPanel.jsx:131
+#: src/blocks/gallery/settings/LayoutPanel.jsx:132
+#: src/blocks/heading/settings/LayoutPanel.jsx:68
+#: src/blocks/heading/settings/LayoutPanel.jsx:69
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:194
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:195
+#: src/blocks/icon-set/settings/IconPanel.jsx:344
+#: src/blocks/icon-set/settings/IconPanel.jsx:345
+#: src/blocks/marquee-text/settings/LayoutPanel.jsx:154
+#: src/blocks/marquee-text/settings/LayoutPanel.jsx:155
+#: src/blocks/note/settings/ContentPanel.jsx:75
+#: src/blocks/note/settings/ContentPanel.jsx:77
+#: src/blocks/slider-slide/settings/SlidePanel.jsx:169
+#: src/blocks/slider-slide/settings/SlidePanel.jsx:170
+#: src/blocks/slider/settings/NavigationPanel.jsx:305
+#: src/blocks/social-icons/settings/IconPanel.jsx:261
+#: src/blocks/social-icons/settings/IconPanel.jsx:262
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:158
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:171
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:342
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:343
+#: src/blocks/testimonial/settings/AuthorPanel.jsx:88
+#: src/blocks/testimonial/settings/AuthorPanel.jsx:89
+msgid "Gap"
+msgstr ""
+
+#: src/blocks/container/settings/ContainerPanel.js:314
+#: src/blocks/container/settings/ContainerPanel.js:315
+#: src/blocks/grid/settings/GridPanel.js:491
+#: src/blocks/grid/settings/GridPanel.js:492
+msgid "Gaps"
+msgstr ""
+
+#: src/admin/components/Sidebar.jsx:34
+#: src/blocks/accordion/settings/GeneralPanel.jsx:108
+msgid "General"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:28
+msgid "Get Support"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:21
+msgid "Getting Started"
+msgstr ""
+
+#: src/blocks/button/templates.js:215
+#: src/blocks/button/templates.js:424
+msgid "Ghost"
+msgstr ""
+
+#: src/blocks/info-card/templates.js:273
+#: src/blocks/info-card/templates.js:325
+msgid "Glass"
+msgstr ""
+
+#: src/admin/components/pages/TypographyPage.jsx:177
+msgid "Global Typography"
+msgstr ""
+
+#: src/blocks/slider/edit.js:495
+msgid "Go to slide"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:39
+msgid "Go to the Blocks page and toggle the switch for each block. Click Save Changes to apply."
+msgstr ""
+
+#: src/blocks/google-map/edit.js:98
+#: src/blocks/google-map/render.php:79
+msgid "Google Map"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:496
+#: src/blocks/info-card/settings/MediaPanel.jsx:791
+#: src/components/controls/BackgroundControl.jsx:27
+#: src/components/controls/BackgroundControl.jsx:270
+#: src/components/controls/ColorPickerButton.jsx:34
+msgid "Gradient"
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LogoPanel.jsx:91
+#: src/blocks/brand-logos/settings/LogoPanel.jsx:92
+#: src/utils/constants.js:421
+msgid "Grayscale"
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:24
+#: src/blocks/gallery/settings/LayoutPanel.jsx:19
+#: src/blocks/grid/settings/GridPanel.js:254
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:18
+msgid "Grid"
+msgstr ""
+
+#: src/utils/constants.js:402
+msgid "Groove"
+msgstr ""
+
+#: src/components/advanced-settings/SizingPanel.jsx:223
+#: src/components/advanced-settings/SizingPanel.jsx:32
+#: src/components/controls/HoverAnimationControl.jsx:18
+msgid "Grow"
+msgstr ""
+
+#: src/components/controls/HoverAnimationControl.jsx:39
+msgid "Hang"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:28
+#: src/blocks/marquee-text/settings/StylePanel.jsx:46
+#: src/blocks/text/settings/TextPanel.jsx:41
+msgid "Hard Light"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:30
+msgid "Have an idea for a new feature? Share your feedback."
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:94
+msgid "Head Shake"
+msgstr ""
+
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:141
+#: src/blocks/note/settings/HeaderPanel.jsx:132
+msgid "Header"
+msgstr ""
+
+#: src/blocks/accordion/settings/ItemsPanel.jsx:58
+#: src/blocks/heading/settings/HeadingPanel.jsx:153
+msgid "Heading"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:43
+msgid "Heart"
+msgstr ""
+
+#: src/components/controls/HoverAnimationControl.jsx:38
+msgid "Heartbeat"
+msgstr ""
+
+#: src/blocks/google-map/settings/MapPanel.js:122
+#: src/blocks/google-map/settings/MapPanel.js:123
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:123
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:124
+#: src/blocks/video/settings/VideoPanel.jsx:462
+#: src/components/controls/SizeControl.jsx:129
+#: src/components/controls/SizeControl.jsx:145
+msgid "Height"
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:188
+msgid "Help"
+msgstr ""
+
+#: src/admin/App.jsx:173
+#: src/admin/components/Sidebar.jsx:49
+msgid "Help & Support"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:38
+msgid "Hexagon"
+msgstr ""
+
+#: src/utils/constants.js:160
+#: src/utils/constants.js:169
+msgid "Hidden"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:22
+msgid "Hide Countdown"
+msgstr ""
+
+#: src/components/advanced-settings/ResponsivePanel.jsx:54
+#: src/components/advanced-settings/ResponsivePanel.jsx:55
+msgid "Hide on Desktop"
+msgstr ""
+
+#: src/utils/constants.js:468
+msgid "Hide on Hover"
+msgstr ""
+
+#: src/components/advanced-settings/ResponsivePanel.jsx:62
+#: src/components/advanced-settings/ResponsivePanel.jsx:63
+msgid "Hide on Mobile"
+msgstr ""
+
+#: src/components/advanced-settings/ResponsivePanel.jsx:58
+#: src/components/advanced-settings/ResponsivePanel.jsx:59
+msgid "Hide on Tablet"
+msgstr ""
+
+#: src/components/advanced-settings/ResponsivePanel.jsx:55
+msgid "Hide this element on desktop screens (1025px+)."
+msgstr ""
+
+#: src/components/advanced-settings/ResponsivePanel.jsx:63
+msgid "Hide this element on mobile screens (767px and below)."
+msgstr ""
+
+#: src/components/advanced-settings/ResponsivePanel.jsx:59
+msgid "Hide this element on tablet screens (768px - 1024px)."
+msgstr ""
+
+#: src/blocks/team-member/templates.js:126
+#: src/blocks/team-member/templates.js:241
+#: src/components/controls/BoxShadowPopover.jsx:277
+#: src/components/controls/TextShadowPopover.jsx:250
+msgid "Horizontal"
+msgstr ""
+
+#: src/blocks/container/variations.js:127
+msgid "Horizontal stacking container."
+msgstr ""
+
+#: src/blocks/countdown/settings/DisplayUnitsPanel.jsx:103
+msgid "Hours"
+msgstr ""
+
+#: src/components/controls/StateTabBar.jsx:17
+#: src/utils/constants.js:431
+msgid "Hover"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:185
+#: src/blocks/heading/settings/HeadingPanel.jsx:186
+#: src/blocks/info-card/settings/DescriptionPanel.jsx:141
+#: src/blocks/info-card/settings/TitlePanel.jsx:141
+#: src/blocks/marquee-text/settings/StylePanel.jsx:285
+#: src/blocks/marquee-text/settings/StylePanel.jsx:286
+#: src/blocks/text/settings/TextPanel.jsx:276
+#: src/blocks/text/settings/TextPanel.jsx:277
+msgid "Hover Color"
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LogoPanel.jsx:96
+#: src/blocks/button/settings/ButtonPanel.jsx:501
+#: src/blocks/carousel-images/settings/ImagePanel.jsx:107
+#: src/blocks/carousel-images/settings/ImagePanel.jsx:108
+#: src/blocks/gallery/settings/ImagePanel.jsx:92
+#: src/blocks/gallery/settings/ImagePanel.jsx:93
+#: src/blocks/heading/settings/HeadingPanel.jsx:189
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:319
+#: src/blocks/icon-set/settings/IconPanel.jsx:408
+#: src/blocks/icon/settings/IconPanel.jsx:516
+#: src/blocks/image/settings/ImagePanel.js:463
+#: src/blocks/image/settings/ImagePanel.js:464
+#: src/blocks/info-card/settings/LayoutPanel.jsx:162
+#: src/blocks/info-card/settings/MediaPanel.jsx:716
+#: src/blocks/social-icons/settings/IconPanel.jsx:383
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:274
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:361
+#: src/components/controls/HoverAnimationControl.jsx:56
+msgid "Hover Effect"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:39
+msgid "How do I enable or disable a block?"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:43
+msgid "How do I reset settings to defaults?"
+msgstr ""
+
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:143
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:144
+#: src/blocks/heading/settings/HeadingPanel.jsx:159
+#: src/blocks/heading/settings/HeadingPanel.jsx:160
+#: src/blocks/heading/settings/SubheadingPanel.jsx:88
+#: src/blocks/heading/settings/SubheadingPanel.jsx:89
+#: src/blocks/info-card/settings/DescriptionPanel.jsx:108
+#: src/blocks/info-card/settings/DescriptionPanel.jsx:109
+#: src/blocks/info-card/settings/TitlePanel.jsx:109
+#: src/blocks/marquee-text/settings/StylePanel.jsx:265
+#: src/blocks/marquee-text/settings/StylePanel.jsx:266
+#: src/blocks/note/settings/HeaderPanel.jsx:151
+#: src/blocks/note/settings/HeaderPanel.jsx:152
+#: src/blocks/progress-bar/settings/TitlePanel.jsx:88
+#: src/blocks/progress-bar/settings/TitlePanel.jsx:89
+#: src/blocks/team-member/settings/ContentPanel.jsx:87
+#: src/blocks/team-member/settings/ContentPanel.jsx:88
+#: src/blocks/text/settings/TextPanel.jsx:214
+#: src/blocks/text/settings/TextPanel.jsx:215
+#: src/components/advanced-settings/LayoutPositionPanel.jsx:243
+#: src/components/advanced-settings/LayoutPositionPanel.jsx:244
+msgid "HTML Tag"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:32
+#: src/blocks/marquee-text/settings/StylePanel.jsx:50
+#: src/blocks/text/settings/TextPanel.jsx:45
+msgid "Hue"
+msgstr ""
+
+#: src/blocks/accordion/settings/ExpandIconPanel.jsx:83
+#: src/blocks/button/edit.js:213
+#: src/blocks/button/settings/ButtonPanel.jsx:379
+#: src/blocks/counter/settings/ItemsPanel.jsx:181
+#: src/blocks/icon-list/edit.js:341
+#: src/blocks/icon-list/edit.js:348
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:263
+#: src/blocks/icon-list/settings/ItemsPanel.jsx:123
+#: src/blocks/icon-set/settings/IconPanel.jsx:323
+#: src/blocks/icon-set/settings/IconsPanel.jsx:69
+#: src/blocks/icon-set/settings/IconsPanel.jsx:91
+#: src/blocks/icon/edit.js:243
+#: src/blocks/icon/settings/IconPanel.jsx:393
+#: src/blocks/icon/settings/IconPanel.jsx:396
+#: src/blocks/info-card/settings/MediaPanel.jsx:28
+#: src/blocks/info-card/settings/MediaPanel.jsx:848
+#: src/blocks/note/settings/DismissPanel.jsx:47
+#: src/blocks/note/settings/HeaderPanel.jsx:158
+#: src/blocks/note/settings/HeaderPanel.jsx:159
+#: src/blocks/note/settings/HeaderPanel.jsx:173
+#: src/blocks/social-icons/settings/IconPanel.jsx:240
+#: src/blocks/social-icons/settings/IconsPanel.jsx:91
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:116
+#: src/blocks/video/settings/PlayIconPanel.jsx:20
+#: src/blocks/video/settings/PlayIconPanel.jsx:280
+msgid "Icon"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/LightboxPanel.jsx:151
+#: src/blocks/gallery/settings/LightboxPanel.jsx:167
+#: src/blocks/image/settings/LightboxPanel.jsx:151
+#: src/blocks/video/settings/LightboxPanel.jsx:137
+msgid "Icon Border Radius"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/LightboxPanel.jsx:143
+#: src/blocks/carousel-images/settings/LightboxPanel.jsx:144
+#: src/blocks/counter/settings/ElementsPanel.jsx:174
+#: src/blocks/counter/settings/ElementsPanel.jsx:175
+#: src/blocks/gallery/settings/LightboxPanel.jsx:159
+#: src/blocks/gallery/settings/LightboxPanel.jsx:160
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:289
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:290
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:306
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:307
+#: src/blocks/icon-set/settings/IconPanel.jsx:378
+#: src/blocks/icon-set/settings/IconPanel.jsx:379
+#: src/blocks/icon-set/settings/IconPanel.jsx:395
+#: src/blocks/icon-set/settings/IconPanel.jsx:396
+#: src/blocks/icon/settings/IconPanel.jsx:487
+#: src/blocks/icon/settings/IconPanel.jsx:488
+#: src/blocks/icon/settings/IconPanel.jsx:504
+#: src/blocks/icon/settings/IconPanel.jsx:505
+#: src/blocks/image/settings/LightboxPanel.jsx:143
+#: src/blocks/image/settings/LightboxPanel.jsx:144
+#: src/blocks/info-card/settings/MediaPanel.jsx:686
+#: src/blocks/info-card/settings/MediaPanel.jsx:687
+#: src/blocks/info-card/settings/MediaPanel.jsx:703
+#: src/blocks/info-card/settings/MediaPanel.jsx:704
+#: src/blocks/note/settings/HeaderPanel.jsx:243
+#: src/blocks/note/settings/HeaderPanel.jsx:244
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:282
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:290
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:353
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:354
+#: src/blocks/video/settings/LightboxPanel.jsx:129
+#: src/blocks/video/settings/LightboxPanel.jsx:130
+#: src/blocks/video/settings/PlayIconPanel.jsx:330
+msgid "Icon Color"
+msgstr ""
+
+#: src/blocks/video/settings/PlayIconPanel.jsx:354
+msgid "Icon Color Hover"
+msgstr ""
+
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:310
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:318
+msgid "Icon Hover"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:506
+#: src/blocks/button/settings/ButtonPanel.jsx:508
+msgid "Icon Hover Effect"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:22
+#: src/blocks/marquee-text/settings/StylePanel.jsx:21
+#: src/utils/constants.js:336
+msgid "Icon Library"
+msgstr ""
+
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:207
+msgid "Icon Padding"
+msgstr ""
+
+#: src/blocks/counter/settings/ElementsPanel.jsx:164
+#: src/blocks/counter/settings/ElementsPanel.jsx:165
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:172
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:173
+msgid "Icon Position"
+msgstr ""
+
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:179
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:181
+#: src/blocks/button/settings/ButtonPanel.jsx:423
+#: src/blocks/button/settings/ButtonPanel.jsx:424
+#: src/blocks/carousel-images/settings/LightboxPanel.jsx:147
+#: src/blocks/carousel-images/settings/LightboxPanel.jsx:148
+#: src/blocks/counter/settings/ElementsPanel.jsx:170
+#: src/blocks/counter/settings/ElementsPanel.jsx:171
+#: src/blocks/gallery/settings/LightboxPanel.jsx:163
+#: src/blocks/gallery/settings/LightboxPanel.jsx:164
+#: src/blocks/image/settings/LightboxPanel.jsx:147
+#: src/blocks/image/settings/LightboxPanel.jsx:148
+#: src/blocks/note/settings/HeaderPanel.jsx:182
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:338
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:339
+#: src/blocks/video/settings/LightboxPanel.jsx:133
+#: src/blocks/video/settings/LightboxPanel.jsx:134
+msgid "Icon Size"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:427
+#: src/blocks/button/settings/ButtonPanel.jsx:428
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:198
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:199
+msgid "Icon Spacing"
+msgstr ""
+
+#: src/blocks/video/settings/PlayIconPanel.jsx:275
+msgid "Icon Type"
+msgstr ""
+
+#: src/components/controls/HoverAnimationControl.jsx:42
+msgid "Icon Up"
+msgstr ""
+
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:177
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:178
+msgid "Icon View"
+msgstr ""
+
+#: src/blocks/accordion/settings/GeneralPanel.jsx:27
+#: src/blocks/accordion/templates.js:69
+msgid "Iconic"
+msgstr ""
+
+#: src/blocks/icon-set/settings/IconsPanel.jsx:185
+#: src/blocks/icon-set/settings/IconsPanel.jsx:199
+#: src/blocks/social-icons/settings/IconsPanel.jsx:190
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:93
+msgid "Icons"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:51
+msgid "Icons by"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/ImagePanel.jsx:94
+#: src/blocks/carousel-images/settings/ImagesPanel.jsx:111
+#: src/blocks/gallery/settings/GalleryPanel.jsx:110
+#: src/blocks/gallery/settings/ImagePanel.jsx:91
+#: src/blocks/image/edit.js:238
+#: src/blocks/image/settings/ImagePanel.js:401
+#: src/blocks/image/settings/ImagePanel.js:405
+#: src/blocks/info-card/settings/MediaPanel.jsx:29
+#: src/blocks/info-card/settings/MediaPanel.jsx:885
+#: src/blocks/team-member/settings/ImagePanel.jsx:70
+#: src/blocks/team-member/settings/ImagePanel.jsx:72
+msgid "Image"
+msgstr ""
+
+#: src/blocks/team-member/settings/LayoutPanel.jsx:100
+#: src/blocks/team-member/settings/LayoutPanel.jsx:99
+msgid "Image Gap"
+msgstr ""
+
+#: src/blocks/team-member/settings/OverlayBoxPanel.jsx:109
+#: src/blocks/team-member/settings/OverlayBoxPanel.jsx:110
+msgid "Image Overlap"
+msgstr ""
+
+#: src/blocks/video/settings/OverlayPanel.jsx:93
+#: src/blocks/video/settings/OverlayPanel.jsx:94
+#: src/blocks/video/settings/OverlayPanel.jsx:95
+msgid "Image Overlay"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/ImagesPanel.jsx:214
+#: src/blocks/gallery/settings/LayoutPanel.jsx:157
+#: src/blocks/video/settings/OverlayPanel.jsx:104
+#: src/components/controls/ImageSizeSelect.jsx:31
+msgid "Image Size"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:423
+#: src/blocks/team-member/settings/ImagePanel.jsx:77
+#: src/blocks/team-member/settings/ImagePanel.jsx:78
+msgid "Image Width"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/ImagesPanel.jsx:213
+#: src/blocks/carousel-images/settings/ImagesPanel.jsx:222
+#: src/blocks/gallery/settings/GalleryPanel.jsx:201
+msgid "Images"
+msgstr ""
+
+#: src/blocks/icon-set/settings/IconsPanel.jsx:23
+msgid "Individual"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:113
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:134
+msgid "Infinite Loop"
+msgstr ""
+
+#: src/blocks/note/settings/LayoutPanel.jsx:19
+msgid "Info"
+msgstr ""
+
+#: src/blocks/button/settings/LayoutPanel.jsx:20
+#: src/blocks/counter/settings/ElementsPanel.jsx:16
+msgid "Inline"
+msgstr ""
+
+#: src/components/advanced-settings/SizingPanel.jsx:22
+msgid "Inline (Auto)"
+msgstr ""
+
+#: src/utils/constants.js:114
+msgid "Inner"
+msgstr ""
+
+#: src/components/controls/BoxShadowPopover.jsx:272
+#: src/utils/constants.js:404
+msgid "Inset"
+msgstr ""
+
+#: src/admin/components/pages/PluginsPage.jsx:101
+msgid "Install Now"
+msgstr ""
+
+#: src/admin/components/pages/PluginsPage.jsx:116
+msgid "installs"
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:666
+msgid "Invalid plugin file path."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:294
+#: includes/admin/class-admin-rest-api.php:321
+msgid "Invalid security token."
+msgstr ""
+
+#: src/blocks/accordion/settings/ItemsPanel.jsx:51
+#: src/components/controls/RepeaterControl/RepeaterControl.jsx:48
+msgid "Item"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:204
+#: src/blocks/countdown/settings/CountdownPanel.jsx:205
+#: src/blocks/counter/settings/ItemStylePanel.jsx:126
+#: src/blocks/counter/settings/ItemStylePanel.jsx:127
+msgid "Item Background"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:226
+msgid "Item Border Radius"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:200
+#: src/blocks/countdown/settings/CountdownPanel.jsx:201
+#: src/blocks/counter/settings/ItemStylePanel.jsx:100
+#: src/blocks/counter/settings/ItemStylePanel.jsx:101
+msgid "Item Gap"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:208
+#: src/blocks/counter/settings/ItemStylePanel.jsx:108
+msgid "Item Padding"
+msgstr ""
+
+#: src/blocks/counter/settings/ItemStylePanel.jsx:99
+msgid "Item Style"
+msgstr ""
+
+#: src/blocks/accordion/settings/ItemsPanel.jsx:94
+#: src/blocks/accordion/settings/ItemsPanel.jsx:95
+#: src/blocks/counter/settings/ItemsPanel.jsx:253
+#: src/blocks/counter/settings/ItemsPanel.jsx:258
+#: src/blocks/icon-list/settings/ItemsPanel.jsx:211
+#: src/blocks/icon-list/settings/ItemsPanel.jsx:212
+msgid "Items"
+msgstr ""
+
+#: src/blocks/container/settings/ContainerPanel.js:325
+msgid "Items within the container can stay in a single line (No wrap), or break into multiple lines (Wrap)."
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:92
+msgid "Jello"
+msgstr ""
+
+#: src/blocks/team-member/settings/ContentPanel.jsx:118
+#: src/blocks/testimonial/settings/AuthorPanel.jsx:114
+#: src/blocks/testimonial/settings/AuthorPanel.jsx:115
+msgid "Job Color"
+msgstr ""
+
+#: src/blocks/testimonial/edit.js:255
+msgid "Job title"
+msgstr ""
+
+#: src/blocks/team-member/edit.js:254
+#: src/blocks/team-member/settings/ContentPanel.jsx:106
+msgid "Job Title"
+msgstr ""
+
+#: src/blocks/team-member/settings/ContentPanel.jsx:108
+msgid "Job Title Text"
+msgstr ""
+
+#: src/blocks/team-member/settings/ContentPanel.jsx:112
+#: src/blocks/testimonial/settings/AuthorPanel.jsx:108
+#: src/blocks/testimonial/settings/AuthorPanel.jsx:109
+msgid "Job Typography"
+msgstr ""
+
+#: src/utils/constants.js:323
+msgid "Justify"
+msgstr ""
+
+#: src/blocks/container/settings/ContainerPanel.js:290
+#: src/blocks/container/settings/ContainerPanel.js:291
+#: src/blocks/grid/settings/GridPanel.js:519
+#: src/blocks/grid/settings/GridPanel.js:520
+#: src/blocks/slider-slide/settings/SlidePanel.jsx:175
+#: src/blocks/slider-slide/settings/SlidePanel.jsx:176
+msgid "Justify Content"
+msgstr ""
+
+#: src/blocks/grid/settings/GridPanel.js:505
+#: src/blocks/grid/settings/GridPanel.js:506
+msgid "Justify Items"
+msgstr ""
+
+#: src/components/advanced-settings/StickyPanel.jsx:87
+msgid "Keeps this container fixed while scrolling. Note: Sticky behavior works on the frontend only."
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:371
+#: src/blocks/countdown/settings/LabelPanel.jsx:82
+#: src/blocks/counter/settings/ItemsPanel.jsx:172
+msgid "Label"
+msgstr ""
+
+#: src/blocks/counter/settings/ElementsPanel.jsx:155
+#: src/blocks/counter/settings/ElementsPanel.jsx:156
+msgid "Label Color"
+msgstr ""
+
+#: src/blocks/counter/settings/ElementsPanel.jsx:149
+#: src/blocks/counter/settings/ElementsPanel.jsx:150
+msgid "Label Typography"
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:72
+#: src/blocks/button/settings/LayoutPanel.jsx:96
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:83
+#: src/blocks/counter/settings/LayoutPanel.jsx:152
+#: src/blocks/gallery/settings/LayoutPanel.jsx:122
+#: src/blocks/heading/settings/LayoutPanel.jsx:63
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:167
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:168
+#: src/blocks/info-card/settings/LayoutPanel.jsx:136
+#: src/blocks/info-card/settings/PresetPanel.jsx:103
+#: src/blocks/marquee-text/settings/LayoutPanel.jsx:139
+#: src/blocks/note/settings/LayoutPanel.jsx:155
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:117
+#: src/blocks/team-member/settings/LayoutPanel.jsx:90
+#: src/blocks/testimonial/settings/LayoutPanel.jsx:37
+#: src/components/advanced-settings/LayoutPositionPanel.jsx:194
+msgid "Layout"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/ImagePanel.jsx:111
+#: src/blocks/carousel-images/settings/ImagePanel.jsx:112
+#: src/blocks/gallery/settings/ImagePanel.jsx:96
+#: src/blocks/gallery/settings/ImagePanel.jsx:97
+#: src/blocks/image/settings/ImagePanel.js:444
+#: src/blocks/image/settings/ImagePanel.js:445
+#: src/blocks/video/settings/VideoPanel.jsx:394
+#: src/blocks/video/settings/VideoPanel.jsx:395
+msgid "Lazy Load"
+msgstr ""
+
+#: src/blocks/grid/settings/GridPanel.js:487
+msgid "Leave empty for auto rows."
+msgstr ""
+
+#: src/blocks/accordion/settings/ExpandIconPanel.jsx:17
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:31
+#: src/blocks/info-card/settings/LayoutPanel.jsx:27
+#: src/blocks/marquee-text/settings/LayoutPanel.jsx:33
+#: src/blocks/testimonial/settings/LayoutPanel.jsx:16
+#: src/components/controls/SpacingControl.jsx:19
+#: src/utils/constants.js:308
+msgid "Left"
+msgstr ""
+
+#: src/blocks/info-card/templates.js:249
+#: src/blocks/info-card/templates.js:324
+msgid "Left Accent"
+msgstr ""
+
+#: src/blocks/info-card/templates.js:307
+#: src/blocks/info-card/templates.js:72
+msgid "Left Icon"
+msgstr ""
+
+#: src/blocks/info-card/templates.js:102
+#: src/blocks/info-card/templates.js:310
+msgid "Left Icon CTA"
+msgstr ""
+
+#: src/admin/components/GlobalTypographyControl.jsx:502
+#: src/components/controls/TypographyPopover.jsx:508
+msgid "Letter Spacing"
+msgstr ""
+
+#: src/blocks/info-card/settings/ButtonPanel.jsx:23
+#: src/blocks/info-card/settings/MediaPanel.jsx:36
+#: src/components/controls/IconSourceControl.jsx:21
+msgid "Library"
+msgstr ""
+
+#: src/components/ColorModeSwitcher.jsx:30
+msgid "Light Mode"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/LightboxPanel.jsx:138
+#: src/blocks/gallery/settings/LightboxPanel.jsx:154
+#: src/blocks/image/settings/LightboxPanel.jsx:138
+#: src/blocks/video/settings/LightboxPanel.jsx:124
+#: src/blocks/video/settings/OverlayPanel.jsx:110
+#: src/blocks/video/settings/OverlayPanel.jsx:111
+#: src/utils/constants.js:443
+msgid "Lightbox"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:25
+#: src/blocks/marquee-text/settings/StylePanel.jsx:43
+#: src/blocks/text/settings/TextPanel.jsx:38
+msgid "Lighten"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:22
+msgid "Line"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:200
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:201
+msgid "Line Cap"
+msgstr ""
+
+#: src/admin/components/GlobalTypographyControl.jsx:448
+#: src/components/controls/TypographyPopover.jsx:454
+msgid "Line Height"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:193
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:194
+msgid "Line Style"
+msgstr ""
+
+#: src/utils/typography-defaults.js:61
+msgid "Line Through"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:109
+msgid "Linear"
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LogosPanel.jsx:129
+#: src/blocks/button/settings/ButtonPanel.jsx:375
+#: src/blocks/carousel-images/settings/ImagesPanel.jsx:154
+#: src/blocks/gallery/settings/GalleryPanel.jsx:153
+#: src/blocks/heading/settings/HeadingPanel.jsx:163
+#: src/blocks/icon-list/settings/ItemsPanel.jsx:201
+#: src/blocks/icon-set/settings/IconsPanel.jsx:166
+#: src/blocks/icon-set/settings/IconsPanel.jsx:193
+#: src/blocks/icon/settings/IconPanel.jsx:400
+#: src/blocks/image/settings/ImagePanel.js:455
+#: src/blocks/info-card/settings/ButtonPanel.jsx:387
+#: src/blocks/social-icons/settings/IconsPanel.jsx:179
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:204
+msgid "Link"
+msgstr ""
+
+#: src/blocks/info-card/settings/ButtonPanel.jsx:383
+msgid "Link & Button"
+msgstr ""
+
+#: src/blocks/info-card/settings/ButtonPanel.jsx:398
+#: src/blocks/info-card/settings/ButtonPanel.jsx:399
+msgid "Link Apply To"
+msgstr ""
+
+#: src/components/controls/BorderRadiusControl.jsx:39
+msgid "Link corners"
+msgstr ""
+
+#: src/components/controls/SizeControl.jsx:137
+#: src/components/controls/SizeControl.jsx:138
+msgid "Link dimensions"
+msgstr ""
+
+#: src/components/controls/GapControl.jsx:137
+#: src/components/controls/GapControl.jsx:138
+msgid "Link gaps"
+msgstr ""
+
+#: src/blocks/icon-set/settings/IconsPanel.jsx:187
+#: src/blocks/icon-set/settings/IconsPanel.jsx:188
+msgid "Link Mode"
+msgstr ""
+
+#: src/components/controls/LinkControl.jsx:84
+msgid "Link Options"
+msgstr ""
+
+#: src/components/controls/SpacingControl.jsx:38
+msgid "Link sides"
+msgstr ""
+
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:17
+msgid "List"
+msgstr ""
+
+#: src/blocks/icon-list/settings/ItemsPanel.jsx:98
+msgid "List Item"
+msgstr ""
+
+#: src/blocks/icon-list/settings/ItemsPanel.jsx:188
+msgid "List item text…"
+msgstr ""
+
+#: src/blocks/icon-list/edit.js:357
+msgid "List item…"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:395
+msgid "Load video only when visible in viewport."
+msgstr ""
+
+#: src/blocks/google-map/settings/MapPanel.js:112
+#: src/blocks/google-map/settings/MapPanel.js:113
+msgid "Location"
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LogoPanel.jsx:56
+#: src/blocks/brand-logos/settings/LogosPanel.jsx:98
+msgid "Logo"
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LogosPanel.jsx:143
+#: src/blocks/brand-logos/settings/LogosPanel.jsx:148
+msgid "Logos"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:112
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:133
+#: src/blocks/video/settings/VideoPanel.jsx:386
+#: src/blocks/video/settings/VideoPanel.jsx:387
+msgid "Loop"
+msgstr ""
+
+#: src/utils/typography-defaults.js:48
+msgid "Lowercase"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:35
+#: src/blocks/marquee-text/settings/StylePanel.jsx:53
+#: src/blocks/text/settings/TextPanel.jsx:48
+msgid "Luminosity"
+msgstr ""
+
+#: src/blocks/google-map/settings/MapPanel.js:111
+msgid "Map"
+msgstr ""
+
+#: src/components/advanced-settings/LayoutPositionPanel.jsx:195
+#: src/components/advanced-settings/LayoutPositionPanel.jsx:196
+msgid "Margin"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:468
+msgid "Mask"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:477
+msgid "Mask Image"
+msgstr ""
+
+#: src/blocks/gallery/settings/LayoutPanel.jsx:20
+msgid "Masonry"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:165
+msgid "Max Upload Size"
+msgstr ""
+
+#: src/blocks/info-card/settings/MediaPanel.jsx:835
+msgid "Media"
+msgstr ""
+
+#: src/blocks/info-card/settings/LayoutPanel.jsx:150
+#: src/blocks/info-card/settings/LayoutPanel.jsx:151
+msgid "Media Align"
+msgstr ""
+
+#: src/utils/constants.js:444
+msgid "Media File"
+msgstr ""
+
+#: src/blocks/info-card/settings/LayoutPanel.jsx:145
+#: src/blocks/info-card/settings/LayoutPanel.jsx:146
+msgid "Media Gap"
+msgstr ""
+
+#: src/components/ImagePlaceholder.jsx:168
+msgid "Media Library"
+msgstr ""
+
+#: src/blocks/info-card/settings/MediaPanel.jsx:839
+msgid "Media Type"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:138
+msgid "Memory Limit"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:31
+msgid "Metadata"
+msgstr ""
+
+#: src/blocks/container/settings/ContainerPanel.js:234
+#: src/blocks/container/settings/ContainerPanel.js:236
+#: src/blocks/grid/settings/GridPanel.js:312
+#: src/blocks/grid/settings/GridPanel.js:314
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:94
+msgid "Min Height"
+msgstr ""
+
+#: src/admin/components/pages/PerformancePage.jsx:52
+msgid "Minify CSS Output"
+msgstr ""
+
+#: src/admin/components/pages/PerformancePage.jsx:53
+msgid "Minify generated CSS for smaller file sizes and faster loading."
+msgstr ""
+
+#: src/blocks/accordion/templates.js:70
+msgid "Minimalist with plus/minus icons"
+msgstr ""
+
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:95
+msgid "Minimum Height"
+msgstr ""
+
+#: src/blocks/countdown/settings/DisplayUnitsPanel.jsx:117
+msgid "Minutes"
+msgstr ""
+
+#: src/admin/components/AdminDeviceSwitcher.jsx:30
+#: src/components/DeviceSwitcher.jsx:31
+msgid "Mobile"
+msgstr ""
+
+#: src/blocks/accordion/settings/GeneralPanel.jsx:29
+msgid "Modern"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:42
+msgid "Move Down"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:40
+msgid "Move Left"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:39
+msgid "Move Right"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:41
+msgid "Move Up"
+msgstr ""
+
+#: src/blocks/accordion/settings/GeneralPanel.jsx:19
+msgid "Multiple"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:21
+#: src/blocks/marquee-text/settings/StylePanel.jsx:39
+#: src/blocks/text/settings/TextPanel.jsx:34
+msgid "Multiply"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:130
+msgid "Multisite"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:382
+#: src/blocks/video/settings/VideoPanel.jsx:383
+msgid "Mute"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:157
+msgid "MySQL Version"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:179
+#: src/blocks/team-member/edit.js:253
+#: src/blocks/team-member/settings/ContentPanel.jsx:81
+#: src/blocks/testimonial/edit.js:254
+msgid "Name"
+msgstr ""
+
+#: src/blocks/team-member/settings/ContentPanel.jsx:97
+#: src/blocks/testimonial/settings/AuthorPanel.jsx:101
+#: src/blocks/testimonial/settings/AuthorPanel.jsx:102
+msgid "Name Color"
+msgstr ""
+
+#: src/blocks/team-member/settings/ContentPanel.jsx:83
+msgid "Name Text"
+msgstr ""
+
+#: src/blocks/team-member/settings/ContentPanel.jsx:91
+#: src/blocks/testimonial/settings/AuthorPanel.jsx:95
+#: src/blocks/testimonial/settings/AuthorPanel.jsx:96
+msgid "Name Typography"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:213
+#: src/blocks/slider/settings/NavigationPanel.jsx:213
+msgid "Navigation"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:28
+msgid "Need help? Contact our support team for assistance."
+msgstr ""
+
+#: src/components/controls/ParentNotice.jsx:46
+msgid "Nested inside Accordion"
+msgstr ""
+
+#: src/components/controls/ParentNotice.jsx:44
+msgid "Nested inside Container"
+msgstr ""
+
+#: src/components/controls/ParentNotice.jsx:45
+msgid "Nested inside Slider"
+msgstr ""
+
+#: src/blocks/accordion/settings/ItemsPanel.jsx:64
+msgid "New Accordion Item"
+msgstr ""
+
+#: src/blocks/marquee-text/settings/ItemsPanel.jsx:32
+msgid "New Item"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:226
+#: src/blocks/gallery/settings/LightboxPanel.jsx:187
+#: src/blocks/slider/settings/NavigationPanel.jsx:226
+msgid "Next"
+msgstr ""
+
+#: src/blocks/carousel-images/render.php:345
+#: src/blocks/slider/edit.js:478
+#: src/blocks/slider/render.php:147
+msgid "Next slide"
+msgstr ""
+
+#: src/blocks/slider/edit.js:369
+msgid "Next Slide"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:131
+#: src/admin/components/pages/SystemInfoPage.jsx:188
+msgid "No"
+msgstr ""
+
+#: src/admin/components/pages/BlocksPage.jsx:277
+msgid "No blocks found matching your search."
+msgstr ""
+
+#: src/admin/components/pages/BlocksPage.jsx:273
+msgid "No blocks found."
+msgstr ""
+
+#: src/blocks/carousel-images/settings/ImagesPanel.jsx:142
+#: src/blocks/gallery/settings/GalleryPanel.jsx:141
+msgid "No caption"
+msgstr ""
+
+#: src/components/controls/BoxShadowPopover.jsx:256
+#: src/components/controls/DualColorPicker.jsx:84
+#: src/components/controls/TextShadowPopover.jsx:242
+#: src/components/controls/TextStrokePopover.jsx:390
+msgid "No color"
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:551
+msgid "No download link available for this plugin."
+msgstr ""
+
+#: src/components/controls/SearchableSelect.jsx:410
+msgid "No fonts found"
+msgstr ""
+
+#: src/components/icons/IconPicker/IconPicker.jsx:285
+msgid "No icons found."
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:77
+#: src/components/controls/BackgroundControl.jsx:79
+msgid "No Repeat"
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:169
+msgid "No settings provided."
+msgstr ""
+
+#: src/utils/constants.js:262
+msgid "No Wrap"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:41
+msgid "No. Existing content will remain intact. The block will simply not be available for new content until re-enabled."
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:21
+#: src/blocks/button/settings/ButtonPanel.jsx:38
+#: src/blocks/countdown/settings/SeparatorPanel.jsx:18
+#: src/blocks/counter/settings/LayoutPanel.jsx:20
+#: src/blocks/image/settings/ImagePanel.js:24
+#: src/blocks/info-card/settings/ButtonPanel.jsx:22
+#: src/blocks/video/settings/VideoPanel.jsx:30
+#: src/components/advanced-settings/AnimationPanel.jsx:17
+#: src/components/controls/BackgroundControl.jsx:25
+#: src/components/controls/BorderControls.jsx:27
+#: src/components/controls/HoverAnimationControl.jsx:17
+#: src/components/controls/ItemAnimationControl.jsx:24
+#: src/utils/constants.js:387
+#: src/utils/constants.js:416
+#: src/utils/constants.js:442
+#: src/utils/constants.js:456
+#: src/utils/typography-defaults.js:50
+#: src/utils/typography-defaults.js:58
+msgid "None"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:20
+#: src/blocks/marquee-text/settings/StylePanel.jsx:38
+#: src/blocks/text/settings/TextPanel.jsx:33
+#: src/components/controls/StateTabBar.jsx:16
+#: src/utils/constants.js:430
+msgid "Normal"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:206
+msgid "Not Active"
+msgstr ""
+
+#: src/blocks/note/settings/DismissPanel.jsx:59
+msgid "Note reappears after %d day(s)."
+msgstr ""
+
+#: src/blocks/note/settings/DismissPanel.jsx:57
+msgid "Note stays hidden for this session only."
+msgstr ""
+
+#: src/blocks/note/edit.js:215
+#: src/blocks/note/settings/HeaderPanel.jsx:144
+msgid "Note title…"
+msgstr ""
+
+#: src/blocks/counter/settings/ItemsPanel.jsx:115
+msgid "Number"
+msgstr ""
+
+#: src/blocks/counter/settings/ElementsPanel.jsx:142
+#: src/blocks/counter/settings/ElementsPanel.jsx:143
+msgid "Number Color"
+msgstr ""
+
+#: src/blocks/counter/settings/LayoutPanel.jsx:169
+#: src/blocks/counter/settings/LayoutPanel.jsx:171
+msgid "Number Effect"
+msgstr ""
+
+#: src/blocks/counter/settings/ElementsPanel.jsx:136
+#: src/blocks/counter/settings/ElementsPanel.jsx:137
+msgid "Number Typography"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/ImagePanel.jsx:102
+#: src/blocks/image/settings/ImagePanel.js:416
+#: src/blocks/image/settings/ImagePanel.js:417
+#: src/blocks/info-card/settings/MediaPanel.jsx:891
+#: src/blocks/info-card/settings/MediaPanel.jsx:892
+msgid "Object Fit"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:39
+msgid "Octagon"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:31
+msgid "Off"
+msgstr ""
+
+#: src/blocks/social-icons/settings/IconsPanel.jsx:21
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:41
+msgid "Official"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:232
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:297
+#: src/blocks/slider/settings/NavigationPanel.jsx:232
+#: src/blocks/slider/settings/NavigationPanel.jsx:297
+#: src/components/advanced-settings/StickyPanel.jsx:100
+#: src/components/advanced-settings/StickyPanel.jsx:98
+msgid "Offset"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/ImagesPanel.jsx:219
+#: src/blocks/gallery/settings/GalleryPanel.jsx:198
+#: src/blocks/image/settings/ImagePanel.js:449
+#: src/blocks/image/settings/ImagePanel.js:450
+msgid "On Click"
+msgstr ""
+
+#: src/blocks/container/variations.js:299
+msgid "One third / two thirds layout."
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LogoPanel.jsx:77
+#: src/blocks/brand-logos/settings/LogoPanel.jsx:80
+#: src/blocks/carousel-images/settings/ImagePanel.jsx:123
+#: src/blocks/gallery/settings/ImagePanel.jsx:108
+#: src/blocks/image/settings/ImagePanel.js:504
+#: src/blocks/info-card/settings/MediaPanel.jsx:799
+#: src/components/controls/BackgroundControl.jsx:224
+msgid "Opacity"
+msgstr ""
+
+#: src/components/controls/LinkControl.jsx:92
+msgid "Open in new window"
+msgstr ""
+
+#: src/blocks/accordion/settings/GeneralPanel.jsx:117
+#: src/blocks/accordion/settings/GeneralPanel.jsx:118
+msgid "Open Mode"
+msgstr ""
+
+#: src/admin/components/pages/PerformancePage.jsx:65
+msgid "Optimization Tips"
+msgstr ""
+
+#: src/components/advanced-settings/LayoutPositionPanel.jsx:223
+#: src/components/advanced-settings/LayoutPositionPanel.jsx:224
+msgid "Order"
+msgstr ""
+
+#: src/admin/components/pages/BlocksPage.jsx:171
+msgid "Other"
+msgstr ""
+
+#: src/utils/constants.js:113
+msgid "Outer"
+msgstr ""
+
+#: src/blocks/button/templates.js:115
+#: src/blocks/button/templates.js:422
+#: src/blocks/note/settings/LayoutPanel.jsx:33
+#: src/components/controls/BoxShadowPopover.jsx:269
+msgid "Outline"
+msgstr ""
+
+#: src/blocks/button/templates.js:165
+#: src/blocks/button/templates.js:423
+msgid "Outline Pill"
+msgstr ""
+
+#: src/blocks/info-card/templates.js:225
+#: src/blocks/info-card/templates.js:323
+msgid "Outlined"
+msgstr ""
+
+#: src/admin/components/pages/DarkModePage.jsx:71
+msgid "Output Dark Mode CSS"
+msgstr ""
+
+#: src/utils/constants.js:405
+msgid "Outset"
+msgstr ""
+
+#: src/components/advanced-settings/LayoutPositionPanel.jsx:237
+#: src/components/advanced-settings/LayoutPositionPanel.jsx:238
+msgid "Overflow"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/ImagePanel.jsx:117
+#: src/blocks/gallery/settings/ImagePanel.jsx:102
+#: src/blocks/heading/settings/HeadingPanel.jsx:23
+#: src/blocks/image/settings/ImagePanel.js:491
+#: src/blocks/info-card/settings/MediaPanel.jsx:786
+#: src/blocks/marquee-text/settings/StylePanel.jsx:41
+#: src/blocks/team-member/templates.js:180
+#: src/blocks/team-member/templates.js:242
+#: src/blocks/text/settings/TextPanel.jsx:36
+#: src/utils/constants.js:457
+#: src/utils/constants.js:489
+msgid "Overlay"
+msgstr ""
+
+#: src/blocks/gallery/settings/ImagePanel.jsx:103
+msgid "Overlay Background"
+msgstr ""
+
+#: src/blocks/team-member/settings/OverlayBoxPanel.jsx:82
+msgid "Overlay Box"
+msgstr ""
+
+#: src/blocks/video/settings/OverlayPanel.jsx:100
+msgid "Overlay Image"
+msgstr ""
+
+#: src/utils/typography-defaults.js:60
+msgid "Overline"
+msgstr ""
+
+#: src/blocks/accordion/settings/ContentStylePanel.jsx:51
+#: src/blocks/accordion/settings/ContentStylePanel.jsx:53
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:160
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:162
+#: src/blocks/button/settings/ButtonPanel.jsx:433
+#: src/blocks/button/settings/ButtonPanel.jsx:436
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:225
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:227
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:240
+#: src/blocks/countdown/settings/CountdownPanel.jsx:210
+#: src/blocks/counter/settings/ItemStylePanel.jsx:110
+#: src/blocks/gallery/settings/CaptionPanel.jsx:225
+#: src/blocks/gallery/settings/CaptionPanel.jsx:227
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:326
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:327
+#: src/blocks/icon-set/settings/IconPanel.jsx:368
+#: src/blocks/icon-set/settings/IconPanel.jsx:369
+#: src/blocks/icon/settings/IconPanel.jsx:440
+#: src/blocks/icon/settings/IconPanel.jsx:441
+#: src/blocks/image/settings/CaptionPanel.jsx:229
+#: src/blocks/image/settings/CaptionPanel.jsx:231
+#: src/blocks/info-card/settings/ButtonPanel.jsx:446
+#: src/blocks/info-card/settings/ButtonPanel.jsx:449
+#: src/blocks/info-card/settings/MediaPanel.jsx:723
+#: src/blocks/info-card/settings/MediaPanel.jsx:724
+#: src/blocks/note/settings/ContentPanel.jsx:56
+#: src/blocks/note/settings/ContentPanel.jsx:58
+#: src/blocks/note/settings/HeaderPanel.jsx:211
+#: src/blocks/note/settings/HeaderPanel.jsx:213
+#: src/blocks/separator/settings/SeparatorPanel.jsx:152
+#: src/blocks/slider-slide/settings/SlidePanel.jsx:151
+#: src/blocks/slider-slide/settings/SlidePanel.jsx:153
+#: src/blocks/slider/settings/NavigationPanel.jsx:240
+#: src/blocks/social-icons/settings/IconPanel.jsx:286
+#: src/blocks/social-icons/settings/IconPanel.jsx:287
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:220
+#: src/blocks/team-member/settings/OverlayBoxPanel.jsx:87
+#: src/blocks/team-member/settings/OverlayBoxPanel.jsx:89
+#: src/blocks/video/settings/PlayIconPanel.jsx:298
+#: src/blocks/video/settings/PlayIconPanel.jsx:299
+#: src/components/advanced-settings/LayoutPositionPanel.jsx:199
+#: src/components/advanced-settings/LayoutPositionPanel.jsx:200
+msgid "Padding"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:304
+#: src/blocks/slider/settings/NavigationPanel.jsx:304
+msgid "Pagination Gap"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:296
+#: src/blocks/slider/settings/NavigationPanel.jsx:296
+msgid "Pagination Offset"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:292
+#: src/blocks/slider/settings/NavigationPanel.jsx:292
+msgid "Pagination Position"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:300
+#: src/blocks/slider/settings/NavigationPanel.jsx:300
+msgid "Pagination Size"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:288
+#: src/blocks/slider/settings/NavigationPanel.jsx:288
+msgid "Pagination Type"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:45
+msgid "Parallelogram"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:191
+msgid "Parent Theme"
+msgstr ""
+
+#: src/components/controls/LinkControl.jsx:83
+msgid "Paste URL or type"
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:90
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:91
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:107
+#: src/blocks/marquee-text/settings/LayoutPanel.jsx:150
+#: src/blocks/marquee-text/settings/LayoutPanel.jsx:151
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:127
+msgid "Pause on Hover"
+msgstr ""
+
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:128
+msgid "Pause on Interaction"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:40
+msgid "Pentagon"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:21
+msgid "Percentage"
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:186
+#: src/admin/App.jsx:168
+#: src/admin/components/Sidebar.jsx:36
+msgid "Performance"
+msgstr ""
+
+#: includes/class-svg-upload.php:60
+msgid "Permission denied."
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:169
+msgid "PHP Time Limit"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:153
+msgid "PHP Version"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:352
+msgid "Play animation only once, or every time element enters viewport"
+msgstr ""
+
+#: src/blocks/video/settings/PlayIconPanel.jsx:267
+#: src/blocks/video/settings/PlayIconPanel.jsx:269
+#: src/blocks/video/settings/PlayIconPanel.jsx:270
+msgid "Play Icon"
+msgstr ""
+
+#: src/blocks/video/edit.js:198
+#: src/blocks/video/render.php:186
+msgid "Play video"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:390
+#: src/blocks/video/settings/VideoPanel.jsx:391
+msgid "Player Controls"
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:705
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:676
+msgid "Plugin file does not exist."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:598
+msgid "Plugin installation failed."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:609
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:686
+msgid "Plugin is already active."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:501
+msgid "Plugin is already installed."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:657
+msgid "Plugin is not installed."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:566
+msgid "Plugin must be downloaded from WordPress.org."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:437
+msgid "Plugin slug is required."
+msgstr ""
+
+#: src/blocks/countdown/settings/DisplayUnitsPanel.jsx:41
+msgid "Plural"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:32
+msgid "Polite"
+msgstr ""
+
+#: src/components/controls/HoverAnimationControl.jsx:22
+msgid "Pop"
+msgstr ""
+
+#: src/blocks/accordion/settings/ExpandIconPanel.jsx:100
+#: src/blocks/accordion/settings/ExpandIconPanel.jsx:101
+#: src/blocks/button/settings/ButtonPanel.jsx:402
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:207
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:208
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:293
+#: src/blocks/countdown/settings/LabelPanel.jsx:83
+#: src/blocks/countdown/settings/LabelPanel.jsx:84
+#: src/blocks/gallery/settings/CaptionPanel.jsx:207
+#: src/blocks/gallery/settings/CaptionPanel.jsx:208
+#: src/blocks/heading/settings/SeparatorPanel.jsx:117
+#: src/blocks/heading/settings/SeparatorPanel.jsx:118
+#: src/blocks/heading/settings/SubheadingPanel.jsx:84
+#: src/blocks/heading/settings/SubheadingPanel.jsx:85
+#: src/blocks/image/settings/CaptionPanel.jsx:211
+#: src/blocks/image/settings/CaptionPanel.jsx:212
+#: src/blocks/image/settings/ImagePanel.js:483
+#: src/blocks/info-card/settings/ButtonPanel.jsx:436
+#: src/blocks/slider/settings/NavigationPanel.jsx:293
+#: src/components/controls/BackgroundControl.jsx:204
+#: src/components/controls/BoxShadowPopover.jsx:266
+msgid "Position"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:430
+msgid "Poster Image"
+msgstr ""
+
+#: src/blocks/counter/settings/ItemsPanel.jsx:158
+msgid "Prefix"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:426
+#: src/blocks/video/settings/VideoPanel.jsx:427
+msgid "Preload"
+msgstr ""
+
+#: src/blocks/button/settings/LayoutPanel.jsx:97
+#: src/blocks/button/settings/LayoutPanel.jsx:98
+#: src/blocks/info-card/settings/PresetPanel.jsx:102
+msgid "Preset"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:223
+#: src/blocks/gallery/settings/LightboxPanel.jsx:184
+#: src/blocks/slider/settings/NavigationPanel.jsx:223
+msgid "Previous"
+msgstr ""
+
+#: src/blocks/carousel-images/render.php:343
+#: src/blocks/slider/edit.js:468
+#: src/blocks/slider/render.php:145
+msgid "Previous slide"
+msgstr ""
+
+#: src/blocks/slider/edit.js:365
+msgid "Previous Slide"
+msgstr ""
+
+#: src/blocks/social-icons/settings/IconPanel.jsx:320
+#: src/blocks/social-icons/settings/IconPanel.jsx:321
+#: src/blocks/social-icons/settings/IconPanel.jsx:348
+#: src/blocks/social-icons/settings/IconPanel.jsx:350
+#: src/blocks/social-icons/settings/IconsPanel.jsx:141
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:166
+msgid "Primary Color"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:405
+#: src/blocks/video/settings/VideoPanel.jsx:406
+msgid "Privacy Mode"
+msgstr ""
+
+#: src/admin/components/pages/SettingsPage.jsx:122
+#: src/admin/components/shared/BlockCard.jsx:365
+msgid "Pro"
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:190
+msgid "Pro Feature"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:205
+msgid "Pro Version"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:116
+#: src/utils/constants.js:481
+msgid "Progress Bar"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:89
+#: src/components/controls/HoverAnimationControl.jsx:20
+msgid "Pulse"
+msgstr ""
+
+#: src/components/controls/HoverAnimationControl.jsx:21
+msgid "Push"
+msgstr ""
+
+#: src/blocks/testimonial/settings/QuotePanel.jsx:35
+msgid "Quote"
+msgstr ""
+
+#: src/blocks/testimonial/settings/RatingPanel.jsx:38
+msgid "Rating"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/ImagePanel.jsx:99
+#: src/blocks/gallery/settings/LayoutPanel.jsx:148
+#: src/blocks/image/settings/ImagePanel.js:437
+msgid "Ratio (%)"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:26
+msgid "Read the documentation to learn how to use BlockFlow."
+msgstr ""
+
+#: src/blocks/note/settings/DismissPanel.jsx:54
+msgid "Reappear"
+msgstr ""
+
+#: src/blocks/note/settings/DismissPanel.jsx:53
+msgid "Reappear After"
+msgstr ""
+
+#: src/admin/components/pages/PluginsPage.jsx:195
+msgid "Recommended plugins from ThemeRuby that work great with BlockFlow."
+msgstr ""
+
+#: src/blocks/slider/edit.js:435
+#: src/components/controls/BackgroundControl.jsx:185
+#: src/components/controls/LinkControl.jsx:116
+#: src/components/controls/MediaUploadButton.jsx:104
+#: src/components/controls/RepeaterControl/RepeaterItem.jsx:196
+msgid "Remove"
+msgstr ""
+
+#: src/components/advanced-settings/AttributesPanel.jsx:72
+msgid "Remove attribute"
+msgstr ""
+
+#: src/blocks/carousel-images/edit.js:388
+#: src/blocks/gallery/edit.js:277
+msgid "Remove image"
+msgstr ""
+
+#: src/blocks/slider/edit.js:434
+msgid "Remove slide"
+msgstr ""
+
+#: src/components/controls/IconSourceControl.jsx:155
+msgid "Remove SVG"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:485
+#: src/blocks/image/settings/ImagePanel.js:78
+#: src/components/controls/BackgroundControl.jsx:216
+#: src/components/controls/BackgroundControl.jsx:80
+msgid "Repeat"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:79
+#: src/components/controls/BackgroundControl.jsx:81
+msgid "Repeat X"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:80
+#: src/components/controls/BackgroundControl.jsx:82
+msgid "Repeat Y"
+msgstr ""
+
+#: src/components/controls/BackgroundControl.jsx:183
+msgid "Replace"
+msgstr ""
+
+#: src/blocks/image/edit.js:264
+msgid "Replace Image"
+msgstr ""
+
+#: src/admin/components/shared/BlockCard.jsx:373
+msgid "Requires Pro"
+msgstr ""
+
+#: src/admin/components/GlobalTypographyControl.jsx:303
+#: src/components/controls/BoxShadowPopover.jsx:232
+#: src/components/controls/EnhancedPanel/EnhancedPanel.jsx:166
+#: src/components/controls/TextShadowPopover.jsx:218
+#: src/components/controls/TextStrokePopover.jsx:331
+#: src/components/controls/TypographyPopover.jsx:309
+msgid "Reset"
+msgstr ""
+
+#: src/components/controls/EnhancedPanel/EnhancedPanel.jsx:177
+msgid "Reset all"
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:193
+msgid "Reset to Default"
+msgstr ""
+
+#: src/admin/components/GlobalTypographyControl.jsx:303
+#: src/components/controls/BoxShadowPopover.jsx:232
+#: src/components/controls/TextShadowPopover.jsx:218
+#: src/components/controls/TextStrokePopover.jsx:331
+#: src/components/controls/TypographyPopover.jsx:309
+msgid "Reset to defaults"
+msgstr ""
+
+#: src/components/advanced-settings/ResponsivePanel.jsx:53
+msgid "Responsive Visibility"
+msgstr ""
+
+#: src/utils/constants.js:403
+msgid "Ridge"
+msgstr ""
+
+#: src/blocks/accordion/settings/ExpandIconPanel.jsx:18
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:32
+#: src/blocks/info-card/settings/LayoutPanel.jsx:32
+#: src/blocks/marquee-text/settings/LayoutPanel.jsx:34
+#: src/blocks/testimonial/settings/LayoutPanel.jsx:18
+#: src/components/controls/SpacingControl.jsx:17
+#: src/utils/constants.js:318
+msgid "Right"
+msgstr ""
+
+#: src/blocks/info-card/templates.js:308
+#: src/blocks/info-card/templates.js:82
+msgid "Right Icon"
+msgstr ""
+
+#: src/blocks/info-card/templates.js:112
+#: src/blocks/info-card/templates.js:311
+msgid "Right Icon CTA"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:81
+msgid "Roll In"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:43
+#: src/components/controls/HoverAnimationControl.jsx:24
+#: src/utils/constants.js:420
+msgid "Rotate"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:62
+#: src/components/controls/ItemAnimationControl.jsx:38
+msgid "Rotate In"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:72
+msgid "Rotate In Down Left"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:76
+msgid "Rotate In Down Right"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:64
+msgid "Rotate In Up Left"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:68
+msgid "Rotate In Up Right"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:44
+msgid "Rotate Reverse"
+msgstr ""
+
+#: src/blocks/marquee-text/settings/StylePanel.jsx:343
+msgid "Rotation"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:41
+msgid "Round"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:36
+#: src/blocks/info-card/templates.js:416
+#: src/blocks/info-card/templates.js:458
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:33
+#: src/utils/constants.js:362
+#: src/utils/icon-presets.js:101
+#: src/utils/icon-presets.js:143
+msgid "Rounded"
+msgstr ""
+
+#: src/blocks/grid/settings/GridPanel.js:22
+#: src/components/controls/GapControl.jsx:145
+#: src/utils/constants.js:184
+msgid "Row"
+msgstr ""
+
+#: src/components/controls/GapControl.jsx:129
+msgid "Row gap"
+msgstr ""
+
+#: src/utils/constants.js:194
+msgid "Row Reverse"
+msgstr ""
+
+#: src/blocks/grid/settings/GridPanel.js:425
+#: src/blocks/grid/settings/GridPanel.js:427
+msgid "Rows"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:93
+#: src/components/controls/HoverAnimationControl.jsx:36
+msgid "Rubber Band"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:39
+msgid "Same Channel"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:33
+#: src/blocks/marquee-text/settings/StylePanel.jsx:51
+#: src/blocks/text/settings/TextPanel.jsx:46
+msgid "Saturation"
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:178
+#: src/admin/components/Header.jsx:39
+msgid "Save Changes"
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:179
+msgid "Saved"
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:180
+msgid "Saving..."
+msgstr ""
+
+#: src/admin/components/Header.jsx:36
+msgid "Saving…"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:46
+msgid "Scale Down"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:45
+msgid "Scale Up"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:22
+#: src/blocks/marquee-text/settings/StylePanel.jsx:40
+#: src/blocks/text/settings/TextPanel.jsx:35
+msgid "Screen"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:192
+msgid "Screen Reader"
+msgstr ""
+
+#: src/components/controls/BackgroundControl.jsx:89
+#: src/utils/constants.js:171
+msgid "Scroll"
+msgstr ""
+
+#: src/blocks/counter/settings/LayoutPanel.jsx:23
+msgid "Scroll Digits"
+msgstr ""
+
+#: src/components/controls/SearchableSelect.jsx:438
+#: src/components/icons/IconPicker/IconPicker.jsx:301
+msgid "Scroll for more…"
+msgstr ""
+
+#: src/admin/components/pages/BlocksPage.jsx:241
+msgid "Search blocks…"
+msgstr ""
+
+#: src/components/controls/SearchableSelect.jsx:398
+msgid "Search fonts…"
+msgstr ""
+
+#: src/components/icons/IconPicker/IconPicker.jsx:473
+msgid "Search icons…"
+msgstr ""
+
+#: src/blocks/social-icons/settings/IconPanel.jsx:327
+#: src/blocks/social-icons/settings/IconPanel.jsx:329
+#: src/blocks/social-icons/settings/IconPanel.jsx:363
+#: src/blocks/social-icons/settings/IconPanel.jsx:365
+#: src/blocks/social-icons/settings/IconsPanel.jsx:162
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:187
+msgid "Secondary Color"
+msgstr ""
+
+#: src/blocks/countdown/settings/DisplayUnitsPanel.jsx:131
+msgid "Seconds"
+msgstr ""
+
+#: includes/class-svg-upload.php:55
+msgid "Security check failed."
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:32
+msgid "See what is new in the latest version of BlockFlow."
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:334
+msgid "Select animation"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:387
+msgid "Select Button Icon"
+msgstr ""
+
+#: src/components/controls/ColorPickerButton.jsx:68
+msgid "Select color"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:53
+msgid "Select date & time"
+msgstr ""
+
+#: src/blocks/note/settings/DismissPanel.jsx:48
+msgid "Select Dismiss Icon"
+msgstr ""
+
+#: src/blocks/marquee-text/settings/StylePanel.jsx:319
+msgid "Select Divider Icon"
+msgstr ""
+
+#: src/blocks/grid/components/GridToolbar.js:158
+msgid "Select Grid Layout"
+msgstr ""
+
+#: src/blocks/accordion/settings/ExpandIconPanel.jsx:93
+#: src/blocks/counter/settings/ItemsPanel.jsx:239
+#: src/blocks/gallery/settings/LightboxPanel.jsx:185
+#: src/blocks/gallery/settings/LightboxPanel.jsx:188
+#: src/blocks/icon-list/edit.js:325
+#: src/blocks/icon-set/edit.js:316
+#: src/blocks/icon/edit.js:202
+#: src/blocks/info-card/settings/ButtonPanel.jsx:421
+#: src/blocks/info-card/settings/MediaPanel.jsx:855
+#: src/blocks/note/settings/HeaderPanel.jsx:160
+#: src/components/icons/IconPicker/IconPicker.jsx:320
+msgid "Select Icon"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:406
+#: src/blocks/team-member/settings/ImagePanel.jsx:73
+msgid "Select Image"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:227
+#: src/blocks/slider/settings/NavigationPanel.jsx:227
+msgid "Select Next Arrow Icon"
+msgstr ""
+
+#: src/blocks/video/settings/PlayIconPanel.jsx:281
+msgid "Select Play Icon"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:224
+#: src/blocks/slider/settings/NavigationPanel.jsx:224
+msgid "Select Previous Arrow Icon"
+msgstr ""
+
+#: src/blocks/social-icons/settings/IconsPanel.jsx:102
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:127
+msgid "Select Social Icon"
+msgstr ""
+
+#: src/blocks/container/components/ContainerToolbar.js:312
+msgid "Select Structure"
+msgstr ""
+
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:155
+msgid "Select Title Icon"
+msgstr ""
+
+#: src/blocks/note/settings/HeaderPanel.jsx:174
+msgid "Select Toggle Icon"
+msgstr ""
+
+#: src/blocks/container/components/StructurePicker.js:141
+#: src/blocks/grid/components/GridStructurePicker.js:150
+msgid "Select your structure"
+msgstr ""
+
+#: src/components/controls/SearchableSelect.jsx:170
+msgid "Select…"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:23
+msgid "Self Hosted"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:24
+msgid "Semi Circle"
+msgstr ""
+
+#: src/blocks/countdown/settings/SeparatorPanel.jsx:61
+#: src/blocks/counter/settings/SeparatorPanel.jsx:99
+#: src/blocks/heading/settings/LayoutPanel.jsx:77
+#: src/blocks/heading/settings/SeparatorPanel.jsx:115
+#: src/blocks/separator/settings/SeparatorPanel.jsx:133
+msgid "Separator"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:150
+msgid "Server"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:161
+msgid "Server Info"
+msgstr ""
+
+#: src/blocks/countdown/edit.js:242
+msgid "Set an end date in the block settings."
+msgstr ""
+
+#: src/components/advanced-settings/StickyPanel.jsx:108
+msgid "Set how far from the edge the container stays when sticky. Positive values add space; negative values allow overlap."
+msgstr ""
+
+#: src/admin/components/pages/SettingsPage.jsx:89
+msgid "Set the default content width in the block editor."
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:185
+#: src/admin/App.jsx:166
+#: src/admin/components/Sidebar.jsx:31
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:89
+#: src/components/inspector-tabs/InspectorTabs.jsx:20
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:212
+#: src/admin/App.jsx:121
+msgid "Settings reset to defaults."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:187
+#: src/admin/App.jsx:109
+msgid "Settings saved successfully."
+msgstr ""
+
+#: src/components/inspector-tabs/InspectorTabs.jsx:56
+msgid "Settings tabs"
+msgstr ""
+
+#: src/blocks/button/templates.js:311
+#: src/blocks/button/templates.js:426
+#: src/blocks/info-card/settings/MediaPanel.jsx:826
+#: src/blocks/info-card/settings/MediaPanel.jsx:827
+#: src/blocks/note/settings/LayoutPanel.jsx:30
+msgid "Shadow"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:95
+#: src/components/controls/HoverAnimationControl.jsx:37
+msgid "Shake"
+msgstr ""
+
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:183
+#: src/blocks/icon-list/settings/LayoutPanel.jsx:184
+#: src/blocks/icon-set/settings/IconPanel.jsx:331
+#: src/blocks/icon-set/settings/IconPanel.jsx:332
+#: src/blocks/icon/settings/IconPanel.jsx:411
+#: src/blocks/icon/settings/IconPanel.jsx:412
+#: src/blocks/image/settings/ImagePanel.js:469
+#: src/blocks/info-card/settings/MediaPanel.jsx:875
+#: src/blocks/info-card/settings/MediaPanel.jsx:876
+#: src/blocks/social-icons/settings/IconPanel.jsx:248
+#: src/blocks/social-icons/settings/IconPanel.jsx:249
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:111
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:112
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:331
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:332
+msgid "Shape"
+msgstr ""
+
+#: src/utils/constants.js:423
+msgid "Shine"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:216
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:217
+#: src/blocks/slider/settings/NavigationPanel.jsx:216
+#: src/blocks/slider/settings/NavigationPanel.jsx:217
+msgid "Show Arrows"
+msgstr ""
+
+#: src/blocks/testimonial/settings/LayoutPanel.jsx:48
+#: src/blocks/testimonial/settings/LayoutPanel.jsx:49
+msgid "Show Avatar"
+msgstr ""
+
+#: src/blocks/info-card/settings/ButtonPanel.jsx:392
+#: src/blocks/info-card/settings/ButtonPanel.jsx:393
+msgid "Show Button"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/LightboxPanel.jsx:168
+#: src/blocks/gallery/settings/LightboxPanel.jsx:193
+#: src/blocks/image/settings/LightboxPanel.jsx:168
+msgid "Show Caption"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/LightboxPanel.jsx:169
+#: src/blocks/gallery/settings/LightboxPanel.jsx:194
+#: src/blocks/image/settings/LightboxPanel.jsx:169
+msgid "Show Caption in Lightbox"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:105
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:106
+msgid "Show Counter"
+msgstr ""
+
+#: src/blocks/marquee-text/settings/StylePanel.jsx:311
+msgid "Show Divider"
+msgstr ""
+
+#: src/blocks/counter/settings/ItemsPanel.jsx:254
+#: src/blocks/counter/settings/ItemsPanel.jsx:255
+msgid "Show Icon"
+msgstr ""
+
+#: src/blocks/countdown/settings/DisplayUnitsPanel.jsx:37
+msgid "Show Label"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:24
+msgid "Show Message"
+msgstr ""
+
+#: src/utils/constants.js:467
+msgid "Show on Hover"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:282
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:283
+#: src/blocks/slider/settings/NavigationPanel.jsx:282
+#: src/blocks/slider/settings/NavigationPanel.jsx:283
+msgid "Show Pagination"
+msgstr ""
+
+#: src/blocks/testimonial/settings/LayoutPanel.jsx:44
+#: src/blocks/testimonial/settings/LayoutPanel.jsx:45
+msgid "Show Rating"
+msgstr ""
+
+#: src/blocks/counter/settings/SeparatorPanel.jsx:101
+#: src/blocks/counter/settings/SeparatorPanel.jsx:103
+msgid "Show Separator"
+msgstr ""
+
+#: src/blocks/note/settings/HeaderPanel.jsx:137
+msgid "Show Title"
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:23
+msgid "Show Zeros"
+msgstr ""
+
+#: src/components/advanced-settings/SizingPanel.jsx:226
+#: src/components/advanced-settings/SizingPanel.jsx:37
+#: src/components/controls/HoverAnimationControl.jsx:19
+msgid "Shrink"
+msgstr ""
+
+#: src/blocks/container/variations.js:243
+msgid "Sidebar left layout with narrow left column."
+msgstr ""
+
+#: src/blocks/container/variations.js:271
+msgid "Sidebar right layout with narrow right column."
+msgstr ""
+
+#: src/blocks/accordion/templates.js:20
+msgid "Simple bordered accordion with clean design"
+msgstr ""
+
+#: src/blocks/counter/templates.js:18
+msgid "Simple counter without borders"
+msgstr ""
+
+#: src/blocks/accordion/settings/GeneralPanel.jsx:18
+msgid "Single"
+msgstr ""
+
+#: src/blocks/container/components/ContainerToolbar.js:33
+#: src/blocks/container/components/StructurePicker.js:32
+#: src/blocks/container/variations.js:103
+msgid "Single Column"
+msgstr ""
+
+#: src/blocks/container/components/ContainerToolbar.js:41
+#: src/blocks/container/components/StructurePicker.js:37
+#: src/blocks/container/variations.js:126
+msgid "Single Row"
+msgstr ""
+
+#: src/blocks/countdown/settings/DisplayUnitsPanel.jsx:44
+msgid "Singular"
+msgstr ""
+
+#: src/components/controls/HoverAnimationControl.jsx:26
+msgid "Sink"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:134
+msgid "Site URL"
+msgstr ""
+
+#: src/admin/components/GlobalTypographyControl.jsx:356
+#: src/blocks/accordion/settings/ExpandIconPanel.jsx:107
+#: src/blocks/accordion/settings/ExpandIconPanel.jsx:109
+#: src/blocks/brand-logos/settings/LogoPanel.jsx:58
+#: src/blocks/brand-logos/settings/LogoPanel.jsx:60
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:236
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:301
+#: src/blocks/gallery/settings/LayoutPanel.jsx:158
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:265
+#: src/blocks/icon-list/settings/IconStylePanel.jsx:267
+#: src/blocks/icon-set/settings/IconPanel.jsx:349
+#: src/blocks/icon-set/settings/IconPanel.jsx:351
+#: src/blocks/icon/settings/IconPanel.jsx:422
+#: src/blocks/icon/settings/IconPanel.jsx:424
+#: src/blocks/image/settings/ImagePanel.js:410
+#: src/blocks/image/settings/ImagePanel.js:411
+#: src/blocks/image/settings/ImagePanel.js:481
+#: src/blocks/info-card/settings/MediaPanel.jsx:662
+#: src/blocks/info-card/settings/MediaPanel.jsx:664
+#: src/blocks/marquee-text/settings/StylePanel.jsx:335
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:130
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:132
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:151
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:152
+#: src/blocks/slider/settings/NavigationPanel.jsx:236
+#: src/blocks/slider/settings/NavigationPanel.jsx:301
+#: src/blocks/social-icons/settings/IconPanel.jsx:266
+#: src/blocks/social-icons/settings/IconPanel.jsx:268
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:117
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:129
+#: src/blocks/testimonial/settings/RatingPanel.jsx:43
+#: src/blocks/testimonial/settings/RatingPanel.jsx:44
+#: src/blocks/video/settings/PlayIconPanel.jsx:294
+#: src/blocks/video/settings/PlayIconPanel.jsx:295
+#: src/components/advanced-settings/SizingPanel.jsx:217
+#: src/components/controls/BackgroundControl.jsx:212
+#: src/components/controls/TypographyPopover.jsx:362
+msgid "Size"
+msgstr ""
+
+#: src/components/advanced-settings/SizingPanel.jsx:195
+msgid "Sizing"
+msgstr ""
+
+#: src/components/controls/HoverAnimationControl.jsx:30
+msgid "Skew Left"
+msgstr ""
+
+#: src/components/controls/HoverAnimationControl.jsx:31
+msgid "Skew Right"
+msgstr ""
+
+#: src/blocks/container/components/StructurePicker.js:154
+#: src/blocks/grid/components/GridStructurePicker.js:163
+msgid "Skip"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:17
+#: src/blocks/slider-slide/settings/SlidePanel.jsx:142
+#: src/blocks/slider/edit.js:247
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:20
+#: src/utils/constants.js:419
+msgid "Slide"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:50
+#: src/components/controls/ItemAnimationControl.jsx:34
+msgid "Slide Down"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:51
+#: src/components/controls/HoverAnimationControl.jsx:40
+#: src/components/controls/ItemAnimationControl.jsx:35
+msgid "Slide Left"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:52
+#: src/components/controls/HoverAnimationControl.jsx:41
+#: src/components/controls/ItemAnimationControl.jsx:36
+msgid "Slide Right"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:49
+#: src/components/controls/ItemAnimationControl.jsx:33
+msgid "Slide Up"
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:23
+msgid "Slider"
+msgstr ""
+
+#: src/blocks/slider/edit.js:378
+msgid "Slides"
+msgstr ""
+
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:102
+msgid "Slides Border Radius"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:84
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:85
+msgid "Slides Per View"
+msgstr ""
+
+#: src/blocks/social-icons/settings/IconsPanel.jsx:56
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:81
+msgid "Social Icon"
+msgstr ""
+
+#: src/blocks/social-icons/settings/IconsPanel.jsx:188
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:92
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:305
+msgid "Social Icons"
+msgstr ""
+
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:307
+msgid "Social Items"
+msgstr ""
+
+#: src/blocks/button/templates.js:263
+#: src/blocks/button/templates.js:425
+msgid "Soft"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:29
+#: src/blocks/marquee-text/settings/StylePanel.jsx:47
+#: src/blocks/text/settings/TextPanel.jsx:42
+msgid "Soft Light"
+msgstr ""
+
+#: src/blocks/info-card/templates.js:177
+#: src/blocks/info-card/templates.js:321
+msgid "Soft Shadow"
+msgstr ""
+
+#: src/blocks/button/templates.js:19
+#: src/blocks/button/templates.js:420
+#: src/blocks/counter/settings/SeparatorPanel.jsx:18
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:32
+#: src/blocks/separator/settings/SeparatorPanel.jsx:19
+#: src/components/controls/BorderControls.jsx:23
+#: src/components/controls/ColorPickerButton.jsx:33
+#: src/utils/constants.js:388
+#: src/utils/constants.js:398
+msgid "Solid"
+msgstr ""
+
+#: src/blocks/button/templates.js:421
+#: src/blocks/button/templates.js:67
+msgid "Solid Pill"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:325
+#: src/blocks/video/settings/VideoPanel.jsx:326
+msgid "Source"
+msgstr ""
+
+#: src/blocks/grid/settings/GridPanel.js:59
+#: src/blocks/grid/settings/GridPanel.js:70
+#: src/utils/constants.js:211
+#: src/utils/constants.js:222
+msgid "Space Between"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/TitlePanel.jsx:102
+#: src/blocks/progress-bar/settings/TitlePanel.jsx:103
+msgid "Spacing"
+msgstr ""
+
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:86
+#: src/blocks/brand-logos/settings/LayoutPanel.jsx:87
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:96
+#: src/blocks/marquee-text/settings/LayoutPanel.jsx:146
+#: src/blocks/marquee-text/settings/LayoutPanel.jsx:147
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:98
+msgid "Speed"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:97
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:99
+msgid "Speed (ms)"
+msgstr ""
+
+#: src/components/controls/BoxShadowPopover.jsx:283
+msgid "Spread"
+msgstr ""
+
+#: src/blocks/info-card/templates.js:405
+#: src/blocks/info-card/templates.js:457
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:42
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:32
+#: src/utils/constants.js:361
+#: src/utils/icon-presets.js:142
+#: src/utils/icon-presets.js:90
+msgid "Square"
+msgstr ""
+
+#: src/blocks/info-card/templates.js:355
+#: src/blocks/info-card/templates.js:448
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:24
+#: src/utils/constants.js:353
+#: src/utils/icon-presets.js:133
+#: src/utils/icon-presets.js:39
+msgid "Stacked"
+msgstr ""
+
+#: src/components/controls/ItemAnimationControl.jsx:164
+msgid "Stagger"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:42
+msgid "Star"
+msgstr ""
+
+#: src/blocks/testimonial/settings/RatingPanel.jsx:39
+#: src/blocks/testimonial/settings/RatingPanel.jsx:40
+msgid "Stars"
+msgstr ""
+
+#: src/blocks/grid/settings/GridPanel.js:36
+#: src/blocks/grid/settings/GridPanel.js:46
+#: src/blocks/grid/settings/GridPanel.js:56
+#: src/blocks/grid/settings/GridPanel.js:67
+#: src/utils/constants.js:208
+#: src/utils/constants.js:219
+#: src/utils/constants.js:230
+#: src/utils/constants.js:240
+#: src/utils/constants.js:250
+#: src/utils/constants.js:278
+msgid "Start"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:360
+msgid "Start Time"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:361
+msgid "Start Time (seconds)"
+msgstr ""
+
+#: src/components/advanced-settings/StickyPanel.jsx:92
+#: src/components/advanced-settings/StickyPanel.jsx:93
+msgid "Stick At"
+msgstr ""
+
+#: src/components/advanced-settings/StickyPanel.jsx:85
+msgid "Sticky"
+msgstr ""
+
+#: src/components/advanced-settings/StickyPanel.jsx:86
+#: src/components/advanced-settings/StickyPanel.jsx:87
+msgid "Sticky Container"
+msgstr ""
+
+#: src/blocks/grid/settings/GridPanel.js:39
+#: src/blocks/grid/settings/GridPanel.js:49
+#: src/blocks/grid/settings/GridPanel.js:60
+#: src/blocks/grid/settings/GridPanel.js:71
+#: src/utils/constants.js:212
+#: src/utils/constants.js:223
+#: src/utils/constants.js:233
+#: src/utils/constants.js:243
+#: src/utils/constants.js:253
+#: src/utils/constants.js:293
+msgid "Stretch"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:33
+msgid "Striped"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:34
+msgid "Striped Animated"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:158
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:159
+msgid "Stroke Width"
+msgstr ""
+
+#: src/blocks/container/components/ContainerToolbar.js:306
+#: src/blocks/container/components/ContainerToolbar.js:307
+#: src/blocks/grid/components/GridToolbar.js:152
+#: src/blocks/grid/components/GridToolbar.js:153
+msgid "Structure"
+msgstr ""
+
+#: src/admin/App.jsx:169
+#: src/admin/components/Sidebar.jsx:37
+#: src/blocks/accordion/settings/GeneralPanel.jsx:110
+#: src/blocks/counter/settings/LayoutPanel.jsx:153
+#: src/blocks/counter/settings/SeparatorPanel.jsx:119
+#: src/blocks/counter/settings/SeparatorPanel.jsx:121
+#: src/blocks/heading/settings/SeparatorPanel.jsx:136
+#: src/blocks/heading/settings/SeparatorPanel.jsx:137
+#: src/blocks/note/settings/LayoutPanel.jsx:164
+#: src/blocks/note/settings/LayoutPanel.jsx:165
+#: src/blocks/separator/settings/SeparatorPanel.jsx:135
+#: src/blocks/separator/settings/SeparatorPanel.jsx:136
+#: src/blocks/team-member/settings/LayoutPanel.jsx:91
+msgid "Style"
+msgstr ""
+
+#: src/blocks/heading/settings/LayoutPanel.jsx:73
+#: src/blocks/heading/settings/SubheadingPanel.jsx:78
+msgid "SubHeading"
+msgstr ""
+
+#: src/blocks/heading/settings/SubheadingPanel.jsx:80
+msgid "SubHeading Text"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:30
+msgid "Submit Feedback"
+msgstr ""
+
+#: src/blocks/note/settings/LayoutPanel.jsx:21
+msgid "Success"
+msgstr ""
+
+#: src/blocks/counter/settings/ItemsPanel.jsx:162
+msgid "Suffix"
+msgstr ""
+
+#: src/blocks/counter/settings/ItemStylePanel.jsx:104
+#: src/blocks/counter/settings/ItemStylePanel.jsx:105
+msgid "Suffix Gap"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:414
+#: src/blocks/video/settings/VideoPanel.jsx:415
+msgid "Suggested Videos"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:28
+msgid "Support"
+msgstr ""
+
+#: includes/class-svg-upload.php:68
+msgid "SVG upload enabled."
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:314
+#: src/blocks/info-card/settings/ButtonPanel.jsx:334
+#: src/blocks/info-card/settings/MediaPanel.jsx:255
+#: src/components/controls/IconSourceControl.jsx:90
+msgid "SVG uploads are not enabled. Please contact your administrator."
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:90
+#: src/components/controls/HoverAnimationControl.jsx:34
+msgid "Swing"
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:187
+#: src/admin/App.jsx:171
+#: src/admin/components/Sidebar.jsx:39
+msgid "System Info"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:93
+msgid "System info copied to clipboard."
+msgstr ""
+
+#: src/admin/components/pages/DarkModePage.jsx:93
+msgid "System Preference"
+msgstr ""
+
+#: src/admin/components/AdminDeviceSwitcher.jsx:25
+#: src/components/DeviceSwitcher.jsx:26
+msgid "Tablet"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:96
+#: src/components/controls/HoverAnimationControl.jsx:35
+msgid "Tada"
+msgstr ""
+
+#: src/blocks/icon-list/settings/ItemsPanel.jsx:187
+#: src/blocks/icon-list/settings/TextStylePanel.jsx:82
+#: src/blocks/marquee-text/settings/ItemsPanel.jsx:22
+#: src/blocks/marquee-text/settings/ItemsPanel.jsx:62
+#: src/blocks/marquee-text/settings/StylePanel.jsx:263
+#: src/blocks/text/settings/TextPanel.jsx:208
+msgid "Text"
+msgstr ""
+
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:206
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:207
+#: src/blocks/button/settings/ButtonPanel.jsx:471
+#: src/blocks/button/settings/ButtonPanel.jsx:472
+#: src/blocks/button/settings/ButtonPanel.jsx:484
+#: src/blocks/button/settings/ButtonPanel.jsx:485
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:249
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:250
+#: src/blocks/gallery/settings/CaptionPanel.jsx:249
+#: src/blocks/gallery/settings/CaptionPanel.jsx:250
+#: src/blocks/heading/settings/HeadingPanel.jsx:178
+#: src/blocks/heading/settings/HeadingPanel.jsx:179
+#: src/blocks/icon-list/settings/TextStylePanel.jsx:101
+#: src/blocks/icon-list/settings/TextStylePanel.jsx:102
+#: src/blocks/icon-list/settings/TextStylePanel.jsx:94
+#: src/blocks/icon-list/settings/TextStylePanel.jsx:95
+#: src/blocks/image/settings/CaptionPanel.jsx:253
+#: src/blocks/image/settings/CaptionPanel.jsx:254
+#: src/blocks/info-card/settings/ButtonPanel.jsx:490
+#: src/blocks/info-card/settings/ButtonPanel.jsx:491
+#: src/blocks/info-card/settings/ButtonPanel.jsx:503
+#: src/blocks/info-card/settings/ButtonPanel.jsx:504
+#: src/blocks/marquee-text/settings/StylePanel.jsx:279
+#: src/blocks/marquee-text/settings/StylePanel.jsx:280
+#: src/blocks/note/settings/HeaderPanel.jsx:238
+#: src/blocks/note/settings/HeaderPanel.jsx:239
+#: src/blocks/text/settings/TextPanel.jsx:270
+#: src/blocks/text/settings/TextPanel.jsx:271
+msgid "Text Color"
+msgstr ""
+
+#: src/blocks/marquee-text/settings/ItemsPanel.jsx:97
+msgid "Text Items"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:202
+#: src/blocks/heading/settings/HeadingPanel.jsx:203
+#: src/blocks/marquee-text/settings/StylePanel.jsx:296
+#: src/blocks/marquee-text/settings/StylePanel.jsx:297
+#: src/blocks/text/settings/TextPanel.jsx:261
+#: src/blocks/text/settings/TextPanel.jsx:262
+#: src/components/controls/TextShadowPopover.jsx:216
+msgid "Text Shadow"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:196
+#: src/blocks/heading/settings/HeadingPanel.jsx:197
+#: src/blocks/marquee-text/settings/StylePanel.jsx:290
+#: src/blocks/marquee-text/settings/StylePanel.jsx:291
+#: src/blocks/text/settings/TextPanel.jsx:255
+#: src/blocks/text/settings/TextPanel.jsx:256
+#: src/components/controls/TextStrokePopover.jsx:329
+msgid "Text Stroke"
+msgstr ""
+
+#: src/blocks/marquee-text/settings/ItemsPanel.jsx:96
+msgid "Texts"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:176
+#: src/components/controls/ColorPickerButton.jsx:163
+#: src/components/controls/ColorPickerButton.jsx:176
+msgid "Theme"
+msgstr ""
+
+#: src/components/advanced-settings/LayoutPositionPanel.jsx:204
+msgid "This control will affect contained elements only."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:445
+#: includes/admin/class-admin-rest-api.php:484
+#: includes/admin/class-admin-rest-api.php:634
+msgid "This plugin is not in the allowed list."
+msgstr ""
+
+#: src/blocks/container/variations.js:354
+msgid "Three Columns (25/50/25)"
+msgstr ""
+
+#: src/blocks/container/variations.js:179
+msgid "Three Columns (33/33/33)"
+msgstr ""
+
+#: src/blocks/grid/variations.js:128
+msgid "Three columns by two rows."
+msgstr ""
+
+#: src/blocks/grid/variations.js:185
+msgid "Three columns with wider center."
+msgstr ""
+
+#: src/blocks/grid/variations.js:52
+msgid "Three equal columns."
+msgstr ""
+
+#: src/blocks/container/variations.js:180
+msgid "Three equal width columns."
+msgstr ""
+
+#: src/blocks/container/variations.js:410
+msgid "Three Rows Stacked"
+msgstr ""
+
+#: src/blocks/container/variations.js:411
+msgid "Three vertically stacked containers."
+msgstr ""
+
+#: src/blocks/gallery/settings/LayoutPanel.jsx:18
+msgid "Tiled"
+msgstr ""
+
+#: src/blocks/heading/settings/HeadingPanel.jsx:155
+#: src/blocks/info-card/settings/TitlePanel.jsx:101
+#: src/blocks/info-card/settings/TitlePanel.jsx:104
+#: src/blocks/note/settings/HeaderPanel.jsx:136
+#: src/blocks/progress-bar/settings/TitlePanel.jsx:81
+#: src/blocks/progress-bar/settings/TitlePanel.jsx:82
+#: src/blocks/testimonial/settings/TitlePanel.jsx:35
+msgid "Title"
+msgstr ""
+
+#: src/blocks/info-card/settings/TitlePanel.jsx:134
+msgid "Title Color"
+msgstr ""
+
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:153
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:216
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:217
+msgid "Title Icon"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/TitlePanel.jsx:94
+#: src/blocks/progress-bar/settings/TitlePanel.jsx:95
+msgid "Title Position"
+msgstr ""
+
+#: src/blocks/info-card/settings/TitlePanel.jsx:108
+msgid "Title Tag"
+msgstr ""
+
+#: src/blocks/note/settings/HeaderPanel.jsx:142
+msgid "Title Text"
+msgstr ""
+
+#: src/components/controls/BorderRadiusControl.jsx:17
+msgid "TL"
+msgstr ""
+
+#: src/blocks/container/settings/ContainerPanel.js:279
+msgid "To achieve full height Container use 100vh."
+msgstr ""
+
+#: src/blocks/note/edit.js:220
+msgid "Toggle"
+msgstr ""
+
+#: src/blocks/note/render.php:125
+msgid "Toggle content"
+msgstr ""
+
+#: src/blocks/note/settings/HeaderPanel.jsx:172
+msgid "Toggle Icon"
+msgstr ""
+
+#: src/blocks/counter/settings/ElementsPanel.jsx:15
+#: src/blocks/heading/settings/SeparatorPanel.jsx:20
+#: src/blocks/heading/settings/SubheadingPanel.jsx:20
+#: src/blocks/info-card/settings/LayoutPanel.jsx:22
+#: src/components/advanced-settings/StickyPanel.jsx:19
+#: src/components/controls/SpacingControl.jsx:16
+msgid "Top"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:63
+#: src/components/controls/PositionControl.jsx:17
+msgid "Top Center"
+msgstr ""
+
+#: src/blocks/info-card/templates.js:306
+#: src/blocks/info-card/templates.js:62
+msgid "Top Icon"
+msgstr ""
+
+#: src/blocks/info-card/templates.js:309
+#: src/blocks/info-card/templates.js:92
+msgid "Top Icon CTA"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:62
+#: src/components/controls/BorderRadiusControl.jsx:17
+#: src/components/controls/PositionControl.jsx:16
+msgid "Top Left"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:64
+#: src/components/controls/BorderRadiusControl.jsx:18
+#: src/components/controls/PositionControl.jsx:18
+msgid "Top Right"
+msgstr ""
+
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:346
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:347
+msgid "Top Spacing"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:101
+msgid "Total"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:100
+msgid "Total Range"
+msgstr ""
+
+#: src/components/controls/BorderRadiusControl.jsx:18
+msgid "TR"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:209
+#: src/blocks/progress-bar/settings/ProgressBarPanel.jsx:210
+msgid "Track Color"
+msgstr ""
+
+#: src/admin/components/GlobalTypographyControl.jsx:435
+#: src/components/controls/TypographyPopover.jsx:441
+msgid "Transform"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:92
+#: src/blocks/carousel-images/settings/LayoutPanel.jsx:93
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:90
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:91
+msgid "Transition"
+msgstr ""
+
+#: src/blocks/image/settings/ImagePanel.js:41
+msgid "Triangle"
+msgstr ""
+
+#: src/admin/components/pages/PluginsPage.jsx:185
+msgid "Try Again"
+msgstr ""
+
+#: src/blocks/container/variations.js:242
+msgid "Two Columns (25/75)"
+msgstr ""
+
+#: src/blocks/container/variations.js:298
+msgid "Two Columns (33/66)"
+msgstr ""
+
+#: src/blocks/container/variations.js:151
+msgid "Two Columns (50/50)"
+msgstr ""
+
+#: src/blocks/container/variations.js:326
+msgid "Two Columns (66/33)"
+msgstr ""
+
+#: src/blocks/container/variations.js:270
+msgid "Two Columns (75/25)"
+msgstr ""
+
+#: src/blocks/grid/variations.js:109
+msgid "Two columns by two rows."
+msgstr ""
+
+#: src/blocks/grid/variations.js:166
+msgid "Two columns: narrow left, wide right."
+msgstr ""
+
+#: src/blocks/grid/variations.js:32
+msgid "Two equal columns."
+msgstr ""
+
+#: src/blocks/container/variations.js:152
+msgid "Two equal width columns."
+msgstr ""
+
+#: src/blocks/container/variations.js:385
+msgid "Two Rows Stacked"
+msgstr ""
+
+#: src/blocks/grid/variations.js:90
+msgid "Two stacked rows."
+msgstr ""
+
+#: src/blocks/container/variations.js:327
+msgid "Two thirds / one third layout."
+msgstr ""
+
+#: src/blocks/container/variations.js:386
+msgid "Two vertically stacked containers."
+msgstr ""
+
+#: src/blocks/carousel-images/settings/NavigationPanel.jsx:289
+#: src/blocks/countdown/settings/SeparatorPanel.jsx:62
+#: src/blocks/countdown/settings/SeparatorPanel.jsx:63
+#: src/blocks/info-card/settings/MediaPanel.jsx:840
+#: src/blocks/note/settings/LayoutPanel.jsx:157
+#: src/blocks/slider/settings/NavigationPanel.jsx:289
+msgid "Type"
+msgstr ""
+
+#: src/admin/App.jsx:170
+#: src/admin/components/GlobalTypographyControl.jsx:301
+#: src/admin/components/Sidebar.jsx:38
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:196
+#: src/blocks/accordion/settings/HeadingStylePanel.jsx:197
+#: src/blocks/button/settings/ButtonPanel.jsx:459
+#: src/blocks/button/settings/ButtonPanel.jsx:460
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:243
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:244
+#: src/blocks/countdown/settings/DigitPanel.jsx:58
+#: src/blocks/countdown/settings/DigitPanel.jsx:59
+#: src/blocks/countdown/settings/LabelPanel.jsx:87
+#: src/blocks/countdown/settings/LabelPanel.jsx:88
+#: src/blocks/gallery/settings/CaptionPanel.jsx:243
+#: src/blocks/gallery/settings/CaptionPanel.jsx:244
+#: src/blocks/heading/settings/HeadingPanel.jsx:168
+#: src/blocks/heading/settings/HeadingPanel.jsx:169
+#: src/blocks/heading/settings/SubheadingPanel.jsx:93
+#: src/blocks/heading/settings/SubheadingPanel.jsx:94
+#: src/blocks/icon-list/settings/TextStylePanel.jsx:83
+#: src/blocks/icon-list/settings/TextStylePanel.jsx:84
+#: src/blocks/image/settings/CaptionPanel.jsx:247
+#: src/blocks/image/settings/CaptionPanel.jsx:248
+#: src/blocks/info-card/settings/ButtonPanel.jsx:473
+#: src/blocks/info-card/settings/ButtonPanel.jsx:474
+#: src/blocks/info-card/settings/DescriptionPanel.jsx:122
+#: src/blocks/info-card/settings/DescriptionPanel.jsx:123
+#: src/blocks/info-card/settings/TitlePanel.jsx:122
+#: src/blocks/info-card/settings/TitlePanel.jsx:123
+#: src/blocks/marquee-text/settings/StylePanel.jsx:269
+#: src/blocks/marquee-text/settings/StylePanel.jsx:270
+#: src/blocks/note/settings/HeaderPanel.jsx:204
+#: src/blocks/note/settings/HeaderPanel.jsx:205
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:118
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:119
+#: src/blocks/progress-bar/settings/TitlePanel.jsx:106
+#: src/blocks/progress-bar/settings/TitlePanel.jsx:107
+#: src/blocks/team-member/settings/ContentPanel.jsx:113
+#: src/blocks/team-member/settings/ContentPanel.jsx:134
+#: src/blocks/team-member/settings/ContentPanel.jsx:92
+#: src/blocks/testimonial/settings/QuotePanel.jsx:36
+#: src/blocks/testimonial/settings/QuotePanel.jsx:37
+#: src/blocks/testimonial/settings/TitlePanel.jsx:36
+#: src/blocks/testimonial/settings/TitlePanel.jsx:37
+#: src/blocks/text/settings/TextPanel.jsx:249
+#: src/blocks/text/settings/TextPanel.jsx:250
+#: src/components/controls/TypographyPopover.jsx:307
+msgid "Typography"
+msgstr ""
+
+#: src/utils/typography-defaults.js:59
+msgid "Underline"
+msgstr ""
+
+#: src/components/controls/BorderRadiusControl.jsx:39
+msgid "Unlink corners"
+msgstr ""
+
+#: src/components/controls/SizeControl.jsx:137
+#: src/components/controls/SizeControl.jsx:138
+msgid "Unlink dimensions"
+msgstr ""
+
+#: src/components/controls/GapControl.jsx:137
+#: src/components/controls/GapControl.jsx:138
+msgid "Unlink gaps"
+msgstr ""
+
+#: src/components/controls/SpacingControl.jsx:38
+msgid "Unlink sides"
+msgstr ""
+
+#: src/admin/components/Header.jsx:30
+msgid "Unsaved changes"
+msgstr ""
+
+#: src/blocks/image/settings/CaptionPanel.jsx:204
+msgid "Update caption text in Media Library. Reload to take effect."
+msgstr ""
+
+#: src/admin/components/shared/BlockCard.jsx:353
+msgid "Upgrade"
+msgstr ""
+
+#: src/admin/components/pages/SettingsPage.jsx:130
+msgid "Upgrade Now"
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:189
+#: src/admin/components/Sidebar.jsx:233
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: src/blocks/info-card/settings/ButtonPanel.jsx:24
+#: src/blocks/video/settings/PlayIconPanel.jsx:21
+#: src/components/ImagePlaceholder.jsx:165
+msgid "Upload"
+msgstr ""
+
+#: src/blocks/info-card/settings/MediaPanel.jsx:886
+#: src/blocks/marquee-text/settings/StylePanel.jsx:22
+#: src/blocks/video/settings/PlayIconPanel.jsx:287
+msgid "Upload Image"
+msgstr ""
+
+#: src/blocks/button/settings/ButtonPanel.jsx:23
+#: src/blocks/button/settings/ButtonPanel.jsx:394
+#: src/blocks/info-card/settings/ButtonPanel.jsx:428
+#: src/blocks/info-card/settings/MediaPanel.jsx:37
+#: src/blocks/info-card/settings/MediaPanel.jsx:862
+#: src/components/controls/IconSourceControl.jsx:163
+#: src/components/controls/IconSourceControl.jsx:22
+msgid "Upload SVG"
+msgstr ""
+
+#: src/utils/typography-defaults.js:47
+msgid "Uppercase"
+msgstr ""
+
+#: src/admin/components/pages/PerformancePage.jsx:71
+msgid "Use lazy loading for images within blocks."
+msgstr ""
+
+#: src/admin/App.jsx:172
+#: src/admin/components/Sidebar.jsx:44
+msgid "Useful Plugins"
+msgstr ""
+
+#: src/admin/components/pages/DarkModePage.jsx:94
+msgid "Uses @media (prefers-color-scheme: dark) to automatically detect user system dark mode preference."
+msgstr ""
+
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:96
+#: src/components/advanced-settings/AttributesPanel.jsx:71
+#: src/components/controls/LinkControl.jsx:115
+msgid "Value"
+msgstr ""
+
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:91
+#: src/blocks/progress-bar/settings/CounterPanel.jsx:92
+msgid "Value Type"
+msgstr ""
+
+#: src/admin/components/Sidebar.jsx:215
+#: src/admin/components/pages/SystemInfoPage.jsx:126
+#: src/admin/components/pages/SystemInfoPage.jsx:183
+#: src/admin/components/pages/SystemInfoPage.jsx:201
+msgid "Version"
+msgstr ""
+
+#: src/blocks/slider/settings/SliderSettingsPanel.jsx:26
+#: src/components/controls/BoxShadowPopover.jsx:279
+#: src/components/controls/TextShadowPopover.jsx:252
+msgid "Vertical"
+msgstr ""
+
+#: src/blocks/container/variations.js:104
+msgid "Vertical stacking container."
+msgstr ""
+
+#: src/blocks/video/edit.js:212
+#: src/blocks/video/render.php:234
+#: src/blocks/video/settings/VideoPanel.jsx:323
+#: src/blocks/video/settings/VideoPanel.jsx:329
+msgid "Video"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:336
+#: src/blocks/video/settings/VideoPanel.jsx:354
+msgid "Video URL"
+msgstr ""
+
+#: src/blocks/icon-set/settings/IconPanel.jsx:325
+#: src/blocks/icon-set/settings/IconPanel.jsx:326
+#: src/blocks/icon/settings/IconPanel.jsx:406
+#: src/blocks/icon/settings/IconPanel.jsx:407
+#: src/blocks/info-card/settings/MediaPanel.jsx:869
+#: src/blocks/info-card/settings/MediaPanel.jsx:870
+#: src/blocks/social-icons/settings/IconPanel.jsx:242
+#: src/blocks/social-icons/settings/IconPanel.jsx:243
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:106
+#: src/blocks/social-icons/settings/SocialIconsPanel.jsx:107
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:327
+#: src/blocks/team-member/settings/SocialIconsPanel.jsx:328
+msgid "View"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:32
+msgid "View Changelog"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:26
+msgid "View Documentation"
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:21
+msgid "Vimeo"
+msgstr ""
+
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:213
+#: src/blocks/carousel-images/settings/CaptionPanel.jsx:214
+#: src/blocks/gallery/settings/CaptionPanel.jsx:213
+#: src/blocks/gallery/settings/CaptionPanel.jsx:214
+#: src/blocks/image/settings/CaptionPanel.jsx:217
+#: src/blocks/image/settings/CaptionPanel.jsx:218
+msgid "Visibility"
+msgstr ""
+
+#: src/utils/constants.js:159
+#: src/utils/constants.js:168
+msgid "Visible"
+msgstr ""
+
+#: src/blocks/note/settings/LayoutPanel.jsx:20
+msgid "Warning"
+msgstr ""
+
+#: src/admin/components/pages/DarkModePage.jsx:126
+msgid "Warning: No detection method is enabled. Dark mode CSS will not be output."
+msgstr ""
+
+#: src/blocks/counter/settings/SeparatorPanel.jsx:140
+#: src/blocks/counter/settings/SeparatorPanel.jsx:141
+#: src/blocks/heading/settings/SeparatorPanel.jsx:126
+#: src/blocks/heading/settings/SeparatorPanel.jsx:127
+#: src/blocks/separator/settings/SeparatorPanel.jsx:148
+#: src/blocks/separator/settings/SeparatorPanel.jsx:149
+msgid "Weight"
+msgstr ""
+
+#: src/admin/components/GlobalTypographyControl.jsx:409
+#: src/components/controls/TypographyPopover.jsx:415
+msgid "Weight & Style"
+msgstr ""
+
+#: src/admin/components/pages/DarkModePage.jsx:72
+msgid "When enabled, dark mode CSS will be generated on the frontend. Disabling this will hide dark color pickers in the editor but preserve existing dark color values."
+msgstr ""
+
+#: src/blocks/countdown/settings/CountdownPanel.jsx:187
+msgid "When Ends"
+msgstr ""
+
+#: src/blocks/info-card/settings/ButtonPanel.jsx:31
+msgid "Whole Card"
+msgstr ""
+
+#: src/admin/components/pages/SettingsPage.jsx:100
+msgid "Wide"
+msgstr ""
+
+#: src/blocks/container/settings/ContainerPanel.js:183
+#: src/blocks/container/settings/ContainerPanel.js:185
+#: src/blocks/counter/settings/SeparatorPanel.jsx:136
+#: src/blocks/counter/settings/SeparatorPanel.jsx:137
+#: src/blocks/grid/settings/GridPanel.js:261
+#: src/blocks/grid/settings/GridPanel.js:263
+#: src/blocks/heading/settings/SeparatorPanel.jsx:122
+#: src/blocks/heading/settings/SeparatorPanel.jsx:123
+#: src/blocks/image/settings/ImagePanel.js:422
+#: src/blocks/info-card/settings/MediaPanel.jsx:781
+#: src/blocks/info-card/settings/MediaPanel.jsx:782
+#: src/blocks/separator/settings/SeparatorPanel.jsx:144
+#: src/blocks/separator/settings/SeparatorPanel.jsx:145
+#: src/blocks/video/settings/VideoPanel.jsx:446
+#: src/components/advanced-settings/SizingPanel.jsx:196
+#: src/components/advanced-settings/SizingPanel.jsx:197
+#: src/components/controls/SizeControl.jsx:118
+#: src/components/controls/SizeControl.jsx:144
+#: src/components/controls/TextStrokePopover.jsx:344
+msgid "Width"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:41
+msgid "Will disabling a block break existing content?"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:91
+msgid "Wobble"
+msgstr ""
+
+#: src/components/controls/HoverAnimationControl.jsx:27
+msgid "Wobble Horizontal"
+msgstr ""
+
+#: src/components/controls/HoverAnimationControl.jsx:28
+msgid "Wobble Vertical"
+msgstr ""
+
+#: src/admin/components/GlobalTypographyControl.jsx:556
+#: src/components/controls/TypographyPopover.jsx:562
+msgid "Word Spacing"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:123
+msgid "WordPress"
+msgstr ""
+
+#: src/blocks/container/settings/ContainerPanel.js:321
+#: src/blocks/container/settings/ContainerPanel.js:322
+#: src/utils/constants.js:267
+msgid "Wrap"
+msgstr ""
+
+#: src/admin/components/pages/SystemInfoPage.jsx:131
+#: src/admin/components/pages/SystemInfoPage.jsx:188
+msgid "Yes"
+msgstr ""
+
+#: src/admin/components/pages/HelpPage.jsx:43
+msgid "You can reset all settings by clearing the plugin data or reinstalling. Individual block settings can be reset from within the block editor."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:140
+msgid "You do not have permission to access this resource."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:330
+msgid "You do not have permission to activate plugins."
+msgstr ""
+
+#: includes/admin/class-admin-rest-api.php:303
+msgid "You do not have permission to install plugins."
+msgstr ""
+
+#: includes/admin/class-admin-dashboard.php:194
+msgid "You have unsaved changes."
+msgstr ""
+
+#: src/blocks/video/settings/VideoPanel.jsx:20
+msgid "YouTube"
+msgstr ""
+
+#: src/components/advanced-settings/LayoutPositionPanel.jsx:209
+#: src/components/advanced-settings/LayoutPositionPanel.jsx:210
+msgid "Z-Index"
+msgstr ""
+
+#: src/blocks/google-map/settings/MapPanel.js:118
+#: src/blocks/google-map/settings/MapPanel.js:119
+msgid "Zoom"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:31
+#: src/components/controls/ItemAnimationControl.jsx:29
+#: src/utils/constants.js:417
+msgid "Zoom In"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:33
+msgid "Zoom In Down"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:34
+msgid "Zoom In Left"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:35
+msgid "Zoom In Right"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:32
+msgid "Zoom In Up"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:36
+#: src/components/controls/ItemAnimationControl.jsx:30
+#: src/utils/constants.js:418
+msgid "Zoom Out"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:38
+msgid "Zoom Out Down"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:39
+msgid "Zoom Out Left"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:40
+msgid "Zoom Out Right"
+msgstr ""
+
+#: src/components/advanced-settings/AnimationPanel.jsx:37
+msgid "Zoom Out Up"
+msgstr ""
+

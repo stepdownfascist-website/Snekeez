@@ -8,12 +8,10 @@ use WebpConverter\Conversion\Format\FormatFactory;
 use WebpConverter\Conversion\Format\WebpFormat;
 use WebpConverter\Conversion\LargerFilesOperator;
 use WebpConverter\Exception\ExceptionInterface;
-use WebpConverter\Exception\FilesizeOversizeException;
 use WebpConverter\Exception\LargerThanOriginalException;
 use WebpConverter\Exception\OutputPathException;
 use WebpConverter\Exception\RemoteErrorResponseException;
 use WebpConverter\Exception\RemoteRequestException;
-use WebpConverter\Exception\SourcePathException;
 use WebpConverter\Model\Token;
 use WebpConverter\Repository\TokenRepository;
 use WebpConverter\Service\ServerConfigurator;
@@ -214,9 +212,11 @@ class RemoteMethod extends MethodAbstract {
 				}
 
 				$source_paths[] = $source_path;
-			} catch ( SourcePathException|FilesizeOversizeException $e ) {
+			} catch ( ExceptionInterface $e ) {
 				$this->save_conversion_error( $e->getMessage(), $plugin_settings );
-				$this->skip_crashed->create_crashed_file( $this->get_image_output_path( $source_path, $output_format ) );
+				if ( $e->is_crashed_file_required() ) {
+					$this->skip_crashed->create_crashed_file( $this->get_image_output_path( $source_path, $output_format ) );
+				}
 			}
 		}
 

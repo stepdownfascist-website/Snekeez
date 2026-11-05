@@ -2,15 +2,10 @@
 
 namespace WebpConverter;
 
-use WebpConverter\Action;
-use WebpConverter\Conversion;
 use WebpConverter\Conversion\Cron;
 use WebpConverter\Conversion\Endpoint;
 use WebpConverter\Error\ErrorDetectorAggregator;
-use WebpConverter\Notice;
-use WebpConverter\Plugin;
 use WebpConverter\Repository\TokenRepository;
-use WebpConverter\Service;
 use WebpConverter\Settings\Page;
 
 /**
@@ -31,6 +26,7 @@ class WebpConverter {
 		( new Action\DeletePathsAction( $format_factory ) )->init_hooks();
 		( new Action\UploadFileHandler( $plugin_data, $token_repository, $format_factory ) )->init_hooks();
 		$directory_factory->init_hooks();
+		( new Endpoint\EndpointIntegrator( new Endpoint\CloudflareZonesEndpoint() ) )->init_hooks();
 		( new Endpoint\EndpointIntegrator( new Endpoint\CronConversionEndpoint( $plugin_data, $token_repository, $format_factory ) ) )->init_hooks();
 		( new Endpoint\EndpointIntegrator( new Endpoint\FilesStatsEndpoint( $plugin_data, $format_factory ) ) )->init_hooks();
 		( new Endpoint\EndpointIntegrator( new Endpoint\PathsEndpoint( $plugin_data, $token_repository, $format_factory ) ) )->init_hooks();
@@ -67,7 +63,6 @@ class WebpConverter {
 		( new Service\CloudflareConfigurator( $plugin_info, $plugin_data ) )->init_hooks();
 		( new Service\DeactivationModalLoader( $plugin_info, $plugin_data ) )->init_hooks();
 		( new Service\MediaStatusViewer( $plugin_data, $token_repository, $format_factory ) )->init_hooks();
-		( new Service\SiteHealthDetector( $plugin_data ) )->init_hooks();
 		( new Service\RestApiUnlocker() )->init_hooks();
 		( new Service\WpCliManager( $plugin_data, $token_repository, $method_factory, $format_factory ) )->init_hooks();
 		( new Settings\AdminAssetsLoader( $plugin_info ) )->init_hooks();

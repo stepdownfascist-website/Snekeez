@@ -4,7 +4,6 @@ namespace WebpConverter\Plugin\Deactivation;
 
 use WebpConverter\Conversion\Cron\CronStatusManager;
 use WebpConverter\Error\ErrorDetectorAggregator;
-use WebpConverter\Notice\CloudflareNotice;
 use WebpConverter\Service\OptionsAccessManager;
 
 /**
@@ -16,8 +15,8 @@ class PluginSettingsManager {
 	 * Removes options from wp_options table.
 	 */
 	public function remove_plugin_settings(): void {
+		OptionsAccessManager::delete_option( 'webpc_notice_cloudflare' );
 		OptionsAccessManager::delete_option( 'webpc_notice_cloudways' );
-		OptionsAccessManager::delete_option( CloudflareNotice::NOTICE_OPTION );
 		OptionsAccessManager::delete_option( 'webpc_notice_litespeed' );
 
 		delete_site_transient( CronStatusManager::CRON_PATHS_TRANSIENT );

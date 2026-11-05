@@ -56,5 +56,12 @@ class AdminAssetsLoader implements HookableInterface {
 			true
 		);
 		wp_enqueue_script( 'converter-for-media' );
+		wp_localize_script(
+			'converter-for-media',
+			'webpcScript',
+			[
+				'label_loading' => __( 'Loading, please wait...', 'webp-converter-for-media' ),
+			]
+		);
 	}
 }

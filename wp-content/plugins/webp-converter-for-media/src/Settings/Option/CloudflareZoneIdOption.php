@@ -41,21 +41,11 @@ class CloudflareZoneIdOption extends OptionAbstract {
 	 * {@inheritdoc}
 	 */
 	public function get_info(): string {
-		return implode(
-			' ',
-			[
-				sprintf(
-				/* translators: %s: service name */
-					__( 'Optionally, fill in if you are using %s.', 'webp-converter-for-media' ),
-					'Cloudflare'
-				),
-				sprintf(
-				/* translators: %1$s: open anchor tag, %2$s: close anchor tag */
-					__( 'Check out %1$sour documentation%2$s for more information.', 'webp-converter-for-media' ),
-					'<a href="https://url.mattplugins.com/converter-field-cloudflare-info" target="_blank">',
-					'</a>'
-				),
-			]
+		return sprintf(
+		/* translators: %s: service name */
+			__( 'Enter a value in the %1$s field above to load zones, then select yours or enter the %2$s manually.', 'webp-converter-for-media' ),
+			'Cloudflare API Token',
+			'Zone ID'
 		);
 	}
 

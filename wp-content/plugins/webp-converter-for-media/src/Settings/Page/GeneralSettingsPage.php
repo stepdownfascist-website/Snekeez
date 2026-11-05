@@ -4,6 +4,7 @@
 namespace WebpConverter\Settings\Page;
 
 use WebpConverter\Conversion\Cron\CronEventGenerator;
+use WebpConverter\Conversion\Endpoint\CloudflareZonesEndpoint;
 use WebpConverter\Conversion\Endpoint\FilesStatsEndpoint;
 use WebpConverter\Conversion\Endpoint\PathsEndpoint;
 use WebpConverter\Conversion\Endpoint\RegenerateEndpoint;
@@ -90,6 +91,8 @@ class GeneralSettingsPage extends PageAbstract {
 			'api_regenerate_nonce'     => RegenerateEndpoint::get_route_nonce(),
 			'api_stats_url'            => FilesStatsEndpoint::get_route_url(),
 			'api_stats_nonce'          => FilesStatsEndpoint::get_route_nonce(),
+			'api_cf_zones_url'         => CloudflareZonesEndpoint::get_route_url(),
+			'api_cf_zones_nonce'       => CloudflareZonesEndpoint::get_route_nonce(),
 			'url_debug_page'           => PageIntegrator::get_settings_page_url( DebugPage::PAGE_SLUG ),
 			'output_formats'           => [
 				'webp' => [

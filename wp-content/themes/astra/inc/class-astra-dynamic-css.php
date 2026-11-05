@@ -500,11 +500,11 @@ if ( ! class_exists( 'Astra_Dynamic_CSS' ) ) {
 			$body_font_weight = astra_get_option( 'body-font-weight' );
 
 			if ( is_array( $body_font_size ) ) {
-				$body_font_size_desktop = isset( $body_font_size['desktop'] ) && '' != $body_font_size['desktop'] ? $body_font_size['desktop'] : 15;
+				$body_font_size_desktop = isset( $body_font_size['desktop'] ) && is_numeric( $body_font_size['desktop'] ) && 0.0 !== (float) $body_font_size['desktop'] ? $body_font_size['desktop'] : 15;
 				// Convert to appropriate pixels if the unit is 'rem'.
 				$body_font_size_desktop = ! empty( $body_font_size['desktop-unit'] ) && $body_font_size['desktop-unit'] === 'rem' ? $body_font_size_desktop * 16 : $body_font_size_desktop;
 			} else {
-				$body_font_size_desktop = '' != $body_font_size ? $body_font_size : 15;
+				$body_font_size_desktop = is_numeric( $body_font_size ) && 0.0 !== (float) $body_font_size ? $body_font_size : 15;
 			}
 			// check the selection color incase of empty/no theme color.
 			$selection_text_color = 'transparent' === $highlight_theme_color ? '' : $highlight_theme_color;
@@ -4967,6 +4967,11 @@ if ( ! class_exists( 'Astra_Dynamic_CSS' ) ) {
 						'display'             => '-moz-box',
 						'display'             => '-ms-flexbox',
 						'display'             => 'flex',
+					),
+					// Tap target for the top level dropdown toggle, safe only next to the flex rule above - on the inline-block fallback Firefox breaks the arrow onto its own row.
+					'#ast-desktop-header .main-header-menu > .menu-item.menu-item-has-children > .menu-link .ast-header-navigation-arrow' => array(
+						'padding-' . astra_flip_rtl_alignment( 'right' ) => '10px',
+						'margin-' . astra_flip_rtl_alignment( 'right' )  => '-10px',
 					),
 				);
 

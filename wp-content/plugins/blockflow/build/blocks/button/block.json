@@ -1,0 +1,296 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "blockflow/button",
+  "version": "1.0.0",
+  "title": "Button",
+  "category": "blockflow",
+  "description": "A customizable button with optional icon.",
+  "keywords": [
+    "button",
+    "link",
+    "cta",
+    "action"
+  ],
+  "textdomain": "blockflow",
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "buttonPreset": {
+      "type": "string",
+      "default": "solid"
+    },
+    "text": {
+      "type": "string",
+      "default": "Click Here"
+    },
+    "link": {
+      "type": "object",
+      "default": {
+        "url": "",
+        "target": "",
+        "rel": "",
+        "customAttributes": []
+      }
+    },
+    "icon": {
+      "type": "object",
+      "default": {
+        "enabled": false,
+        "source": "library",
+        "name": "",
+        "position": "before",
+        "customSvg": {
+          "id": null,
+          "url": ""
+        }
+      }
+    },
+    "iconSpacing": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "8",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "iconSize": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "16",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "iconHoverAnimation": {
+      "type": "string",
+      "default": ""
+    },
+    "alignment": {
+      "type": "object",
+      "default": {
+        "desktop": "",
+        "tablet": "",
+        "mobile": ""
+      }
+    },
+    "fullWidth": {
+      "type": "object",
+      "default": {
+        "desktop": "inline",
+        "tablet": "",
+        "mobile": ""
+      }
+    },
+    "typography": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "fontFamily": "",
+          "fontSize": {
+            "value": "",
+            "unit": "px"
+          },
+          "fontWeight": "",
+          "textTransform": "",
+          "fontStyle": "",
+          "textDecoration": "",
+          "lineHeight": {
+            "value": "",
+            "unit": "em"
+          },
+          "letterSpacing": {
+            "value": "",
+            "unit": "px"
+          },
+          "wordSpacing": {
+            "value": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {},
+        "enabled": true
+      }
+    },
+    "textColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "backgroundColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "textColorHover": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "backgroundColorHover": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "buttonPadding": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "top": "",
+          "right": "",
+          "bottom": "",
+          "left": "",
+          "unit": "px"
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "border": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "style": "",
+          "width": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": "",
+            "unit": "px"
+          },
+          "color": {
+            "light": "",
+            "dark": ""
+          },
+          "radius": {
+            "topLeft": "",
+            "topRight": "",
+            "bottomRight": "",
+            "bottomLeft": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "borderHover": {
+      "type": "object",
+      "default": {
+        "desktop": {},
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "boxShadow": {
+      "type": "object",
+      "default": {
+        "horizontal": "0",
+        "vertical": "4",
+        "blur": "6",
+        "spread": "0",
+        "color": {
+          "light": "rgba(0, 0, 0, 0.1)",
+          "dark": ""
+        },
+        "inset": false,
+        "enabled": false
+      }
+    },
+    "boxShadowHover": {
+      "type": "object",
+      "default": {
+        "horizontal": "0",
+        "vertical": "4",
+        "blur": "6",
+        "spread": "0",
+        "color": {
+          "light": "rgba(0, 0, 0, 0.1)",
+          "dark": ""
+        },
+        "inset": false,
+        "enabled": false
+      }
+    },
+    "hoverAnimation": {
+      "type": "string",
+      "default": ""
+    },
+    "spacing": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "padding": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": "",
+            "unit": "px"
+          },
+          "margin": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": "",
+            "unit": "px"
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      }
+    },
+    "animation": {
+      "type": "object",
+      "default": {
+        "type": "",
+        "duration": 400,
+        "delay": 0,
+        "easing": "ease",
+        "once": true
+      }
+    },
+    "responsiveVisibility": {
+      "type": "object",
+      "default": {
+        "hideOnDesktop": false,
+        "hideOnTablet": false,
+        "hideOnMobile": false
+      }
+    },
+    "htmlTag": {
+      "type": "string",
+      "default": "div"
+    },
+    "htmlAttributes": {
+      "type": "object",
+      "default": {
+        "customAttributes": []
+      }
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "className": true,
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

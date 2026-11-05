@@ -120,7 +120,10 @@ class Admin {
 				'object_types'     => array_keys( Helper::get_accessible_post_types() ),
 				'context'          => 'side',
 				'priority'         => 'high',
-				'mb_callback_args' => [ '__block_editor_compatible_meta_box' => false ],
+				'mb_callback_args' => [
+					'__block_editor_compatible_meta_box' => false,
+					'__back_compat_meta_box'             => \rank_math_is_gutenberg(),
+				],
 			]
 		);
 
@@ -139,7 +142,7 @@ class Admin {
 		$refresh_date = Helper::get_content_ai_refresh_date();
 		$content_ai   = [
 			'ca_plan'         => [
-				'label' => esc_html__( 'Content AI Plan', 'seo-by-rank-math' ),
+				'label' => esc_html__( 'Rank Math AI Plan', 'seo-by-rank-math' ),
 				'value' => \ucwords( Helper::get_content_ai_plan() ),
 			],
 			'ca_credits'      => [

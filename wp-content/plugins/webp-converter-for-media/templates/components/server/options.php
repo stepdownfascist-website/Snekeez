@@ -77,9 +77,9 @@ use WebpConverter\Service\StatsManager;
 		</td>
 	</tr>
 	<tr>
-		<td class="e"><?php echo esc_html( CloudflareConfigurator::REQUEST_CACHE_CONFIG_OPTION ); ?></td>
+		<td class="e"><?php echo esc_html( CloudflareConfigurator::REQUEST_CACHE_SETTINGS_OPTION ); ?></td>
 		<td class="v">
-			<?php echo esc_html( OptionsAccessManager::get_option( CloudflareConfigurator::REQUEST_CACHE_CONFIG_OPTION, '-' ) ); ?>
+			<?php echo esc_html( OptionsAccessManager::get_option( CloudflareConfigurator::REQUEST_CACHE_SETTINGS_OPTION, '-' ) ); ?>
 		</td>
 	</tr>
 	<tr>

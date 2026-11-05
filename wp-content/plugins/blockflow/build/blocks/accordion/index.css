@@ -1,0 +1,1 @@
+.blockflow-accordion{display:flex;flex-direction:column}.blockflow-accordion .blockflow-accordion__items{display:flex;flex-direction:column;gap:var(--blockflow-accordion-gap,0)}.blockflow-accordion-item__content-body .block-editor-block-list__layout:empty:before{color:#757575;content:"Add content…";font-style:italic}
